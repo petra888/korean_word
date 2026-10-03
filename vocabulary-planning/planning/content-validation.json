@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "word_count": 10,
+  "first_textbook_batch_order": [
+    "까탈",
+    "깜냥",
+    "달포",
+    "말미",
+    "선잠",
+    "강단있는",
+    "격의",
+    "융통성",
+    "굴지",
+    "기탄없이"
+  ],
+  "flagged_source_rows_preserved": 4,
+  "objective_item_count": 150,
+  "writing_prompt_count": 20,
+  "phase_counts": {
+    "practice": 80,
+    "pretest": 10,
+    "posttest": 10,
+    "delayed": 10,
+    "weekly": 20,
+    "monthly": 10,
+    "quarterly": 10
+  },
+  "answer_position_counts": {
+    "a": 38,
+    "d": 37,
+    "b": 38,
+    "c": 37
+  },
+  "fictional_practice_supply": {
+    "unknown": 40,
+    "uncertain": 24,
+    "known": 16
+  },
+  "fictional_practice_need": {
+    "unknown": 36,
+    "uncertain": 18,
+    "known": 6
+  },
+  "regular_submission_activities": 70,
+  "regular_objective": 60,
+  "all_word_drafts": 10,
+  "errors": [],
+  "limits": [
+    "Structural and source preservation checks only",
+    "Meanings, answer uniqueness and age suitability need Korean teacher approval",
+    "Does not prove real service access control, storage or learning efficacy"
+  ]
+}

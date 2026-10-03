@@ -1,0 +1,10 @@
+{
+  "qa_cases": 63,
+  "development_tasks": 28,
+  "qa_status": "not executed real service",
+  "task_to_qa_links": "pass",
+  "validation_scope": "document and CSV references only",
+  "prd_requirements_mapped": 26,
+  "new_chart_cases": 4,
+  "content_education_approval": "not completed"
+}

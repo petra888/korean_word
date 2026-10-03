@@ -1,0 +1,34 @@
+{
+  "renderer": "ReportLab with embedded Korean subset font",
+  "documents": [
+    {
+      "file": "교사 평가 부모 자료 차트 개선안.pdf",
+      "pages": 4,
+      "searchable_characters": 5202,
+      "font_embedded": true,
+      "source_sha256": "f3ae7c458fecc7050b4de052b4edb17a14fd740770bf9e556e5a685d33099464"
+    },
+    {
+      "file": "2주 학생 교사 수업 운영표.pdf",
+      "pages": 8,
+      "searchable_characters": 11355,
+      "font_embedded": true,
+      "source_sha256": "3005a8230f06542911be13e9cd041622b6104edae17e0ffd1bdc6d74f05ac406"
+    },
+    {
+      "file": "교재 첫 10개 단어 문항 작문.pdf",
+      "pages": 55,
+      "searchable_characters": 54114,
+      "font_embedded": true,
+      "source_sha256": "a9b52a07691b94ede9f974fe5b51a83e29be33f3b3c6c4c2f63bc6decfe3cb32"
+    },
+    {
+      "file": "개발 상세 명세와 검수 기준.pdf",
+      "pages": 15,
+      "searchable_characters": 28990,
+      "font_embedded": true,
+      "source_sha256": "93717c135526ba3e923981d6c47ab7762f30834e3e7841a988d238f023c74043"
+    }
+  ],
+  "browser_preview": "unverified: sandbox prevents browser and local server startup"
+}

@@ -1,0 +1,572 @@
+{
+  "document_id": "OPS-2W-20261004-TEACHER-REVIEW-V3",
+  "created_date_kst": "2026-10-04",
+  "timezone": "Asia/Seoul",
+  "document_status": "planning_proposal_not_user_confirmed_operations",
+  "work_authorized": true,
+  "user_confirmed_operating_parameters": false,
+  "basis": "사용자 최신 요구: PDF 순서, 뜻10개 무작위 매칭 진단, 모른다 자동정답 안내, 혼합4지선다 빈칸10문항,10단어 전부 작문, 교사 판정 후 보충. 인원·시간·예산 등 결정 질문은 미답변.",
+  "confirmed_learning_requirements": [
+    "PDF 원문 순서 유지",
+    "뜻10개와 무작위 단어 매칭",
+    "모른다 응답 후 정답 자동안내",
+    "이해추론 혼합4지선다 빈칸10문항",
+    "전체10단어 각각문장쓰기",
+    "교사 정답/오답/검토(애매) 단일판정·자동분류 확인후 후속보충",
+    "학생과교사 구분",
+    "일간주간월간 리포트",
+    "교사평가와직접부모메시지",
+    "주간월간분기 전체복습"
+  ],
+  "target": {
+    "academy_count": 1,
+    "student_count": 30,
+    "first_cohort": "초등 고학년 우선; 일부 중학생 사용성 확인",
+    "devices": [
+      "PC",
+      "tablet"
+    ],
+    "delivery": "web",
+    "status": "assumption"
+  },
+  "learning_flow": {
+    "macro_stages": [
+      "진단·계획",
+      "이해·추론",
+      "표현·수정",
+      "복습·재확인"
+    ],
+    "daily_detail": [
+      "뜻 매칭 진단",
+      "계획 확인",
+      "혼합4지선다 빈칸10문항",
+      "전수 단어 작문",
+      "교사 피드백 수정·정리"
+    ],
+    "replaces_three_choice_self_check": true,
+    "status": "latest_user_requirements_reflected"
+  },
+  "pool": {
+    "count": 10,
+    "selection_rule": "source_order_ascending_first_10_without_skipping",
+    "source_order_range": [
+      1,
+      10
+    ],
+    "pdf_page": 1,
+    "ids_are_source_content_ids_not_approved_meaning_ids": true,
+    "meaning_approval_required": true,
+    "words": [
+      {
+        "content_id": "W0001",
+        "headword_original": "까탈",
+        "source_order": 1,
+        "hypothetical_initial_diagnostic_group": "unknown",
+        "source_release_status": "사전·교사 검수 전"
+      },
+      {
+        "content_id": "W0002",
+        "headword_original": "깜냥",
+        "source_order": 2,
+        "hypothetical_initial_diagnostic_group": "unknown",
+        "source_release_status": "사전·교사 검수 전"
+      },
+      {
+        "content_id": "W0003",
+        "headword_original": "달포",
+        "source_order": 3,
+        "hypothetical_initial_diagnostic_group": "unknown",
+        "source_release_status": "사전·교사 검수 전"
+      },
+      {
+        "content_id": "W0004",
+        "headword_original": "말미",
+        "source_order": 4,
+        "hypothetical_initial_diagnostic_group": "unknown",
+        "source_release_status": "검수대기"
+      },
+      {
+        "content_id": "W0005",
+        "headword_original": "선잠",
+        "source_order": 5,
+        "hypothetical_initial_diagnostic_group": "unknown",
+        "source_release_status": "사전·교사 검수 전"
+      },
+      {
+        "content_id": "W0006",
+        "headword_original": "강단있는",
+        "source_order": 6,
+        "hypothetical_initial_diagnostic_group": "uncertain",
+        "source_release_status": "검수대기"
+      },
+      {
+        "content_id": "W0007",
+        "headword_original": "격의",
+        "source_order": 7,
+        "hypothetical_initial_diagnostic_group": "uncertain",
+        "source_release_status": "사전·교사 검수 전"
+      },
+      {
+        "content_id": "W0008",
+        "headword_original": "융통성",
+        "source_order": 8,
+        "hypothetical_initial_diagnostic_group": "uncertain",
+        "source_release_status": "검수대기"
+      },
+      {
+        "content_id": "W0009",
+        "headword_original": "굴지",
+        "source_order": 9,
+        "hypothetical_initial_diagnostic_group": "known",
+        "source_release_status": "사전·교사 검수 전"
+      },
+      {
+        "content_id": "W0010",
+        "headword_original": "기탄없이",
+        "source_order": 10,
+        "hypothetical_initial_diagnostic_group": "known",
+        "source_release_status": "검수대기"
+      }
+    ],
+    "distribution_is_fictional_not_assigned_to_real_students": true,
+    "source_flags_do_not_allow_skipping_or_arbitrary_replacement": true
+  },
+  "diagnostic": {
+    "type": "definition_word_randomized_matching",
+    "definition_count": 10,
+    "headword_count": 10,
+    "word_order_randomized": true,
+    "display_order_seed_and_first_response_preserved": true,
+    "unknown_response_reveals_correct_answer": true,
+    "missed_response_auto_unknown": false,
+    "first_unassisted_correct_group": "known",
+    "first_wrong_group": "uncertain",
+    "explicit_unknown_group": "unknown",
+    "correct_after_reveal_is_not_independent_correct": true,
+    "initial_group_preserved_after_reveal": true,
+    "retry_needs_verification": true,
+    "replaces_three_choice_self_check": true,
+    "counts_toward_regular_60": false,
+    "counts_toward_period_learned_word_set": false
+  },
+  "regular": {
+    "weeks": 2,
+    "sessions_per_week": 3,
+    "relative_weekdays": [
+      "월",
+      "수",
+      "금"
+    ],
+    "sessions": 6,
+    "activities_per_session": 10,
+    "objective_per_session": 10,
+    "objective_type": "mixed_4_choice_cloze",
+    "choice_count": 4,
+    "draft_per_session": 0,
+    "writing_is_separate_full_coverage_task": true,
+    "planned_activities_total": 60,
+    "planned_objective_total": 60,
+    "planned_drafts_total": 0,
+    "default_weights": {
+      "unknown": 0.6,
+      "uncertain": 0.3,
+      "known": 0.1
+    },
+    "fictional_frozen_group_totals": {
+      "unknown": 36,
+      "uncertain": 18,
+      "known": 6
+    },
+    "actual_group_freeze": "활동 배정 당시. 최초진단과이후교사판정 구분; 변경은 다음 회차부터.",
+    "retries_hints_revisions_increment_activity_count": false,
+    "objective_bank_per_word": 8,
+    "objective_bank_total": 80,
+    "bank_supply_by_hypothetical_group": {
+      "unknown": 40,
+      "uncertain": 24,
+      "known": 16
+    },
+    "used_by_hypothetical_group": {
+      "unknown": 36,
+      "uncertain": 18,
+      "known": 6
+    },
+    "unused_after_regular_by_hypothetical_group": {
+      "unknown": 4,
+      "uncertain": 6,
+      "known": 10
+    },
+    "unknown_shortage_if_followup_10_at_6_3_1": 2,
+    "same_item_reuse_to_fill_quota": false,
+    "shortage_policy": "미사용 승인문항의 실제그룹별 공급 확인, 새변형승인 또는유효그룹 비례재배분/교사보류. 사유·변경분모기록."
+  },
+  "writing": {
+    "type": "full_coverage_separate_from_weighted_objectives",
+    "unique_word_count": 10,
+    "required_drafts_per_word": 1,
+    "required_total_drafts": 10,
+    "drafts_per_session": [
+      4,
+      3,
+      3,
+      0,
+      0,
+      0
+    ],
+    "draft_targets_per_session": [
+      [
+        "W0001",
+        "W0002",
+        "W0003",
+        "W0004"
+      ],
+      [
+        "W0005",
+        "W0006",
+        "W0007"
+      ],
+      [
+        "W0008",
+        "W0009",
+        "W0010"
+      ],
+      [],
+      [],
+      []
+    ],
+    "draft_targets_follow_pdf_order": true,
+    "available_prompts_per_word": 2,
+    "available_prompt_bank_total": 20,
+    "prompt_alternates_do_not_double_required_drafts": true,
+    "counts_toward_60_30_10": false,
+    "regular_objective_plus_draft_submission_count": 70,
+    "teacher_sla": "다음 수업 전, 미확정 운영제안",
+    "revision_count_if_each_gets_one_revision": 10,
+    "expression_assessment_target_unique_words": 10,
+    "teacher_judgment_pending_is_not_confirmed_grade": true,
+    "teacher_judgment_updates_next_assignment_group_with_evidence": true,
+    "all_initial_drafts_complete_before_weekly_review": true,
+    "draft_complete_gate_does_not_require_teacher_grading_complete": true,
+    "revisions_per_session": [
+      0,
+      4,
+      3,
+      3,
+      0,
+      0
+    ],
+    "all_planned_revisions_in_sessions": true,
+    "all_drafts_teacher_writing_judgment_required": true,
+    "teacher_writing_judgment_labels": [
+      {
+        "id": "correct",
+        "label": "정답"
+      },
+      {
+        "id": "incorrect",
+        "label": "오답"
+      },
+      {
+        "id": "uncertain",
+        "label": "검토(애매)"
+      }
+    ],
+    "teacher_writing_judgment_single_selection": true,
+    "selected_judgment_button_toggle_off": false,
+    "teacher_comment_required": false,
+    "separate_understanding_group_selection_required": false,
+    "understanding_reason_required": false,
+    "manual_override_required": false,
+    "manual_override_reason_required": false,
+    "numeric_rubric_enabled": false,
+    "understanding_rule_version": "writing-understanding-v3-1",
+    "objective_evidence_scope": "현재묶음·해당중심단어의유효첫객관응답;진단/자동답/재시도/이전묶음제외",
+    "auto_group_rules": [
+      {
+        "writing_judgment": "incorrect",
+        "objective_condition": "any",
+        "auto_group": "unknown"
+      },
+      {
+        "writing_judgment": "uncertain",
+        "objective_condition": "any",
+        "auto_group": "uncertain"
+      },
+      {
+        "writing_judgment": "correct",
+        "objective_condition": "valid_first_response_count>=1 and all_first_responses_correct",
+        "auto_group": "known"
+      },
+      {
+        "writing_judgment": "correct",
+        "objective_condition": "any_first_response_incorrect or valid_first_response_count==0",
+        "auto_group": "uncertain"
+      }
+    ],
+    "hint_use_blocks_auto_known": false,
+    "hint_use_recorded_as_help_evidence": true,
+    "hinted_correct_excluded_from_independent_correct_numerator": true,
+    "next_group_select_autopreset": true,
+    "confirmed_manual_override_has_priority": true,
+    "snapshot_fields": [
+      "snapshot_id",
+      "snapshot_version",
+      "rule_version",
+      "current_bundle_id",
+      "meaning_id",
+      "writing_submission_version_id",
+      "writing_text_hash",
+      "objective_first_item_ids",
+      "first_response_correctness",
+      "hint_exposure",
+      "writing_judgment",
+      "auto_group",
+      "manual_group",
+      "final_group",
+      "system_reason",
+      "optional_comment",
+      "optional_override_reason",
+      "teacher_id",
+      "confirmed_at"
+    ],
+    "unconfirmed_revision_auto_promotes": false,
+    "past_plans_and_diagnostic_answers_immutable": true,
+    "legacy_numeric_grades_preserved": true,
+    "legacy_numeric_grade_to_three_labels_auto_conversion": false,
+    "legacy_confirmed_explicit_group_preserved": true,
+    "legacy_numeric_only_requires_new_three_button_rejudgment": true
+  },
+  "content_demand": {
+    "practice_objectives": 80,
+    "pre_post_delayed_objectives": 30,
+    "weekly_full_review_objectives": 20,
+    "monthly_full_review_objectives": 10,
+    "quarterly_full_review_objectives": 10,
+    "objective_total": 150,
+    "all_objectives_four_choice_cloze": true,
+    "diagnostic_matching_is_separate": true,
+    "writing_prompts": 20,
+    "release_approval": "pending_education_owner",
+    "followup_remediation_supply_not_guaranteed_by_total_unused_count": true
+  },
+  "student_time_minutes_typical": {
+    "diagnostic_matching": 10,
+    "regular_objective": 60,
+    "full_coverage_drafts": 50,
+    "plan_confirmation": 6,
+    "feedback_revision": 30,
+    "session_summary": 6,
+    "weekly_full_review": 20,
+    "weekly_results_judgment_check": 4,
+    "basic_two_week_total": 186,
+    "session_minutes": [
+      42,
+      39,
+      36,
+      21,
+      12,
+      12
+    ],
+    "six_sessions_in_class": 162,
+    "last_revision_outside_six_sessions": 0,
+    "additional_full_review_and_results": 24,
+    "conditional_remediation_per_bundle": 10,
+    "conditional_remediation_max_bundles_assumption": 2,
+    "conditional_remediation_total_min": 0,
+    "conditional_remediation_total_max_assumption": 20,
+    "with_both_remediation_bundles_typical": 206,
+    "remediation_max_not_possible_without_supply_approval_or_reallocation_in_fixed_example": true,
+    "pre_objective_evaluation": 10,
+    "post_objective_evaluation": 10,
+    "delayed_objective_evaluation": 10,
+    "three_evaluations_total_outside_two_week": 30,
+    "assessment_setup_observation_extra": true,
+    "values_are_hypotheses_not_guaranteed_maximums": true,
+    "old_15_20_minute_goal_not_sufficient_for_full_scope": true
+  },
+  "teacher_time_minutes": {
+    "scope": "30명 반;초고 발생주 기준 평균3분 3버튼판정·자동근거확인·선택피드백 예산. 실제 검토시각과 수정 재검토 별도 측정.",
+    "drafts_per_student_per_week": [
+      10,
+      0
+    ],
+    "drafts_per_student_two_weeks": 10,
+    "class_total_drafts_two_weeks": 300,
+    "writing_weekly": [
+      900,
+      0
+    ],
+    "writing_two_week": 900,
+    "weekly_parent_report_minutes_per_student": 2,
+    "reports_weekly": 60,
+    "reports_two_week": 120,
+    "base_weekly": [
+      960,
+      60
+    ],
+    "base_two_week": 1020,
+    "unbudgeted_separate_work": [
+      "수정본 재검토",
+      "추가 지도",
+      "콘텐츠 검수",
+      "과제 준비",
+      "전수 복습·오개념 확인",
+      "미완료자 관리",
+      "기기 지원",
+      "상담",
+      "월간·분기 정리"
+    ],
+    "values_are_hypotheses": true,
+    "draft_initial_grading_seconds_per_draft": 180,
+    "base_weekly_average": 510,
+    "base_weekly_is_submission_origin_budget_not_equal_actual_work_per_week": true,
+    "revision_recheck_time_is_separate_unbudgeted": true,
+    "numeric_rubric_removed_is_measured_time_saving": false
+  },
+  "full_review": {
+    "week": "Monday-Sunday KST",
+    "month": "calendar month KST",
+    "quarter": "Jan-Mar / Apr-Jun / Jul-Sep / Oct-Dec KST",
+    "eligibility": "승인 의미ID 기준 객관학습 유효응답 또는초고제출. 뜻매칭진단·뜻열람만은제외.",
+    "dedupe_key": "approved_meaning_id",
+    "first_response_per_unique_meaning_counts_for_coverage": true,
+    "accuracy_separate_from_coverage": true,
+    "weekly_example_target_count": 10,
+    "weekly_review_count_in_two_weeks": 2,
+    "weekly_fresh_context_questions_needed": 20,
+    "chunk_size_default": 5,
+    "additional_full_review_words_per_day_cap_assumption": 10,
+    "overlap_queue": "진행 중/마감 임박 우선. 같은 마감이면 주간→월간→분기 제안",
+    "cross_period_automatic_response_copy": false,
+    "period_target_versions_preserved": true,
+    "full_review_excluded_from_60_30_10": true,
+    "remediation_weights_after_full_review": {
+      "unknown": 0.6,
+      "uncertain": 0.3,
+      "known": 0.1
+    },
+    "diagnostic_excluded_from_learned_word_set": true,
+    "weekly_self_recheck_replaced_by_results_and_teacher_judgment_check": true,
+    "monthly_quarterly_time_not_in_186": true
+  },
+  "assessment": {
+    "pilot_weeks": 4,
+    "pre_week": 1,
+    "learning_weeks": [
+      2,
+      3
+    ],
+    "post_week": 4,
+    "objective_count_each": 10,
+    "independent_new_context_sets": [
+      "pre",
+      "post",
+      "delayed"
+    ],
+    "delay_days_min": 7,
+    "delay_anchor": "단어별 마지막 유효 학습 및 의미 교정 피드백 노출; 전수/보충/수정 포함",
+    "delay_may_extend_to_week_5_or_later": true,
+    "quarter_learning_effect_not_claimed_in_four_week_pilot": true,
+    "pretest_separate_from_matching_diagnostic": true
+  },
+  "source_status": {
+    "word_source": "analysis/vocabulary.json",
+    "source_order_is_authoritative": true,
+    "content_approval": "pending_education_owner_review",
+    "rights": "not_confirmed",
+    "source_raw_headword_and_meaning_preserved": true,
+    "original_text_instructions_not_operating_instructions": true
+  },
+  "pending_user_decisions": [
+    {
+      "id": 1,
+      "question": "첫 도입 학원·학생층·인원",
+      "proposed": "학원 1곳, 초등 고학년 30명 우선",
+      "status": "unanswered"
+    },
+    {
+      "id": 2,
+      "question": "학습 장소",
+      "proposed": "학원 시작·가정 복습 연결; 가정 기기 확인 필요",
+      "status": "unanswered"
+    },
+    {
+      "id": 3,
+      "question": "사용 기기",
+      "proposed": "PC·태블릿 중심 웹",
+      "status": "unanswered"
+    },
+    {
+      "id": 4,
+      "question": "단어 묶음·학습 빈도·시간",
+      "proposed": "PDF순서10단어,주3회객관10.첫주전수초고4/3/3,둘째주수정·객관·복습;회12~42분+주간별도복습",
+      "status": "unanswered"
+    },
+    {
+      "id": 5,
+      "question": "교재 디지털 이용·변형 권한",
+      "proposed": null,
+      "status": "unanswered"
+    },
+    {
+      "id": 6,
+      "question": "콘텐츠 승인자",
+      "proposed": "국어 교육 책임자 1명",
+      "status": "unanswered"
+    },
+    {
+      "id": 7,
+      "question": "교사 인원·가용 시간",
+      "proposed": "30명반기준초고발생주예산첫주960분/둘째주60분(평균510)외수정재검토·준비·복습관리·지원별도",
+      "status": "unanswered"
+    },
+    {
+      "id": 8,
+      "question": "피드백 기한",
+      "proposed": "다음 수업 전",
+      "status": "unanswered"
+    },
+    {
+      "id": 9,
+      "question": "부모 전달 주기·채널",
+      "proposed": "주간 메시지·월간 종합, 교사 PDF 확인 후 기존 채널",
+      "status": "unanswered"
+    },
+    {
+      "id": 10,
+      "question": "기본 디자인",
+      "proposed": "B 기반 C 추론·D 작문 결합",
+      "status": "unanswered"
+    },
+    {
+      "id": 11,
+      "question": "납품·맞춤 범위",
+      "proposed": "공통 웹, 학원명·로고 설정, 학원 데이터 분리",
+      "status": "unanswered"
+    },
+    {
+      "id": 12,
+      "question": "개발·콘텐츠·운영 예산",
+      "proposed": null,
+      "status": "unanswered"
+    },
+    {
+      "id": 13,
+      "question": "시범 운영·납품 목표일",
+      "proposed": null,
+      "status": "unanswered"
+    },
+    {
+      "id": 14,
+      "question": "운영 담당자",
+      "proposed": "학원·서비스 연락 담당자 각각 지정",
+      "status": "unanswered"
+    },
+    {
+      "id": 15,
+      "question": "사업·계약·소유권·유지보수",
+      "proposed": "파일럿과 정식 계약 구분, 책임·권리 명시",
+      "status": "unanswered"
+    }
+  ]
+}

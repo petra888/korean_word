@@ -1,0 +1,72 @@
+{
+  "method": "MuPDF SVG rasterization; isolated fictional records from actual report renderer",
+  "svg_geometry": "filled annular paths",
+  "checks": [
+    {
+      "fixture": "donut-0",
+      "expected_ratios": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "raster_ratios": [
+        0.4009845904845399,
+        0.29969315844488653,
+        0.19937957311933102,
+        0.09994267795124254
+      ],
+      "status": "PASS"
+    },
+    {
+      "fixture": "donut-1",
+      "expected_ratios": [
+        0.5,
+        0.2,
+        0.2,
+        0.1
+      ],
+      "raster_ratios": [
+        0.5015652876426432,
+        0.1996162520618036,
+        0.19904399636449321,
+        0.09977446393106001
+      ],
+      "status": "PASS"
+    },
+    {
+      "fixture": "all",
+      "expected_ratios": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "raster_ratios": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "PASS"
+    },
+    {
+      "fixture": "empty",
+      "expected_ratios": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "raster_ratios": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "PASS"
+    }
+  ],
+  "source_html_sha256": "f56bc35a8bb2c8c8fc03f1486cafb7ca7da57c76d6b4d27e4270660f10c3ed25",
+  "actual_browser_and_print": "NOT RUN; SVG raster checks do not verify browser layout or printing"
+}

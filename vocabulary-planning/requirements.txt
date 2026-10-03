@@ -1,0 +1,4 @@
+Markdown>=3.7,<4
+PyMuPDF>=1.24,<2
+fonttools>=4.50,<5
+reportlab>=4.2,<5

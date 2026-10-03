@@ -1,0 +1,227 @@
+{
+  "created_date_kst": "2026-10-04",
+  "scope": "Predevelopment planning, draft content and a fictional interactive prototype",
+  "content": {
+    "words": 10,
+    "objective_items": 150,
+    "writing_prompts": 20,
+    "approval_status": "teacher_review_required"
+  },
+  "textbook_order": {
+    "rows": 450,
+    "batches_of_10": 45
+  },
+  "qa_cases": 63,
+  "development_tasks": 28,
+  "report_charts": {
+    "type": "inline SVG donut",
+    "understanding_basis": "latest confirmed teacher classification; pending otherwise",
+    "writing_basis": "latest confirmed three-button judgment",
+    "unique_meaning_ids": true,
+    "comparison": "previous confirmed report snapshot only"
+  },
+  "actual_service_qa": "not executed",
+  "actual_browser_validation": "not executed: browser startup blocked",
+  "files": [
+    {
+      "path": "analysis/README.md",
+      "bytes": 6164,
+      "sha256": "f53b4ba42162b447307a7cbfddf0be00c260b5d1c84a0c6188a798edc782ba22"
+    },
+    {
+      "path": "analysis/report.md",
+      "bytes": 26945,
+      "sha256": "0540b63d54c21aac98f17eddaeb98c7b39353342a87053e093ff06ba0e2c9c32"
+    },
+    {
+      "path": "analysis/vocabulary.json",
+      "bytes": 1380801,
+      "sha256": "caf356b552bff74782158fc85d3e8b5a18994c765d9ae3b68291a8e9def60e50"
+    },
+    {
+      "path": "curriculum/pilot-10-items.csv",
+      "bytes": 80523,
+      "sha256": "57752ec71cfc13afab3767f0f7b30f1ad3d18530fa9b9fd11e3b73760106bc9d"
+    },
+    {
+      "path": "curriculum/pilot-10-words.csv",
+      "bytes": 11687,
+      "sha256": "4b6dc556289d36d2d707836d48f9a8133cf61e3dc0f654afb2660e1f43af678f"
+    },
+    {
+      "path": "curriculum/pilot-10-writing.csv",
+      "bytes": 21719,
+      "sha256": "c8183b0d8df54826c93079bb23976cdce053b70c0a7dd5d1f34c0c83dab387ff"
+    },
+    {
+      "path": "curriculum/pilot-10.json",
+      "bytes": 196747,
+      "sha256": "750f6047d72524a765ed653e9e3f1b740c96ee9ab7b20a5401c11eaff181ad62"
+    },
+    {
+      "path": "curriculum/pilot-30-candidates.json",
+      "bytes": 13750,
+      "sha256": "0fd5a9b40f4d896d5f92a31c58b3b587fdc5c08fb400432a800439ac3828c304"
+    },
+    {
+      "path": "curriculum/textbook-order.csv",
+      "bytes": 62438,
+      "sha256": "309126096e70fba40fa16eeecebb3f582101af53805232d4af119a2049e2bfb2"
+    },
+    {
+      "path": "curriculum/textbook-order.json",
+      "bytes": 192821,
+      "sha256": "e5c8224452ce5800f8a020b3fa996098303a5815fb157f71569f09e05b5dc621"
+    },
+    {
+      "path": "deliverables/report-charts-v4/2주 학생 교사 수업 운영표.pdf",
+      "bytes": 94828,
+      "sha256": "5835f6d7603b69568d867e34f6721f37867e5e5b7681d72d05f865abc08707a4"
+    },
+    {
+      "path": "deliverables/report-charts-v4/README.md",
+      "bytes": 3461,
+      "sha256": "6b5732f14f7f8de936a442eed56387a0b5375c3de582e8e44115be66e9c0a621"
+    },
+    {
+      "path": "deliverables/report-charts-v4/render-validation.json",
+      "bytes": 1163,
+      "sha256": "f77571a939c8cebcfd314691ec941bb10de191ef3af6ad397d228caf21e0fe5f"
+    },
+    {
+      "path": "deliverables/report-charts-v4/개발 상세 명세와 검수 기준.pdf",
+      "bytes": 137343,
+      "sha256": "9c5b7dd114594edd85a99bb177e69842ebc55aa6b828c5546d6d80afb1dce241"
+    },
+    {
+      "path": "deliverables/report-charts-v4/교사 판정 운영 개발 명세 묶음.pdf",
+      "bytes": 292111,
+      "sha256": "81eb657115b88aa1dc0cc6b542f11808db0a4d97110156879681c8b61776be97"
+    },
+    {
+      "path": "deliverables/report-charts-v4/교사 평가 부모 자료 차트 개선안.pdf",
+      "bytes": 64792,
+      "sha256": "147c5247a8d1c1faf10a91b0506ca90013680af22fe8aa993b6b9be5abf31e94"
+    },
+    {
+      "path": "deliverables/report-charts-v4/교재 첫 10개 단어 문항 작문.pdf",
+      "bytes": 205086,
+      "sha256": "c37742bf2acc7c2317f7d5f062846adc799ab73f353963c50967919132a77d83"
+    },
+    {
+      "path": "documents/10-word-curriculum.md",
+      "bytes": 124080,
+      "sha256": "a9b52a07691b94ede9f974fe5b51a83e29be33f3b3c6c4c2f63bc6decfe3cb32"
+    },
+    {
+      "path": "documents/PRD.md",
+      "bytes": 57580,
+      "sha256": "f2de85b65b93b6c397947c3202ce661368bfa0cc1fd7358134cc13ab08d2b9d5"
+    },
+    {
+      "path": "documents/development-readiness.md",
+      "bytes": 11661,
+      "sha256": "f3ae7c458fecc7050b4de052b4edb17a14fd740770bf9e556e5a685d33099464"
+    },
+    {
+      "path": "documents/development-spec.md",
+      "bytes": 58610,
+      "sha256": "93717c135526ba3e923981d6c47ab7762f30834e3e7841a988d238f023c74043"
+    },
+    {
+      "path": "documents/two-week-operation.md",
+      "bytes": 25907,
+      "sha256": "3005a8230f06542911be13e9cd041622b6104edae17e0ffd1bdc6d74f05ac406"
+    },
+    {
+      "path": "export_pilot_tables.py",
+      "bytes": 3584,
+      "sha256": "011dce2ea5410cb43cc7d7106d4705cd3bb53739dbc4d64b5f55643b64a3972c"
+    },
+    {
+      "path": "planning/acceptance-matrix.csv",
+      "bytes": 24518,
+      "sha256": "8e9718b3c94ef90cbdf46b90d72a7cec35653b0833605de057465aae1a92fed5"
+    },
+    {
+      "path": "planning/assumptions.json",
+      "bytes": 18497,
+      "sha256": "cdd077fc313663444299edd856612266ec7192a26b812317220dd338fa2e7917"
+    },
+    {
+      "path": "planning/chart-svg-render-validation.json",
+      "bytes": 1390,
+      "sha256": "2cc1daeaf2d27a76a545cdb733ec530901f374661727d0bca791d6c1c8064872"
+    },
+    {
+      "path": "planning/content-validation.json",
+      "bytes": 1108,
+      "sha256": "5e9fa99282e5b1971a1dbcf3cc617d975e595527bec69d562864f9d8d9c7fb33"
+    },
+    {
+      "path": "planning/delivery-status.json",
+      "bytes": 1381,
+      "sha256": "a11593b896d6f50a9cfc36bf59694aa9ccde42c846a9b20a54a4e84563f613ae"
+    },
+    {
+      "path": "planning/order-validation.json",
+      "bytes": 330,
+      "sha256": "eef197a5f9cc4515a147b1d4829736c949fcba586c48fd58d076035a36a74664"
+    },
+    {
+      "path": "planning/prototype-validation.json",
+      "bytes": 4771,
+      "sha256": "6a94dee0e5a0d7cd2059f742e3d2a0d02181b57f850946af9c5849fff83e08b3"
+    },
+    {
+      "path": "planning/spec-link-validation.json",
+      "bytes": 286,
+      "sha256": "56c072e57f84a407e26ca1ce77446e492e3531f22079592e68891b8b56099364"
+    },
+    {
+      "path": "planning/two-week-operation.csv",
+      "bytes": 14047,
+      "sha256": "644257316e067d8c61d790a3a6715d2ade4ce0394c907b111e7953bfbbac0f4e"
+    },
+    {
+      "path": "planning/work-breakdown.csv",
+      "bytes": 16988,
+      "sha256": "e1242af8001f41944eac9b21d16f53df7fce205226237aeb53ef4ee1f5e1d3d3"
+    },
+    {
+      "path": "prepare_textbook_order.py",
+      "bytes": 3035,
+      "sha256": "2117a59a50432f1a9d6e35331f026741a00a02a9d8c208ca28c7b9176cea59dc"
+    },
+    {
+      "path": "prototype/README.md",
+      "bytes": 10654,
+      "sha256": "ab380c28f9496858329a276fbb04b3ad9e967f97d6c37e49ee909211800c401c"
+    },
+    {
+      "path": "prototype/pilot-flow.html",
+      "bytes": 232444,
+      "sha256": "f56bc35a8bb2c8c8fc03f1486cafb7ca7da57c76d6b4d27e4270660f10c3ed25"
+    },
+    {
+      "path": "qa/development-readiness/prototype-vm-check.js",
+      "bytes": 46708,
+      "sha256": "0dd4bebe8cabcbd4ab75d6727b1b3071e9a913ed9c8d29b42e764bc83f664192"
+    },
+    {
+      "path": "research/evidence.json",
+      "bytes": 27079,
+      "sha256": "fb83a020ca1a75c6b72fa8f4c1542206befc4bbb044ec49051674c9bdea1bee9"
+    },
+    {
+      "path": "research/references.md",
+      "bytes": 17732,
+      "sha256": "0d5ce498d61961b60dd7fb7ec65a60d4d536416c38e269304ec91488f6f14621"
+    },
+    {
+      "path": "validate_predevelopment.py",
+      "bytes": 6249,
+      "sha256": "b3e9a81ad0ae047c529174245bafd851ed0db3f82f4c6c02f4b547967830d7c3"
+    }
+  ]
+}

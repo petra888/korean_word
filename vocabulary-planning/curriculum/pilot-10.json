@@ -1,0 +1,6007 @@
+{
+  "version": "draft-2026-10-04-source-order-cloze-v3",
+  "status": "teacher_review_required",
+  "selection_basis": "첨부 교재 원문 source_order 1–10. 임의 난이도 선별이 아님.",
+  "words": [
+    {
+      "id": "W0001",
+      "meaning_id": "W0001-S1",
+      "word": "까탈",
+      "display_word": "까탈",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 1,
+        "source_order": 1,
+        "definition_original": "일이 순조롭지 않게 방해하는 일",
+        "example_original": "예) 그녀는 까탈을 부리다",
+        "issue_ids": [],
+        "recall_page": 2,
+        "recall_definition_original": "일이 순조롭지 않게 방해하는 일",
+        "recall_example_original": "예) 그녀는 (   )을 부리다"
+      },
+      "simple_definition": "일이 순조롭게 진행되지 못하게 방해하는 조건이나 트집.",
+      "definition_diagnostic": {
+        "definition_original": "일이 순조롭지 않게 방해하는 일",
+        "definition_for_check": "일이 순조롭게 진행되지 못하게 방해하는 조건이나 트집.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "원문 근거를 바탕으로 조건·트집 사용을 편집한 초안. 사전 의미 범위 검토 필요. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "일의 진행을 방해하는 조건이나 트집이라는 뜻으로 다룬다. 정당한 확인·안전 요구를 불필요한 방해로 평가하지 않는다.",
+      "usage_note": "까탈이 생기다·까탈을 부리다처럼 쓴다. 왜 일이 막히거나 지연되었는지 상황을 함께 쓴다.",
+      "confusable": [
+        "조건",
+        "트집"
+      ],
+      "accepted_forms": [
+        "까탈",
+        "까탈을",
+        "까탈이",
+        "까탈 없이"
+      ],
+      "writing": {
+        "prompt": "합의한 일을 진행하려는데 사소하고 불필요한 조건을 자꾸 내세워 일이 막힌 상황을 만들어, 까탈을 넣어 한 문장을 쓰세요.",
+        "sentence_frame": "___이/가 ___에 까탈을 부려 ___이/가 늦어졌다.",
+        "teacher_sample": "친구가 이미 정한 색깔을 계속 바꾸자고 까탈을 부려 포스터 만들기가 늦어졌다.",
+        "alternative": {
+          "prompt": "준비한 일이 방해 조건 때문에 순조롭게 진행되지 못한 상황을 만들어, 까탈을 넣어 한 문장을 쓰세요.",
+          "sentence_frame": "___ 때문에 ___에 까탈이 생겨 ___했다.",
+          "teacher_sample": "사소한 조건을 계속 바꾸는 바람에 진행에 까탈이 생겨 준비가 늦어졌다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0002",
+      "meaning_id": "W0002-S1",
+      "word": "깜냥",
+      "display_word": "깜냥",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 2,
+        "source_order": 2,
+        "definition_original": "일을 해낼 만한 본인 능력",
+        "example_original": "예) 성공을 위해 깜냥을 발휘하다",
+        "issue_ids": [],
+        "recall_page": 2,
+        "recall_definition_original": "일을 해낼 만한 본인 능력",
+        "recall_example_original": "예) 성공을 위해 (   )을 발휘하다"
+      },
+      "simple_definition": "어떤 일을 해낼 수 있는 스스로의 능력.",
+      "definition_diagnostic": {
+        "definition_original": "일을 해낼 만한 본인 능력",
+        "definition_for_check": "어떤 일을 해낼 수 있는 스스로의 능력.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "원문 의미를 쉬운 문장으로 정비한 초안. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "자기 힘으로 일을 감당할 수 있는 능력이라는 뜻만 다룬다. 학생의 고정된 능력 수준으로 낙인찍지 않는다.",
+      "usage_note": "깜냥이 되다·깜냥으로 해내다·깜냥을 발휘하다처럼 쓴다. 무슨 일을 얼마나 해낼 수 있는지 드러낸다.",
+      "confusable": [
+        "능력",
+        "재주"
+      ],
+      "accepted_forms": [
+        "깜냥",
+        "깜냥이",
+        "깜냥을",
+        "깜냥으로"
+      ],
+      "writing": {
+        "prompt": "자기 힘으로 어떤 일을 해낼 수 있었던 상황을 만들어, 깜냥을 넣어 한 문장을 쓰세요.",
+        "sentence_frame": "___은/는 ___을/를 해낼 깜냥이 있어 ___했다.",
+        "teacher_sample": "유나는 작은 책장을 혼자 조립할 깜냥이 있어 설명서를 보며 완성했다.",
+        "alternative": {
+          "prompt": "아직 혼자 감당하기 어려운 일이라 도움을 구한 상황을 만들어, 깜냥을 넣어 한 문장을 쓰세요.",
+          "sentence_frame": "내 깜냥으로는 ___하기 어려워 ___에게 도움을 구했다.",
+          "teacher_sample": "내 깜냥으로는 긴 공연을 혼자 준비하기 어려워 친구들에게 도움을 구했다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0003",
+      "meaning_id": "W0003-S1",
+      "word": "달포",
+      "display_word": "달포",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 3,
+        "source_order": 3,
+        "definition_original": "한 달이 조금 넘는 기간",
+        "example_original": "예) 달포 만에 고향에 도착하다",
+        "issue_ids": [],
+        "recall_page": 2,
+        "recall_definition_original": "한 달이 조금 넘는 기간",
+        "recall_example_original": "예) (   )만에 고향에 도착하다"
+      },
+      "simple_definition": "한 달이 조금 넘는 기간.",
+      "definition_diagnostic": {
+        "definition_original": "한 달이 조금 넘는 기간",
+        "definition_for_check": "한 달이 조금 넘는 기간.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "원문 기간 표현을 유지한 편집 초안. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "한 달보다 조금 긴 기간이라는 뜻. 정확히 며칠로 고정하지 않는다. 한 해가 조금 넘는 해포와 구별한다.",
+      "usage_note": "달포 동안·달포 만에처럼 쓴다. 기간을 드러내는 문맥에서 사용한다.",
+      "confusable": [
+        "사흘",
+        "보름",
+        "해포"
+      ],
+      "accepted_forms": [
+        "달포",
+        "달포 동안",
+        "달포 만에"
+      ],
+      "writing": {
+        "prompt": "한 달이 조금 넘게 어떤 일을 한 상황을 만들어, 달포를 넣어 한 문장을 쓰세요.",
+        "sentence_frame": "한 달이 조금 넘도록 ___하여 달포 만에 ___했다.",
+        "teacher_sample": "한 달이 조금 넘도록 연습하여 달포 만에 새 곡을 끝까지 연주했다.",
+        "alternative": {
+          "prompt": "한 달이 조금 넘은 뒤 다시 만난 상황을 만들어, 달포를 넣어 한 문장을 쓰세요.",
+          "sentence_frame": "___ 뒤 한 달이 조금 지나 달포 만에 ___을/를 만났다.",
+          "teacher_sample": "이사한 뒤 한 달이 조금 지나 달포 만에 옛 친구를 만났다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0004",
+      "meaning_id": "W0004-S1",
+      "word": "말미",
+      "display_word": "말미",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 4,
+        "source_order": 4,
+        "definition_original": "다른 일로 얻게 되는 여유",
+        "example_original": "예)이사 계획에 말미를 주다",
+        "issue_ids": [
+          "I034"
+        ],
+        "recall_page": 2,
+        "recall_definition_original": "다른 일로 얻게 되는 여유",
+        "recall_example_original": "예)이사 계획에 (   )를 주다"
+      },
+      "simple_definition": "다른 일을 하려고 잠시 마련한 시간이나 여유.",
+      "definition_diagnostic": {
+        "definition_original": "다른 일로 얻게 되는 여유",
+        "definition_for_check": "다른 일을 하려고 잠시 마련한 시간이나 여유.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "I034: 원문 뜻풀이의 관계가 불명확하여 다른 일을 할 시간 여유로 명료화한 교정 제안. 원문 미변경·국어 담당자 승인 전. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "다른 일을 하기 위해 마련하거나 허락받은 시간 여유라는 뜻만 다룬다. 글·말의 끝부분이라는 다른 뜻은 제외한다.",
+      "usage_note": "말미를 주다·말미를 얻다처럼 쓴다. 무엇을 하려고 어떤 시간 여유를 마련했는지 드러낸다.",
+      "confusable": [
+        "여유",
+        "짬"
+      ],
+      "accepted_forms": [
+        "말미",
+        "말미를",
+        "말미가",
+        "말미를 주었다",
+        "말미를 얻었다"
+      ],
+      "writing": {
+        "prompt": "다른 일을 마칠 수 있도록 시간 여유를 받은 상황을 만들어, 말미를 넣어 한 문장을 쓰세요.",
+        "sentence_frame": "___은/는 ___할 수 있도록 ___에게 말미를 주었다.",
+        "teacher_sample": "선생님은 자료를 고칠 수 있도록 우리에게 하루의 말미를 주셨다.",
+        "alternative": {
+          "prompt": "바쁜 일정 중 다른 일을 할 짬을 얻은 상황을 만들어, 말미를 넣어 한 문장을 쓰세요.",
+          "sentence_frame": "___할 말미를 얻어 ___했다.",
+          "teacher_sample": "집안일을 마친 나는 책을 읽을 말미를 얻어 짧은 이야기를 읽었다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0005",
+      "meaning_id": "W0005-S1",
+      "word": "선잠",
+      "display_word": "선잠",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 5,
+        "source_order": 5,
+        "definition_original": "깊이 들지 못하고 깬 잠",
+        "example_original": "예) 시험기간에는 선잠만 잤다",
+        "issue_ids": [],
+        "recall_page": 2,
+        "recall_definition_original": "깊이 들지 못하고 깬 잠",
+        "recall_example_original": "예) 시험기간에는 (   )만 잤다"
+      },
+      "simple_definition": "깊이 들지 못하고 가볍게 잔 잠.",
+      "definition_diagnostic": {
+        "definition_original": "깊이 들지 못하고 깬 잠",
+        "definition_for_check": "깊이 들지 못하고 가볍게 잔 잠.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "원문을 바탕으로 얕은 잠의 뜻을 정비한 초안. 반드시 여러 번 깨어야만 하는 것은 아니다. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "잠의 깊이가 얕아 쉽게 깨는 상태. 짧게 잤다는 시간만으로 판단하지 않는다.",
+      "usage_note": "선잠을 자다·선잠이 들다·선잠에서 깨다처럼 쓴다. 낮잠은 잔 시간대, 늦잠은 늦게까지 자는 것을 가리킨다.",
+      "confusable": [
+        "낮잠",
+        "늦잠",
+        "숙면"
+      ],
+      "accepted_forms": [
+        "선잠",
+        "선잠을",
+        "선잠이",
+        "선잠에서"
+      ],
+      "writing": {
+        "prompt": "작은 소리 때문에 깊이 잠들지 못한 상황을 떠올려, 선잠을 넣어 한 문장을 쓰세요.",
+        "sentence_frame": "___ 때문에 ___은/는 선잠을 ___ .",
+        "teacher_sample": "동생이 뒤척이는 소리 때문에 나는 선잠을 자다가 여러 번 깼다.",
+        "alternative": {
+          "prompt": "여행 중 낯선 곳에서 깊이 잠들지 못한 상황을 만들어, 선잠을 넣어 한 문장을 쓰세요.",
+          "sentence_frame": "낯선 ___에서 ___ 때문에 선잠을 ___ .",
+          "teacher_sample": "낯선 숙소에서 긴장한 나는 깊이 잠들지 못하고 선잠을 잤다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0006",
+      "meaning_id": "W0006-S1",
+      "word": "강단있는",
+      "display_word": "강단 있는",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 6,
+        "source_order": 6,
+        "definition_original": "굳세고 강하게 결단하는 힘",
+        "example_original": "예) 그는 강단이 있는 성격이다",
+        "issue_ids": [
+          "I032"
+        ],
+        "recall_page": 2,
+        "recall_definition_original": "굳세고 강하게 결단하는 힘",
+        "recall_example_original": "예) 그는 (   )이 있는 성격이다"
+      },
+      "simple_definition": "옳다고 판단한 일을 굳세게 결단하고 실행하는 힘을 가진.",
+      "definition_diagnostic": {
+        "definition_original": "굳세고 강하게 결단하는 힘",
+        "definition_for_check": "옳다고 판단한 일을 굳세게 결단하고 실행하는 힘을 가진.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "I032: 원문은 관형 표현인데 뜻풀이가 힘이라는 명사이다. 굳세게 결단하는 힘을 가진으로 맞춘 신규 초안, 띄어쓰기 강단 있는 별도 제안. 원문 표제어 보존. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "굳세게 결단하는 힘을 가진 태도·사람을 나타낸다. 남의 의견을 듣지 않는 고집과 같은 뜻으로 가르치지 않는다.",
+      "usage_note": "강단 있는 태도·강단 있는 사람처럼 쓴다. 강단이 있는으로 풀어 쓸 수 있다. 표제어 원문 강단있는은 보존하고 학습 표시만 띄어쓴다.",
+      "confusable": [
+        "우유부단한",
+        "고집 센"
+      ],
+      "accepted_forms": [
+        "강단 있는",
+        "강단있는",
+        "강단이 있는"
+      ],
+      "writing": {
+        "prompt": "충분히 생각한 뒤 필요한 일을 굳게 결정하여 실행한 상황을 만들어, 「강단 있는」을 사용해 한 문장을 쓰세요.",
+        "sentence_frame": "___은/는 ___하기로 굳게 결정해 실행한 강단 있는 ___이다.",
+        "teacher_sample": "민서는 잘못을 고치기로 굳게 결정해 실행한 강단 있는 사람이다.",
+        "alternative": {
+          "prompt": "반대 의견도 살펴본 뒤 옳다고 판단한 결정을 지킨 상황을 만들어, 「강단 있는」을 사용해 한 문장을 쓰세요.",
+          "sentence_frame": "___은/는 ___을/를 살펴본 뒤 ___하여 강단 있는 태도를 보였다.",
+          "teacher_sample": "반장은 반대 의견을 살펴본 뒤 필요한 결정을 끝까지 실행하여 강단 있는 태도를 보였다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0007",
+      "meaning_id": "W0007-S1",
+      "word": "격의",
+      "display_word": "격의",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 7,
+        "source_order": 7,
+        "definition_original": "속마음을 터놓지 않아 느끼는 거리감",
+        "example_original": "예) 친구랑 격의 없는 대화를 하다",
+        "issue_ids": [],
+        "recall_page": 2,
+        "recall_definition_original": "서로 속마음을 터놓지 않는 거리감",
+        "recall_example_original": "예) 친구랑 (   ) 없는 대화를 하다"
+      },
+      "simple_definition": "서로 속마음을 터놓지 않아 느끼는 마음의 거리감.",
+      "definition_diagnostic": {
+        "definition_original": "속마음을 터놓지 않아 느끼는 거리감",
+        "definition_for_check": "서로 속마음을 터놓지 않아 느끼는 마음의 거리감.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "원문 속마음·거리감 뜻을 정비한 초안. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "사람 사이의 마음의 거리감이라는 뜻. 예의나 존경 자체와 같은 뜻으로 보지 않는다.",
+      "usage_note": "격의 없이·격의 없는 대화처럼 쓴다. 속마음을 터놓을 수 있는지 드러낸다.",
+      "confusable": [
+        "거리감",
+        "경의"
+      ],
+      "accepted_forms": [
+        "격의",
+        "격의가",
+        "격의 없이",
+        "격의 없는"
+      ],
+      "writing": {
+        "prompt": "서로 속마음을 편하게 이야기한 상황을 만들어, 격의를 넣어 한 문장을 쓰세요.",
+        "sentence_frame": "___와/과 속마음을 터놓고 격의 없이 ___했다.",
+        "teacher_sample": "나는 오랜 친구와 속마음을 터놓고 격의 없이 이야기했다.",
+        "alternative": {
+          "prompt": "처음에는 마음의 거리가 있었지만 대화하며 가까워진 상황을 만들어, 격의를 넣어 한 문장을 쓰세요.",
+          "sentence_frame": "처음에는 격의가 있었지만 ___하여 ___했다.",
+          "teacher_sample": "처음에는 격의가 있었지만 서로 고민을 이야기하며 마음이 가까워졌다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0008",
+      "meaning_id": "W0008-S1",
+      "word": "융통성",
+      "display_word": "융통성",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 8,
+        "source_order": 8,
+        "definition_original": "형세에 따라 일을 처리하는 재주",
+        "example_original": "예) 융통성이 없이 꽉 막힌 사람",
+        "issue_ids": [
+          "I001"
+        ],
+        "recall_page": 2,
+        "recall_definition_original": "자신의 행복을 크게 노래하고 누림",
+        "recall_example_original": "예) 전성기 선수를 (   )하고 있다"
+      },
+      "simple_definition": "상황에 맞게 방법을 조정하여 일을 처리하는 능력.",
+      "definition_diagnostic": {
+        "definition_original": "형세에 따라 일을 처리하는 재주",
+        "definition_for_check": "상황에 맞게 방법을 조정하여 일을 처리하는 능력.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "I001: p2의 짝 뜻·예문은 p1 융통성과 불일치한다. 이 묶음은 p1의 형세에 따라 일을 처리하는 재주를 근거로 새 풀이를 만들었다. p2 내용을 정답 근거로 사용하지 않음·원문 보존. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "상황에 맞게 방법을 조정하는 뜻. 이번 학습 예문은 목적과 안전·운영 규칙을 지키며 방법을 조정하는 경우로 한정한다. 이를 사전적 의미의 필수 조건을 추가한 것으로 보지 않는다.",
+      "usage_note": "융통성을 발휘하다·융통성이 있다처럼 쓴다. 상황 변화와 방법 조정을 함께 표현한다.",
+      "confusable": [
+        "고집",
+        "편법"
+      ],
+      "accepted_forms": [
+        "융통성",
+        "융통성이",
+        "융통성을"
+      ],
+      "writing": {
+        "prompt": "상황이 달라져 목적에 맞게 방법을 바꾼 경험을 만들어, 융통성을 넣어 한 문장을 쓰세요.",
+        "sentence_frame": "___이/가 달라지자 ___을/를 조정하여 융통성을 발휘했다.",
+        "teacher_sample": "비가 오자 선생님은 안전한 실내 활동으로 계획을 바꾸어 융통성을 발휘했다.",
+        "alternative": {
+          "prompt": "준비물이나 일정이 달라졌지만 목적을 지키며 다른 방법을 찾은 상황을 만들어, 융통성을 넣어 한 문장을 쓰세요.",
+          "sentence_frame": "___이/가 없어 ___을/를 대신 사용하여 융통성을 발휘했다.",
+          "teacher_sample": "일부 재료가 없어 같은 목적의 안전한 대체 재료를 사용하여 융통성을 발휘했다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0009",
+      "meaning_id": "W0009-S1",
+      "word": "굴지",
+      "display_word": "굴지",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 9,
+        "source_order": 9,
+        "definition_original": "손가락을 꼽을 만큼 뛰어남",
+        "example_original": "예) 삼성은 국내 굴지의 기업이다",
+        "issue_ids": [],
+        "recall_page": 2,
+        "recall_definition_original": "손가락을 꼽을 만큼 뛰어남",
+        "recall_example_original": "예) 삼성은 국내 (   )의 기업이다"
+      },
+      "simple_definition": "많은 대상 가운데 손꼽힐 만큼 뛰어남.",
+      "definition_diagnostic": {
+        "definition_original": "손가락을 꼽을 만큼 뛰어남",
+        "definition_for_check": "많은 대상 가운데 손꼽힐 만큼 뛰어남.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "원문 손꼽힐 만큼 뛰어남을 바탕으로 만든 편집 초안. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "손꼽힐 만큼 뛰어난 기업·기관·사람을 나타내는 뜻. 널리 알려졌다는 사실만으로 뛰어난 성과를 대신하지 않는다.",
+      "usage_note": "굴지의 기업·굴지의 선수처럼 의와 함께 쓴다. 어떤 분야에서 얼마나 뛰어난지 드러낸다.",
+      "confusable": [
+        "유명한",
+        "무명의"
+      ],
+      "accepted_forms": [
+        "굴지",
+        "굴지의"
+      ],
+      "writing": {
+        "prompt": "많은 곳 가운데 손꼽힐 만큼 뛰어난 성과를 낸 기관이나 사람을 상상하여, 굴지를 넣어 한 문장을 쓰세요.",
+        "sentence_frame": "___은/는 오랫동안 뛰어난 ___으로 굴지의 ___이/가 되었다.",
+        "teacher_sample": "그 연구소는 오랫동안 뛰어난 연구 성과를 내어 국내 굴지의 연구소로 인정받았다.",
+        "alternative": {
+          "prompt": "오랫동안 뛰어난 실력으로 손꼽힌 선수나 공연 단체를 상상하여, 굴지를 넣어 한 문장을 쓰세요.",
+          "sentence_frame": "___은/는 ___에서 손꼽히는 성과를 내어 굴지의 ___로 인정받았다.",
+          "teacher_sample": "그 악단은 세계 무대에서 손꼽히는 연주 실력을 보여 굴지의 악단으로 인정받았다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    },
+    {
+      "id": "W0010",
+      "meaning_id": "W0010-S1",
+      "word": "기탄없이",
+      "display_word": "기탄없이",
+      "source": {
+        "pdf_page": 1,
+        "row_on_page": 10,
+        "source_order": 10,
+        "definition_original": "꺼리거나 사양하지 않고",
+        "example_original": "예) 불만을 기탄없이 말하다",
+        "issue_ids": [
+          "I033"
+        ],
+        "recall_page": 2,
+        "recall_definition_original": "꺼리거나 사양하지 않고",
+        "recall_example_original": "예) 불만을 (   )없이 말하다"
+      },
+      "simple_definition": "꺼리거나 어려워하지 않고.",
+      "definition_diagnostic": {
+        "definition_original": "꺼리거나 사양하지 않고",
+        "definition_for_check": "꺼리거나 어려워하지 않고.",
+        "approval_status": "draft",
+        "dictionary_verified": false,
+        "review_note": "I033: p2의 원문 빈칸 뒤 없이와 부사 표제어 기탄없이를 함께 넣으면 중복된다. 새 문항은 자연스러운 부사 형태만 사용하며 원문을 바꾸지 않는다. 사전 대조·국어 교육 담당자 승인 전."
+      },
+      "meaning_scope": "의견·생각을 꺼리거나 어려워하지 않고 말할 때 쓴다. 무례하게 말한다는 뜻과 같은 것으로 가르치지 않는다.",
+      "usage_note": "기탄없이 말하다·기탄없이 의견을 밝히다처럼 쓴다. 기탄없이 뒤에 없이를 다시 붙이지 않는다.",
+      "confusable": [
+        "머뭇거리며",
+        "에둘러서"
+      ],
+      "accepted_forms": [
+        "기탄없이"
+      ],
+      "writing": {
+        "prompt": "솔직한 의견을 부탁받고 주저하지 않은 채 생각을 말한 상황을 만들어, 「기탄없이」를 사용해 한 문장을 쓰세요.",
+        "sentence_frame": "___이/가 의견을 부탁하자 ___을/를 기탄없이 말했다.",
+        "teacher_sample": "선생님이 의견을 부탁하자 나는 수업의 개선점을 기탄없이 말했다.",
+        "alternative": {
+          "prompt": "토의에서 말을 돌리지 않고 필요한 생각을 직접 전한 상황을 만들어, 「기탄없이」를 사용해 한 문장을 쓰세요.",
+          "sentence_frame": "___에서 ___을/를 기탄없이 밝혔다.",
+          "teacher_sample": "자유로운 토의에서 민서는 자신이 생각한 다른 방법을 기탄없이 밝혔다."
+        },
+        "judgment_labels": [
+          {
+            "id": "correct",
+            "label": "정답"
+          },
+          {
+            "id": "incorrect",
+            "label": "오답"
+          },
+          {
+            "id": "uncertain",
+            "label": "검토(애매)"
+          }
+        ],
+        "teacher_guidance": [
+          {
+            "id": "meaning",
+            "label": "뜻에 맞는 활용",
+            "instruction": "이번 목표 뜻에 맞게 사용했는지 살펴보세요. 단어 포함 여부만으로 정답 처리하지 않습니다."
+          },
+          {
+            "id": "context",
+            "label": "상황과 근거",
+            "instruction": "목표 뜻을 확인할 상황이나 근거가 문장에 드러나는지 살펴보세요."
+          },
+          {
+            "id": "sentence",
+            "label": "문장 성립과 자연스러움",
+            "instruction": "하나의 문장으로 뜻이 전달되는지 확인하고 필요한 수정은 선택 코멘트로 안내하세요."
+          }
+        ]
+      },
+      "approval_status": "draft"
+    }
+  ],
+  "items": [
+    {
+      "id": "W0001-C01",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "도장과 서명은 규정대로 모두 갖췄는데 담당자가 종이 색까지 바꾸라며 (____)을 부려, 신청서 접수가 늦어졌다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "까탈"
+        },
+        {
+          "id": "b",
+          "text": "허풍"
+        },
+        {
+          "id": "c",
+          "text": "엄살"
+        },
+        {
+          "id": "d",
+          "text": "재롱"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "필요한 서류를 갖췄는데도 규정에 없는 종이 색을 문제 삼아 접수를 늦췄다. 진행을 방해하는 불필요한 요구이므로 까탈이 알맞다.",
+      "hint": "규정에 없는 요구 때문에 접수가 늦어진 점을 보세요.",
+      "context_cues": [
+        "규정대로 모두 갖췄는데",
+        "종이 색까지 바꾸라며",
+        "접수가 늦어졌다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C02",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "유나는 모양과 크기가 같은 두 컵을 두고 무늬의 점 하나가 다르다며 계속 바꿔 달라고 했고, 동생은 그 사소한 (____)에 지쳤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "칭찬"
+        },
+        {
+          "id": "b",
+          "text": "약속"
+        },
+        {
+          "id": "c",
+          "text": "관심"
+        },
+        {
+          "id": "d",
+          "text": "까탈"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "사용에 지장이 없는 작은 무늬 차이를 이유로 계속 교환을 요구했다. 이런 사소한 조건을 문제 삼는 행동은 까탈이다.",
+      "hint": "작은 차이를 문제 삼아 계속 바꿔 달라고 한 행동에 주목하세요.",
+      "context_cues": [
+        "무늬의 점 하나가 다르다며",
+        "계속 바꿔 달라고"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C03",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "안전을 확인하고 출발 시간도 모두 합의했지만, 한 친구가 자기 자리의 커튼 색을 바꾸기 전에는 버스에 타지 않겠다며 (____)을 부렸다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "허풍"
+        },
+        {
+          "id": "b",
+          "text": "까탈"
+        },
+        {
+          "id": "c",
+          "text": "엄살"
+        },
+        {
+          "id": "d",
+          "text": "재롱"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "이미 출발 준비를 마쳤는데 커튼 색을 바꿔야만 타겠다고 하여 출발을 막았다. 불필요한 조건을 붙이는 까탈에 해당한다.",
+      "hint": "출발을 막는 조건이 꼭 필요한 것인지 생각해 보세요.",
+      "context_cues": [
+        "출발 시간도 모두 합의했지만",
+        "커튼 색을 바꾸기 전에는",
+        "타지 않겠다며"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C04",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "접수 안내에는 이름만 쓰면 된다고 되어 있었지만, 창구 직원은 글씨의 기울기까지 따졌고 그런 (____) 때문에 줄이 길어졌다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "칭찬"
+        },
+        {
+          "id": "b",
+          "text": "책임"
+        },
+        {
+          "id": "c",
+          "text": "까탈"
+        },
+        {
+          "id": "d",
+          "text": "관심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "안내에 없는 글씨의 기울기를 문제 삼아 접수가 지연되었다. 일을 순조롭게 진행하지 못하게 하는 까탈이다.",
+      "hint": "안내에 없는 사항을 따져 줄이 길어진 이유를 살펴보세요.",
+      "context_cues": [
+        "이름만 쓰면 된다고",
+        "글씨의 기울기까지 따졌고",
+        "줄이 길어졌다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C05",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "필요한 준비를 마친 뒤에도 포장 끈의 길이와 매듭 모양을 계속 바꾸라는 손님의 (____)이 많아, 선물을 제시간에 전달하지 못했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "칭찬"
+        },
+        {
+          "id": "b",
+          "text": "약속"
+        },
+        {
+          "id": "c",
+          "text": "까탈"
+        },
+        {
+          "id": "d",
+          "text": "관심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "포장은 끝났지만 사소한 요구가 반복되어 전달이 늦어졌다. 진행을 어렵게 하는 여러 요구를 까탈이라고 한다.",
+      "hint": "준비를 마친 뒤에도 반복된 사소한 요구가 어떤 결과를 낳았나요?",
+      "context_cues": [
+        "계속 바꾸라는",
+        "제시간에 전달하지 못했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C06",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "주인은 예약 때 없던 조건을 덧붙여 식탁보 무늬부터 바꾸라며 (____)을 부렸고, 이미 음식을 차린 직원들은 식사를 시작하지 못했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "까탈"
+        },
+        {
+          "id": "b",
+          "text": "허풍"
+        },
+        {
+          "id": "c",
+          "text": "위엄"
+        },
+        {
+          "id": "d",
+          "text": "재롱"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "예약 당시 없던 식탁보 조건을 새로 붙여 식사의 시작을 막았다. 이러한 불필요한 트집에는 까탈이 알맞다.",
+      "hint": "새로 붙인 조건 때문에 어떤 일이 멈췄는지 보세요.",
+      "context_cues": [
+        "예약 때 없던 조건",
+        "식탁보 무늬부터 바꾸라며",
+        "식사를 시작하지 못했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C07",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "색연필이 모두 잘 나오는데도 준호는 상자 모서리에 난 작은 흠을 이유로 교환을 거듭 요구했고, 점원은 준호의 (____)을 받아 주느라 다른 손님을 오래 기다리게 했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "까탈"
+        },
+        {
+          "id": "b",
+          "text": "칭찬"
+        },
+        {
+          "id": "c",
+          "text": "약속"
+        },
+        {
+          "id": "d",
+          "text": "관심"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "물건 사용에는 문제가 없는데 작은 상처를 이유로 교환을 반복 요구했다. 까탈을 받아 주느라 일이 지체된 상황이다.",
+      "hint": "사용에는 문제가 없는 물건을 여러 번 바꾸려 한 이유를 보세요.",
+      "context_cues": [
+        "색연필이 모두 잘 나오는데도",
+        "교환을 거듭 요구했고",
+        "오래 기다리게 했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C08",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "모둠 발표 준비는 끝났지만, 태오는 자기 이름이 맨 앞에 오지 않으면 발표하지 않겠다는 (____)을 내세워 연습을 멈추게 했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "까탈"
+        },
+        {
+          "id": "b",
+          "text": "칭찬"
+        },
+        {
+          "id": "c",
+          "text": "관심"
+        },
+        {
+          "id": "d",
+          "text": "책임"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "발표 준비와 무관한 이름 순서에 조건을 붙여 연습을 막았다. 이 문맥의 까탈은 진행을 방해하는 요구이다.",
+      "hint": "이름 순서에 붙인 조건이 연습을 어떻게 방해했는지 보세요.",
+      "context_cues": [
+        "자기 이름이 맨 앞에 오지 않으면",
+        "발표하지 않겠다는",
+        "연습을 멈추게 했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C09",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "검사 결과 기준에 맞는 운동화였지만 손님은 상자 속 종이의 접힌 방향까지 문제 삼았고, 그 (____) 때문에 계산이 한참 지연되었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "까탈"
+        },
+        {
+          "id": "b",
+          "text": "칭찬"
+        },
+        {
+          "id": "c",
+          "text": "약속"
+        },
+        {
+          "id": "d",
+          "text": "관심"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "물건은 기준에 맞지만 포장 종이의 접힌 방향을 문제 삼아 계산을 늦췄다. 쓸데없는 조건이나 트집인 까탈이 알맞다.",
+      "hint": "검사 기준과 무관한 지적 때문에 계산이 늦어진 점을 보세요.",
+      "context_cues": [
+        "기준에 맞는 운동화였지만",
+        "접힌 방향까지 문제 삼았고",
+        "계산이 한참 지연되었다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C10",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "행사에 필요한 절차는 모두 끝났는데 한 참가자가 자기 명찰의 글자 간격을 고치지 않으면 입장하지 않겠다며 (____)을 부렸다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "허풍"
+        },
+        {
+          "id": "b",
+          "text": "엄살"
+        },
+        {
+          "id": "c",
+          "text": "재롱"
+        },
+        {
+          "id": "d",
+          "text": "까탈"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "절차가 끝난 뒤 작은 글자 간격을 이유로 입장을 거부했다. 불필요한 요구를 내세운 까탈이다.",
+      "hint": "절차가 끝난 뒤에도 입장을 거부하게 만든 요구를 살펴보세요.",
+      "context_cues": [
+        "절차는 모두 끝났는데",
+        "글자 간격을 고치지 않으면",
+        "입장하지 않겠다며"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0001-C11",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "식당은 메뉴 변경을 허용하지 않는다고 미리 알렸지만, 민호는 자기 반찬만 별 모양으로 잘라 달라고 거듭 요구했고 그 (____) 때문에 주문 확인이 길어졌다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "칭찬"
+        },
+        {
+          "id": "b",
+          "text": "약속"
+        },
+        {
+          "id": "c",
+          "text": "까탈"
+        },
+        {
+          "id": "d",
+          "text": "관심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "알려 준 규칙을 알면서도 반찬 모양을 바꾸라는 사소한 요구를 반복했다. 진행을 어렵게 하는 까탈로 볼 수 있다.",
+      "hint": "미리 알린 규칙 뒤에도 반복된 요구가 무엇인지 보세요.",
+      "context_cues": [
+        "미리 알렸지만",
+        "별 모양으로 잘라 달라고",
+        "거듭 요구했고"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0001-C12",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "수진은 누구나 이용할 수 있는 공용 책상에 자기만 좋아하는 장식을 달아야 쓸 수 있다며 (____)을 부려, 함께 공부할 준비를 늦췄다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "까탈"
+        },
+        {
+          "id": "b",
+          "text": "허풍"
+        },
+        {
+          "id": "c",
+          "text": "엄살"
+        },
+        {
+          "id": "d",
+          "text": "재롱"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "공용 책상을 쓰는 데 꼭 필요하지 않은 개인 취향의 장식을 조건으로 붙였다. 함께 할 일을 지연시키는 까탈이다.",
+      "hint": "공용 물건에 개인 취향의 조건을 붙인 점에 주목하세요.",
+      "context_cues": [
+        "자기만 좋아하는 장식",
+        "달아야 쓸 수 있다며",
+        "준비를 늦췄다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C13",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "대여 규칙에 맞게 책을 돌려줬지만 직원은 규칙에 없는 책등의 색 순서까지 따져 받지 않았고, 그 예상 밖의 (____)에 반납이 막혔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "칭찬"
+        },
+        {
+          "id": "b",
+          "text": "관심"
+        },
+        {
+          "id": "c",
+          "text": "책임"
+        },
+        {
+          "id": "d",
+          "text": "까탈"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "반납 규칙을 지켰는데 규칙에 없는 조건을 붙여 접수를 막았다. 예상하지 못한 까탈 때문에 일이 진행되지 않는 상황이다.",
+      "hint": "규칙을 지켰는데도 반납을 막은 조건을 찾아보세요.",
+      "context_cues": [
+        "대여 규칙에 맞게",
+        "규칙에 없는",
+        "반납이 막혔다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C14",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "현서는 친구가 정성껏 쓴 초대장을 받고도 글자 크기와 줄 간격을 번갈아 문제 삼았으며, 계속된 (____) 때문에 친구는 다시 쓰기를 포기했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "까탈"
+        },
+        {
+          "id": "b",
+          "text": "칭찬"
+        },
+        {
+          "id": "c",
+          "text": "약속"
+        },
+        {
+          "id": "d",
+          "text": "관심"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "초대장의 사소한 모양을 번갈아 문제 삼아 상대가 일을 포기하게 만들었다. 반복되는 불필요한 트집인 까탈이다.",
+      "hint": "사소한 모양을 계속 문제 삼은 결과를 보세요.",
+      "context_cues": [
+        "글자 크기와 줄 간격",
+        "번갈아 문제 삼았으며",
+        "다시 쓰기를 포기했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0001-C15",
+      "word_id": "W0001",
+      "meaning_id": "W0001-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "연극 의상은 약속한 색과 크기로 준비됐지만 배우가 안 보이는 안감의 무늬까지 바꾸라며 (____)을 부려, 의상 담당자는 다시 손을 봐야 했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "까탈"
+        },
+        {
+          "id": "b",
+          "text": "허풍"
+        },
+        {
+          "id": "c",
+          "text": "엄살"
+        },
+        {
+          "id": "d",
+          "text": "재롱"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "약속한 조건을 충족했는데도 보이지 않는 안감 무늬를 추가로 문제 삼았다. 진행을 방해하는 불필요한 요구인 까탈이다.",
+      "hint": "약속한 조건을 지킨 뒤 추가로 요구한 내용에 주목하세요.",
+      "context_cues": [
+        "약속한 색과 크기로",
+        "안 보이는 안감의 무늬까지",
+        "다시 손을 봐야 했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C01",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "두 자리 수 곱셈은 혼자 풀지만 세 자리 수 곱셈은 아직 배우지 않은 민재는, 현재의 (____)으로 풀 수 있는 문제부터 골랐다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "깜냥"
+        },
+        {
+          "id": "d",
+          "text": "규칙"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "혼자 해결할 수 있는 계산의 범위에 맞춰 문제를 골랐다. 일을 해낼 수 있는 자신의 능력인 깜냥이 알맞다.",
+      "hint": "지금 혼자 해결할 수 있는 범위를 확인하세요.",
+      "context_cues": [
+        "두 자리 수 곱셈은 혼자 풀지만",
+        "세 자리 수 곱셈은 아직 배우지 않은",
+        "풀 수 있는 문제부터"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C02",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "한 번에 상자를 두 개까지만 들 수 있는 나는 무리해서 네 개를 들지 않고, 내 (____)에 맞게 두 개씩 옮겼다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "규칙"
+        },
+        {
+          "id": "d",
+          "text": "깜냥"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "스스로 들 수 있는 양을 기준으로 일을 나누었다. 자신의 힘과 능력의 범위를 가리키는 깜냥이다.",
+      "hint": "한 번에 스스로 감당할 수 있는 양이 얼마인가요?",
+      "context_cues": [
+        "두 개까지만 들 수 있는",
+        "무리해서 네 개를 들지 않고",
+        "두 개씩 옮겼다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C03",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "처음 자전거를 배우는 준서는 아직 균형도 오래 잡지 못해, 자기 (____)으로는 가파른 언덕을 오르기 어렵다고 판단했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "깜냥"
+        },
+        {
+          "id": "b",
+          "text": "체면"
+        },
+        {
+          "id": "c",
+          "text": "소문"
+        },
+        {
+          "id": "d",
+          "text": "약속"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "균형을 잡는 현재 능력으로는 언덕을 오르기 어렵다고 보았다. 할 수 있는 정도를 나타내는 깜냥이 맞다.",
+      "hint": "판단의 근거가 자전거를 타는 현재 수준에 있는지 보세요.",
+      "context_cues": [
+        "아직 균형도 오래 잡지 못해",
+        "가파른 언덕을 오르기 어렵다고"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C04",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "바느질을 처음 배운 지우는 단추 하나는 달 수 있지만 옷 한 벌은 만들 수 없어, 자기 (____)에 맞는 단추 달기부터 맡았다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "규칙"
+        },
+        {
+          "id": "d",
+          "text": "깜냥"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "배운 바느질로 해낼 수 있는 일부터 맡았다. 현재의 능력인 깜냥을 고려한 선택이다.",
+      "hint": "할 수 있는 일과 아직 못 하는 일을 비교하세요.",
+      "context_cues": [
+        "단추 하나는 달 수 있지만",
+        "옷 한 벌은 만들 수 없어",
+        "단추 달기부터 맡았다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C05",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "수영장에서 혼자 열 미터까지 갈 수 있는 윤호는 오십 미터를 한 번에 건너려다가, 아직 자기 (____)으로 감당하기 어렵다는 것을 깨달았다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "깜냥"
+        },
+        {
+          "id": "d",
+          "text": "기분"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "혼자 헤엄칠 수 있는 거리보다 훨씬 긴 거리를 시도했다. 자신의 힘과 능력인 깜냥으로 감당할 수 있는지 판단하는 상황이다.",
+      "hint": "혼자 갈 수 있는 거리와 시도한 거리를 비교하세요.",
+      "context_cues": [
+        "혼자 열 미터까지",
+        "오십 미터를 한 번에",
+        "감당하기 어렵다는"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C06",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "악보의 쉬운 부분만 연주할 수 있는 소라는 어려운 독주곡을 맡기 전에, 지금 자신의 (____)으로 끝까지 연주할 수 있는지 확인했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "약속"
+        },
+        {
+          "id": "d",
+          "text": "깜냥"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "곡을 끝까지 연주할 수 있는 현재 능력을 확인했다. 자신이 해낼 수 있는 정도를 뜻하는 깜냥이 알맞다.",
+      "hint": "곡을 맡기 전에 무엇을 할 수 있는지 확인한 것인가요?",
+      "context_cues": [
+        "쉬운 부분만 연주할 수 있는",
+        "끝까지 연주할 수 있는지"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C07",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "민수는 전선 연결법을 아직 몰라 전등을 혼자 만들 수 없었고, 자기 (____)으로 만들 수 있는 종이 모형부터 완성했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "규칙"
+        },
+        {
+          "id": "d",
+          "text": "깜냥"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "아직 못 하는 작업을 피하고 스스로 할 수 있는 작업을 골랐다. 자신의 능력인 깜냥의 범위 안에서 시작했다.",
+      "hint": "혼자 만들 수 없는 것과 만들 수 있는 것을 대조해 보세요.",
+      "context_cues": [
+        "전선 연결법을 아직 몰라",
+        "혼자 만들 수 없었고",
+        "종이 모형부터"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C08",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "짧은 영어 문장은 읽을 수 있지만 긴 설명문은 해석하지 못하는 하린은, 자기 (____)으로 읽을 수 있는 짧은 책을 빌렸다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "깜냥"
+        },
+        {
+          "id": "d",
+          "text": "기분"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "책을 고른 기준은 지금 읽고 이해할 수 있는 수준이다. 개인의 능력인 깜냥을 가리킨다.",
+      "hint": "빌린 책의 길이를 정한 기준이 무엇인지 보세요.",
+      "context_cues": [
+        "짧은 영어 문장은 읽을 수 있지만",
+        "긴 설명문은 해석하지 못하는",
+        "짧은 책을 빌렸다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C09",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "박자를 맞추는 동작까지는 혼자 할 수 있는 나래는 어려운 회전 동작을 맡지 않고, 자기 (____)에 맞는 부분을 맡아 공연을 준비했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "깜냥"
+        },
+        {
+          "id": "b",
+          "text": "체면"
+        },
+        {
+          "id": "c",
+          "text": "소문"
+        },
+        {
+          "id": "d",
+          "text": "규칙"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "혼자 수행할 수 있는 동작에 맞춰 역할을 정했다. 일을 해낼 만한 자기 능력인 깜냥이다.",
+      "hint": "현재 혼자 수행할 수 있는 동작의 범위를 보세요.",
+      "context_cues": [
+        "박자를 맞추는 동작까지는 혼자 할 수 있는",
+        "어려운 회전 동작을 맡지 않고"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C10",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "아직 지도에서 방위를 읽지 못하는 도현은 혼자 먼 길을 안내하기에는 자신의 (____)이 부족하다고 보고, 먼저 지도 읽기를 연습했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "깜냥"
+        },
+        {
+          "id": "b",
+          "text": "체면"
+        },
+        {
+          "id": "c",
+          "text": "소문"
+        },
+        {
+          "id": "d",
+          "text": "기분"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "길을 안내하는 데 필요한 지도 읽기를 아직 못 해서 자기 능력이 부족하다고 판단했다. 이 능력은 깜냥이다.",
+      "hint": "길 안내에 필요한 것 중 아직 하지 못하는 일이 무엇인가요?",
+      "context_cues": [
+        "지도에서 방위를 읽지 못하는",
+        "혼자 먼 길을 안내하기에는",
+        "지도 읽기를 연습했다"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0002-C11",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "지난달에는 보조를 받아야 했지만 이제는 작은 선반을 혼자 조립할 수 있어, 나는 내 (____)으로 조립을 끝냈다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "기분"
+        },
+        {
+          "id": "d",
+          "text": "깜냥"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "남의 도움 없이 선반을 끝까지 조립한 자신의 힘과 능력을 말한다. 깜냥으로 조립했다는 표현이 맞다.",
+      "hint": "보조를 받던 때와 혼자 끝낸 지금의 차이를 보세요.",
+      "context_cues": [
+        "보조를 받아야 했지만",
+        "작은 선반을 혼자 조립할 수 있어",
+        "조립을 끝냈다"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0002-C12",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "채소를 씻는 일만 해 본 수아는 칼을 쓰는 요리를 혼자 하기 어렵다고 보고, 자기 (____)으로 해낼 수 있는 샐러드 재료 씻기를 맡았다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "깜냥"
+        },
+        {
+          "id": "b",
+          "text": "체면"
+        },
+        {
+          "id": "c",
+          "text": "소문"
+        },
+        {
+          "id": "d",
+          "text": "약속"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "현재 혼자 할 수 있는 작업을 기준으로 역할을 맡았다. 일을 해낼 자기 능력인 깜냥에 관한 문장이다.",
+      "hint": "해 본 일과 혼자 하기 어려운 일을 구분하세요.",
+      "context_cues": [
+        "채소를 씻는 일만 해 본",
+        "칼을 쓰는 요리를 혼자 하기 어렵다고",
+        "재료 씻기를 맡았다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C13",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "수빈은 화면 한 장을 만들 수는 있지만 오류를 고칠 줄은 몰라, 복잡한 프로그램 전체를 자기 (____)으로 만들기에는 아직 무리라고 말했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "기분"
+        },
+        {
+          "id": "d",
+          "text": "깜냥"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "현재 할 수 있는 작업과 전체 프로그램에 필요한 작업을 비교했다. 감당할 수 있는 자기 능력인 깜냥이 알맞다.",
+      "hint": "만들 수 있는 범위와 아직 해결하지 못하는 작업을 비교하세요.",
+      "context_cues": [
+        "화면 한 장을 만들 수는 있지만",
+        "오류를 고칠 줄은 몰라",
+        "아직 무리라고"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C14",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "혼자 짧은 발표는 할 수 있어도 긴 토론을 이끌기는 어려운 나는, 지금의 (____)으로 진행할 수 있는 삼 분 발표부터 맡았다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "깜냥"
+        },
+        {
+          "id": "d",
+          "text": "규칙"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "발표와 토론을 진행할 수 있는 자신의 현재 수준을 기준으로 선택했다. 이런 능력은 깜냥이다.",
+      "hint": "지금 혼자 진행할 수 있는 발표의 길이에 주목하세요.",
+      "context_cues": [
+        "긴 토론을 이끌기는 어려운",
+        "삼 분 발표부터 맡았다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0002-C15",
+      "word_id": "W0002",
+      "meaning_id": "W0002-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "혼자서는 자루 하나밖에 나를 수 없는 태호는 남에게 도움을 청하기 전에, 자신의 (____)으로 옮길 수 있는 한 자루부터 창고에 가져다 놓았다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "체면"
+        },
+        {
+          "id": "b",
+          "text": "소문"
+        },
+        {
+          "id": "c",
+          "text": "규칙"
+        },
+        {
+          "id": "d",
+          "text": "깜냥"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "도움을 받지 않고 스스로 옮길 수 있는 양을 먼저 처리했다. 자기 힘과 능력인 깜냥으로 해낸 일이다.",
+      "hint": "다른 사람의 도움 없이 옮길 수 있는 양을 확인하세요.",
+      "context_cues": [
+        "혼자서는 자루 하나밖에",
+        "옮길 수 있는 한 자루부터"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C01",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "나는 고향을 떠난 지 한 달하고 닷새가 지나 (____) 만에 다시 고향에 갔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "달포"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달하고 닷새"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C02",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "전학한 지 한 달이 조금 넘은 민서는 (____) 만에 옛 친구를 만났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "달포"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달이 조금 넘음"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C03",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "수아는 새끼 강아지가 온 지 서른다섯 날쯤 지나 (____) 만에 처음 사진을 정리했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "달포"
+        },
+        {
+          "id": "b",
+          "text": "사흘"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "서른다섯 날쯤"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C04",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "도윤은 도서관에 가입한 뒤 한 달하고 사흘이 지나 (____) 만에 첫 독서 기록을 마쳤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "보름"
+        },
+        {
+          "id": "c",
+          "text": "해포"
+        },
+        {
+          "id": "d",
+          "text": "달포"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달하고 사흘"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C05",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "공사가 시작된 지 한 달이 조금 넘어 체육관은 (____) 만에 다시 문을 열었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "달포"
+        },
+        {
+          "id": "b",
+          "text": "사흘"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달이 조금 넘음"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C06",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "나는 여행을 떠난 뒤 한 달하고 나흘이 지나 (____) 만에 집으로 돌아왔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "달포"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달하고 나흘"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C07",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "편지를 보낸 뒤 서른네 날쯤 지나 답장이 와서 나는 (____) 만에 소식을 들었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "달포"
+        },
+        {
+          "id": "b",
+          "text": "사흘"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "서른네 날쯤"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C08",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "유나는 한 달이 조금 넘도록 연습한 끝에 (____) 만에 새 곡을 끝까지 연주했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "달포"
+        },
+        {
+          "id": "b",
+          "text": "사흘"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달이 조금 넘도록"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C09",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "책을 빌린 뒤 한 달하고 엿새가 지나 준호는 (____) 만에 책을 돌려주었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "달포"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달하고 엿새"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C10",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "지호는 화분을 산 뒤 서른여섯 날쯤 지나 (____) 만에 새잎이 난 것을 확인했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "달포"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "서른여섯 날쯤"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0003-C11",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "현우는 이사한 뒤 한 달하고 닷새가 지나 (____) 만에 예전 이웃을 만났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "보름"
+        },
+        {
+          "id": "c",
+          "text": "달포"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달하고 닷새"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0003-C12",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "동아리가 만들어진 지 한 달이 조금 넘어 우리는 (____) 만에 첫 전시회를 열었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "달포"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달이 조금 넘음"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C13",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "서윤은 새 자전거를 받은 뒤 한 달하고 사흘이 지나 (____) 만에 혼자 타는 데 익숙해졌다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "보름"
+        },
+        {
+          "id": "c",
+          "text": "달포"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달하고 사흘"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C14",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "박물관이 문을 닫은 지 서른다섯 날쯤 지나 (____) 만에 다시 손님을 받았다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "달포"
+        },
+        {
+          "id": "b",
+          "text": "사흘"
+        },
+        {
+          "id": "c",
+          "text": "보름"
+        },
+        {
+          "id": "d",
+          "text": "해포"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "서른다섯 날쯤"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0003-C15",
+      "word_id": "W0003",
+      "meaning_id": "W0003-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "나는 한 달이 조금 넘게 뜨개질을 배워 (____) 만에 작은 목도리를 완성했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "사흘"
+        },
+        {
+          "id": "b",
+          "text": "보름"
+        },
+        {
+          "id": "c",
+          "text": "해포"
+        },
+        {
+          "id": "d",
+          "text": "달포"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "한 달이 조금 넘는 기간을 나타낸다. 사흘은 세 날, 보름은 열다섯 날, 해포는 한 해가 조금 넘는 기간이므로 이 기간과 다르다.",
+      "hint": "한 달보다 조금 긴 기간인지 확인하세요.",
+      "context_cues": [
+        "한 달이 조금 넘게"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C01",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "오늘 안에 짐을 빼야 했지만 집주인이 마감일을 이틀 늦춰 주어, 우리는 짐을 정리할 이틀의 (____)를 얻었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "사과"
+        },
+        {
+          "id": "c",
+          "text": "말미"
+        },
+        {
+          "id": "d",
+          "text": "경고"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "마감일을 늦춰 받아 짐을 정리할 시간이 이틀 더 생겼다. 다른 일을 위해 얻은 시간적 여유인 말미이다.",
+      "hint": "마감일이 늦춰지면서 새로 생긴 것이 무엇인가요?",
+      "context_cues": [
+        "마감일을 이틀 늦춰 주어",
+        "짐을 정리할 이틀의"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C02",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "반장은 당장 대답하지 않아도 된다며 투표 전까지 생각할 하루의 (____)를 주었고, 나는 그동안 두 의견을 비교했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "말미"
+        },
+        {
+          "id": "b",
+          "text": "안내"
+        },
+        {
+          "id": "c",
+          "text": "사과"
+        },
+        {
+          "id": "d",
+          "text": "경고"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "바로 결정하지 않고 하루 동안 생각할 시간을 받았다. 다른 일을 할 수 있도록 주어진 시간적 여유는 말미이다.",
+      "hint": "바로 대답하는 대신 무엇을 할 시간이 주어졌나요?",
+      "context_cues": [
+        "당장 대답하지 않아도 된다며",
+        "생각할 하루의",
+        "그동안 두 의견을 비교했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C03",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "가게 주인은 다음 손님이 오기 전 십 분 동안 직원이 약국에 다녀오도록 허락했고, 직원은 그 짧은 (____)를 이용해 약을 사 왔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "사과"
+        },
+        {
+          "id": "c",
+          "text": "평가"
+        },
+        {
+          "id": "d",
+          "text": "말미"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "본래 일하는 중에 약국에 다녀올 시간을 허락받았다. 다른 일을 위해 마련된 시간적 여유인 말미이다.",
+      "hint": "일하는 중에 잠깐 허락받은 시간을 찾아보세요.",
+      "context_cues": [
+        "십 분 동안",
+        "약국에 다녀오도록 허락했고",
+        "약을 사 왔다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C04",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "선생님은 오늘 제출할 보고서를 내일까지 내도록 해 주었고, 지민은 추가로 받은 하루의 (____)에 빠진 그림을 보충했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "말미"
+        },
+        {
+          "id": "b",
+          "text": "안내"
+        },
+        {
+          "id": "c",
+          "text": "사과"
+        },
+        {
+          "id": "d",
+          "text": "경고"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "제출 기한이 하루 늘어 보충할 시간이 생겼다. 다른 일을 할 수 있게 얻은 말미를 활용한 상황이다.",
+      "hint": "제출 날짜가 바뀌면서 그림을 보충할 무엇이 생겼나요?",
+      "context_cues": [
+        "오늘 제출할 보고서를 내일까지",
+        "추가로 받은 하루의",
+        "빠진 그림을 보충했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C05",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "택배 기사는 다음 배달 시간을 늦추지 않는 범위에서 잠시 집에 들를 수 있게 되었고, 그 짧은 (____)에 두고 온 열쇠를 챙겼다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "말미"
+        },
+        {
+          "id": "b",
+          "text": "안내"
+        },
+        {
+          "id": "c",
+          "text": "사과"
+        },
+        {
+          "id": "d",
+          "text": "평가"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "배달 중 다른 일을 할 수 있는 짧은 시간을 얻어 열쇠를 챙겼다. 시간적 여유를 뜻하는 말미이다.",
+      "hint": "배달 사이에 집에 들를 수 있게 된 짧은 틈을 보세요.",
+      "context_cues": [
+        "잠시 집에 들를 수 있게",
+        "두고 온 열쇠를 챙겼다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C06",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "감독은 선수의 가족 병문안을 위해 오후 훈련을 빼 주었고, 선수는 그날 얻은 (____)를 병원에 다녀오는 데 썼다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "사과"
+        },
+        {
+          "id": "c",
+          "text": "말미"
+        },
+        {
+          "id": "d",
+          "text": "평가"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "원래 예정된 훈련에서 빠져 병문안을 할 시간을 얻었다. 다른 일을 위해 마련한 시간적 여유인 말미이다.",
+      "hint": "훈련에서 빠지면서 병문안에 쓸 무엇을 얻었나요?",
+      "context_cues": [
+        "가족 병문안을 위해",
+        "오후 훈련을 빼 주었고",
+        "병원에 다녀오는 데 썼다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C07",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "당장 작품을 제출하라는 말을 들은 예린은 풀칠이 마를 때까지 삼십 분만 기다려 달라고 부탁해, 마무리할 (____)를 얻었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "말미"
+        },
+        {
+          "id": "c",
+          "text": "사과"
+        },
+        {
+          "id": "d",
+          "text": "경고"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "바로 제출하지 않고 풀칠이 마를 때까지 기다리는 시간을 얻었다. 일을 마칠 수 있게 주어진 시간적 여유는 말미이다.",
+      "hint": "바로 제출하지 않고 기다릴 수 있게 된 시간을 보세요.",
+      "context_cues": [
+        "삼십 분만 기다려 달라고",
+        "마무리할"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C08",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "축제 담당자는 무대 순서를 한 시간 뒤로 옮겨 주었고, 우리는 그 덕분에 끊어진 장식을 고칠 (____)를 얻었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "말미"
+        },
+        {
+          "id": "b",
+          "text": "안내"
+        },
+        {
+          "id": "c",
+          "text": "사과"
+        },
+        {
+          "id": "d",
+          "text": "경고"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "무대 순서가 늦춰져 장식을 수리할 시간이 생겼다. 그 일을 위해 얻은 시간적 여유인 말미이다.",
+      "hint": "무대 순서가 늦춰진 덕분에 할 수 있게 된 일을 보세요.",
+      "context_cues": [
+        "한 시간 뒤로 옮겨 주었고",
+        "끊어진 장식을 고칠"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C09",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "도서관은 반납 날짜를 하루 연장해 주었고, 나는 그 하루의 (____)를 이용해 책을 다 읽은 뒤 반납했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "말미"
+        },
+        {
+          "id": "c",
+          "text": "사과"
+        },
+        {
+          "id": "d",
+          "text": "경고"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "반납 기한을 늘려 남은 책을 읽을 시간을 받았다. 시간적 여유인 말미를 이용한 문장이다.",
+      "hint": "반납 날짜를 연장받아 생긴 하루를 무엇에 썼나요?",
+      "context_cues": [
+        "반납 날짜를 하루 연장해 주었고",
+        "책을 다 읽은 뒤"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C10",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "회의 진행자는 서류를 두고 온 직원에게 시작 전 십 분을 더 주었고, 직원은 그 (____)에 사무실에서 서류를 가져왔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "사과"
+        },
+        {
+          "id": "c",
+          "text": "평가"
+        },
+        {
+          "id": "d",
+          "text": "말미"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "회의를 시작하기 전에 서류를 가져올 시간을 따로 받았다. 다른 일을 위한 시간적 여유인 말미이다.",
+      "hint": "십 분을 더 받아 그동안 무엇을 했는지 보세요.",
+      "context_cues": [
+        "시작 전 십 분을 더 주었고",
+        "사무실에서 서류를 가져왔다"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0004-C11",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "대회 담당자는 재료가 늦게 도착한 팀의 제출 시간을 두 시간 늦춰 주었고, 그 팀은 늘어난 (____)에 모형을 완성했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "사과"
+        },
+        {
+          "id": "c",
+          "text": "평가"
+        },
+        {
+          "id": "d",
+          "text": "말미"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "제출 시간을 늦춰 받아 작업할 시간이 두 시간 늘었다. 일을 완성할 시간적 여유인 말미이다.",
+      "hint": "제출 시간이 늦춰지면서 늘어난 것이 무엇인가요?",
+      "context_cues": [
+        "제출 시간을 두 시간 늦춰 주었고",
+        "모형을 완성했다"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0004-C12",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "도장을 새로 받아 와야 하는 아버지에게 담당자는 오늘 오후까지 서류 제출을 기다려 주었고, 아버지는 그 (____)에 도장을 받아 왔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "말미"
+        },
+        {
+          "id": "c",
+          "text": "사과"
+        },
+        {
+          "id": "d",
+          "text": "평가"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "서류 제출을 기다려 주어 필요한 도장을 받아 올 시간을 얻었다. 다른 일을 처리할 수 있는 말미가 생긴 것이다.",
+      "hint": "제출을 기다려 주는 동안 처리한 일을 확인하세요.",
+      "context_cues": [
+        "오늘 오후까지",
+        "서류 제출을 기다려 주었고",
+        "도장을 받아 왔다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C13",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "농장 주인은 비가 그칠 때까지 일손에게 한 시간을 쉬도록 했고, 한 직원은 그 (____)를 얻어 마을에 가서 안경을 고쳤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "사과"
+        },
+        {
+          "id": "c",
+          "text": "말미"
+        },
+        {
+          "id": "d",
+          "text": "평가"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "농장 일을 잠깐 쉬는 동안 개인적인 일을 할 시간을 얻었다. 다른 일을 위한 시간적 여유인 말미이다.",
+      "hint": "농장 일을 잠깐 멈춘 동안 어떤 일을 할 수 있었나요?",
+      "context_cues": [
+        "한 시간을 쉬도록",
+        "마을에 가서 안경을 고쳤다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C14",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "수업 자료를 다시 확인해야 했던 교사는 발표를 오후로 미뤄 달라고 요청했고, 허락받은 (____)에 잘못된 수치를 고쳤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "사과"
+        },
+        {
+          "id": "c",
+          "text": "평가"
+        },
+        {
+          "id": "d",
+          "text": "말미"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "발표를 미루어 자료를 고칠 시간을 허락받았다. 다른 일을 할 수 있도록 마련된 시간적 여유가 말미이다.",
+      "hint": "발표를 미룬 뒤 그 사이에 무엇을 했는지 살펴보세요.",
+      "context_cues": [
+        "발표를 오후로 미뤄 달라고",
+        "허락받은",
+        "잘못된 수치를 고쳤다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0004-C15",
+      "word_id": "W0004",
+      "meaning_id": "W0004-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "오늘까지 방을 비워야 하는 가족에게 관리인은 내일 아침까지 기다려 주겠다고 했고, 가족은 마지막 상자를 옮길 (____)를 얻었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "안내"
+        },
+        {
+          "id": "b",
+          "text": "말미"
+        },
+        {
+          "id": "c",
+          "text": "사과"
+        },
+        {
+          "id": "d",
+          "text": "경고"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "방을 비울 기한을 늦춰 받아 남은 짐을 옮길 시간이 생겼다. 다른 일을 위해 얻은 시간적 여유인 말미이다.",
+      "hint": "관리인이 기다려 주면서 가족에게 무엇이 더 생겼나요?",
+      "context_cues": [
+        "오늘까지 방을 비워야",
+        "내일 아침까지 기다려 주겠다고",
+        "마지막 상자를 옮길"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C01",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "복도의 작은 발소리에도 쉽게 깬 나는 깊이 잠들지 못하고 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "선잠"
+        },
+        {
+          "id": "c",
+          "text": "단잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "시간대보다 잠의 깊이를 살펴보세요.",
+      "context_cues": [
+        "작은 발소리",
+        "쉽게 깸",
+        "깊이 잠들지 못함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C02",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "낯선 숙소에서 긴장한 준호는 얕게 잠들었다 깨기를 반복하며 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "선잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "깊이 잤는지 가볍게 잤는지 생각해 보세요.",
+      "context_cues": [
+        "긴장",
+        "얕게 잠듦",
+        "깨기를 반복"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C03",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "창문을 두드리는 빗소리에 자주 깬 나는 푹 자지 못한 채 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "선잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "어떤 소리에 얼마나 쉽게 깼는지 보세요.",
+      "context_cues": [
+        "빗소리",
+        "자주 깸",
+        "푹 자지 못함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C04",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "민호는 깊이 잠들지 못해 문손잡이의 작은 소리에도 깨는 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "깊은 잠"
+        },
+        {
+          "id": "d",
+          "text": "선잠"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "잠이 얕았다는 단서를 찾아보세요.",
+      "context_cues": [
+        "깊이 잠들지 못함",
+        "작은 소리에도 깸"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C05",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "옆자리 친구가 뒤척일 때마다 깬 수아는 깊이 잠들지 못하고 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "선잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "잠든 상태가 깊었는지 확인하세요.",
+      "context_cues": [
+        "뒤척일 때마다 깸",
+        "깊이 잠들지 못함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C06",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "시험을 앞두고 긴장한 나는 얕게 잠들어 시계 소리에도 깨는 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "선잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "자극에 쉽게 깬 잠을 생각해 보세요.",
+      "context_cues": [
+        "긴장",
+        "얕게 잠듦",
+        "시계 소리에도 깸"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C07",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "지호는 낯선 방의 소리에 신경이 쓰여 깊이 잠들지 못한 채 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "선잠"
+        },
+        {
+          "id": "c",
+          "text": "단잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "반드시 여러 번 깨지 않아도 얕게 잔 잠일 수 있어요.",
+      "context_cues": [
+        "낯선 방",
+        "깊이 잠들지 못함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C08",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "버스의 작은 안내 방송에도 눈을 뜬 예나는 얕은 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "선잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "깊게 잠들었는지 문장 속 단서를 확인하세요.",
+      "context_cues": [
+        "작은 안내 방송",
+        "눈을 뜸",
+        "얕음"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C09",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "현우는 동생이 조금만 움직여도 눈을 뜰 만큼 얕은 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "깊은 잠"
+        },
+        {
+          "id": "d",
+          "text": "선잠"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "얕게 잠든 상태에 알맞은 말을 골라보세요.",
+      "context_cues": [
+        "조금만 움직임",
+        "눈을 뜸",
+        "얕음"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C10",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "옆방의 낮은 이야기 소리에도 몇 번씩 깬 나는 깊이 잠들지 못한 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "선잠"
+        },
+        {
+          "id": "c",
+          "text": "단잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "잠의 길이보다 깊이를 비교하세요.",
+      "context_cues": [
+        "낮은 이야기 소리",
+        "몇 번씩 깸",
+        "깊이 잠들지 못함"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0005-C11",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "하린은 주변 소리에 계속 신경을 쓰느라 깊이 들지 못한 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "선잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "깊이 들지 못했다는 상태가 핵심이에요.",
+      "context_cues": [
+        "주변 소리",
+        "깊이 들지 못함"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0005-C12",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "바람에 흔들리는 문소리 때문에 얕게 잠든 서윤은 자꾸 깨는 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "선잠"
+        },
+        {
+          "id": "c",
+          "text": "단잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "작은 자극에 깨어나는 상태를 살펴보세요.",
+      "context_cues": [
+        "문소리",
+        "얕게 잠듦",
+        "자꾸 깸"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C13",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "형이 이불을 고치는 작은 움직임에도 깬 도윤은 푹 자지 못한 채 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "선잠"
+        },
+        {
+          "id": "c",
+          "text": "단잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "편안하고 깊게 잔 잠과 구별하세요.",
+      "context_cues": [
+        "작은 움직임",
+        "깸",
+        "푹 자지 못함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C14",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "유나는 잠결에도 복도 소리가 들릴 만큼 깊이 들지 못한 (____)을 잤다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "단잠"
+        },
+        {
+          "id": "c",
+          "text": "깊은 잠"
+        },
+        {
+          "id": "d",
+          "text": "선잠"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "깊이 잠들지 못했다는 단서에 주목하세요.",
+      "context_cues": [
+        "복도 소리가 들림",
+        "깊이 들지 못함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0005-C15",
+      "word_id": "W0005",
+      "meaning_id": "W0005-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "할아버지가 기침을 작게 하자 바로 눈을 뜬 나는 얕게 들었던 (____)에서 깼다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "늦잠"
+        },
+        {
+          "id": "b",
+          "text": "선잠"
+        },
+        {
+          "id": "c",
+          "text": "단잠"
+        },
+        {
+          "id": "d",
+          "text": "깊은 잠"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "작은 자극에 쉽게 깨거나 깊이 잠들지 못한 얕은 잠을 나타낸다. 늦게까지 잤다는 정보는 없으며 깊고 편안한 잠과도 다르다.",
+      "hint": "짧게 잤다는 사실만으로 판단하지 마세요.",
+      "context_cues": [
+        "작은 기침",
+        "바로 눈을 뜸",
+        "얕게 듦"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C01",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "여러 의견을 듣고 필요한 일을 굳게 결정해 끝까지 실천한 반장은 (____) 태도를 보였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "변덕스러운"
+        },
+        {
+          "id": "d",
+          "text": "강단 있는"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "의견을 들음",
+        "굳게 결정",
+        "끝까지 실천"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C02",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "친구들이 반대해도 안전에 필요한 결정을 굳게 지킨 지호는 (____) 사람이었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "강단 있는"
+        },
+        {
+          "id": "c",
+          "text": "소극적인"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "안전에 필요한 결정",
+        "굳게 지킴"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C03",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "어려운 선택 앞에서 물러서지 않고 옳다고 판단한 일을 굳게 실행한 민서는 (____) 모습을 보였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "강단 있는"
+        },
+        {
+          "id": "c",
+          "text": "소극적인"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "옳다고 판단",
+        "굳게 실행"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C04",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "계획을 충분히 살핀 뒤 필요한 변화를 결단하고 끝까지 추진한 대표는 (____) 지도자였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "강단 있는"
+        },
+        {
+          "id": "c",
+          "text": "소극적인"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "충분히 살핌",
+        "결단",
+        "끝까지 추진"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C05",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "잘못을 알게 되자 망설이지 않고 고치기로 굳게 결정한 수아는 (____) 태도를 보였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "강단 있는"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "잘못을 고침",
+        "굳게 결정"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C06",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "기준을 확인한 뒤 어려운 상황에서도 정한 원칙을 굳게 지킨 선생님은 (____) 분이었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "변덕스러운"
+        },
+        {
+          "id": "d",
+          "text": "강단 있는"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "기준 확인",
+        "원칙을 굳게 지킴"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C07",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "불편한 의견이라도 필요하다고 판단하면 굳게 결심하고 말한 현우는 (____) 사람이었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "변덕스러운"
+        },
+        {
+          "id": "d",
+          "text": "강단 있는"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "필요하다고 판단",
+        "굳게 결심",
+        "말함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C08",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "중요한 일을 미루지 않고 충분히 생각한 뒤 결단하여 실행한 유나는 (____) 모습을 보였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "강단 있는"
+        },
+        {
+          "id": "b",
+          "text": "우유부단한"
+        },
+        {
+          "id": "c",
+          "text": "소극적인"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "충분히 생각",
+        "결단",
+        "실행"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C09",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "모두가 주저할 때 필요한 조치를 굳게 결정하고 책임진 대장은 (____) 사람이었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "강단 있는"
+        },
+        {
+          "id": "b",
+          "text": "우유부단한"
+        },
+        {
+          "id": "c",
+          "text": "소극적인"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "필요한 조치",
+        "굳게 결정",
+        "책임"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C10",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "실패가 두려워도 충분히 준비한 도전을 굳게 결심해 실천한 준호는 (____) 태도를 보였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "강단 있는"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "충분히 준비",
+        "굳게 결심",
+        "실천"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0006-C11",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "반대 의견도 검토한 뒤 옳다고 판단한 결정을 끝까지 실행한 회장은 (____) 지도자였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "변덕스러운"
+        },
+        {
+          "id": "d",
+          "text": "강단 있는"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "반대 의견 검토",
+        "옳다고 판단",
+        "끝까지 실행"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0006-C12",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "약속을 지키기 어려워져도 필요한 일을 굳게 결정해 행동한 하린은 (____) 모습을 보였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "강단 있는"
+        },
+        {
+          "id": "c",
+          "text": "소극적인"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "필요한 일",
+        "굳게 결정",
+        "행동"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C13",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "불리한 상황에서도 잘못된 요구를 거절하기로 결심하고 분명히 거절한 서윤은 (____) 사람이었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "강단 있는"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "잘못된 요구",
+        "거절 결심",
+        "분명히 거절"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C14",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "고칠 점을 확인하고 어려운 결정을 굳게 내려 실천한 감독은 (____) 태도를 보였다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "강단 있는"
+        },
+        {
+          "id": "d",
+          "text": "변덕스러운"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "고칠 점 확인",
+        "굳게 결정",
+        "실천"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0006-C15",
+      "word_id": "W0006",
+      "meaning_id": "W0006-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "할 일을 충분히 따져 본 뒤 망설이지 않고 결단하여 실행한 도윤은 (____) 사람이었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "우유부단한"
+        },
+        {
+          "id": "b",
+          "text": "소극적인"
+        },
+        {
+          "id": "c",
+          "text": "변덕스러운"
+        },
+        {
+          "id": "d",
+          "text": "강단 있는"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "옳다고 판단한 일을 굳세게 결단하고 실행하는 모습이다. 결정을 못 하거나 물러서거나 결정을 쉽게 바꾸는 모습과 구별한다.",
+      "hint": "결정을 굳게 내리고 실행한 점을 살펴보세요.",
+      "context_cues": [
+        "충분히 따져 봄",
+        "결단",
+        "실행"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C01",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "서로 존댓말만 쓰며 속마음을 감추던 두 친구는 함께 고민을 털어놓은 뒤, 둘 사이의 (____)가 사라졌다고 느꼈다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "의무"
+        },
+        {
+          "id": "b",
+          "text": "기회"
+        },
+        {
+          "id": "c",
+          "text": "격의"
+        },
+        {
+          "id": "d",
+          "text": "취미"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "겉으로만 대하던 사이에서 고민을 솔직히 털어놓는 사이로 바뀌었다. 속마음을 터놓지 못해 생기는 거리감인 격의가 사라진 것이다.",
+      "hint": "고민을 털어놓기 전과 후의 관계를 비교하세요.",
+      "context_cues": [
+        "속마음을 감추던",
+        "함께 고민을 털어놓은 뒤",
+        "둘 사이의"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C02",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "처음 만난 두 사람은 개인적인 질문을 피하고 날씨 이야기만 했으며, 서로 속마음을 드러내지 않아 대화에서 (____)가 느껴졌다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "격의"
+        },
+        {
+          "id": "b",
+          "text": "분노"
+        },
+        {
+          "id": "c",
+          "text": "후회"
+        },
+        {
+          "id": "d",
+          "text": "공포"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "개인적인 이야기를 피하고 속마음을 드러내지 않아 두 사람 사이에 거리감이 남아 있다. 이 거리감은 격의이다.",
+      "hint": "대화가 개인적인 마음까지 이어지지 않은 점을 보세요.",
+      "context_cues": [
+        "개인적인 질문을 피하고",
+        "날씨 이야기만",
+        "속마음을 드러내지 않아"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C03",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "오랜 친구들은 서로 눈치를 보며 말을 감추는 대신 실패한 경험과 걱정까지 털어놓았고, 그런 (____) 없는 대화가 마음을 편하게 했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "격의"
+        },
+        {
+          "id": "b",
+          "text": "자료"
+        },
+        {
+          "id": "c",
+          "text": "장비"
+        },
+        {
+          "id": "d",
+          "text": "수수료"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "걱정과 실패까지 감추지 않고 말하여 마음의 거리가 없는 대화를 했다. 격의 없는 대화라는 표현이 맞다.",
+      "hint": "감추던 말을 꺼내고 걱정까지 나눈 관계에 주목하세요.",
+      "context_cues": [
+        "말을 감추는 대신",
+        "실패한 경험과 걱정까지 털어놓았고",
+        "마음을 편하게"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C04",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "새로 전학 온 유빈은 아직 누구에게도 고민을 말하지 못했고, 친구들과 인사는 나눠도 그들 사이에는 (____)가 남아 있었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "의무"
+        },
+        {
+          "id": "b",
+          "text": "격의"
+        },
+        {
+          "id": "c",
+          "text": "기회"
+        },
+        {
+          "id": "d",
+          "text": "취미"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "인사는 하지만 고민을 털어놓을 만큼 가까워지지는 않았다. 속마음을 터놓지 못하는 관계의 거리감인 격의이다.",
+      "hint": "인사를 나누는 것과 고민을 말하는 것의 차이를 보세요.",
+      "context_cues": [
+        "누구에게도 고민을 말하지 못했고",
+        "인사는 나눠도",
+        "그들 사이에는"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C05",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "동아리 선배가 먼저 자신의 실수를 솔직히 이야기하자 후배들도 걱정을 털어놓았고, 선후배 사이의 (____)가 조금씩 사라졌다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "의무"
+        },
+        {
+          "id": "b",
+          "text": "기회"
+        },
+        {
+          "id": "c",
+          "text": "취미"
+        },
+        {
+          "id": "d",
+          "text": "격의"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "선배와 후배가 자신의 실수와 걱정을 솔직하게 말하며 마음의 거리를 줄였다. 관계의 격의가 사라지는 상황이다.",
+      "hint": "실수와 걱정을 솔직히 말한 뒤 관계가 어떻게 바뀌었나요?",
+      "context_cues": [
+        "자신의 실수를 솔직히",
+        "후배들도 걱정을 털어놓았고",
+        "조금씩 사라졌다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C06",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "아이들은 서로의 속마음을 묻지 않고 정해진 인사만 주고받았으므로, 한 교실에 오래 있어도 관계에는 (____)가 있었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "의무"
+        },
+        {
+          "id": "b",
+          "text": "격의"
+        },
+        {
+          "id": "c",
+          "text": "기회"
+        },
+        {
+          "id": "d",
+          "text": "취미"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "오래 함께 있었지만 형식적인 인사에 머물러 서로 마음을 알지 못했다. 속마음을 터놓지 않는 거리감인 격의가 있는 관계이다.",
+      "hint": "함께 보낸 시간보다 대화의 깊이에 주목하세요.",
+      "context_cues": [
+        "속마음을 묻지 않고",
+        "정해진 인사만",
+        "한 교실에 오래 있어도"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C07",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "상담 교사는 학생과 겉도는 문답만 하다가 먼저 자기 고민을 들려주었고, 학생도 마음을 열면서 두 사람 사이의 (____)가 줄어들었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "의무"
+        },
+        {
+          "id": "b",
+          "text": "기회"
+        },
+        {
+          "id": "c",
+          "text": "취미"
+        },
+        {
+          "id": "d",
+          "text": "격의"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "겉도는 문답에서 개인적인 고민을 나누는 대화로 바뀌며 마음의 거리가 줄었다. 속마음을 터놓지 못하던 격의가 줄어든 것이다.",
+      "hint": "겉도는 문답과 마음을 연 대화를 비교하세요.",
+      "context_cues": [
+        "겉도는 문답만",
+        "먼저 자기 고민을 들려주었고",
+        "학생도 마음을 열면서"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C08",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "사촌들은 명절마다 만났지만 고민을 말할 때는 여전히 눈치를 보며 말을 삼켰고, 서로에게 느끼는 (____)를 떨치지 못했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "격의"
+        },
+        {
+          "id": "b",
+          "text": "분노"
+        },
+        {
+          "id": "c",
+          "text": "후회"
+        },
+        {
+          "id": "d",
+          "text": "공포"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "자주 만나도 고민을 털어놓지 못하고 말을 감추었다. 마음을 열지 못해 생기는 관계의 거리감인 격의를 떨치지 못한 것이다.",
+      "hint": "만나는 횟수와 속마음을 말할 수 있는지는 어떻게 다른가요?",
+      "context_cues": [
+        "고민을 말할 때는",
+        "눈치를 보며 말을 삼켰고",
+        "서로에게 느끼는"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C09",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "두 팀장은 서로 실패한 일을 숨기느라 형식적인 말만 했지만, 공동 작업 뒤에는 실패도 이야기할 만큼 가까워져 처음의 (____)가 사라졌다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "격의"
+        },
+        {
+          "id": "b",
+          "text": "의무"
+        },
+        {
+          "id": "c",
+          "text": "기회"
+        },
+        {
+          "id": "d",
+          "text": "취미"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "실패를 숨기는 형식적인 관계가 실패를 털어놓는 관계로 바뀌었다. 처음 있던 마음의 거리감인 격의가 사라졌다.",
+      "hint": "실패를 숨길 때와 이야기할 수 있게 된 뒤를 비교하세요.",
+      "context_cues": [
+        "실패한 일을 숨기느라",
+        "형식적인 말만",
+        "실패도 이야기할 만큼 가까워져"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C10",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "준호는 이웃에게 예의 바르게 인사했지만 자기 이야기는 끝내 감추었고, 그 이웃과의 관계에는 아직 (____)가 있었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "의무"
+        },
+        {
+          "id": "b",
+          "text": "격의"
+        },
+        {
+          "id": "c",
+          "text": "기회"
+        },
+        {
+          "id": "d",
+          "text": "취미"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "예의 있는 인사와 별개로 자기 속마음을 감추어 관계의 거리가 남아 있다. 속마음을 터놓지 않는 거리감인 격의이다.",
+      "hint": "예의 있는 인사를 했어도 감추고 있는 것이 무엇인지 보세요.",
+      "context_cues": [
+        "예의 바르게 인사했지만",
+        "자기 이야기는 끝내 감추었고",
+        "아직"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0007-C11",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "모임의 사람들은 남들이 어떻게 볼지 걱정해 속마음을 숨겼지만, 서로의 어려움을 듣고 난 뒤에는 (____) 없이 고민을 나누었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "자료"
+        },
+        {
+          "id": "b",
+          "text": "격의"
+        },
+        {
+          "id": "c",
+          "text": "장비"
+        },
+        {
+          "id": "d",
+          "text": "수수료"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "남의 시선을 걱정해 마음을 숨기던 사람들이 이제는 어려움과 고민을 털어놓는다. 마음의 거리가 없이 대하는 격의 없는 관계이다.",
+      "hint": "다른 사람의 시선을 걱정하던 때와 고민을 나누는 때를 비교하세요.",
+      "context_cues": [
+        "속마음을 숨겼지만",
+        "서로의 어려움을 듣고 난 뒤",
+        "고민을 나누었다"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0007-C12",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "새 담임은 학생들과 규칙만 이야기할 때보다 각자의 꿈과 걱정을 듣기 시작한 뒤, 학생들과의 (____)가 줄었다고 느꼈다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "분노"
+        },
+        {
+          "id": "b",
+          "text": "후회"
+        },
+        {
+          "id": "c",
+          "text": "격의"
+        },
+        {
+          "id": "d",
+          "text": "공포"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "규칙에 관한 형식적인 이야기에서 학생들의 개인적인 마음을 나누는 대화로 바뀌었다. 관계의 거리감인 격의가 줄어든 상황이다.",
+      "hint": "꿈과 걱정을 듣기 시작하면서 무엇이 가까워졌나요?",
+      "context_cues": [
+        "규칙만 이야기할 때보다",
+        "각자의 꿈과 걱정을 듣기 시작한 뒤",
+        "학생들과의"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C13",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "화해한 친구들은 서로에게 서운했던 마음까지 솔직하게 말할 수 있게 되었고, 속마음을 숨기던 때의 (____)는 더 이상 느끼지 않았다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "분노"
+        },
+        {
+          "id": "b",
+          "text": "후회"
+        },
+        {
+          "id": "c",
+          "text": "격의"
+        },
+        {
+          "id": "d",
+          "text": "공포"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "서운한 마음까지 말할 만큼 가까워져 마음을 감추며 생기던 거리감이 없어졌다. 이 거리감이 격의이다.",
+      "hint": "솔직히 말할 수 있게 된 뒤 사라진 관계의 느낌을 생각하세요.",
+      "context_cues": [
+        "서운했던 마음까지 솔직하게",
+        "속마음을 숨기던 때의",
+        "더 이상 느끼지 않았다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C14",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "오랫동안 편지를 주고받으며 비밀과 걱정을 나눈 두 친구는, 처음 직접 만났을 때도 (____) 없이 서로의 속마음을 이야기했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "격의"
+        },
+        {
+          "id": "b",
+          "text": "자료"
+        },
+        {
+          "id": "c",
+          "text": "장비"
+        },
+        {
+          "id": "d",
+          "text": "수수료"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "이미 편지로 개인적인 비밀과 걱정을 나누어 마음의 거리가 없었다. 격의 없이 속마음을 이야기했다는 표현이 맞다.",
+      "hint": "직접 만나기 전부터 어떤 이야기를 나누었는지 보세요.",
+      "context_cues": [
+        "비밀과 걱정을 나눈",
+        "처음 직접 만났을 때도",
+        "서로의 속마음을 이야기했다"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0007-C15",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "새 모둠에서는 자신의 생각을 드러내면 놀림받을까 봐 모두 말을 아꼈고, 편하게 속마음을 나누지 못하는 (____)가 남아 있었다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "의무"
+        },
+        {
+          "id": "b",
+          "text": "기회"
+        },
+        {
+          "id": "c",
+          "text": "격의"
+        },
+        {
+          "id": "d",
+          "text": "취미"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "놀림을 걱정해 생각을 감추고 서로 마음을 터놓지 못했다. 사람 사이에 생기는 이러한 거리감은 격의이다.",
+      "hint": "말을 아끼는 이유와 서로 나누지 못하는 것을 보세요.",
+      "context_cues": [
+        "놀림받을까 봐",
+        "모두 말을 아꼈고",
+        "편하게 속마음을 나누지 못하는"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C01",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "비가 오자 안전한 실내 활동으로 계획을 알맞게 바꾼 선생님의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "융통성"
+        },
+        {
+          "id": "c",
+          "text": "불만"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "비",
+        "실내 활동으로 변경"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C02",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "준비물이 늦게 오자 순서를 바꾸어 수업을 이어 간 강사의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "융통성"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "준비물 지연",
+        "순서 변경",
+        "수업 이어 감"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C03",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "참가자가 줄자 규칙에 맞게 팀 수를 조정한 진행자의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "욕심"
+        },
+        {
+          "id": "d",
+          "text": "융통성"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "참가자 감소",
+        "팀 수 조정"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C04",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "버스가 지연되자 약속을 지킬 다른 길을 찾아 이동한 대표의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "융통성"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "버스 지연",
+        "다른 길"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C05",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "운동장을 쓸 수 없게 되자 연습 목적에 맞는 실내 방법을 찾은 코치의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "욕심"
+        },
+        {
+          "id": "d",
+          "text": "융통성"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "운동장 사용 불가",
+        "실내 방법"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C06",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "발표 시간이 짧아지자 핵심을 유지하며 순서를 조정한 민서의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "융통성"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "발표 시간 단축",
+        "핵심 유지",
+        "순서 조정"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C07",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "독서실 자리가 부족하자 규칙에 맞는 다른 공간을 마련한 담당자의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "욕심"
+        },
+        {
+          "id": "d",
+          "text": "융통성"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "자리 부족",
+        "다른 공간",
+        "규칙 준수"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C08",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "일부 재료가 없자 같은 목적에 맞는 안전한 대체 재료를 고른 교사의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "융통성"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "재료 없음",
+        "목적에 맞는 대체 재료"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C09",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "모둠원이 결석하자 남은 사람의 역할을 알맞게 나눈 반장의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "융통성"
+        },
+        {
+          "id": "c",
+          "text": "불만"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "모둠원 결석",
+        "역할 조정"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C10",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "일정이 겹치자 모두 가능한 시간으로 회의를 조정한 회장의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "융통성"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "일정 겹침",
+        "가능한 시간으로 조정"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0008-C11",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "도서관이 문을 닫자 조사 목적에 맞는 온라인 자료를 찾아 과제를 이어 간 수아의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "융통성"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "도서관 휴관",
+        "온라인 자료",
+        "과제 이어 감"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0008-C12",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "참여 학생의 수준이 달라지자 같은 목표에 맞게 설명 방법을 바꾼 선생님의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "융통성"
+        },
+        {
+          "id": "b",
+          "text": "고집"
+        },
+        {
+          "id": "c",
+          "text": "불만"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "학생 수준 변화",
+        "목표 유지",
+        "설명 방법 변경"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C13",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "행사 장소가 바뀌자 동선을 새 장소에 맞게 조정한 담당자의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "융통성"
+        },
+        {
+          "id": "b",
+          "text": "고집"
+        },
+        {
+          "id": "c",
+          "text": "불만"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "장소 변경",
+        "동선 조정"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C14",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "책상이 모자라자 수업 규칙을 지키며 자리 배치를 바꾼 반장의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "융통성"
+        },
+        {
+          "id": "b",
+          "text": "고집"
+        },
+        {
+          "id": "c",
+          "text": "불만"
+        },
+        {
+          "id": "d",
+          "text": "욕심"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "책상 부족",
+        "자리 배치 조정"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0008-C15",
+      "word_id": "W0008",
+      "meaning_id": "W0008-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "예상보다 시간이 남자 학습 목표에 맞는 추가 활동을 넣은 교사의 (____)이 드러났다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "고집"
+        },
+        {
+          "id": "b",
+          "text": "불만"
+        },
+        {
+          "id": "c",
+          "text": "욕심"
+        },
+        {
+          "id": "d",
+          "text": "융통성"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "상황이 달라지자 방법을 알맞게 바꾸어 일을 처리한 능력이다. 바뀐 상황과 조정한 방법이 문장에 함께 제시되어 있다.",
+      "hint": "상황이 바뀌었을 때 방법을 알맞게 조정했는지 보세요.",
+      "context_cues": [
+        "시간이 남음",
+        "목표에 맞는 추가 활동"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C01",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "수십 년간 업계에서 손꼽히는 성과로 널리 알려진 그 회사는 (____) 기업이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "굴지의"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "손꼽히는 성과",
+        "널리 알려짐"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C02",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "오랫동안 세계 대회에서 손꼽히는 기록으로 유명한 그는 (____) 선수다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "굴지의"
+        },
+        {
+          "id": "b",
+          "text": "이름 없는"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "오랫동안",
+        "손꼽히는 기록",
+        "유명"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C03",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "수십 년간 뛰어난 연구 성과로 많은 대학 중 손꼽힌 그곳은 (____) 대학이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "c",
+          "text": "뒤처진"
+        },
+        {
+          "id": "d",
+          "text": "굴지의"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "뛰어난 연구",
+        "손꼽힘"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C04",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "오랫동안 여러 나라에서 손꼽히는 연주 실력으로 유명한 그곳은 (____) 악단이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "c",
+          "text": "뒤처진"
+        },
+        {
+          "id": "d",
+          "text": "굴지의"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "오랫동안",
+        "손꼽히는 연주",
+        "유명"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C05",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "수십 년간 뛰어난 전시로 많은 미술관 중 손꼽히며 유명한 그곳은 (____) 미술관이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "굴지의"
+        },
+        {
+          "id": "b",
+          "text": "이름 없는"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "뛰어난 전시",
+        "유명"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C06",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "오랫동안 연구자들이 손꼽을 만큼 뛰어난 성과로 유명한 그곳은 (____) 연구소다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "굴지의"
+        },
+        {
+          "id": "b",
+          "text": "이름 없는"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "오랫동안",
+        "손꼽히는 성과",
+        "유명"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C07",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "수십 년간 뛰어난 무대 실력으로 손꼽히며 널리 알려진 그곳은 (____) 극단이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "c",
+          "text": "굴지의"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "뛰어난 무대",
+        "널리 알려짐"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C08",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "오랫동안 많은 작품 중 손꼽힐 수준의 책을 펴내며 유명해진 그곳은 (____) 출판사다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "c",
+          "text": "뒤처진"
+        },
+        {
+          "id": "d",
+          "text": "굴지의"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "오랫동안",
+        "손꼽히는 책",
+        "유명"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C09",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "수십 년간 뛰어난 경기 성적으로 여러 팀 중 손꼽힌 그곳은 (____) 구단이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "굴지의"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "뛰어난 성적",
+        "손꼽힘"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C10",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "오랫동안 손꼽히는 제품 품질로 많은 나라에 알려진 그곳은 (____) 제조 회사다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "c",
+          "text": "뒤처진"
+        },
+        {
+          "id": "d",
+          "text": "굴지의"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "오랫동안",
+        "손꼽히는 품질",
+        "널리 알려짐"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0009-C11",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "수십 년간 뛰어난 교육 성과로 여러 학교 중 손꼽히며 유명한 그곳은 (____) 학교다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "굴지의"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "교육 성과",
+        "유명"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0009-C12",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "오랫동안 손꼽히는 설계 실력으로 널리 알려진 그곳은 (____) 건축 회사다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "c",
+          "text": "굴지의"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "오랫동안",
+        "손꼽히는 설계",
+        "널리 알려짐"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C13",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "수십 년간 뛰어난 자료로 많은 기관 중 손꼽히며 유명한 그곳은 (____) 기록 기관이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "굴지의"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "뛰어난 자료",
+        "유명"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C14",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "오랫동안 뛰어난 공연으로 많은 단체 중 손꼽히며 유명한 그곳은 (____) 합창단이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "굴지의"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "오랫동안",
+        "뛰어난 공연",
+        "유명"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0009-C15",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "수십 년간 손꼽히는 제작 실력으로 널리 알려진 그곳은 (____) 제작사다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "굴지의"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "손꼽히는 제작",
+        "널리 알려짐"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C01",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "선생님이 솔직한 의견을 부탁하자 수아는 주저하거나 돌려 말하지 않고 생각을 (____) 말했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "기탄없이"
+        },
+        {
+          "id": "b",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "솔직한 의견 요청",
+        "주저하지 않음",
+        "돌려 말하지 않음"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C02",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "회의에서 현우는 상대를 어려워하거나 말을 돌리지 않고 필요한 의견을 (____) 밝혔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "기탄없이"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "상대를 어려워하지 않음",
+        "말을 돌리지 않음"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C03",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "친구가 개선점을 묻자 민서는 망설이거나 돌려 말하지 않고 자기 생각을 (____) 전했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "기탄없이"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "개선점 요청",
+        "망설이지 않음",
+        "직접 전함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C04",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "반장이 자유로운 토의를 권하자 준호는 주저하거나 돌려 말하지 않고 의견을 (____) 말했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "주저하며"
+        },
+        {
+          "id": "c",
+          "text": "기탄없이"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "자유로운 토의",
+        "주저하지 않음",
+        "직접 의견"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C05",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "공연 소감을 묻자 유나는 상대를 어려워하거나 에둘러 말하지 않고 느낀 점을 (____) 이야기했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "주저하며"
+        },
+        {
+          "id": "c",
+          "text": "에둘러서"
+        },
+        {
+          "id": "d",
+          "text": "기탄없이"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "소감 요청",
+        "어려워하지 않음",
+        "직접 이야기"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C06",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "자유롭게 의견을 말하도록 권유받자 지호는 망설이거나 돌려 말하지 않고 자기 의견을 (____) 밝혔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "기탄없이"
+        },
+        {
+          "id": "b",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "자유로운 의견 권유",
+        "망설이지 않음",
+        "직접 밝힘"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C07",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "pretest",
+      "type": "context_cloze",
+      "prompt": "선생님이 불편한 점도 말해 달라고 하자 하린은 주저하거나 돌려 말하지 않고 문제를 (____) 전했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "주저하며"
+        },
+        {
+          "id": "c",
+          "text": "에둘러서"
+        },
+        {
+          "id": "d",
+          "text": "기탄없이"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "불편한 점 요청",
+        "주저하지 않음",
+        "직접 전함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C08",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "posttest",
+      "type": "context_cloze",
+      "prompt": "독서 모임에서 서윤은 반대 의견도 어려워하거나 말을 돌리지 않고 (____) 말했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "기탄없이"
+        },
+        {
+          "id": "b",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "반대 의견",
+        "어려워하지 않음",
+        "직접 말함"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C09",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "delayed",
+      "type": "context_cloze",
+      "prompt": "친구가 솔직한 평가를 부탁하자 도윤은 망설이거나 돌려 말하지 않고 의견을 (____) 밝혔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "기탄없이"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "솔직한 평가 요청",
+        "망설이지 않음",
+        "직접 밝힘"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C10",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "제안 시간을 준 진행자에게 지우는 주저하거나 말을 돌리지 않고 자기 생각을 (____) 전했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "주저하며"
+        },
+        {
+          "id": "c",
+          "text": "에둘러서"
+        },
+        {
+          "id": "d",
+          "text": "기탄없이"
+        }
+      ],
+      "correct_option_id": "d",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "제안 시간",
+        "주저하지 않음",
+        "직접 전함"
+      ],
+      "review_status": "draft",
+      "period_sequence": 1
+    },
+    {
+      "id": "W0010-C11",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "weekly",
+      "type": "context_cloze",
+      "prompt": "설문 담당자가 의견을 청하자 예나는 어려워하거나 돌려 말하지 않고 개선점을 (____) 말했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "기탄없이"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "의견 요청",
+        "어려워하지 않음",
+        "직접 말함"
+      ],
+      "review_status": "draft",
+      "period_sequence": 2
+    },
+    {
+      "id": "W0010-C12",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "monthly",
+      "type": "context_cloze",
+      "prompt": "대표가 누구나 의견을 내도 된다고 하자 민준은 주저하거나 말을 돌리지 않고 생각을 (____) 밝혔다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "주저하며"
+        },
+        {
+          "id": "c",
+          "text": "기탄없이"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "의견 허용",
+        "주저하지 않음",
+        "직접 밝힘"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C13",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "작품에 대한 생각을 묻자 현서는 망설이거나 돌려 말하지 않고 소감을 (____) 이야기했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "주저하며"
+        },
+        {
+          "id": "c",
+          "text": "기탄없이"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "생각 요청",
+        "망설이지 않음",
+        "직접 이야기"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C14",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "선생님이 질문을 권하자 나라는 어려워하거나 말을 돌리지 않고 궁금한 점을 (____) 말했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "기탄없이"
+        },
+        {
+          "id": "b",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "a",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "질문 권함",
+        "어려워하지 않음",
+        "직접 질문"
+      ],
+      "review_status": "draft"
+    },
+    {
+      "id": "W0010-C15",
+      "word_id": "W0010",
+      "meaning_id": "W0010-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "모둠 친구들이 생각을 묻자 수호는 주저하거나 돌려 말하지 않고 필요한 의견을 (____) 전했다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "머뭇거리며"
+        },
+        {
+          "id": "b",
+          "text": "기탄없이"
+        },
+        {
+          "id": "c",
+          "text": "주저하며"
+        },
+        {
+          "id": "d",
+          "text": "에둘러서"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "꺼리거나 어려워하지 않고 의견을 직접 말하는 행동이다. 망설이거나 꺼리거나 돌려 말하는 행동과 구별한다.",
+      "hint": "망설임이나 돌려 말하기 없이 직접 의견을 전했는지 보세요.",
+      "context_cues": [
+        "생각 요청",
+        "주저하지 않음",
+        "직접 의견"
+      ],
+      "review_status": "draft"
+    }
+  ]
+}

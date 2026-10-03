@@ -1,0 +1,16 @@
+{
+  "created_date_kst": "2026-10-04",
+  "local_documents_and_exports": "complete",
+  "content_approval": "teacher_review_required; first10 source issue rows preserved",
+  "actual_service_acceptance": "63 cases not executed",
+  "actual_browser_render_click_print": "not executed: browser and local server startup blocked",
+  "native_page_final_link_edit": "blocked: MCP tool call requires approval, but approval policy is never",
+  "native_visualization_embed": "not present on same-stream readback",
+  "fallback_delivery": "PDF CSV JSON HTML ZIP workspace artifacts",
+  "revision": "report-charts-v4",
+  "word_selection": "first10 textbook order; all450 source rows preserved",
+  "current_delivery": "deliverables/report-charts-v4; latest HTML prototype/pilot-flow.html",
+  "teacher_review": "Three single-choice judgment buttons; no new score fields; automatic classification with teacher override; old records preserved",
+  "teacher_records": "First incorrect answer in red with incorrect label; correct in teal; pending neutral. Weekly/monthly/quarterly answer details included. First-answer history unchanged.",
+  "report_charts": "Shared SVG donut charts in teacher evaluation and parent preview/print; confirmed teacher understanding, three-button writing judgment, pending and revision waiting separate; unique meaning IDs; real prior confirmed snapshot comparison only."
+}

@@ -1,0 +1,19 @@
+{
+  "source_rows": 450,
+  "batches": 45,
+  "order_preserved": true,
+  "first_batch": [
+    "까탈",
+    "깜냥",
+    "달포",
+    "말미",
+    "선잠",
+    "강단있는",
+    "격의",
+    "융통성",
+    "굴지",
+    "기탄없이"
+  ],
+  "duplicate_positions_preserved": true,
+  "source_pdf_same_as_prior_upload": true
+}

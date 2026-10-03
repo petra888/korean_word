@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.csv -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.pdf binary
+*.png binary
+*.zip binary
+vocabulary-planning/research/duolingo-hlr-2016.txt -text -eol whitespace=-blank-at-eol,-blank-at-eof

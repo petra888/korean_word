@@ -1,0 +1,413 @@
+{
+  "version": "textbook-order-v2-2026-10-04",
+  "status": "teacher_review_required",
+  "selection_rule": "The first 30 consecutive source rows, with no skips",
+  "words": [
+    {
+      "id": "W0001",
+      "source_order": 1,
+      "word_original": "까탈",
+      "pdf_page": 1,
+      "row_on_page": 1,
+      "printed_number_original": 1,
+      "definition_original": "일이 순조롭지 않게 방해하는 일",
+      "example_original": "예) 그녀는 까탈을 부리다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0002",
+      "source_order": 2,
+      "word_original": "깜냥",
+      "pdf_page": 1,
+      "row_on_page": 2,
+      "printed_number_original": 2,
+      "definition_original": "일을 해낼 만한 본인 능력",
+      "example_original": "예) 성공을 위해 깜냥을 발휘하다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0003",
+      "source_order": 3,
+      "word_original": "달포",
+      "pdf_page": 1,
+      "row_on_page": 3,
+      "printed_number_original": 3,
+      "definition_original": "한 달이 조금 넘는 기간",
+      "example_original": "예) 달포 만에 고향에 도착하다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0004",
+      "source_order": 4,
+      "word_original": "말미",
+      "pdf_page": 1,
+      "row_on_page": 4,
+      "printed_number_original": 4,
+      "definition_original": "다른 일로 얻게 되는 여유",
+      "example_original": "예)이사 계획에 말미를 주다",
+      "issue_ids": [
+        "I034"
+      ],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0005",
+      "source_order": 5,
+      "word_original": "선잠",
+      "pdf_page": 1,
+      "row_on_page": 5,
+      "printed_number_original": 5,
+      "definition_original": "깊이 들지 못하고 깬 잠",
+      "example_original": "예) 시험기간에는 선잠만 잤다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0006",
+      "source_order": 6,
+      "word_original": "강단있는",
+      "pdf_page": 1,
+      "row_on_page": 6,
+      "printed_number_original": 6,
+      "definition_original": "굳세고 강하게 결단하는 힘",
+      "example_original": "예) 그는 강단이 있는 성격이다",
+      "issue_ids": [
+        "I032"
+      ],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0007",
+      "source_order": 7,
+      "word_original": "격의",
+      "pdf_page": 1,
+      "row_on_page": 7,
+      "printed_number_original": 7,
+      "definition_original": "속마음을 터놓지 않아 느끼는 거리감",
+      "example_original": "예) 친구랑 격의 없는 대화를 하다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0008",
+      "source_order": 8,
+      "word_original": "융통성",
+      "pdf_page": 1,
+      "row_on_page": 8,
+      "printed_number_original": 8,
+      "definition_original": "형세에 따라 일을 처리하는 재주",
+      "example_original": "예) 융통성이 없이 꽉 막힌 사람",
+      "issue_ids": [
+        "I001"
+      ],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0009",
+      "source_order": 9,
+      "word_original": "굴지",
+      "pdf_page": 1,
+      "row_on_page": 9,
+      "printed_number_original": 9,
+      "definition_original": "손가락을 꼽을 만큼 뛰어남",
+      "example_original": "예) 삼성은 국내 굴지의 기업이다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0010",
+      "source_order": 10,
+      "word_original": "기탄없이",
+      "pdf_page": 1,
+      "row_on_page": 10,
+      "printed_number_original": 10,
+      "definition_original": "꺼리거나 사양하지 않고",
+      "example_original": "예) 불만을 기탄없이 말하다",
+      "issue_ids": [
+        "I033"
+      ],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "full_draft_bundle"
+    },
+    {
+      "id": "W0011",
+      "source_order": 11,
+      "word_original": "환호",
+      "pdf_page": 1,
+      "row_on_page": 11,
+      "printed_number_original": 11,
+      "definition_original": "기뻐서 큰 소리로 부르짖음.",
+      "example_original": "예) 골이 들어간 순간 모두 환호했다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0012",
+      "source_order": 12,
+      "word_original": "점령",
+      "pdf_page": 1,
+      "row_on_page": 12,
+      "printed_number_original": 12,
+      "definition_original": "일정한 땅을 차지하여 제 것으로  함",
+      "example_original": "예) 미군이 전 지역을 점령했다",
+      "issue_ids": [
+        "I002"
+      ],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0013",
+      "source_order": 13,
+      "word_original": "방탕",
+      "pdf_page": 1,
+      "row_on_page": 13,
+      "printed_number_original": 13,
+      "definition_original": "주색잡기에 빠져 행실이 좋지 못함",
+      "example_original": "예) 방탕한 삶에는 미래가 없다",
+      "issue_ids": [
+        "I003"
+      ],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0014",
+      "source_order": 14,
+      "word_original": "수렴하다",
+      "pdf_page": 1,
+      "row_on_page": 14,
+      "printed_number_original": 14,
+      "definition_original": "여러 의견이나 생각을 하나로 모음",
+      "example_original": "예) 회원들 의견을 수렴했다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0015",
+      "source_order": 15,
+      "word_original": "참전하다",
+      "pdf_page": 1,
+      "row_on_page": 15,
+      "printed_number_original": 15,
+      "definition_original": "전쟁에 참가함",
+      "example_original": "예) 할아버지는 월남전에 참전하셨다",
+      "issue_ids": [
+        "I004"
+      ],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0016",
+      "source_order": 16,
+      "word_original": "섣달",
+      "pdf_page": 3,
+      "row_on_page": 1,
+      "printed_number_original": 16,
+      "definition_original": "음력으로 한 해의 마지막 달",
+      "example_original": "예) 섣달그믐이 지나면 새해다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0017",
+      "source_order": 17,
+      "word_original": "섬돌",
+      "pdf_page": 3,
+      "row_on_page": 2,
+      "printed_number_original": 17,
+      "definition_original": "오르내릴 수 있게 놓은 돌층계",
+      "example_original": "예) 섬돌 위에 신발을 놓다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0018",
+      "source_order": 18,
+      "word_original": "어림",
+      "pdf_page": 3,
+      "row_on_page": 3,
+      "printed_number_original": 18,
+      "definition_original": "대충 들어맞추어 짐작함",
+      "example_original": "예) 어림도 없는 소리 하지 마라",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0019",
+      "source_order": 19,
+      "word_original": "오금",
+      "pdf_page": 3,
+      "row_on_page": 4,
+      "printed_number_original": 19,
+      "definition_original": "무릎의 구부러지는 오목한 안쪽",
+      "example_original": "예) 오래 앉아 있어 오금이 저리다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0020",
+      "source_order": 20,
+      "word_original": "갈무리",
+      "pdf_page": 3,
+      "row_on_page": 5,
+      "printed_number_original": 20,
+      "definition_original": "물건을 잘 정리해서 저장함",
+      "example_original": "예) 곡식을 갈무리하다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0021",
+      "source_order": 21,
+      "word_original": "나태한",
+      "pdf_page": 3,
+      "row_on_page": 6,
+      "printed_number_original": 21,
+      "definition_original": "행동이 게으르고 정성이 없음",
+      "example_original": "예) 나태한 생활을 청산하다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0022",
+      "source_order": 22,
+      "word_original": "단장",
+      "pdf_page": 3,
+      "row_on_page": 7,
+      "printed_number_original": 22,
+      "definition_original": "창자가 끊어지는 듯한 슬픔",
+      "example_original": "예) 단장의 미아리 고개 노래가 슬프다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0023",
+      "source_order": 23,
+      "word_original": "도탄",
+      "pdf_page": 3,
+      "row_on_page": 8,
+      "printed_number_original": 23,
+      "definition_original": "진흙탕과 숯불처럼 고통스러운 처지",
+      "example_original": "예) 도탄에 빠진 백성이 걱정스럽다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0024",
+      "source_order": 24,
+      "word_original": "무구한",
+      "pdf_page": 3,
+      "row_on_page": 9,
+      "printed_number_original": 24,
+      "definition_original": "때가 묻지 않고 순진함",
+      "example_original": "예) 무구한 아이들의 눈망울",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0025",
+      "source_order": 25,
+      "word_original": "방만한",
+      "pdf_page": 3,
+      "row_on_page": 10,
+      "printed_number_original": 25,
+      "definition_original": "맺고 끊는 데가 없이 제멋대로 풀어짐",
+      "example_original": "예) 방만한 경영으로 부도나다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0026",
+      "source_order": 26,
+      "word_original": "집중",
+      "pdf_page": 3,
+      "row_on_page": 11,
+      "printed_number_original": 26,
+      "definition_original": "한곳으로 힘, 정신을 모으다",
+      "example_original": "예) 모두에게 시선이 집중되다",
+      "issue_ids": [
+        "I014"
+      ],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0027",
+      "source_order": 27,
+      "word_original": "채집하다",
+      "pdf_page": 3,
+      "row_on_page": 12,
+      "printed_number_original": 27,
+      "definition_original": "식물, 곤충, 광물을 캐서 모으다",
+      "example_original": "예) 숙제로 산에서 곤충을 채집했다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0028",
+      "source_order": 28,
+      "word_original": "모집하다",
+      "pdf_page": 3,
+      "row_on_page": 13,
+      "printed_number_original": 28,
+      "definition_original": "사람이나 작품을 널리 알려 모으다",
+      "example_original": "예) 동아리 신입 부원을 모집한다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0029",
+      "source_order": 29,
+      "word_original": "소집하다",
+      "pdf_page": 3,
+      "row_on_page": 14,
+      "printed_number_original": 29,
+      "definition_original": "단체조직의 사람들을 불러 모으다",
+      "example_original": "예) 감독은 경기 후 선수들을 소집했다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    },
+    {
+      "id": "W0030",
+      "source_order": 30,
+      "word_original": "수집하다",
+      "pdf_page": 3,
+      "row_on_page": 15,
+      "printed_number_original": 30,
+      "definition_original": "취미나 연구를 위해 물건을 모으다",
+      "example_original": "예) 연구원은 가치 있는 것만 수집했다",
+      "issue_ids": [],
+      "approval_status": "teacher_review_required",
+      "authoring_status": "source_only_not_authored"
+    }
+  ]
+}

@@ -1,0 +1,669 @@
+{
+  "checked_at_local_date": "2026-10-03",
+  "timezone": "Asia/Seoul",
+  "purpose": "Korean vocabulary B2B academy product planning and four visual concepts",
+  "method": {
+    "tools": [
+      "GitHub connector public repository read",
+      "Allowed shell network reads of official repository PDF/UI images",
+      "PDF text extraction",
+      "Image visual inspection"
+    ],
+    "live_commercial_page_access": false,
+    "web_search_available": false,
+    "network_policy": "Restricted external network; allowed public GitHub repository reads used; no restriction bypass",
+    "source_validation": "Exact short excerpts are matched against directly read source text."
+  },
+  "references": [
+    {
+      "id": "R1",
+      "name": "Anki",
+      "provenance": "Anki official manual repository",
+      "evidence_level": "official documentation and repository UI image directly inspected",
+      "sources": [
+        {
+          "url": "https://github.com/ankitects/anki-manual/blob/main/src/studying.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 34,
+              "exact_text": "The cards are split into [three types](getting-started.md#card-states): New, Learning, and To Review.",
+              "needle": "New, Learning, and To Review"
+            },
+            {
+              "line": 49,
+              "exact_text": "When a card is shown, only the question is shown at first. After",
+              "needle": "only the question is shown at first"
+            },
+            {
+              "line": 50,
+              "exact_text": "thinking about the answer, either click the **Show Answer** button, or",
+              "needle": "Show Answer"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/ankitects/anki-manual/blob/main/src/editing.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 331,
+              "exact_text": "_Cloze deletion_ is the process of hiding one or more words in a",
+              "needle": "_Cloze deletion_ is the process of hiding"
+            },
+            {
+              "line": 71,
+              "exact_text": "  sentence. Likewise, imagine you're studying a computer course. If",
+              "needle": "sentence."
+            },
+            {
+              "line": 353,
+              "exact_text": "    Canberra was founded in {{c1::1913}}.",
+              "needle": "Canberra was founded in {{c1::1913}}"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/ankitects/anki-manual/blob/main/src/deck-options.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 407,
+              "exact_text": "- Choose a value of desired retention: the proportion of cards recalled successfully when they are due. **This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.** The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use [\"Compute minimum recommended retention\"](#compute-minimum-recommended-retention) to help you choose the value of desired retention.",
+              "needle": "Higher retention leads to shorter intervals"
+            },
+            {
+              "line": 431,
+              "exact_text": "cards. As desired retention approaches 100%, the workload increases drastically.",
+              "needle": "workload increases drastically"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/ankitects/anki-manual/blob/main/src/media/study_overview.png",
+          "type": "official UI image",
+          "read_status": "downloaded_from_allowed_official_repository_and_visually_inspected",
+          "local_file": "source-images/anki-study-overview.png",
+          "observed": "New / Learning / To Review counts and a single Study Now button"
+        }
+      ],
+      "observed": [
+        "학습 개요에서 신규/학습중/복습예정 분리",
+        "정답 공개 전에 회상",
+        "문장 Cloze와 복습량 관리"
+      ],
+      "adopt": [
+        "오늘의 학습과 복습 분량을 별도 표시",
+        "문맥/표현을 포함한 변형 복습"
+      ],
+      "limitations": [
+        "자기평가는 초등학생에게 그대로 도입하지 않음",
+        "FSRS의 설정값을 제품 최적값으로 단정하지 않음"
+      ],
+      "designs": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "Khan Academy Perseus",
+      "provenance": "Khan Academy official repository",
+      "evidence_level": "official documentation, implementation, and repository UI image directly inspected",
+      "sources": [
+        {
+          "url": "https://github.com/Khan/perseus/blob/main/README.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 10,
+              "exact_text": "Perseus is Khan Academy's exercise system. This repo contains the code needed to take a problem in the Perseus format and present it, allow interaction, and grade the result of a learner's work.",
+              "needle": "Perseus is Khan Academy's exercise system."
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/Khan/perseus/blob/main/packages/perseus/src/hints-renderer.tsx",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 27,
+              "exact_text": "    hintsVisible?: number;",
+              "needle": "hintsVisible?: number;"
+            },
+            {
+              "line": 78,
+              "exact_text": "        // When a new hint is displayed we immediately focus it",
+              "needle": "When a new hint is displayed we immediately focus it"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/Khan/perseus/blob/main/sample.png",
+          "type": "official UI image",
+          "read_status": "downloaded_from_allowed_official_repository_and_visually_inspected",
+          "local_file": "source-images/khan-perseus-sample.png",
+          "observed": "Question content, spaced answer options, and a help link occupy distinct regions"
+        }
+      ],
+      "observed": [
+        "문항·선택지·도움말의 정보 구획",
+        "단계별 힌트와 새로운 힌트의 포커스"
+      ],
+      "adopt": [
+        "한 문항·한 목표",
+        "힌트 사용과 독립 수행 구분"
+      ],
+      "limitations": [
+        "수학 자동채점 구조를 한국어 작문 채점의 검증 근거로 사용하지 않음"
+      ],
+      "designs": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "H5P Fill in the Blanks",
+      "provenance": "H5P official organization repository",
+      "evidence_level": "official README and content schema directly read",
+      "sources": [
+        {
+          "url": "https://github.com/h5p/h5p-blanks/blob/master/README.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 4,
+              "exact_text": "Test your users with fill in the blanks tasks(Cloze tests).",
+              "needle": "fill in the blanks tasks"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/h5p/h5p-blanks/blob/master/semantics.json",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 79,
+              "exact_text": "        \"description\": \"<ul><li>Blanks are added with an asterisk (*) in front and behind the correct word/phrase.</li><li>Alternative answers are separated with a forward slash (/).</li><li>You may add a textual tip, using a colon (:) in front of the tip.</li></ul>\",",
+              "needle": "Alternative answers are separated"
+            },
+            {
+              "line": 333,
+              "exact_text": "        \"label\": \"Require all fields to be answered before the solution can be viewed\",",
+              "needle": "Require all fields to be answered"
+            },
+            {
+              "line": 230,
+              "exact_text": "    \"label\": \"Assistive technology label for solution\",",
+              "needle": "Assistive technology label for solution"
+            }
+          ]
+        }
+      ],
+      "observed": [
+        "대안 정답·텍스트힌트·정답공개·재시도"
+      ],
+      "adopt": [
+        "새 예문의 문맥 빈칸",
+        "문항별 허용 답안 및 설명"
+      ],
+      "limitations": [
+        "한국어 조사/활용형은 교사 검토된 허용답안 정책 필요"
+      ],
+      "designs": [
+        "B",
+        "C",
+        "all question schema"
+      ]
+    },
+    {
+      "id": "R4",
+      "name": "H5P Essay",
+      "provenance": "otacke content-type developer repository; not h5p organization repository",
+      "evidence_level": "public developer README and content schema directly read",
+      "sources": [
+        {
+          "url": "https://github.com/otacke/h5p-essay/blob/master/README.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 6,
+              "exact_text": "Initially (and maybe finally), this feedback will simply be based on a list of keywords that have been defined be a teaching person before.",
+              "needle": "feedback will simply be based on a list of keywords"
+            },
+            {
+              "line": 15,
+              "exact_text": "- As a student, I can (automatically) save a draft and continue writing later.",
+              "needle": "(automatically) save a draft"
+            },
+            {
+              "line": 5,
+              "exact_text": "This is rather an experimental playground than a fully elaborated content type for H5P. In its first stage, learners will be able to write a text and receive feedback immediately.",
+              "needle": "experimental playground"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/otacke/h5p-essay/blob/master/semantics.json",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 78,
+              "exact_text": "    \"description\": \"You can optionally add a sample solution that's shown after the student created a text. It's called sample solution because there probably is not only one solution.\",",
+              "needle": "probably is not only one solution"
+            },
+            {
+              "line": 86,
+              "exact_text": "        \"placeholder\": \"Please remember that you were not expected to come up with the exact same solution. It's just a good example.\",",
+              "needle": "not expected to come up with the exact same solution"
+            },
+            {
+              "line": 195,
+              "exact_text": "              \"label\": \"Feedback if keyword included\",",
+              "needle": "Feedback if keyword included"
+            }
+          ]
+        }
+      ],
+      "observed": [
+        "키워드 기준 피드백",
+        "초안 저장",
+        "복수 유효 답안과 비교용 예시"
+      ],
+      "adopt": [
+        "단어 포함 자동 확인",
+        "작문-피드백-수정 루프"
+      ],
+      "limitations": [
+        "키워드 포함으로 의미/문법 적절성을 확정할 수 없음",
+        "MVP 의미 판단은 교사 루브릭 확정"
+      ],
+      "designs": [
+        "D"
+      ]
+    },
+    {
+      "id": "R5",
+      "name": "Moodle",
+      "provenance": "Moodle official repository",
+      "evidence_level": "official application strings and embedded feature help directly read; live UI not viewed",
+      "sources": [
+        {
+          "url": "https://github.com/moodle/moodle/blob/main/public/mod/assign/lang/en/assign.php",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 123,
+              "exact_text": "$string['attemptreopenmethod_help'] = 'This setting controls how students are granted attempts for this assignment. For each attempt, the grade and feedback are saved, and can be viewed by the teacher and the student. Options are:",
+              "needle": "For each attempt, the grade and feedback are saved"
+            },
+            {
+              "line": 151,
+              "exact_text": "$string['batchoperationreverttodraft'] = 'Revert to draft';",
+              "needle": "Revert to draft"
+            },
+            {
+              "line": 153,
+              "exact_text": "$string['batchoperationsetmarkingworkflowstate'] = 'Change marking state';",
+              "needle": "Change marking state"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/moodle/moodle/blob/main/public/mod/quiz/lang/en/quiz.php",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 30,
+              "exact_text": "$string['adaptive_help'] = 'If enabled, multiple responses to a question are allowed within the same attempt at the quiz. So for example if a response is marked as incorrect, the student will be allowed to try again immediately. However, depending on the \"Apply penalties\" setting, a penalty will usually be subtracted for each wrong attempt.';",
+              "needle": "multiple responses to a question are allowed"
+            },
+            {
+              "line": 125,
+              "exact_text": "$string['autosaveperiod_desc'] = 'Responses can be saved automatically during quiz attempts. The responses are saved whenever one is changed, and then after this delay. There is a trade-off: a shorter delay increases the server load, but reduces the chance that students lose their work. If you are going to make this delay much shorter, you should change the value gradually and monitor the server load. If the load gets too high, make the delay longer again. Setting the delay to 0 turns off auto-saving.';",
+              "needle": "Responses can be saved automatically"
+            }
+          ]
+        }
+      ],
+      "observed": [
+        "시도별 제출·성적·피드백 이력",
+        "검토·재제출 상태와 일괄 작업"
+      ],
+      "adopt": [
+        "반과 학생별 배정·검토 흐름",
+        "초안/제출/수정본 보존"
+      ],
+      "limitations": [
+        "전체 LMS 메뉴를 가져오지 않음",
+        "연습 오답의 일률 감점 지양"
+      ],
+      "designs": [
+        "D",
+        "teacher common"
+      ]
+    },
+    {
+      "id": "R6",
+      "name": "GOV.UK Design System",
+      "provenance": "UK Government Digital Service official repository",
+      "evidence_level": "official component guidance directly read",
+      "sources": [
+        {
+          "url": "https://github.com/alphagov/govuk-design-system/blob/main/src/components/textarea/index.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 28,
+              "exact_text": "You must label textareas. Placeholder text is not a suitable substitute for a label, as it disappears when users click inside the textarea.",
+              "needle": "You must label textareas."
+            },
+            {
+              "line": 38,
+              "exact_text": "Make the height of a textarea proportional to the amount of text you expect users to enter. You can set the height of a textarea by specifying the `rows` attribute.",
+              "needle": "Make the height of a textarea proportional"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/alphagov/govuk-design-system/blob/main/src/components/error-message/index.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 44,
+              "exact_text": "Do not clear any form fields when showing the Error message component. Keep both passing and failing answers.",
+              "needle": "Do not clear any form fields"
+            },
+            {
+              "line": 88,
+              "exact_text": "Describe what has happened and tell them how to fix it. The message must be in plain English, use positive language and get to the point.",
+              "needle": "Describe what has happened and tell them how to fix it."
+            }
+          ]
+        }
+      ],
+      "observed": [
+        "입력 위 라벨",
+        "예상 응답량에 맞는 영역",
+        "오류 시 입력 보존과 구체적 수정 안내"
+      ],
+      "adopt": [
+        "짧은 작문 지시와 적절한 입력 크기",
+        "초안 보존·다음 행동 피드백"
+      ],
+      "limitations": [
+        "어린이와 한국어 가독성은 직접 사용성 평가 필요"
+      ],
+      "designs": [
+        "D",
+        "all accessibility"
+      ]
+    },
+    {
+      "id": "R7",
+      "name": "Duolingo Half-Life Regression",
+      "provenance": "Duolingo official research repository and published ACL paper",
+      "evidence_level": "official README and official repository PDF directly read",
+      "sources": [
+        {
+          "url": "https://github.com/duolingo/halflife-regression/blob/master/README.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 5,
+              "exact_text": "Half-life regression (HLR) is a model for spaced repetition practice, with particular applications to second language acquisition. The model marries psycholinguistic theory with modern machine learning techniques, indirectly estimating the \"half-life\" of words (and potentially any other item or fact) in a student's long-term memory.",
+              "needle": "model for spaced repetition practice"
+            },
+            {
+              "line": 43,
+              "exact_text": "* ``delta`` - time (in seconds) since the last lesson/practice that included this word/lexeme",
+              "needle": "delta"
+            },
+            {
+              "line": 50,
+              "exact_text": "* ``history_correct`` - total times user has been correct for the word/lexeme prior to this lesson/practice",
+              "needle": "history_correct"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/duolingo/halflife-regression/blob/master/settles.acl16.pdf",
+          "type": "published research paper in official repository",
+          "read_status": "downloaded_and_text_extracted_then_directly_read",
+          "local_file": "duolingo-hlr-2016.pdf",
+          "text_file": "duolingo-hlr-2016.txt",
+          "citation": {
+            "authors": [
+              "Burr Settles",
+              "Brendan Meeder"
+            ],
+            "title": "A Trainable Spaced Repetition Model for Language Learning",
+            "year": 2016,
+            "venue": "ACL",
+            "doi": "10.18653/v1/P16-1174"
+          },
+          "observed_sections": [
+            "Abstract",
+            "4.1 Results",
+            "4.3 User Experiment I",
+            "4.4 User Experiment II",
+            "Conclusion"
+          ],
+          "interpretation": "Reported +12.0% is change in daily user return/activity for HLR-lex vs HLR, not a vocabulary-learning or writing outcome. Reduced recall prediction MAE is also distinct from learning gain."
+        }
+      ],
+      "observed": [
+        "노출/정답/시간 간격을 사용하는 복습 모델",
+        "모델과 학생 재방문 지표의 구분",
+        "언어 특성 과적합과 경험 문제"
+      ],
+      "adopt": [
+        "설명 가능한 규칙 기반 MVP 복습",
+        "지연 평가 데이터로 고급 스케줄 검증"
+      ],
+      "limitations": [
+        "외국어 서비스 연구를 한국어 초중등 모국어 작문효과로 일반화하지 않음",
+        "12%를 기억력 향상으로 표현하지 않음"
+      ],
+      "designs": [
+        "all review policy"
+      ]
+    },
+    {
+      "id": "R8",
+      "name": "IBM Carbon Design System",
+      "provenance": "IBM Carbon official repository",
+      "evidence_level": "official design-system README and DataTable guidance directly read; live Storybook not viewed",
+      "sources": [
+        {
+          "url": "https://github.com/carbon-design-system/carbon/blob/main/README.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 36,
+              "exact_text": "Carbon is IBM's open-source design system for products and experiences. This",
+              "needle": "Carbon is IBM's open-source design system"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/carbon-design-system/carbon/blob/main/packages/react/src/components/DataTable/DataTable.mdx",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 156,
+              "exact_text": "filtering, row selection, batch actions.",
+              "needle": "filtering, row selection, batch actions."
+            },
+            {
+              "line": 162,
+              "exact_text": "## Sorting",
+              "needle": "## Sorting"
+            },
+            {
+              "line": 266,
+              "exact_text": "## Filtering",
+              "needle": "## Filtering"
+            },
+            {
+              "line": 349,
+              "exact_text": "## Batch actions",
+              "needle": "## Batch actions"
+            }
+          ]
+        }
+      ],
+      "observed": [
+        "행/열 기반 목록",
+        "정렬·필터·행선택·일괄액션"
+      ],
+      "adopt": [
+        "교사의 반/학생 목록",
+        "검토대기와 보충학습 상태별 필터"
+      ],
+      "limitations": [
+        "학생 화면과 교사 화면의 정보밀도 구분"
+      ],
+      "designs": [
+        "teacher common"
+      ]
+    },
+    {
+      "id": "R9",
+      "name": "Scratch",
+      "provenance": "Scratch Foundation official current scratch-editor monorepo; legacy scratch-gui migration notice checked",
+      "evidence_level": "official README and current UI implementation/style/color definitions directly read; live editor not viewed",
+      "sources": [
+        {
+          "url": "https://github.com/scratchfoundation/scratch-gui/blob/develop/README.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 5,
+              "exact_text": "The Scratch Team has migrated the `scratch-gui` module into a new mono-repo,",
+              "needle": "migrated the `scratch-gui` module"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/scratchfoundation/scratch-editor/blob/develop/README.md",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 13,
+              "exact_text": "- `scratch-gui` provides the buttons, menus, and other elements that you interact with when creating and editing a",
+              "needle": "scratch-gui` provides the buttons, menus"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/scratchfoundation/scratch-editor/blob/develop/packages/scratch-gui/src/components/cards/cards.jsx",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 61,
+              "exact_text": "        defaultMessage: 'Next step',",
+              "needle": "defaultMessage: 'Next step'"
+            },
+            {
+              "line": 56,
+              "exact_text": "        defaultMessage: 'Previous step',",
+              "needle": "defaultMessage: 'Previous step'"
+            },
+            {
+              "line": 92,
+              "exact_text": "                            className={i === step ? styles.activeStepPip : styles.inactiveStepPip}",
+              "needle": "styles.activeStepPip"
+            },
+            {
+              "line": 222,
+              "exact_text": "const ImageStep = ({title, image}) => (<Fragment>",
+              "needle": "const ImageStep"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/scratchfoundation/scratch-editor/blob/develop/packages/scratch-gui/src/components/cards/card.css",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 93,
+              "exact_text": "    border-radius: 0.75rem;",
+              "needle": "border-radius: 0.75rem;"
+            },
+            {
+              "line": 64,
+              "exact_text": "    height: 44px;",
+              "needle": "height: 44px;"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/scratchfoundation/scratch-editor/blob/develop/packages/scratch-gui/src/css/colors.css",
+          "type": "official documentation",
+          "read_status": "directly_read",
+          "excerpts": [
+            {
+              "line": 1,
+              "exact_text": "$ui-primary: hsla(215, 100%, 95%, 1); /* #E5F0FF */",
+              "needle": "$ui-primary:"
+            },
+            {
+              "line": 18,
+              "exact_text": "$ui-green: hsla(163, 85%, 35%, 1); /* #0DA57A */",
+              "needle": "$ui-green:"
+            },
+            {
+              "line": 21,
+              "exact_text": "$ui-orange: hsla(37, 96%, 55%, 1); /* #FAA51D */",
+              "needle": "$ui-orange:"
+            }
+          ]
+        }
+      ],
+      "observed": [
+        "작은 튜토리얼 단계",
+        "제목/이미지/이전/다음/단계점",
+        "둥근 카드와 조작 버튼"
+      ],
+      "adopt": [
+        "A의 친근한 단계형 안내",
+        "장식과 학습 텍스트의 역할 분리"
+      ],
+      "limitations": [
+        "Scratch 캐릭터·블록화면·색상값 복제하지 않음",
+        "최신 라이브 사이트 화면 확인했다고 하지 않음"
+      ],
+      "designs": [
+        "A"
+      ]
+    }
+  ],
+  "conceptual_designs": {
+    "A": "어휘 탐험",
+    "B": "읽기 라운지",
+    "C": "문맥 탐정",
+    "D": "문장 스튜디오"
+  }
+}

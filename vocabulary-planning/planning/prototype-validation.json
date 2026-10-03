@@ -1,0 +1,143 @@
+{
+  "prototypeVersion": 2,
+  "teacherReviewVersion": 3,
+  "method": "Node VM + mocked DOM; pure-function and event-handler behavioral checks",
+  "syntax": "PASS",
+  "mockDomFlow": "PASS",
+  "checks": [
+    {
+      "name": "PDF first ten canonical order",
+      "status": "PASS"
+    },
+    {
+      "name": "Matching bank permutation and order persist independently of definition order",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown auto answer cannot count as correct; exposure snapshot prevents promotions",
+      "status": "PASS"
+    },
+    {
+      "name": "Objective ten activities use 6/3/1; all ten writing targets are separately counted",
+      "status": "PASS"
+    },
+    {
+      "name": "Unsubmitted choice and shuffled options survive Back",
+      "status": "PASS"
+    },
+    {
+      "name": "Four choices per mixed question with generic heading and no target classification",
+      "status": "PASS"
+    },
+    {
+      "name": "First responses, hints, retries and revisits retain original counts",
+      "status": "PASS"
+    },
+    {
+      "name": "All ten drafts required; Back preserves draft; repeated submission adds no activity",
+      "status": "PASS"
+    },
+    {
+      "name": "Teacher confirmation requires one judgment and exact version; reasons are optional and latest classification wins",
+      "status": "PASS"
+    },
+    {
+      "name": "Unreviewed revision never promotes group; grade identifies exact text version",
+      "status": "PASS"
+    },
+    {
+      "name": "Period coverage includes all ten and checkpoints before fresh weighted remedial plan",
+      "status": "PASS"
+    },
+    {
+      "name": "Confirmed parent text is escaped; internal memo and unconfirmed edits excluded",
+      "status": "PASS"
+    },
+    {
+      "name": "Empty groups normalize without altering diagnostic classification",
+      "status": "PASS"
+    },
+    {
+      "name": "Host v2 restoration preserves pending choice and disclosure; rejects v1 with no feedback loop",
+      "status": "PASS"
+    },
+    {
+      "name": "Four individual drafts allow early teacher review while all-ten review gate stays closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Teacher UI exposes three single-choice buttons and removes every score control",
+      "status": "PASS"
+    },
+    {
+      "name": "Correct writing plus all valid first answers correct automatically yields known, including hinted answers",
+      "status": "PASS"
+    },
+    {
+      "name": "Any first-answer mistake keeps correct writing uncertain even after successful retries",
+      "status": "PASS"
+    },
+    {
+      "name": "No submitted objective evidence, pending choices, and another session cannot satisfy automatic known",
+      "status": "PASS"
+    },
+    {
+      "name": "Incorrect and uncertain writing judgments map directly to unknown and uncertain",
+      "status": "PASS"
+    },
+    {
+      "name": "Manual uncertain overrides automatic known only on confirmation and survives v2 restoration",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy score-only records are preserved without conversion; explicit historical classification stays authoritative",
+      "status": "PASS"
+    },
+    {
+      "name": "Embedded curriculum replaces numeric criteria with judgment labels and non-scored teacher guidance",
+      "status": "PASS"
+    },
+    {
+      "name": "Teacher records color wrong first answers red across regular, remedial and all review periods",
+      "status": "PASS"
+    },
+    {
+      "name": "Donut distributions use unique meanings and latest confirmed grades, with revision and legacy states separate",
+      "status": "PASS"
+    },
+    {
+      "name": "Known-word comparison uses actual prior confirmed snapshots and never invents a first baseline",
+      "status": "PASS"
+    },
+    {
+      "name": "Charts and legends render safely for zero targets and share teacher-parent printable SVG without memos",
+      "status": "PASS"
+    }
+  ],
+  "scope": {
+    "diagnosticRows": 10,
+    "regularObjectiveActivities": 10,
+    "objectiveQuota": "6/3/1",
+    "fullWritingTargets": 10,
+    "partialWritingSubmission": 4,
+    "periodCoverageTargets": 10,
+    "hostStateVersion": 2,
+    "teacherJudgments": [
+      "correct",
+      "incorrect",
+      "uncertain"
+    ],
+    "numericWritingScores": false,
+    "classificationRule": "writing-understanding-v3-1",
+    "teacherFirstAnswerColors": true,
+    "assessmentCharts": 2
+  },
+  "actualBrowser": "NOT RUN — mocked DOM only",
+  "notVerified": [
+    "Actual pointer drag and drop",
+    "Real browser appearance and accessibility",
+    "Production authentication and authorization",
+    "Server autosave, calendar aggregation and deployment",
+    "Educational content approval or learning efficacy"
+  ]
+}
