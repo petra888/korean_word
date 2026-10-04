@@ -13,3 +13,5 @@ node_modules/
 /vocabulary-planning/deploy/demo-site/
 /vocabulary-planning/deploy/교직원-테스트-배포-*.zip
 /vocabulary-planning/deploy/transfer/
+/vocabulary-planning/deploy/vercel-preview/
+.vercel/
