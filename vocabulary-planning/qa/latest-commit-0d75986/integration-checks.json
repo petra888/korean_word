@@ -1,0 +1,28 @@
+{
+  "commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "checks": [
+    {
+      "check": "Latest commit baseline VM",
+      "count": 27,
+      "status": "PASS",
+      "method": "Node VM/mock DOM"
+    },
+    {
+      "check": "Local handoff and archived member SHA256 match",
+      "count": 40,
+      "archive_members": 41,
+      "status": "PASS",
+      "method": "Actual file/ZIP bytes"
+    },
+    {
+      "check": "Service acceptance matrix/task references",
+      "cases": 63,
+      "tasks": 28,
+      "links": "PASS",
+      "service_execution": "NOT RUN",
+      "statuses": [
+        "미실행(실서비스)"
+      ]
+    }
+  ]
+}

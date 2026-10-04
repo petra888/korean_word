@@ -1,0 +1,13 @@
+{
+  "renderer": "ReportLab with embedded Korean subset font",
+  "documents": [
+    {
+      "file": "QA-보고서.pdf",
+      "pages": 3,
+      "searchable_characters": 4100,
+      "font_embedded": true,
+      "source_sha256": "3805eb208874e35d26d95fd471288538351e2c5673e859c5938cc5f3e8f0f36f"
+    }
+  ],
+  "browser_print": "NOT RUN: this PDF is a QA document export, not a parent report browser print"
+}

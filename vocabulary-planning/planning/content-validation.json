@@ -14,10 +14,10 @@
     "기탄없이"
   ],
   "flagged_source_rows_preserved": 4,
-  "objective_item_count": 150,
+  "objective_item_count": 160,
   "writing_prompt_count": 20,
   "phase_counts": {
-    "practice": 80,
+    "practice": 90,
     "pretest": 10,
     "posttest": 10,
     "delayed": 10,
@@ -26,15 +26,15 @@
     "quarterly": 10
   },
   "answer_position_counts": {
-    "a": 38,
-    "d": 37,
-    "b": 38,
-    "c": 37
+    "a": 41,
+    "d": 39,
+    "b": 41,
+    "c": 39
   },
   "fictional_practice_supply": {
-    "unknown": 40,
-    "uncertain": 24,
-    "known": 16
+    "unknown": 45,
+    "uncertain": 27,
+    "known": 18
   },
   "fictional_practice_need": {
     "unknown": 36,

@@ -1,0 +1,48 @@
+{
+  "base_commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "verified_scope": "fixed working tree, not a new commit",
+  "html_sha256": "0a673ee9af68b60cbab439a8772794ffdedf4615200fd31faaf49b6dbbff3d53",
+  "baseline_verified_issues_fixed": 12,
+  "print_code_path_improved_actual_print_unverified": 1,
+  "education_candidates_edited_pending_teacher_approval": 3,
+  "test_results": {
+    "core_vm": {
+      "passed": 27,
+      "failed": 0
+    },
+    "independent_vm": {
+      "passed": 42,
+      "failed": 0,
+      "initial_allocation_subcases": 660
+    },
+    "mobile_print_vm": {
+      "passed": 9,
+      "failed": 0
+    },
+    "contrast_pairs": {
+      "passed": 22,
+      "failed": 0
+    },
+    "svg_raster": {
+      "passed": 5,
+      "failed": 0
+    },
+    "content_structure": {
+      "passed": 20,
+      "failed": 0
+    }
+  },
+  "content": {
+    "objective_items": 160,
+    "practice_items": 90,
+    "writing_prompts": 20,
+    "legacy_snapshot_items": 150,
+    "teacher_approved": false,
+    "dictionary_verified": false
+  },
+  "actual_browser_mobile_print": "NOT RUN",
+  "production_acceptance_cases": {
+    "total": 63,
+    "executed": 0
+  }
+}

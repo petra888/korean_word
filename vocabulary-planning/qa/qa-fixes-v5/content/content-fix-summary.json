@@ -1,0 +1,202 @@
+{
+  "bank_version": "draft-2026-10-04-source-order-cloze-v5-qa",
+  "original_ids_preserved": 150,
+  "changed_existing_items": [
+    "W0003-C01",
+    "W0003-C02",
+    "W0003-C03",
+    "W0003-C04",
+    "W0003-C05",
+    "W0003-C06",
+    "W0003-C07",
+    "W0003-C08",
+    "W0003-C09",
+    "W0003-C10",
+    "W0003-C11",
+    "W0003-C12",
+    "W0003-C13",
+    "W0003-C14",
+    "W0003-C15",
+    "W0005-C01",
+    "W0005-C02",
+    "W0005-C03",
+    "W0005-C04",
+    "W0005-C05",
+    "W0005-C06",
+    "W0005-C07",
+    "W0005-C08",
+    "W0005-C09",
+    "W0005-C10",
+    "W0005-C11",
+    "W0005-C12",
+    "W0005-C13",
+    "W0005-C14",
+    "W0005-C15",
+    "W0006-C01",
+    "W0006-C02",
+    "W0006-C03",
+    "W0006-C04",
+    "W0006-C05",
+    "W0006-C06",
+    "W0006-C07",
+    "W0006-C08",
+    "W0006-C09",
+    "W0006-C10",
+    "W0006-C11",
+    "W0006-C12",
+    "W0006-C13",
+    "W0006-C14",
+    "W0006-C15",
+    "W0007-C13",
+    "W0008-C01",
+    "W0008-C02",
+    "W0008-C03",
+    "W0008-C04",
+    "W0008-C05",
+    "W0008-C06",
+    "W0008-C07",
+    "W0008-C08",
+    "W0008-C09",
+    "W0008-C10",
+    "W0008-C11",
+    "W0008-C12",
+    "W0008-C13",
+    "W0008-C14",
+    "W0008-C15",
+    "W0009-C01",
+    "W0009-C02",
+    "W0009-C03",
+    "W0009-C04",
+    "W0009-C05",
+    "W0009-C06",
+    "W0009-C07",
+    "W0009-C08",
+    "W0009-C09",
+    "W0009-C10",
+    "W0009-C11",
+    "W0009-C12",
+    "W0009-C13",
+    "W0009-C14",
+    "W0009-C15",
+    "W0010-C01",
+    "W0010-C02",
+    "W0010-C03",
+    "W0010-C04",
+    "W0010-C05",
+    "W0010-C06",
+    "W0010-C07",
+    "W0010-C08",
+    "W0010-C09",
+    "W0010-C10",
+    "W0010-C11",
+    "W0010-C12",
+    "W0010-C13",
+    "W0010-C14",
+    "W0010-C15"
+  ],
+  "added_items": [
+    "W0001-C16",
+    "W0002-C16",
+    "W0003-C16",
+    "W0004-C16",
+    "W0005-C16",
+    "W0006-C16",
+    "W0007-C16",
+    "W0008-C16",
+    "W0009-C16",
+    "W0010-C16"
+  ],
+  "word_and_writing_metadata_unchanged": false,
+  "correct_option_ids_and_forms_preserved": true,
+  "total_objective_items": 160,
+  "phase_counts": {
+    "practice": 90,
+    "pretest": 10,
+    "posttest": 10,
+    "delayed": 10,
+    "weekly": 20,
+    "monthly": 10,
+    "quarterly": 10
+  },
+  "correct_option_counts": {
+    "a": 41,
+    "d": 39,
+    "b": 41,
+    "c": 39
+  },
+  "limits": [
+    "교육 편집 초안, 외부 사전 대조·국어 교육 담당자 승인 전",
+    "구조 및 문맥 검토는 평가 동등 난이도·학년 적합성·학습효과 검증을 대신하지 않음"
+  ],
+  "writing_edits": {
+    "W0009": [
+      "writing.sentence_frame",
+      "writing.teacher_sample",
+      "writing.alternative.prompt"
+    ]
+  },
+  "source_word_ids_order_and_accepted_forms_unchanged": true,
+  "changed_existing_count": 91,
+  "pattern_diversity": {
+    "W0001": {
+      "option_sets": 4,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0002": {
+      "option_sets": 3,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0003": {
+      "option_sets": 9,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0004": {
+      "option_sets": 2,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0005": {
+      "option_sets": 6,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0006": {
+      "option_sets": 8,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0007": {
+      "option_sets": 3,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0008": {
+      "option_sets": 5,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0009": {
+      "option_sets": 7,
+      "hints": 16,
+      "explanations": 16
+    },
+    "W0010": {
+      "option_sets": 9,
+      "hints": 16,
+      "explanations": 16
+    }
+  },
+  "fixes_rechecked_after_independent_review": [
+    "연습40힌트의 조사 및 목표 의미 맞춤",
+    "말미C16 시간여유 설명",
+    "기탄 C07/C09/C16 부정범위",
+    "융통 C09/C11/C13/C16 결합과 문맥구조",
+    "선잠 C09지연 보기집합 사전·사후와 분리"
+  ],
+  "authored_bank_sha256": "83cb6653362f671d7080a1515ceb112c315d224365744b0f09549a703131dc4c",
+  "canonical_with_legacy_snapshots_sha256": "d7593199292ebaf836e7f4e29b8a7562fe4dd5e910f3620117164d538a627491",
+  "legacy_snapshot_item_count": 150
+}

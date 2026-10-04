@@ -1,0 +1,70 @@
+{
+  "status": "pass",
+  "method": "PyMuPDF document text/font/page-boundary inspection; not browser printing",
+  "documents": [
+    {
+      "file": "2주 학생 교사 수업 운영표.pdf",
+      "pages": 8,
+      "searchable_characters": 11625,
+      "font_embedded": true,
+      "replacement_characters": 0,
+      "null_characters": 0,
+      "out_of_page_text_blocks": [],
+      "sha256": "6ba96f96ec3995ac8b69d2e1b82e8950dd8e54913584d17e928fe92dd2d0dee9"
+    },
+    {
+      "file": "QA 개선 개발 착수안.pdf",
+      "pages": 4,
+      "searchable_characters": 5754,
+      "font_embedded": true,
+      "replacement_characters": 0,
+      "null_characters": 0,
+      "out_of_page_text_blocks": [],
+      "sha256": "dadd722ee617e40a466b0e7c84e0dc61a69a65b0562741170b19f71907f87dce"
+    },
+    {
+      "file": "개발 상세 명세와 검수 기준.pdf",
+      "pages": 15,
+      "searchable_characters": 29879,
+      "font_embedded": true,
+      "replacement_characters": 0,
+      "null_characters": 0,
+      "out_of_page_text_blocks": [],
+      "sha256": "4499fcf5ec8bd1cfbb20da7a1b54f728150c39cf48da25183d0dee0105f59ead"
+    },
+    {
+      "file": "개선-검증-보고서.pdf",
+      "pages": 3,
+      "searchable_characters": 3704,
+      "font_embedded": true,
+      "replacement_characters": 0,
+      "null_characters": 0,
+      "out_of_page_text_blocks": [],
+      "sha256": "090cc88831216d8859c45d52e5dd7963fb3c6006a3d8bc9235df8dc17099dfde"
+    },
+    {
+      "file": "교사 판정 운영 개발 명세 묶음.pdf",
+      "pages": 27,
+      "searchable_characters": 47258,
+      "font_embedded": true,
+      "replacement_characters": 0,
+      "null_characters": 0,
+      "out_of_page_text_blocks": [],
+      "sha256": "21a79426bcfda12357fc0ab776a5d49f8385dfaa4c55cb4b9cb3d84d6986a0b6"
+    },
+    {
+      "file": "교재 첫 10개 단어 문항 작문.pdf",
+      "pages": 65,
+      "searchable_characters": 63687,
+      "font_embedded": true,
+      "replacement_characters": 0,
+      "null_characters": 0,
+      "out_of_page_text_blocks": [],
+      "sha256": "03cc52d5123f9a40c3ba47396133e59517d19c6ef4885a5c31364914e1d0c2ab",
+      "all_160_item_ids_present": true
+    }
+  ],
+  "all_exported_pages": 122,
+  "four_primary_document_pages": 92,
+  "source_hashes_match": true
+}

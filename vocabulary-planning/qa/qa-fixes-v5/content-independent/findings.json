@@ -1,0 +1,72 @@
+{
+  "source_sha256": "d7593199292ebaf836e7f4e29b8a7562fe4dd5e910f3620117164d538a627491",
+  "review_type": "콘텐츠 작성 담당과 분리된 AI 텍스트 전수 검토",
+  "unresolved_confirmed_key_or_sentence_defects": [],
+  "baseline_candidates": [
+    {
+      "id": "C-01",
+      "status": "수정 텍스트 확인",
+      "remaining_limit": "교사 독립 정답 선택 미실행"
+    },
+    {
+      "id": "C-02",
+      "status": "수정 텍스트 확인",
+      "remaining_limit": "사전 의미 범위 대조 미실행"
+    },
+    {
+      "id": "C-03",
+      "status": "보기·힌트·해설 다양화 확인",
+      "remaining_limit": "난도 동등성·측정 구별력·학습 효과 미검증"
+    }
+  ],
+  "independent_review_changes_confirmed": [
+    {
+      "id": "IR-C01",
+      "items": "W0003/W0005/W0006/W0008/W0010의 기존 연습40개",
+      "issue": "고정 조사 를과 일반 상태·행동 힌트 템플릿",
+      "resolution": "상황별 직접 힌트로 교체; 달포는 기간을 묻도록 정비"
+    },
+    {
+      "id": "IR-C02",
+      "items": [
+        "W0004-C16"
+      ],
+      "issue": "시간 여유를 받았다와 주었다의 주체 혼선",
+      "resolution": "제출을 늦춰 주어 마무리할 시간 여유가 생김으로 정리"
+    },
+    {
+      "id": "IR-C03",
+      "items": [
+        "W0010-C07",
+        "W0010-C09",
+        "W0010-C16"
+      ],
+      "issue": "눈치를 보거나 걱정하는 행동의 부정 범위 모호성",
+      "resolution": "대등한 부정 표현 또는 상대를 어려워하지 않음으로 수정"
+    },
+    {
+      "id": "IR-C04",
+      "items": [
+        "W0005-C09"
+      ],
+      "issue": "사전·지연의 동일 보기 집합 잔존",
+      "resolution": "지연 오답 늦잠을 겨울잠으로 교체해 사전/사후/지연 집합 구별"
+    },
+    {
+      "id": "IR-C05",
+      "items": [
+        "W0008-C09",
+        "W0008-C11",
+        "W0008-C13",
+        "W0008-C16"
+      ],
+      "issue": "발휘하다와 오답명사의 결합으로 답을 제거하는 단서",
+      "resolution": "덕분에·드러났다·칭찬했다의 세 문장 구조로 정비"
+    }
+  ],
+  "approval_status": "draft; 외부 사전 대조·국어 교사 승인·실제 학생 검증은 수행하지 않음",
+  "reviewed_current_items": 160,
+  "reviewed_current_words_and_items_sha256": "6b7434daf6183700767e3eef46101b7343050e9f8467391421f5909cfb0a41ad",
+  "previous_items_count_excluded_from_reviewed_current_count": 150,
+  "legacy_history_only_change_from_read_snapshot": true
+}

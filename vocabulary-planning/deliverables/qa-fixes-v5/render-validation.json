@@ -1,0 +1,34 @@
+{
+  "renderer": "ReportLab with embedded Korean subset font",
+  "documents": [
+    {
+      "file": "QA 개선 개발 착수안.pdf",
+      "pages": 4,
+      "searchable_characters": 5754,
+      "font_embedded": true,
+      "source_sha256": "50807b05afac37084be292d7dec56f11a9993f78433a5b73b5b9582fd9ac78f8"
+    },
+    {
+      "file": "2주 학생 교사 수업 운영표.pdf",
+      "pages": 8,
+      "searchable_characters": 11625,
+      "font_embedded": true,
+      "source_sha256": "b05f1a8df60012b4ee25420aea5785c0e466d4f6eed1f080e240e1ff724f36b5"
+    },
+    {
+      "file": "교재 첫 10개 단어 문항 작문.pdf",
+      "pages": 65,
+      "searchable_characters": 63687,
+      "font_embedded": true,
+      "source_sha256": "ead846f3da3e1176826296918d0962f6d6be982fd67d20ea5fc299870d37ec50"
+    },
+    {
+      "file": "개발 상세 명세와 검수 기준.pdf",
+      "pages": 15,
+      "searchable_characters": 29879,
+      "font_embedded": true,
+      "source_sha256": "ac797e55e4196eb6151f8b8045bb9c622cf1d55dc43bd9e888161aced9df7568"
+    }
+  ],
+  "browser_preview": "unverified: sandbox prevents browser and local server startup"
+}

@@ -1,0 +1,50 @@
+{
+  "commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "existingChecksPassed": 27,
+  "additionalNormalChecksPassed": 5,
+  "additionalFindingsReproduced": 3,
+  "findings": [
+    {
+      "id": "FF-01",
+      "severity": "P1",
+      "title": "모름 1·앎 9 최초 진단에서 첫 정규 학습 시작 불가",
+      "source_file": "vocabulary-planning/prototype/pilot-flow.html",
+      "lines": [
+        54,
+        55,
+        62
+      ],
+      "check": "F04",
+      "method": "Node VM + mocked DOM event and function execution",
+      "actual_browser": false
+    },
+    {
+      "id": "FF-02",
+      "severity": "P2",
+      "title": "교사 원문 버전 전환 시 미확정 판정·코멘트 소실",
+      "source_file": "vocabulary-planning/prototype/pilot-flow.html",
+      "lines": [
+        91,
+        96
+      ],
+      "check": "F05",
+      "method": "Node VM + mocked DOM event execution",
+      "actual_browser": false
+    },
+    {
+      "id": "FF-03",
+      "severity": "P2",
+      "title": "재시도 중 뒤로가기·재진입에서 미제출 선택 복원 실패",
+      "source_file": "vocabulary-planning/prototype/pilot-flow.html",
+      "lines": [
+        42,
+        44,
+        64,
+        65
+      ],
+      "check": "F06",
+      "method": "Node VM + mocked DOM event execution",
+      "actual_browser": false
+    }
+  ]
+}

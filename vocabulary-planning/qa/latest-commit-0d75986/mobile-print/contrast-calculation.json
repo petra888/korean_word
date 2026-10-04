@@ -1,0 +1,40 @@
+{
+  "method": "WCAG relative luminance calculated from committed CSS constants; actual compositing and rendering unverified",
+  "pairs": [
+    {
+      "foreground": "#627c8d",
+      "background": "#ffffff",
+      "usage": "small/.fine/.muted body, chart subtitles and legends",
+      "ratio": 4.386869949635545,
+      "wcag_normal_text_4_5": "FAIL"
+    },
+    {
+      "foreground": "#627c8d",
+      "background": "#f2f7f9",
+      "usage": "toast and muted body on shell",
+      "ratio": 4.062589484419947,
+      "wcag_normal_text_4_5": "FAIL"
+    },
+    {
+      "foreground": "#087487",
+      "background": "#ffffff",
+      "usage": "correct response text",
+      "ratio": 5.442761978624602,
+      "wcag_normal_text_4_5": "PASS"
+    },
+    {
+      "foreground": "#a83535",
+      "background": "#ffffff",
+      "usage": "incorrect response text",
+      "ratio": 6.510385014836948,
+      "wcag_normal_text_4_5": "PASS"
+    },
+    {
+      "foreground": "#17384b",
+      "background": "#ffffff",
+      "usage": "body main text",
+      "ratio": 12.326106534068135,
+      "wcag_normal_text_4_5": "PASS"
+    }
+  ]
+}

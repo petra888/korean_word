@@ -3,9 +3,15 @@ import hashlib
 import json
 import zipfile
 import csv
+import argparse
+
+parser = argparse.ArgumentParser(description='Package current planning, prototype and verification artifacts')
+parser.add_argument('--output', default='deliverables/qa-fixes-v5')
+args = parser.parse_args()
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / 'deliverables/report-charts-v4'
+OUT = ROOT / args.output
+OUT.mkdir(parents=True, exist_ok=True)
 files = []
 for folder, suffixes in [
     ('documents', {'.md'}), ('curriculum', {'.json', '.csv'}),
@@ -18,16 +24,19 @@ files.extend([
     ROOT / 'analysis/report.md', ROOT / 'research/references.md',
     ROOT / 'research/evidence.json', ROOT / 'validate_predevelopment.py',
     ROOT / 'export_pilot_tables.py', ROOT / 'prepare_textbook_order.py',
+    ROOT / 'sync_prototype_content.py',
 ])
 files.extend(OUT.glob('*.pdf'))
 files.extend([OUT / 'render-validation.json', OUT / 'README.md'])
+files.extend(p for p in (ROOT / 'qa/qa-fixes-v5').rglob('*') if p.is_file() and p.suffix in {'.md', '.json', '.js', '.py', '.csv'})
+files.extend(p for p in (ROOT / 'qa/latest-commit-0d75986').rglob('*') if p.is_file() and p.suffix in {'.md', '.json', '.js', '.py', '.csv', '.txt', '.pdf', '.html'})
 files = sorted(set(files))
 entries = [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size,
             'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]
 manifest = {
     'created_date_kst': '2026-10-04',
     'scope': 'Predevelopment planning, draft content and a fictional interactive prototype',
-    'content': {'words': 10, 'objective_items': 150, 'writing_prompts': 20,
+    'content': {'words': 10, 'objective_items': 160, 'writing_prompts': 20,
                 'approval_status': 'teacher_review_required'},
     'textbook_order': {'rows': 450, 'batches_of_10': 45},
     'qa_cases': len(list(csv.DictReader((ROOT/'planning/acceptance-matrix.csv').open(encoding='utf-8-sig')))),
@@ -39,7 +48,7 @@ manifest = {
 }
 manifest_path = OUT / 'package-manifest.json'
 manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
-archive = OUT / '교사 평가 부모 자료 차트 개선 자료 v4.zip'
+archive = OUT / '어휘 학습 QA 개선 자료 v5.zip'
 with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED) as z:
     for p in files + [manifest_path]:
         z.write(p, p.relative_to(ROOT))

@@ -1,0 +1,276 @@
+{
+  "commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "snapshot": "/tmp/vocabulary-full-qa-0d75986-n5h3m0i4/vocabulary-planning",
+  "status": "pass",
+  "check_count": 17,
+  "checks": [
+    {
+      "name": "450 raw rows and original fields retained",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "450 textbook positions preserved",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "45 consecutive batches of 10 rows",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "450-row textbook order CSV matches JSON",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "first 10 words follow source order",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "HTML embedded bank exactly equals canonical JSON",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "150 objective CSV rows and unique IDs",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "all 150 objective CSV fields match canonical JSON",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "10 word CSV rows preserve source and draft definition",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "20 writing CSV rows exactly match JSON metadata",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "all items have one blank, 4 unique choices and valid key",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "correct answer form is listed in accepted_forms",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "no literal correct answer in prompt/hint",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "name": "all words/items explicitly pending approval and dictionary unverified",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "removed numeric writing criteria absent; 3 judgment buttons metadata",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "teacher content document includes every objective ID/prompt/hint/explanation",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "teacher content document includes all 20 writing prompts/frames/examples",
+      "status": "pass",
+      "details": null
+    }
+  ],
+  "pattern_stats": [
+    {
+      "word_id": "W0001",
+      "word": "까탈",
+      "item_count": 15,
+      "unique_option_sets": 4,
+      "unique_hints": 15,
+      "unique_explanations": 15,
+      "answer_position_counts": {
+        "a": 8,
+        "d": 3,
+        "b": 1,
+        "c": 3
+      }
+    },
+    {
+      "word_id": "W0002",
+      "word": "깜냥",
+      "item_count": 15,
+      "unique_option_sets": 3,
+      "unique_hints": 15,
+      "unique_explanations": 15,
+      "answer_position_counts": {
+        "c": 4,
+        "d": 7,
+        "a": 4
+      }
+    },
+    {
+      "word_id": "W0003",
+      "word": "달포",
+      "item_count": 15,
+      "unique_option_sets": 1,
+      "unique_hints": 1,
+      "unique_explanations": 1,
+      "answer_position_counts": {
+        "b": 6,
+        "a": 5,
+        "d": 2,
+        "c": 2
+      }
+    },
+    {
+      "word_id": "W0004",
+      "word": "말미",
+      "item_count": 15,
+      "unique_option_sets": 2,
+      "unique_hints": 15,
+      "unique_explanations": 15,
+      "answer_position_counts": {
+        "c": 3,
+        "a": 4,
+        "d": 4,
+        "b": 4
+      }
+    },
+    {
+      "word_id": "W0005",
+      "word": "선잠",
+      "item_count": 15,
+      "unique_option_sets": 1,
+      "unique_hints": 15,
+      "unique_explanations": 1,
+      "answer_position_counts": {
+        "b": 6,
+        "c": 6,
+        "d": 3
+      }
+    },
+    {
+      "word_id": "W0006",
+      "word": "강단있는",
+      "item_count": 15,
+      "unique_option_sets": 1,
+      "unique_hints": 1,
+      "unique_explanations": 1,
+      "answer_position_counts": {
+        "d": 5,
+        "b": 4,
+        "c": 4,
+        "a": 2
+      }
+    },
+    {
+      "word_id": "W0007",
+      "word": "격의",
+      "item_count": 15,
+      "unique_option_sets": 3,
+      "unique_hints": 15,
+      "unique_explanations": 15,
+      "answer_position_counts": {
+        "c": 4,
+        "a": 5,
+        "b": 4,
+        "d": 2
+      }
+    },
+    {
+      "word_id": "W0008",
+      "word": "융통성",
+      "item_count": 15,
+      "unique_option_sets": 1,
+      "unique_hints": 1,
+      "unique_explanations": 1,
+      "answer_position_counts": {
+        "b": 2,
+        "c": 6,
+        "d": 4,
+        "a": 3
+      }
+    },
+    {
+      "word_id": "W0009",
+      "word": "굴지",
+      "item_count": 15,
+      "unique_option_sets": 1,
+      "unique_hints": 1,
+      "unique_explanations": 1,
+      "answer_position_counts": {
+        "b": 6,
+        "a": 3,
+        "d": 4,
+        "c": 2
+      }
+    },
+    {
+      "word_id": "W0010",
+      "word": "기탄없이",
+      "item_count": 15,
+      "unique_option_sets": 1,
+      "unique_hints": 1,
+      "unique_explanations": 1,
+      "answer_position_counts": {
+        "a": 4,
+        "b": 5,
+        "c": 3,
+        "d": 3
+      }
+    }
+  ],
+  "source_issue_ids_first_10": {
+    "W0004": [
+      "I034"
+    ],
+    "W0006": [
+      "I032"
+    ],
+    "W0008": [
+      "I001"
+    ],
+    "W0010": [
+      "I033"
+    ]
+  },
+  "content_counts": {
+    "source_rows": 450,
+    "unique_raw_headwords": 444,
+    "source_batches": 45,
+    "pilot_words": 10,
+    "objective_items": 150,
+    "writing_prompts": 20,
+    "phase_counts": {
+      "practice": 80,
+      "pretest": 10,
+      "posttest": 10,
+      "delayed": 10,
+      "weekly": 20,
+      "monthly": 10,
+      "quarterly": 10
+    }
+  },
+  "checksums": {
+    "analysis/vocabulary.json": "caf356b552bff74782158fc85d3e8b5a18994c765d9ae3b68291a8e9def60e50",
+    "curriculum/textbook-order.json": "e5c8224452ce5800f8a020b3fa996098303a5815fb157f71569f09e05b5dc621",
+    "curriculum/pilot-10.json": "750f6047d72524a765ed653e9e3f1b740c96ee9ab7b20a5401c11eaff181ad62",
+    "prototype/pilot-flow.html": "f56bc35a8bb2c8c8fc03f1486cafb7ca7da57c76d6b4d27e4270660f10c3ed25"
+  },
+  "limits": [
+    "Dataset/source-field comparison does not independently reread all 60 PDF pages.",
+    "No external dictionary verification, Korean teacher approval, age norms or real-student efficacy test.",
+    "Literal answer leakage check does not imply absence of inferential cues or easy distractors.",
+    "Structural pass is not a publish/education approval."
+  ]
+}

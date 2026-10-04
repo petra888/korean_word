@@ -1,0 +1,131 @@
+{
+  "commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "method": "Node VM + mocked DOM; source snapshot read only",
+  "actualBrowser": "NOT RUN",
+  "results": [
+    {
+      "name": "F01 월간·분기 각각 10개 완주와 5개 저장 묶음, 기간별 첫 답 독립 보존",
+      "status": "PASS",
+      "evidence": {
+        "monthly": {
+          "done": 10,
+          "total": 10,
+          "correct": 10,
+          "independent": 10,
+          "hints": 0
+        },
+        "quarterly": {
+          "done": 10,
+          "total": 10,
+          "correct": 10,
+          "independent": 10,
+          "hints": 0
+        }
+      }
+    },
+    {
+      "name": "F02 진단 기존 배치 이동은 두 행 교환이며 모름 자동 배치도 카드 중복을 만들지 않음",
+      "status": "PASS",
+      "evidence": {
+        "W0001": "W0001",
+        "W0002": "W0002",
+        "W0003": "W0003"
+      }
+    },
+    {
+      "name": "F03 계획 생성은 미사용 문항만 배정하고 소진 시 재사용 대신 시작을 차단",
+      "status": "PASS",
+      "evidence": {
+        "newPlan": 10,
+        "exhaustedPlan": 0,
+        "shortage": [
+          "모름",
+          "애매함",
+          "앎"
+        ]
+      }
+    },
+    {
+      "name": "F04 최초 진단 모름 1·앎 9의 첫 학습 시작 가능 여부 — 확인된 초기 콘텐츠 소진",
+      "status": "REPRODUCED_FINDING",
+      "evidence": {
+        "finding": "P1",
+        "diagnosis": {
+          "unknown": 1,
+          "uncertain": 0,
+          "known": 9
+        },
+        "quota": {
+          "unknown": 9,
+          "uncertain": 0,
+          "known": 1
+        },
+        "actualActivities": 9,
+        "startDisabled": true,
+        "practiceItemsForUnknown": 8
+      }
+    },
+    {
+      "name": "F05 교사 판정·코멘트 초안이 원문 버전 전환 후 보존되는지 — 확인된 손실",
+      "status": "REPRODUCED_FINDING",
+      "evidence": {
+        "finding": "P2",
+        "before": {
+          "judgment": "uncertain",
+          "comment": "v2 검토 중 코멘트"
+        },
+        "after": {
+          "targetVersionId": "regular-W1-v2",
+          "writing_judgment": "",
+          "understanding_state": "",
+          "auto_understanding_state": null,
+          "classification_source": "auto",
+          "manual_override": false,
+          "auto_reason": "작문 판정을 선택하세요.",
+          "override_reason": "",
+          "comment": "",
+          "rule_version": "writing-understanding-v3-1"
+        }
+      }
+    },
+    {
+      "name": "F06 재시도 중 미제출 선택이 뒤로가기와 재진입에서 보존되는지 — 확인된 숨김·손실",
+      "status": "REPRODUCED_FINDING",
+      "evidence": {
+        "finding": "P2",
+        "selected": "a",
+        "afterBack": {
+          "pending": "a",
+          "visible": false,
+          "submit": false
+        },
+        "afterRetry": {
+          "pending": null
+        }
+      }
+    },
+    {
+      "name": "F07 미확정 교사 평가·수동 조정은 다음 배정을 바꾸지 않으며 확정 이후만 적용",
+      "status": "PASS",
+      "evidence": {
+        "before": "unknown",
+        "confirmed": "uncertain",
+        "commentRequired": false
+      }
+    },
+    {
+      "name": "F08 새 수정본을 교사가 판정한 이후 최신 판정 집계와 재검토 대기 제거",
+      "status": "PASS",
+      "evidence": {
+        "revisionPending": 0,
+        "writing": {
+          "correct": 0,
+          "incorrect": 0,
+          "uncertain": 1,
+          "pending": 9
+        },
+        "total": 10
+      }
+    }
+  ]
+}

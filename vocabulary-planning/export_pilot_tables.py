@@ -24,7 +24,7 @@ with (ROOT/'curriculum/pilot-10-writing.csv').open('w',encoding='utf-8-sig',newl
         for label,prompt in [('기본',writing),('대체',writing['alternative'])]:
             writer.writerow([w['id'],w['meaning_id'],w['word'],w.get('display_word',w['word']),label,prompt['prompt'],prompt['sentence_frame'],prompt['teacher_sample'],json.dumps(writing['judgment_labels'],ensure_ascii=False),json.dumps(writing['teacher_guidance'],ensure_ascii=False),w['approval_status']])
 items=list(csv.DictReader((ROOT/'curriculum/pilot-10-items.csv').open(encoding='utf-8-sig')))
-assert len(items)==150
+assert len(items)==len(bank['items'])==160
 assert {i['문항ID']:i['지문'] for i in items}=={i['id']:i['prompt'] for i in bank['items']}
 for i in items:assert i['정답내용']==i['보기'+i['정답ID']]
 writings=list(csv.DictReader((ROOT/'curriculum/pilot-10-writing.csv').open(encoding='utf-8-sig')))

@@ -1,7 +1,12 @@
 from pathlib import Path
 from xml.etree import ElementTree as ET
 import json, re, sys, html, hashlib
-sys.path.insert(0,str(Path(__file__).parent/'tooling'))
+import argparse
+parser=argparse.ArgumentParser(description='Render vocabulary planning PDFs with embedded Korean fonts')
+parser.add_argument('--output', default='deliverables/qa-fixes-v5')
+parser.add_argument('--markdown-path', type=Path)
+args=parser.parse_args()
+sys.path.insert(0,str(args.markdown_path or Path(__file__).parent/'tooling'))
 import markdown, fitz
 from fontTools.ttLib import TTCollection
 from fontTools import subset
@@ -17,11 +22,11 @@ from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Preformatted
 
 ROOT=Path(__file__).parent
-OUT=ROOT/'deliverables/report-charts-v4'
+OUT=ROOT/args.output
 OUT.mkdir(parents=True,exist_ok=True)
-SOURCES=[('development-readiness','교사 평가 부모 자료 차트 개선안.pdf'),('two-week-operation','2주 학생 교사 수업 운영표.pdf'),('10-word-curriculum','교재 첫 10개 단어 문항 작문.pdf'),('development-spec','개발 상세 명세와 검수 기준.pdf')]
+SOURCES=[('development-readiness','QA 개선 개발 착수안.pdf'),('two-week-operation','2주 학생 교사 수업 운영표.pdf'),('10-word-curriculum','교재 첫 10개 단어 문항 작문.pdf'),('development-spec','개발 상세 명세와 검수 기준.pdf')]
 source_cache={stem:(ROOT/'documents'/f'{stem}.md').read_text() for stem,_ in SOURCES}
-all_text=''.join(source_cache.values())+'기획 검토 자료 콘텐츠 교사 승인 전 2026.10.04 페이지'
+all_text=''.join(source_cache.values())+'• 기획 검토 자료 콘텐츠 교사 승인 전 2026.10.04 페이지'
 fontdir=ROOT/'tooling/fonts';fontdir.mkdir(parents=True,exist_ok=True)
 def korean_font(style):
     dest=fontdir/f'VocabularyKorean-{style}.ttf'
@@ -46,7 +51,7 @@ def korean_font(style):
 regular=korean_font('Regular');bold=korean_font('Bold')
 pdfmetrics.registerFontFamily('Korean',normal=regular,bold=bold,italic=regular,boldItalic=bold)
 base=ParagraphStyle('body',fontName=regular,fontSize=9.5,leading=15.7,textColor=colors.HexColor('#233c4b'),wordWrap='CJK',splitLongWords=True,spaceAfter=8)
-styles={tag:ParagraphStyle(tag,parent=base,fontName=bold,fontSize=size,leading=size*1.5,spaceBefore=before,spaceAfter=after,keepWithNext=True) for tag,size,before,after in [('h1',20,5,20),('h2',14.5,18,10),('h3',11.8,13,8),('h4',10,9,6)]}
+styles={tag:ParagraphStyle(tag,parent=base,fontName=bold,fontSize=size,leading=size*1.5,spaceBefore=before,spaceAfter=after,keepWithNext=True) for tag,size,before,after in [('h1',20,5,20),('h2',14.5,18,10),('h3',11.8,13,8),('h4',10,9,6),('h5',9.5,9,5),('h6',9,8,4)]}
 small=ParagraphStyle('cell',parent=base,fontSize=8,leading=12.5,spaceAfter=0)
 header=ParagraphStyle('headercell',parent=small,fontName=bold)
 def inline(el):

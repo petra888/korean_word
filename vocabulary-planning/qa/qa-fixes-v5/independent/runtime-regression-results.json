@@ -1,0 +1,498 @@
+{
+  "testedAt": "2026-10-03T18:48:30.361Z",
+  "target": "/workspace/korean_word/vocabulary-planning/prototype/pilot-flow.html",
+  "html_sha256": "0a673ee9af68b60cbab439a8772794ffdedf4615200fd31faaf49b6dbbff3d53",
+  "method": "Independent Node VM execution with mocked DOM/storage/host; all mutations are in isolated fixtures",
+  "browserVerification": "NOT RUN: browser sandbox restriction persists",
+  "productionValidation": "NOT RUN: prototype has no production authentication/server database",
+  "summary": {
+    "total": 42,
+    "passed": 42,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "id": "ST-01",
+      "name": "Pending objective choice, hint and shuffled order survive new runtime",
+      "status": "PASS",
+      "evidence": {
+        "hintAndChoiceRestored": true,
+        "firstSubmissionCount": 0
+      }
+    },
+    {
+      "id": "ST-02",
+      "name": "Unsubmitted draft, revision draft, confirmed exact version and manual override survive restart",
+      "status": "PASS",
+      "evidence": {
+        "exactSessionRoundtrip": true,
+        "manualGroup": "uncertain"
+      }
+    },
+    {
+      "id": "ST-03",
+      "name": "Read rejection keeps diagnosis usable with visible storage warning",
+      "status": "PASS",
+      "evidence": {
+        "warning": "브라우저 저장을 읽을 수 없습니다. 현재 창에서 진행하거나 JSON을 복사하세요."
+      }
+    },
+    {
+      "id": "ST-04",
+      "name": "Quota failure preserves in-memory pending answer and JSON export",
+      "status": "PASS",
+      "evidence": {
+        "warning": "현재 v2, 이전 v1과 복구용 원문 기록을 표시했습니다.",
+        "unsavedJSONRetained": true
+      }
+    },
+    {
+      "id": "ST-05",
+      "name": "Malformed v2 JSON is archived byte-for-byte before fresh state writes",
+      "status": "PASS",
+      "evidence": {
+        "originalRawRetained": true,
+        "archiveWrittenFirst": true
+      }
+    },
+    {
+      "id": "ST-06",
+      "name": "v1 original remains untouched and exportable after v2 reset",
+      "status": "PASS",
+      "evidence": {
+        "legacyRawUntouched": true
+      }
+    },
+    {
+      "id": "ST-07",
+      "name": "Explicitly newer host event is accepted without host-save recursion",
+      "status": "PASS",
+      "evidence": {
+        "eventAccepted": true,
+        "hostSaveCalls": 0
+      }
+    },
+    {
+      "id": "ST-08",
+      "name": "Synchronous host-save failure remains visible after successful local save; success clears it",
+      "status": "PASS",
+      "evidence": {
+        "failedStatus": "호스트 저장이 제한되었습니다. 브라우저 기록 또는 JSON 복사를 이용하세요.",
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 4. 오전 3:48"
+      }
+    },
+    {
+      "id": "ST-09",
+      "name": "Asynchronous host-save rejection is shown after settlement and later success clears it",
+      "status": "PASS",
+      "evidence": {
+        "failedStatus": "호스트 저장이 제한되었습니다. 브라우저 기록 또는 JSON 복사를 이용하세요.",
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 4. 오전 3:48"
+      }
+    },
+    {
+      "id": "ST-10",
+      "name": "Repeated unchanged host snapshots do not recurse or remove confirmed manual state",
+      "status": "PASS",
+      "evidence": {
+        "repeatCount": 25,
+        "hostSaveCalls": 0
+      }
+    },
+    {
+      "id": "ST-11",
+      "name": "Older host event cannot overwrite a newer saved local revision draft",
+      "status": "PASS",
+      "evidence": {
+        "latestLocalDraftPreserved": true,
+        "staleModifiedAt": "2000-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "ST-12",
+      "name": "Initial stale host snapshot cannot replace a newer local draft on restart",
+      "status": "PASS",
+      "evidence": {
+        "newerLocalPreferred": true
+      }
+    },
+    {
+      "id": "ST-13.1",
+      "name": "Malformed nested v2 recovery: diagnostic.unknown null",
+      "status": "PASS",
+      "evidence": {
+        "startupUsable": true,
+        "rawOriginalArchived": true,
+        "unrelatedTextPreserved": true,
+        "secondRestartUsable": true
+      }
+    },
+    {
+      "id": "ST-13.2",
+      "name": "Malformed nested v2 recovery: session null activity",
+      "status": "PASS",
+      "evidence": {
+        "startupUsable": true,
+        "rawOriginalArchived": true,
+        "unrelatedTextPreserved": true,
+        "secondRestartUsable": true
+      }
+    },
+    {
+      "id": "ST-13.3",
+      "name": "Malformed nested v2 recovery: negative currentIndex",
+      "status": "PASS",
+      "evidence": {
+        "startupUsable": true,
+        "rawOriginalArchived": true,
+        "unrelatedTextPreserved": true,
+        "secondRestartUsable": true
+      }
+    },
+    {
+      "id": "ST-13.4",
+      "name": "Malformed nested v2 recovery: writing grades plain object",
+      "status": "PASS",
+      "evidence": {
+        "startupUsable": true,
+        "rawOriginalArchived": true,
+        "unrelatedTextPreserved": true,
+        "secondRestartUsable": true
+      }
+    },
+    {
+      "id": "ST-13.5",
+      "name": "Malformed nested v2 recovery: selected version missing",
+      "status": "PASS",
+      "evidence": {
+        "startupUsable": true,
+        "rawOriginalArchived": true,
+        "unrelatedTextPreserved": true,
+        "secondRestartUsable": true
+      }
+    },
+    {
+      "id": "ST-13.6",
+      "name": "Malformed nested v2 recovery: review response null",
+      "status": "PASS",
+      "evidence": {
+        "startupUsable": true,
+        "rawOriginalArchived": true,
+        "unrelatedTextPreserved": true,
+        "secondRestartUsable": true
+      }
+    },
+    {
+      "id": "ST-13.7",
+      "name": "Malformed nested v2 recovery: confirmed parent snapshot missing ratings",
+      "status": "PASS",
+      "evidence": {
+        "startupUsable": true,
+        "rawOriginalArchived": true,
+        "unrelatedTextPreserved": true,
+        "secondRestartUsable": true
+      }
+    },
+    {
+      "id": "ST-14",
+      "name": "v2 numeric scores are preserved without new judgment or promotion; explicit historic state stays authoritative",
+      "status": "PASS",
+      "evidence": {
+        "scoresPreserved": true,
+        "noAutoJudgment": true,
+        "explicitHistoricalStatePreserved": true
+      }
+    },
+    {
+      "id": "ST-15",
+      "name": "Student text and teacher comment escape HTML; parent excludes internal and unconfirmed text",
+      "status": "PASS",
+      "evidence": {
+        "escaped": true,
+        "internalMemoExcluded": true,
+        "unconfirmedMessageExcluded": true
+      }
+    },
+    {
+      "id": "ST-16",
+      "name": "Untrusted stored session id cannot create a new inline handler attribute",
+      "status": "PASS",
+      "evidence": {
+        "generatedInlineHandler": false,
+        "browserScriptExecution": "NOT TESTED"
+      }
+    },
+    {
+      "id": "ST-17",
+      "name": "Local save recovery clears only the current storage failure",
+      "status": "PASS",
+      "evidence": {
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 4. 오전 3:48",
+        "lastWriteDurable": true
+      }
+    },
+    {
+      "id": "ST-18",
+      "name": "Failure to write a recovery archive prevents replacement of the only corrupt original; export remains possible",
+      "status": "PASS",
+      "evidence": {
+        "originalRecordUntouched": true,
+        "inMemoryRecoveryExportable": true,
+        "warning": "현재 v2, 이전 v1과 복구용 원문 기록을 표시했습니다."
+      }
+    },
+    {
+      "id": "ST-19",
+      "name": "A late rejected earlier host request cannot replace the status of a later successful host request",
+      "status": "PASS",
+      "evidence": {
+        "lateRejectionIgnored": true,
+        "status": "데모 기록 저장 · 2026. 10. 4. 오전 3:48"
+      }
+    },
+    {
+      "id": "ST-20",
+      "name": "Reset consumes asynchronous host-save failure without an unhandled rejection",
+      "status": "PASS",
+      "evidence": {
+        "unhandledRejectionCount": 0,
+        "resetDiagnosisCount": 0,
+        "status": "호스트 저장이 제한되었습니다. 브라우저 기록 또는 JSON 복사를 이용하세요."
+      }
+    },
+    {
+      "id": "ST-21",
+      "name": "Accepted host clock ahead of local time cannot replay over a subsequently saved local draft",
+      "status": "PASS",
+      "evidence": {
+        "hostTime": "2026-10-03T18:49:29.781Z",
+        "localTime": "2026-10-03T18:49:29.782Z",
+        "hostRevision": 26,
+        "localRevision": 27,
+        "latestDraftPreserved": true
+      }
+    },
+    {
+      "id": "ST-22",
+      "name": "Reset remains newer than pre-reset future-dated host snapshot and prevents cleared records from returning",
+      "status": "PASS",
+      "evidence": {
+        "hostTime": "2026-10-03T18:49:29.797Z",
+        "resetTime": "2026-10-03T18:49:29.798Z",
+        "hostRevision": 26,
+        "resetRevision": 27,
+        "clearedRecordsNotResurrected": true
+      }
+    },
+    {
+      "id": "FL-01",
+      "name": "All 66 diagnosis count distributions × 10 word rotations yield complete initial ten-item plans without duplicates",
+      "status": "PASS",
+      "evidence": {
+        "cases": 660,
+        "failures": []
+      }
+    },
+    {
+      "id": "FL-02",
+      "name": "Actual diagnosis nine known/one unknown starts ten questions for every possible unknown word",
+      "status": "PASS",
+      "evidence": [
+        {
+          "unknownWord": "까탈",
+          "activities": 10
+        },
+        {
+          "unknownWord": "깜냥",
+          "activities": 10
+        },
+        {
+          "unknownWord": "달포",
+          "activities": 10
+        },
+        {
+          "unknownWord": "말미",
+          "activities": 10
+        },
+        {
+          "unknownWord": "선잠",
+          "activities": 10
+        },
+        {
+          "unknownWord": "강단있는",
+          "activities": 10
+        },
+        {
+          "unknownWord": "격의",
+          "activities": 10
+        },
+        {
+          "unknownWord": "융통성",
+          "activities": 10
+        },
+        {
+          "unknownWord": "굴지",
+          "activities": 10
+        },
+        {
+          "unknownWord": "기탄없이",
+          "activities": 10
+        }
+      ]
+    },
+    {
+      "id": "FL-03",
+      "name": "Unsubmitted grade judgment/comment/override survives version switching and fresh runtime",
+      "status": "PASS",
+      "evidence": {
+        "bothVersionDraftsPreserved": true,
+        "manualOverride": "unknown"
+      }
+    },
+    {
+      "id": "FL-04",
+      "name": "Retry pending choice stays visible/submittable after Back, reentry and fresh runtime; first response stays unchanged",
+      "status": "PASS",
+      "evidence": {
+        "pendingChoice": "a",
+        "visibleAndSubmittable": true,
+        "firstPreserved": true,
+        "retryAttemptCount": 2
+      }
+    },
+    {
+      "id": "FL-05",
+      "name": "Future allocation changes only after confirmed writing judgment; teacher can override automatic known",
+      "status": "PASS",
+      "evidence": {
+        "before": "unknown",
+        "confirmed": "uncertain",
+        "automatic": "known"
+      }
+    },
+    {
+      "id": "FL-06",
+      "name": "Full weekly/monthly/quarterly coverage retains independent first answers and the five-item break",
+      "status": "PASS",
+      "evidence": {
+        "weekly": {
+          "done": 10,
+          "total": 10,
+          "correct": 10,
+          "independent": 10,
+          "hints": 0
+        },
+        "monthly": {
+          "done": 10,
+          "total": 10,
+          "correct": 10,
+          "independent": 10,
+          "hints": 0
+        },
+        "quarterly": {
+          "done": 10,
+          "total": 10,
+          "correct": 10,
+          "independent": 10,
+          "hints": 0
+        }
+      }
+    },
+    {
+      "id": "FL-07",
+      "name": "Used practice content is not reassigned; real exhaustion remains explicit and prevents start",
+      "status": "PASS",
+      "evidence": {
+        "noReuse": true,
+        "exhaustedBlocked": true
+      }
+    },
+    {
+      "id": "FL-08",
+      "name": "Revision confirmation replaces latest chart judgment without duplicate words or false promotion",
+      "status": "PASS",
+      "evidence": {
+        "revisionPending": 0,
+        "totalWords": 10,
+        "writing": {
+          "correct": 0,
+          "incorrect": 0,
+          "uncertain": 1,
+          "pending": 9
+        }
+      }
+    },
+    {
+      "id": "MG-01",
+      "name": "Existing v2 regular question retains its original context/options, pending choice and first response after content revision",
+      "status": "PASS",
+      "evidence": {
+        "legacyQuestionId": "W0009-C01",
+        "oldContextRetained": true,
+        "oldOptionsRetained": true,
+        "firstAndPendingChoiceRetained": true
+      }
+    },
+    {
+      "id": "MG-02",
+      "name": "Existing v2 quarterly question retains original context/options and answer evidence after content revision",
+      "status": "PASS",
+      "evidence": {
+        "legacyQuestionId": "W0007-C13",
+        "oldContextRetained": true,
+        "oldOptionsRetained": true,
+        "firstResponseRetained": true,
+        "teacherRecordRetained": true
+      }
+    },
+    {
+      "id": "AC-01",
+      "name": "Objective choice explicitly exposes its selected state to assistive technology",
+      "status": "PASS",
+      "evidence": {
+        "fourExplicitStates": true,
+        "singleSelected": true
+      }
+    },
+    {
+      "id": "AC-02",
+      "name": "All ten first-draft textareas have a unique word-specific accessible label",
+      "status": "PASS",
+      "evidence": {
+        "labels": [
+          "writing-heading-regular-W1 writing-prompt-regular-W1",
+          "writing-heading-regular-W2 writing-prompt-regular-W2",
+          "writing-heading-regular-W3 writing-prompt-regular-W3",
+          "writing-heading-regular-W4 writing-prompt-regular-W4",
+          "writing-heading-regular-W5 writing-prompt-regular-W5",
+          "writing-heading-regular-W6 writing-prompt-regular-W6",
+          "writing-heading-regular-W7 writing-prompt-regular-W7",
+          "writing-heading-regular-W8 writing-prompt-regular-W8",
+          "writing-heading-regular-W9 writing-prompt-regular-W9",
+          "writing-heading-regular-W10 writing-prompt-regular-W10"
+        ],
+        "uniqueInputs": 10
+      }
+    },
+    {
+      "id": "PR-01",
+      "name": "Direct beforeprint regenerates current parent report and excludes teacher internal memo",
+      "status": "PASS",
+      "evidence": {
+        "beforeprintRegistered": true,
+        "currentConfirmedMessage": true,
+        "internalMemoExcluded": true,
+        "actualBrowserPrint": "NOT TESTED"
+      }
+    },
+    {
+      "id": "PR-02",
+      "name": "beforeprint from a fresh student diagnosis fills an initially empty print area with an honest pending report",
+      "status": "PASS",
+      "evidence": {
+        "freshPrintAreaPrepared": true,
+        "actualBrowserPrint": "NOT TESTED"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "source_html_sha256": "f56bc35a8bb2c8c8fc03f1486cafb7ca7da57c76d6b4d27e4270660f10c3ed25",
+  "checks": [
+    {
+      "script": "vocabulary-planning/qa/latest-commit-0d75986/function-flow/additional-flow-checks.js",
+      "summary": {
+        "total": 8,
+        "normal": 5,
+        "reproduced": 3
+      }
+    },
+    {
+      "script": "vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js",
+      "summary": {
+        "total": 16,
+        "pass": 10,
+        "findings": 6,
+        "harnessErrors": 0
+      }
+    }
+  ],
+  "product_source_unchanged": true
+}

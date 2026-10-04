@@ -1,0 +1,64 @@
+{
+  "commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "date_kst": "2026-10-04",
+  "source_html_sha256": "f56bc35a8bb2c8c8fc03f1486cafb7ca7da57c76d6b4d27e4270660f10c3ed25",
+  "decision": "changes_required; delivery signoff withheld",
+  "baseline_vm": {
+    "normal_pass": 27
+  },
+  "additional_flow": {
+    "total": 8,
+    "normal_pass": 5,
+    "reproduced_findings": 3
+  },
+  "additional_storage": {
+    "total": 16,
+    "normal_pass": 10,
+    "reproduced_findings": 6,
+    "corrupt_nested_cases": 7
+  },
+  "confirmed_implementation_findings": {
+    "total": 12,
+    "P1": 3,
+    "P2": 7,
+    "P3": 2,
+    "ids": [
+      "FF-01",
+      "SE-11",
+      "SE-12",
+      "FF-02",
+      "FF-03",
+      "SE-05",
+      "SE-08",
+      "SE-15",
+      "MP-001",
+      "MP-002",
+      "SE-16",
+      "MP-004"
+    ]
+  },
+  "unverified_output_risk": {
+    "id": "MP-003",
+    "priority": "P2",
+    "browser_print_result": "NOT RUN"
+  },
+  "content_review_candidates": {
+    "count": 3,
+    "teacher_confirmed": false
+  },
+  "content_structure": {
+    "additional_checks_pass": 17,
+    "objective_items_read": 150,
+    "writing_prompts_read": 20,
+    "raw_rows": 450,
+    "batches": 45
+  },
+  "rendered_files": {
+    "svg_cases": 5,
+    "handoff_pdfs": 4,
+    "handoff_pdf_pages": 82,
+    "parent_browser_print": "NOT RUN"
+  },
+  "real_service_acceptance": "63 cases NOT RUN; service features not implemented",
+  "product_source_unchanged": true
+}

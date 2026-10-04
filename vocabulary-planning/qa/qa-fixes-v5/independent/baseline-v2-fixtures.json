@@ -1,0 +1,1235 @@
+{
+  "basisCommit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "basisHtmlSha256": "f56bc35a8bb2c8c8fc03f1486cafb7ca7da57c76d6b4d27e4270660f10c3ed25",
+  "method": "Executed frozen prior-commit HTML in VM harness; all names/drafts/answers synthetic",
+  "regular": {
+    "state": {
+      "version": 2,
+      "role": "student",
+      "screen": "study",
+      "teacherScreen": "dashboard",
+      "navigation": {
+        "student": [
+          {
+            "screen": "plan",
+            "teacherScreen": "dashboard",
+            "activeSession": "regular",
+            "activeReview": null,
+            "sessionIndex": 0
+          }
+        ],
+        "teacher": []
+      },
+      "self": {
+        "W0001": "unknown",
+        "W0002": "unknown",
+        "W0003": "unknown",
+        "W0004": "unknown",
+        "W0005": "unknown",
+        "W0006": "unknown",
+        "W0007": "unknown",
+        "W0008": "unknown",
+        "W0009": "unknown",
+        "W0010": "unknown"
+      },
+      "selfLocked": true,
+      "diagnostic": {
+        "assignments": {
+          "W0001": "W0001",
+          "W0002": "W0002",
+          "W0003": "W0003",
+          "W0004": "W0004",
+          "W0005": "W0005",
+          "W0006": "W0006",
+          "W0007": "W0007",
+          "W0008": "W0008",
+          "W0009": "W0009",
+          "W0010": "W0010"
+        },
+        "unknown": {
+          "W0001": true,
+          "W0002": true,
+          "W0003": true,
+          "W0004": true,
+          "W0005": true,
+          "W0006": true,
+          "W0007": true,
+          "W0008": true,
+          "W0009": true,
+          "W0010": true
+        },
+        "wordOrder": [
+          "W0004",
+          "W0009",
+          "W0005",
+          "W0010",
+          "W0007",
+          "W0001",
+          "W0008",
+          "W0006",
+          "W0002",
+          "W0003"
+        ],
+        "firstSnapshot": {},
+        "postExposureTouched": {},
+        "disclosedAt": "2026-10-03T18:43:30.317Z",
+        "locked": true,
+        "results": {
+          "W0001": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0001",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0002": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0002",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0003": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0003",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0004": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0004",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0005": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0005",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0006": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0006",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0007": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0007",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0008": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0008",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0009": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0009",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0010": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0010",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          }
+        },
+        "submittedAt": "2026-10-03T18:43:30.318Z"
+      },
+      "sessions": {
+        "regular": {
+          "id": "regular",
+          "quota": {
+            "unknown": 10,
+            "uncertain": 0,
+            "known": 0
+          },
+          "allocationGroups": {
+            "W0001": "unknown",
+            "W0002": "unknown",
+            "W0003": "unknown",
+            "W0004": "unknown",
+            "W0005": "unknown",
+            "W0006": "unknown",
+            "W0007": "unknown",
+            "W0008": "unknown",
+            "W0009": "unknown",
+            "W0010": "unknown"
+          },
+          "activities": [
+            {
+              "id": "regular-Q9",
+              "type": "context_cloze",
+              "wordId": "W0009",
+              "meaningId": "W0009-S1",
+              "itemId": "W0009-C01",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q3",
+              "type": "context_cloze",
+              "wordId": "W0003",
+              "meaningId": "W0003-S1",
+              "itemId": "W0003-C03",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q2",
+              "type": "context_cloze",
+              "wordId": "W0002",
+              "meaningId": "W0002-S1",
+              "itemId": "W0002-C02",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q10",
+              "type": "context_cloze",
+              "wordId": "W0010",
+              "meaningId": "W0010-S1",
+              "itemId": "W0010-C02",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q1",
+              "type": "context_cloze",
+              "wordId": "W0001",
+              "meaningId": "W0001-S1",
+              "itemId": "W0001-C01",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q5",
+              "type": "context_cloze",
+              "wordId": "W0005",
+              "meaningId": "W0005-S1",
+              "itemId": "W0005-C05",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q7",
+              "type": "context_cloze",
+              "wordId": "W0007",
+              "meaningId": "W0007-S1",
+              "itemId": "W0007-C14",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q4",
+              "type": "context_cloze",
+              "wordId": "W0004",
+              "meaningId": "W0004-S1",
+              "itemId": "W0004-C04",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q8",
+              "type": "context_cloze",
+              "wordId": "W0008",
+              "meaningId": "W0008-S1",
+              "itemId": "W0008-C15",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            },
+            {
+              "id": "regular-Q6",
+              "type": "context_cloze",
+              "wordId": "W0006",
+              "meaningId": "W0006-S1",
+              "itemId": "W0006-C06",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.319Z"
+            }
+          ],
+          "writingActivities": [
+            {
+              "id": "regular-W1",
+              "type": "writing",
+              "wordId": "W0001",
+              "meaningId": "W0001-S1"
+            },
+            {
+              "id": "regular-W2",
+              "type": "writing",
+              "wordId": "W0002",
+              "meaningId": "W0002-S1"
+            },
+            {
+              "id": "regular-W3",
+              "type": "writing",
+              "wordId": "W0003",
+              "meaningId": "W0003-S1"
+            },
+            {
+              "id": "regular-W4",
+              "type": "writing",
+              "wordId": "W0004",
+              "meaningId": "W0004-S1"
+            },
+            {
+              "id": "regular-W5",
+              "type": "writing",
+              "wordId": "W0005",
+              "meaningId": "W0005-S1"
+            },
+            {
+              "id": "regular-W6",
+              "type": "writing",
+              "wordId": "W0006",
+              "meaningId": "W0006-S1"
+            },
+            {
+              "id": "regular-W7",
+              "type": "writing",
+              "wordId": "W0007",
+              "meaningId": "W0007-S1"
+            },
+            {
+              "id": "regular-W8",
+              "type": "writing",
+              "wordId": "W0008",
+              "meaningId": "W0008-S1"
+            },
+            {
+              "id": "regular-W9",
+              "type": "writing",
+              "wordId": "W0009",
+              "meaningId": "W0009-S1"
+            },
+            {
+              "id": "regular-W10",
+              "type": "writing",
+              "wordId": "W0010",
+              "meaningId": "W0010-S1"
+            }
+          ],
+          "responses": {
+            "regular-Q9": {
+              "hintShown": false,
+              "attempts": [
+                {
+                  "choice": "a",
+                  "correct": false,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.323Z"
+                }
+              ],
+              "pendingChoice": "b",
+              "first": {
+                "choice": "a",
+                "correct": false,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.323Z"
+              }
+            }
+          },
+          "writings": {},
+          "shortage": [],
+          "currentIndex": 0,
+          "createdAt": "2026-10-03T18:43:30.320Z"
+        }
+      },
+      "activeSession": "regular",
+      "reviews": {},
+      "activeReview": null,
+      "teacher": {
+        "ratings": {
+          "뜻 이해": "미평가",
+          "문맥 추론": "미평가",
+          "작문 활용": "미평가",
+          "학습 태도": "미평가"
+        },
+        "strength": "",
+        "improve": "",
+        "next": "",
+        "parentMessage": "",
+        "internalMemo": "",
+        "includeEvaluation": true,
+        "includeMessage": true,
+        "status": "draft",
+        "confirmedSnapshot": null
+      },
+      "choiceOrders": {
+        "W0006-C06": [
+          "a",
+          "c",
+          "b",
+          "d"
+        ],
+        "W0009-C01": [
+          "d",
+          "b",
+          "a",
+          "c"
+        ]
+      },
+      "preview": false,
+      "createdAt": "2026-10-03T18:43:30.300Z",
+      "modifiedAt": "2026-10-03T18:43:30.325Z"
+    },
+    "question": {
+      "id": "W0009-C01",
+      "word_id": "W0009",
+      "meaning_id": "W0009-S1",
+      "phase": "practice",
+      "type": "context_cloze",
+      "prompt": "수십 년간 업계에서 손꼽히는 성과로 널리 알려진 그 회사는 (____) 기업이다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "이름 없는"
+        },
+        {
+          "id": "b",
+          "text": "굴지의"
+        },
+        {
+          "id": "c",
+          "text": "새로 생긴"
+        },
+        {
+          "id": "d",
+          "text": "뒤처진"
+        }
+      ],
+      "correct_option_id": "b",
+      "explanation": "많은 대상 가운데 손꼽힐 만큼 뛰어나고 이름이 널리 알려진 대상을 나타낸다. 오랜 활동과 뛰어난 성과가 있어 새롭거나 뒤처진 대상이라는 설명은 맞지 않는다.",
+      "hint": "오랫동안 뛰어난 성과를 내며 널리 알려졌는지 보세요.",
+      "context_cues": [
+        "수십 년",
+        "손꼽히는 성과",
+        "널리 알려짐"
+      ],
+      "review_status": "draft"
+    },
+    "response": {
+      "hintShown": false,
+      "attempts": [
+        {
+          "choice": "a",
+          "correct": false,
+          "hinted": false,
+          "submittedAt": "2026-10-03T18:43:30.323Z"
+        }
+      ],
+      "pendingChoice": "b",
+      "first": {
+        "choice": "a",
+        "correct": false,
+        "hinted": false,
+        "submittedAt": "2026-10-03T18:43:30.323Z"
+      }
+    }
+  },
+  "quarterly": {
+    "state": {
+      "version": 2,
+      "role": "student",
+      "screen": "review-question",
+      "teacherScreen": "dashboard",
+      "navigation": {
+        "student": [
+          {
+            "screen": "plan",
+            "teacherScreen": "dashboard",
+            "activeSession": "regular",
+            "activeReview": null,
+            "sessionIndex": 0
+          }
+        ],
+        "teacher": []
+      },
+      "self": {
+        "W0001": "unknown",
+        "W0002": "unknown",
+        "W0003": "unknown",
+        "W0004": "unknown",
+        "W0005": "unknown",
+        "W0006": "unknown",
+        "W0007": "unknown",
+        "W0008": "unknown",
+        "W0009": "unknown",
+        "W0010": "unknown"
+      },
+      "selfLocked": true,
+      "diagnostic": {
+        "assignments": {
+          "W0001": "W0001",
+          "W0002": "W0002",
+          "W0003": "W0003",
+          "W0004": "W0004",
+          "W0005": "W0005",
+          "W0006": "W0006",
+          "W0007": "W0007",
+          "W0008": "W0008",
+          "W0009": "W0009",
+          "W0010": "W0010"
+        },
+        "unknown": {
+          "W0001": true,
+          "W0002": true,
+          "W0003": true,
+          "W0004": true,
+          "W0005": true,
+          "W0006": true,
+          "W0007": true,
+          "W0008": true,
+          "W0009": true,
+          "W0010": true
+        },
+        "wordOrder": [
+          "W0002",
+          "W0006",
+          "W0005",
+          "W0007",
+          "W0008",
+          "W0004",
+          "W0010",
+          "W0009",
+          "W0001",
+          "W0003"
+        ],
+        "firstSnapshot": {},
+        "postExposureTouched": {},
+        "disclosedAt": "2026-10-03T18:43:30.327Z",
+        "locked": true,
+        "results": {
+          "W0001": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0001",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0002": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0002",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0003": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0003",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0004": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0004",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0005": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0005",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0006": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0006",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0007": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0007",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0008": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0008",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0009": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0009",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          },
+          "W0010": {
+            "group": "unknown",
+            "status": "unknown-auto",
+            "choice": "W0010",
+            "firstChoice": null,
+            "correct": null,
+            "exposed": true
+          }
+        },
+        "submittedAt": "2026-10-03T18:43:30.329Z"
+      },
+      "sessions": {
+        "regular": {
+          "id": "regular",
+          "quota": {
+            "unknown": 10,
+            "uncertain": 0,
+            "known": 0
+          },
+          "allocationGroups": {
+            "W0001": "unknown",
+            "W0002": "unknown",
+            "W0003": "unknown",
+            "W0004": "unknown",
+            "W0005": "unknown",
+            "W0006": "unknown",
+            "W0007": "unknown",
+            "W0008": "unknown",
+            "W0009": "unknown",
+            "W0010": "unknown"
+          },
+          "activities": [
+            {
+              "id": "regular-Q3",
+              "type": "context_cloze",
+              "wordId": "W0003",
+              "meaningId": "W0003-S1",
+              "itemId": "W0003-C03",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q6",
+              "type": "context_cloze",
+              "wordId": "W0006",
+              "meaningId": "W0006-S1",
+              "itemId": "W0006-C06",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q5",
+              "type": "context_cloze",
+              "wordId": "W0005",
+              "meaningId": "W0005-S1",
+              "itemId": "W0005-C05",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q1",
+              "type": "context_cloze",
+              "wordId": "W0001",
+              "meaningId": "W0001-S1",
+              "itemId": "W0001-C01",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q9",
+              "type": "context_cloze",
+              "wordId": "W0009",
+              "meaningId": "W0009-S1",
+              "itemId": "W0009-C01",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q10",
+              "type": "context_cloze",
+              "wordId": "W0010",
+              "meaningId": "W0010-S1",
+              "itemId": "W0010-C02",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q8",
+              "type": "context_cloze",
+              "wordId": "W0008",
+              "meaningId": "W0008-S1",
+              "itemId": "W0008-C15",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q7",
+              "type": "context_cloze",
+              "wordId": "W0007",
+              "meaningId": "W0007-S1",
+              "itemId": "W0007-C14",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q2",
+              "type": "context_cloze",
+              "wordId": "W0002",
+              "meaningId": "W0002-S1",
+              "itemId": "W0002-C02",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            },
+            {
+              "id": "regular-Q4",
+              "type": "context_cloze",
+              "wordId": "W0004",
+              "meaningId": "W0004-S1",
+              "itemId": "W0004-C04",
+              "group": "unknown",
+              "assignedAt": "2026-10-03T18:43:30.329Z"
+            }
+          ],
+          "writingActivities": [
+            {
+              "id": "regular-W1",
+              "type": "writing",
+              "wordId": "W0001",
+              "meaningId": "W0001-S1"
+            },
+            {
+              "id": "regular-W2",
+              "type": "writing",
+              "wordId": "W0002",
+              "meaningId": "W0002-S1"
+            },
+            {
+              "id": "regular-W3",
+              "type": "writing",
+              "wordId": "W0003",
+              "meaningId": "W0003-S1"
+            },
+            {
+              "id": "regular-W4",
+              "type": "writing",
+              "wordId": "W0004",
+              "meaningId": "W0004-S1"
+            },
+            {
+              "id": "regular-W5",
+              "type": "writing",
+              "wordId": "W0005",
+              "meaningId": "W0005-S1"
+            },
+            {
+              "id": "regular-W6",
+              "type": "writing",
+              "wordId": "W0006",
+              "meaningId": "W0006-S1"
+            },
+            {
+              "id": "regular-W7",
+              "type": "writing",
+              "wordId": "W0007",
+              "meaningId": "W0007-S1"
+            },
+            {
+              "id": "regular-W8",
+              "type": "writing",
+              "wordId": "W0008",
+              "meaningId": "W0008-S1"
+            },
+            {
+              "id": "regular-W9",
+              "type": "writing",
+              "wordId": "W0009",
+              "meaningId": "W0009-S1"
+            },
+            {
+              "id": "regular-W10",
+              "type": "writing",
+              "wordId": "W0010",
+              "meaningId": "W0010-S1"
+            }
+          ],
+          "responses": {
+            "regular-Q3": {
+              "first": {
+                "choice": "a",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "a",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q6": {
+              "first": {
+                "choice": "d",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "d",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q5": {
+              "first": {
+                "choice": "c",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "c",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q1": {
+              "first": {
+                "choice": "a",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "a",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q9": {
+              "first": {
+                "choice": "b",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "b",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q10": {
+              "first": {
+                "choice": "b",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "b",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q8": {
+              "first": {
+                "choice": "d",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "d",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q7": {
+              "first": {
+                "choice": "a",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "a",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q2": {
+              "first": {
+                "choice": "d",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "d",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            },
+            "regular-Q4": {
+              "first": {
+                "choice": "a",
+                "correct": true,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.330Z"
+              },
+              "attempts": [
+                {
+                  "choice": "a",
+                  "correct": true,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.330Z"
+                }
+              ],
+              "hintShown": false
+            }
+          },
+          "writings": {
+            "regular-W1": {
+              "draftText": "까탈을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W1-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "까탈을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.331Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W2": {
+              "draftText": "깜냥을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W2-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "깜냥을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.332Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W3": {
+              "draftText": "달포을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W3-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "달포을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.332Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W4": {
+              "draftText": "말미을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W4-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "말미을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.332Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W5": {
+              "draftText": "선잠을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W5-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "선잠을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.332Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W6": {
+              "draftText": "강단 있는을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W6-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "강단 있는을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.332Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W7": {
+              "draftText": "격의을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W7-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "격의을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.332Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W8": {
+              "draftText": "융통성을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W8-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "융통성을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.333Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W9": {
+              "draftText": "굴지을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W9-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "굴지을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.333Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            },
+            "regular-W10": {
+              "draftText": "기탄없이을 포함한 QA 초고",
+              "versions": [
+                {
+                  "id": "regular-W10-v1",
+                  "number": 1,
+                  "kind": "draft",
+                  "text": "기탄없이을 포함한 QA 초고",
+                  "submittedAt": "2026-10-03T18:43:30.333Z"
+                }
+              ],
+              "grades": [],
+              "revisionDraft": ""
+            }
+          },
+          "shortage": [],
+          "currentIndex": 0,
+          "createdAt": "2026-10-03T18:43:30.330Z",
+          "allWritingSubmittedAt": "2026-10-03T18:43:30.333Z"
+        }
+      },
+      "activeSession": "regular",
+      "reviews": {
+        "quarterly": {
+          "id": "quarterly",
+          "targetWordIds": [
+            "W0001",
+            "W0002",
+            "W0003",
+            "W0004",
+            "W0005",
+            "W0006",
+            "W0007",
+            "W0008",
+            "W0009",
+            "W0010"
+          ],
+          "targetMeaningIds": [
+            "W0001-S1",
+            "W0002-S1",
+            "W0003-S1",
+            "W0004-S1",
+            "W0005-S1",
+            "W0006-S1",
+            "W0007-S1",
+            "W0008-S1",
+            "W0009-S1",
+            "W0010-S1"
+          ],
+          "targetVersion": 1,
+          "responses": {
+            "W0007": {
+              "hintShown": false,
+              "attempts": [
+                {
+                  "choice": "a",
+                  "correct": false,
+                  "hinted": false,
+                  "submittedAt": "2026-10-03T18:43:30.335Z"
+                }
+              ],
+              "pendingChoice": null,
+              "first": {
+                "choice": "a",
+                "correct": false,
+                "hinted": false,
+                "submittedAt": "2026-10-03T18:43:30.335Z"
+              }
+            }
+          },
+          "currentIndex": 6,
+          "chunkBreakAt": null,
+          "createdAt": "2026-10-03T18:43:30.333Z"
+        }
+      },
+      "activeReview": "quarterly",
+      "teacher": {
+        "ratings": {
+          "뜻 이해": "미평가",
+          "문맥 추론": "미평가",
+          "작문 활용": "미평가",
+          "학습 태도": "미평가"
+        },
+        "strength": "",
+        "improve": "",
+        "next": "",
+        "parentMessage": "",
+        "internalMemo": "",
+        "includeEvaluation": true,
+        "includeMessage": true,
+        "status": "draft",
+        "confirmedSnapshot": null
+      },
+      "choiceOrders": {
+        "W0003-C03": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ],
+        "W0007-C13": [
+          "c",
+          "b",
+          "a",
+          "d"
+        ]
+      },
+      "preview": false,
+      "createdAt": "2026-10-03T18:43:30.327Z",
+      "modifiedAt": "2026-10-03T18:43:30.336Z"
+    },
+    "question": {
+      "id": "W0007-C13",
+      "word_id": "W0007",
+      "meaning_id": "W0007-S1",
+      "phase": "quarterly",
+      "type": "context_cloze",
+      "prompt": "화해한 친구들은 서로에게 서운했던 마음까지 솔직하게 말할 수 있게 되었고, 속마음을 숨기던 때의 (____)는 더 이상 느끼지 않았다.",
+      "options": [
+        {
+          "id": "a",
+          "text": "분노"
+        },
+        {
+          "id": "b",
+          "text": "후회"
+        },
+        {
+          "id": "c",
+          "text": "격의"
+        },
+        {
+          "id": "d",
+          "text": "공포"
+        }
+      ],
+      "correct_option_id": "c",
+      "explanation": "서운한 마음까지 말할 만큼 가까워져 마음을 감추며 생기던 거리감이 없어졌다. 이 거리감이 격의이다.",
+      "hint": "솔직히 말할 수 있게 된 뒤 사라진 관계의 느낌을 생각하세요.",
+      "context_cues": [
+        "서운했던 마음까지 솔직하게",
+        "속마음을 숨기던 때의",
+        "더 이상 느끼지 않았다"
+      ],
+      "review_status": "draft"
+    },
+    "first": {
+      "choice": "a",
+      "correct": false,
+      "hinted": false,
+      "submittedAt": "2026-10-03T18:43:30.335Z"
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "sourcePath": "/workspace/korean_word/vocabulary-planning/prototype/pilot-flow.html",
+  "sourceHtmlSha256": "0a673ee9af68b60cbab439a8772794ffdedf4615200fd31faaf49b6dbbff3d53",
+  "method": "Current edited source evaluated in Node VM with mocked DOM. Layout, browser accessibility tree, focus, touch and browser printing are not exercised.",
+  "results": [
+    {
+      "name": "MP-003: Native print at initial screen creates a current parent report",
+      "status": "PASS",
+      "method": "Node VM event callback and generated markup; no browser printing",
+      "printAreaCharacters": 6487
+    },
+    {
+      "name": "MP-002: Ten draft textareas expose distinct word-specific names",
+      "status": "PASS",
+      "method": "Generated HTML attributes and referenced text; no screen reader",
+      "fields": [
+        {
+          "word": "까탈",
+          "id": "writing-input-qa-W0",
+          "name": "1. 까탈 합의한 일을 진행하려는데 사소하고 불필요한 조건을 자꾸 내세워 일이 막힌 상황을 만들어, 까탈을 넣어 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "깜냥",
+          "id": "writing-input-qa-W1",
+          "name": "2. 깜냥 자기 힘으로 어떤 일을 해낼 수 있었던 상황을 만들어, 깜냥을 넣어 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "달포",
+          "id": "writing-input-qa-W2",
+          "name": "3. 달포 한 달이 조금 넘게 어떤 일을 한 상황을 만들어, 달포를 넣어 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "말미",
+          "id": "writing-input-qa-W3",
+          "name": "4. 말미 다른 일을 마칠 수 있도록 시간 여유를 받은 상황을 만들어, 말미를 넣어 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "선잠",
+          "id": "writing-input-qa-W4",
+          "name": "5. 선잠 작은 소리 때문에 깊이 잠들지 못한 상황을 떠올려, 선잠을 넣어 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "강단 있는",
+          "id": "writing-input-qa-W5",
+          "name": "6. 강단 있는 충분히 생각한 뒤 필요한 일을 굳게 결정하여 실행한 상황을 만들어, 「강단 있는」을 사용해 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "격의",
+          "id": "writing-input-qa-W6",
+          "name": "7. 격의 서로 속마음을 편하게 이야기한 상황을 만들어, 격의를 넣어 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "융통성",
+          "id": "writing-input-qa-W7",
+          "name": "8. 융통성 상황이 달라져 목적에 맞게 방법을 바꾼 경험을 만들어, 융통성을 넣어 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "굴지",
+          "id": "writing-input-qa-W8",
+          "name": "9. 굴지 많은 곳 가운데 손꼽힐 만큼 뛰어난 성과를 낸 기관이나 사람을 상상하여, 굴지를 넣어 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        },
+        {
+          "word": "기탄없이",
+          "id": "writing-input-qa-W9",
+          "name": "10. 기탄없이 솔직한 의견을 부탁받고 주저하지 않은 채 생각을 말한 상황을 만들어, 「기탄없이」를 사용해 한 문장을 쓰세요.",
+          "descriptionReferences": null
+        }
+      ]
+    },
+    {
+      "name": "Revision textareas expose word-specific names after teacher confirmation",
+      "status": "PASS",
+      "method": "Generated revision HTML in Node VM; no screen reader",
+      "fields": [
+        {
+          "word": "까탈",
+          "id": "revision-input-qa-W0",
+          "name": "1. 까탈 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "깜냥",
+          "id": "revision-input-qa-W1",
+          "name": "2. 깜냥 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "달포",
+          "id": "revision-input-qa-W2",
+          "name": "3. 달포 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "말미",
+          "id": "revision-input-qa-W3",
+          "name": "4. 말미 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "선잠",
+          "id": "revision-input-qa-W4",
+          "name": "5. 선잠 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "강단 있는",
+          "id": "revision-input-qa-W5",
+          "name": "6. 강단 있는 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "격의",
+          "id": "revision-input-qa-W6",
+          "name": "7. 격의 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "융통성",
+          "id": "revision-input-qa-W7",
+          "name": "8. 융통성 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "굴지",
+          "id": "revision-input-qa-W8",
+          "name": "9. 굴지 피드백을 반영한 수정 문장"
+        },
+        {
+          "word": "기탄없이",
+          "id": "revision-input-qa-W9",
+          "name": "10. 기탄없이 피드백을 반영한 수정 문장"
+        }
+      ]
+    },
+    {
+      "name": "MP-001: Objective choices expose exactly one selected state and clear alternatives",
+      "status": "PASS",
+      "method": "Actual questionBody generator in Node VM; no keyboard/focus test",
+      "optionCount": 4,
+      "selectedCount": 1,
+      "unselectedCount": 3,
+      "submittedSelectionRetained": true,
+      "firstIncorrectPreservedAfterCorrectRetry": true
+    },
+    {
+      "name": "Confirmed parent report excludes internal memo, escapes and preserves a long message",
+      "status": "PASS",
+      "method": "Generated HTML inspection in Node VM",
+      "internalMemoExcluded": true,
+      "confirmedMessageEscaped": true,
+      "longMessageCharacters": 10836
+    },
+    {
+      "name": "App print button refreshes output before requesting print",
+      "status": "PASS",
+      "method": "Mock print call counter and actual handler",
+      "printCalls": 1,
+      "printAreaCharacters": 18087
+    },
+    {
+      "name": "MP-003: Native beforeprint replaces stale output with current confirmed content",
+      "status": "PASS",
+      "method": "Actual event callback in Node VM",
+      "freshConfirmedMessage": true,
+      "staleOutputRemoved": true,
+      "internalMemoExcluded": true
+    },
+    {
+      "name": "Native printing while report is draft excludes unconfirmed teacher text",
+      "status": "PASS",
+      "method": "Actual event callback in Node VM",
+      "unconfirmedParentMessageExcluded": true,
+      "unconfirmedStrengthExcluded": true
+    },
+    {
+      "name": "Donut charts provide label/count/percentage alternatives in five edge cases",
+      "status": "PASS",
+      "method": "Actual SVG generator in Node VM",
+      "fixtureCount": 5
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "zero",
+      "counts": {
+        "known": 0,
+        "uncertain": 0,
+        "unknown": 0,
+        "pending": 0
+      },
+      "total": 0,
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "all",
+      "counts": {
+        "known": 10,
+        "uncertain": 0,
+        "unknown": 0,
+        "pending": 0
+      },
+      "total": 10,
+      "expected": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "mixed",
+      "counts": {
+        "known": 4,
+        "uncertain": 3,
+        "unknown": 2,
+        "pending": 1
+      },
+      "total": 10,
+      "expected": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "tiny",
+      "counts": {
+        "known": 99,
+        "uncertain": 1,
+        "unknown": 0,
+        "pending": 0
+      },
+      "total": 100,
+      "expected": [
+        0.99,
+        0.01,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "thirds",
+      "counts": {
+        "known": 1,
+        "uncertain": 1,
+        "unknown": 1,
+        "pending": 0
+      },
+      "total": 3,
+      "expected": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0
+      ],
+      "status": "PASS"
+    }
+  ],
+  "passed": 9,
+  "failed": 0
+}

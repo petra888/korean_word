@@ -10,3 +10,5 @@ node_modules/
 /vocabulary-planning/tooling/
 /vocabulary-planning/source-page-*.png
 /vocabulary-planning/analysis/pdf-page-*.png
+/vocabulary-planning/deploy/demo-site/
+/vocabulary-planning/deploy/교직원-테스트-배포-*.zip

@@ -1,0 +1,246 @@
+{
+  "method": "Direct inspection and rasterization of committed ReportLab PDFs using MuPDF; these are planning documents, not browser parent reports",
+  "actual_browser_print": "NOT RUN",
+  "results": [
+    {
+      "file": "교사 평가 부모 자료 차트 개선안.pdf",
+      "pages": 4,
+      "pages_match_manifest": true,
+      "source_sha256": "f3ae7c458fecc7050b4de052b4edb17a14fd740770bf9e556e5a685d33099464",
+      "source_hash_matches_manifest": true,
+      "searchable_characters": 5205,
+      "contains_korean": true,
+      "unicode_replacement_char_count": 0,
+      "embedded_font_programs": [
+        {
+          "xref": 2,
+          "name": "Helvetica",
+          "type": "Type1",
+          "extension": "n/a",
+          "embedded_program_bytes": 0,
+          "embedded": false
+        },
+        {
+          "xref": 10,
+          "name": "AAAAAA+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 27208,
+          "embedded": true
+        },
+        {
+          "xref": 14,
+          "name": "AAAAAB+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 23508,
+          "embedded": true
+        },
+        {
+          "xref": 18,
+          "name": "AAAAAA+VocabularyKorean-Bold",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 16440,
+          "embedded": true
+        }
+      ],
+      "outside_page_text_blocks": [],
+      "actually_used_text_fonts": [
+        "VocabularyKorean-Bold",
+        "VocabularyKorean-Regular"
+      ],
+      "unused_standard_helvetica_resource": true
+    },
+    {
+      "file": "2주 학생 교사 수업 운영표.pdf",
+      "pages": 8,
+      "pages_match_manifest": true,
+      "source_sha256": "3005a8230f06542911be13e9cd041622b6104edae17e0ffd1bdc6d74f05ac406",
+      "source_hash_matches_manifest": true,
+      "searchable_characters": 11362,
+      "contains_korean": true,
+      "unicode_replacement_char_count": 0,
+      "embedded_font_programs": [
+        {
+          "xref": 2,
+          "name": "Helvetica",
+          "type": "Type1",
+          "extension": "n/a",
+          "embedded_program_bytes": 0,
+          "embedded": false
+        },
+        {
+          "xref": 14,
+          "name": "AAAAAA+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 27716,
+          "embedded": true
+        },
+        {
+          "xref": 18,
+          "name": "AAAAAB+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 29304,
+          "embedded": true
+        },
+        {
+          "xref": 22,
+          "name": "AAAAAA+VocabularyKorean-Bold",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 27284,
+          "embedded": true
+        },
+        {
+          "xref": 26,
+          "name": "AAAAAB+VocabularyKorean-Bold",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 976,
+          "embedded": true
+        }
+      ],
+      "outside_page_text_blocks": [],
+      "actually_used_text_fonts": [
+        "VocabularyKorean-Bold",
+        "VocabularyKorean-Regular"
+      ],
+      "unused_standard_helvetica_resource": true
+    },
+    {
+      "file": "교재 첫 10개 단어 문항 작문.pdf",
+      "pages": 55,
+      "pages_match_manifest": true,
+      "source_sha256": "a9b52a07691b94ede9f974fe5b51a83e29be33f3b3c6c4c2f63bc6decfe3cb32",
+      "source_hash_matches_manifest": true,
+      "searchable_characters": 54168,
+      "contains_korean": true,
+      "unicode_replacement_char_count": 0,
+      "embedded_font_programs": [
+        {
+          "xref": 2,
+          "name": "Helvetica",
+          "type": "Type1",
+          "extension": "n/a",
+          "embedded_program_bytes": 0,
+          "embedded": false
+        },
+        {
+          "xref": 61,
+          "name": "AAAAAA+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 27316,
+          "embedded": true
+        },
+        {
+          "xref": 65,
+          "name": "AAAAAB+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 33816,
+          "embedded": true
+        },
+        {
+          "xref": 69,
+          "name": "AAAAAC+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 23952,
+          "embedded": true
+        },
+        {
+          "xref": 73,
+          "name": "AAAAAA+VocabularyKorean-Bold",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 26968,
+          "embedded": true
+        },
+        {
+          "xref": 77,
+          "name": "AAAAAB+VocabularyKorean-Bold",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 2424,
+          "embedded": true
+        }
+      ],
+      "outside_page_text_blocks": [],
+      "actually_used_text_fonts": [
+        "VocabularyKorean-Bold",
+        "VocabularyKorean-Regular"
+      ],
+      "unused_standard_helvetica_resource": true
+    },
+    {
+      "file": "개발 상세 명세와 검수 기준.pdf",
+      "pages": 15,
+      "pages_match_manifest": true,
+      "source_sha256": "93717c135526ba3e923981d6c47ab7762f30834e3e7841a988d238f023c74043",
+      "source_hash_matches_manifest": true,
+      "searchable_characters": 29004,
+      "contains_korean": true,
+      "unicode_replacement_char_count": 0,
+      "embedded_font_programs": [
+        {
+          "xref": 2,
+          "name": "Helvetica",
+          "type": "Type1",
+          "extension": "n/a",
+          "embedded_program_bytes": 0,
+          "embedded": false
+        },
+        {
+          "xref": 21,
+          "name": "AAAAAA+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 27236,
+          "embedded": true
+        },
+        {
+          "xref": 25,
+          "name": "AAAAAB+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 33068,
+          "embedded": true
+        },
+        {
+          "xref": 29,
+          "name": "AAAAAC+VocabularyKorean-Regular",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 8472,
+          "embedded": true
+        },
+        {
+          "xref": 33,
+          "name": "AAAAAA+VocabularyKorean-Bold",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 26908,
+          "embedded": true
+        },
+        {
+          "xref": 37,
+          "name": "AAAAAB+VocabularyKorean-Bold",
+          "type": "TrueType",
+          "extension": "ttf",
+          "embedded_program_bytes": 3712,
+          "embedded": true
+        }
+      ],
+      "outside_page_text_blocks": [],
+      "actually_used_text_fonts": [
+        "VocabularyKorean-Bold",
+        "VocabularyKorean-Regular"
+      ],
+      "unused_standard_helvetica_resource": true
+    }
+  ]
+}

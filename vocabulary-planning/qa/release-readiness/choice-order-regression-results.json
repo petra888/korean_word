@@ -1,0 +1,149 @@
+{
+  "method": "Node VM with mocked DOM/localStorage/host; no real browser, mobile or browser print verification",
+  "source_sha256": "85226d2f83dc08803de48bdebe401c67602296507ee21cbfab91dfb6761976d7",
+  "count": 16,
+  "passed": 16,
+  "failed": 0,
+  "checks": [
+    {
+      "id": "CO-duplicates-wrong",
+      "name": "Damaged duplicates-wrong order is archived and repaired with all four distinct options",
+      "status": "PASS",
+      "details": {
+        "distinctOptions": 4,
+        "correctOptionVisible": true,
+        "exactOriginalArchived": true
+      }
+    },
+    {
+      "id": "CO-duplicates-correct",
+      "name": "Damaged duplicates-correct order is archived and repaired with all four distinct options",
+      "status": "PASS",
+      "details": {
+        "distinctOptions": 4,
+        "correctOptionVisible": true,
+        "exactOriginalArchived": true
+      }
+    },
+    {
+      "id": "CO-three-unique",
+      "name": "Damaged three-unique order is archived and repaired with all four distinct options",
+      "status": "PASS",
+      "details": {
+        "distinctOptions": 4,
+        "correctOptionVisible": true,
+        "exactOriginalArchived": true
+      }
+    },
+    {
+      "id": "CO-missing-option",
+      "name": "Damaged missing-option order is archived and repaired with all four distinct options",
+      "status": "PASS",
+      "details": {
+        "distinctOptions": 4,
+        "correctOptionVisible": true,
+        "exactOriginalArchived": true
+      }
+    },
+    {
+      "id": "CO-extra-option",
+      "name": "Damaged extra-option order is archived and repaired with all four distinct options",
+      "status": "PASS",
+      "details": {
+        "distinctOptions": 4,
+        "correctOptionVisible": true,
+        "exactOriginalArchived": true
+      }
+    },
+    {
+      "id": "CO-foreign-option",
+      "name": "Damaged foreign-option order is archived and repaired with all four distinct options",
+      "status": "PASS",
+      "details": {
+        "distinctOptions": 4,
+        "correctOptionVisible": true,
+        "exactOriginalArchived": true
+      }
+    },
+    {
+      "id": "CO-invalid-option",
+      "name": "Damaged invalid-option order is archived and repaired with all four distinct options",
+      "status": "PASS",
+      "details": {
+        "distinctOptions": 4,
+        "correctOptionVisible": true,
+        "exactOriginalArchived": true
+      }
+    },
+    {
+      "id": "CO-non-array",
+      "name": "Damaged non-array order is archived and repaired with all four distinct options",
+      "status": "PASS",
+      "details": {
+        "distinctOptions": 4,
+        "correctOptionVisible": true,
+        "exactOriginalArchived": true
+      }
+    },
+    {
+      "id": "CO-container",
+      "name": "Malformed choiceOrders container is archived and repaired",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-valid",
+      "name": "A valid stored permutation is retained exactly without quarantine",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-runtime",
+      "name": "Runtime damaged order is repaired and persisted before presentation",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-preserve",
+      "name": "Repair preserves first answer, retries, pending choice, writing drafts and navigation",
+      "status": "PASS",
+      "details": {
+        "firstAndRetryPreserved": true,
+        "writingDraftPreserved": true,
+        "navigationPreserved": true,
+        "recoveryExportable": true
+      }
+    },
+    {
+      "id": "CO-legacy-snapshot",
+      "name": "Stored historical activity snapshot option IDs take precedence over new canonical IDs",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-legacy-unsnapshotted",
+      "name": "Legacy item bank option IDs remain valid when old activity has no snapshot",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-review-snapshot",
+      "name": "Period review snapshot ordering is preserved and damaged ordering is recoverable",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-full-flow",
+      "name": "Normal study, all reviews, ten teacher grades, report print preparation, export and restore remain usable",
+      "status": "PASS",
+      "details": {
+        "objectiveResponses": 10,
+        "writingSubmissions": 10,
+        "periodReviewResponses": 30,
+        "teacherGrades": 10,
+        "printPrepared": true,
+        "exportReloadVerified": true
+      }
+    }
+  ]
+}

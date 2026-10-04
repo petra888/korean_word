@@ -1,0 +1,186 @@
+{
+  "sourceHtmlSha256": "0a673ee9af68b60cbab439a8772794ffdedf4615200fd31faaf49b6dbbff3d53",
+  "method": "WCAG relative luminance calculation from edited CSS and generated SVG. Opaque colors only; actual browser compositing, disabled opacity, rendering and exact ancestor backgrounds are unverified. Decorative color dots and borders are excluded.",
+  "foreground": "#4b6474",
+  "opaqueLightBackgroundCount": 18,
+  "results": [
+    {
+      "foreground": "#4b6474",
+      "background": "#d5e3e8",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 4.736516839739734,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#dbe6ed",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 4.905896088836875,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#e5eef2",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.28819167149767,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#eaf5f6",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.598376285972797,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#edf3f6",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.557387287297906,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#edf7f9",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.711856674330764,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#eef3f6",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.567618831575455,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#eff8f6",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.757718387576084,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#f1f6f8",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.713279860429748,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#f1f9fa",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.8297298636529105,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#f2f7f9",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.763585242908423,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#f4f8fa",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.824736974360756,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#fbfdfe",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 6.100089744305706,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#fff3d5",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.640710010206597,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#fff4dc",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.697813032801964,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#fff6e8",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.808597127882568,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#fff8e7",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 5.877744471915067,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#ffffff",
+      "usage": "muted small text, conservative test across all declared opaque light backgrounds",
+      "ratio": 6.2236411040895225,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#ffffff",
+      "usage": "parent report footer",
+      "ratio": 6.2236411040895225,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#4b6474",
+      "background": "#ffffff",
+      "usage": "donut center small label",
+      "ratio": 6.2236411040895225,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#087487",
+      "background": "#ffffff",
+      "usage": "correct answer text",
+      "ratio": 5.442761978624602,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#a83535",
+      "background": "#ffffff",
+      "usage": "incorrect answer text",
+      "ratio": 6.510385014836948,
+      "minimum": 4.5,
+      "status": "PASS"
+    }
+  ],
+  "passed": 22,
+  "failed": 0
+}

@@ -1,0 +1,13 @@
+{
+  "renderer": "ReportLab with embedded Korean subset font",
+  "documents": [
+    {
+      "file": "개선-검증-보고서.pdf",
+      "pages": 3,
+      "searchable_characters": 3704,
+      "font_embedded": true,
+      "source_sha256": "04637d5b794b0c23c866bf087b7a7abf5aab69642d64a42631b91bafe529230d"
+    }
+  ],
+  "browser_print": "NOT RUN: this PDF is a QA document export, not a parent report browser print"
+}

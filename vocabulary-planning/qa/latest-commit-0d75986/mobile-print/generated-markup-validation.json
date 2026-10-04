@@ -1,0 +1,324 @@
+{
+  "method": "Exact committed JavaScript evaluated in Node VM; mocked DOM does not verify layout, keyboard focus or printing",
+  "sourceHtmlSha256": "f56bc35a8bb2c8c8fc03f1486cafb7ca7da57c76d6b4d27e4270660f10c3ed25",
+  "results": [
+    {
+      "name": "Fresh native print target",
+      "method": "Generated DOM inspection + committed print CSS",
+      "beforeButtonPrintAreaLength": 0,
+      "beforePrintListener": false,
+      "printCSSHidesMain": true,
+      "status": "CONFIRMED STRUCTURAL GAP — native print target starts empty"
+    },
+    {
+      "name": "All ten writing fields have distinct accessible associations",
+      "method": "Generated markup inspection",
+      "fields": [
+        {
+          "id": null,
+          "activity": "qa-W0",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W1",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W2",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W3",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W4",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W5",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W6",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W7",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W8",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        },
+        {
+          "id": null,
+          "activity": "qa-W9",
+          "ariaLabel": false,
+          "placeholder": "한 문장을 써 주세요."
+        }
+      ],
+      "explicitDistinctLabelsPresent": false,
+      "status": "FAIL — ten fields only share one placeholder"
+    },
+    {
+      "name": "Objective selected answer exposes programmatic state",
+      "method": "Generated markup inspection",
+      "choices": 4,
+      "selectedChoices": 1,
+      "ariaStateChoices": 0,
+      "status": "FAIL — selected state exists only in CSS class"
+    },
+    {
+      "name": "Parent markup privacy and escaping, long text preserved",
+      "method": "Node VM with mock DOM; generated HTML",
+      "internalMemoExcluded": true,
+      "confirmedMessageEscaped": true,
+      "longMessageCharacters": 10836,
+      "status": "PASS (markup only)"
+    },
+    {
+      "name": "App print button populates parent target before requesting print",
+      "method": "Node VM mock event handler; window.print replaced with counter",
+      "printCalls": 1,
+      "printAreaLength": 17685,
+      "status": "PASS (handler only; no browser printing)"
+    },
+    {
+      "name": "Donut label/count/percentage alternatives",
+      "method": "Actual SVG generator in Node VM",
+      "fixtures": [
+        {
+          "name": "zero",
+          "counts": {
+            "known": 0,
+            "uncertain": 0,
+            "unknown": 0,
+            "pending": 0
+          },
+          "total": 0,
+          "expected": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hasImageRole": true,
+          "hasAccessibleName": true,
+          "hasTitle": true,
+          "hasTextCounts": true,
+          "status": "PASS (generated markup)"
+        },
+        {
+          "name": "all",
+          "counts": {
+            "known": 10,
+            "uncertain": 0,
+            "unknown": 0,
+            "pending": 0
+          },
+          "total": 10,
+          "expected": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "hasImageRole": true,
+          "hasAccessibleName": true,
+          "hasTitle": true,
+          "hasTextCounts": true,
+          "status": "PASS (generated markup)"
+        },
+        {
+          "name": "mixed",
+          "counts": {
+            "known": 4,
+            "uncertain": 3,
+            "unknown": 2,
+            "pending": 1
+          },
+          "total": 10,
+          "expected": [
+            0.4,
+            0.3,
+            0.2,
+            0.1
+          ],
+          "hasImageRole": true,
+          "hasAccessibleName": true,
+          "hasTitle": true,
+          "hasTextCounts": true,
+          "status": "PASS (generated markup)"
+        },
+        {
+          "name": "tiny",
+          "counts": {
+            "known": 99,
+            "uncertain": 1,
+            "unknown": 0,
+            "pending": 0
+          },
+          "total": 100,
+          "expected": [
+            0.99,
+            0.01,
+            0,
+            0
+          ],
+          "hasImageRole": true,
+          "hasAccessibleName": true,
+          "hasTitle": true,
+          "hasTextCounts": true,
+          "status": "PASS (generated markup)"
+        },
+        {
+          "name": "thirds",
+          "counts": {
+            "known": 1,
+            "uncertain": 1,
+            "unknown": 1,
+            "pending": 0
+          },
+          "total": 3,
+          "expected": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333,
+            0
+          ],
+          "hasImageRole": true,
+          "hasAccessibleName": true,
+          "hasTitle": true,
+          "hasTextCounts": true,
+          "status": "PASS (generated markup)"
+        }
+      ],
+      "status": "PASS (markup only)"
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "zero",
+      "counts": {
+        "known": 0,
+        "uncertain": 0,
+        "unknown": 0,
+        "pending": 0
+      },
+      "total": 0,
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hasImageRole": true,
+      "hasAccessibleName": true,
+      "hasTitle": true,
+      "hasTextCounts": true,
+      "status": "PASS (generated markup)"
+    },
+    {
+      "name": "all",
+      "counts": {
+        "known": 10,
+        "uncertain": 0,
+        "unknown": 0,
+        "pending": 0
+      },
+      "total": 10,
+      "expected": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hasImageRole": true,
+      "hasAccessibleName": true,
+      "hasTitle": true,
+      "hasTextCounts": true,
+      "status": "PASS (generated markup)"
+    },
+    {
+      "name": "mixed",
+      "counts": {
+        "known": 4,
+        "uncertain": 3,
+        "unknown": 2,
+        "pending": 1
+      },
+      "total": 10,
+      "expected": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "hasImageRole": true,
+      "hasAccessibleName": true,
+      "hasTitle": true,
+      "hasTextCounts": true,
+      "status": "PASS (generated markup)"
+    },
+    {
+      "name": "tiny",
+      "counts": {
+        "known": 99,
+        "uncertain": 1,
+        "unknown": 0,
+        "pending": 0
+      },
+      "total": 100,
+      "expected": [
+        0.99,
+        0.01,
+        0,
+        0
+      ],
+      "hasImageRole": true,
+      "hasAccessibleName": true,
+      "hasTitle": true,
+      "hasTextCounts": true,
+      "status": "PASS (generated markup)"
+    },
+    {
+      "name": "thirds",
+      "counts": {
+        "known": 1,
+        "uncertain": 1,
+        "unknown": 1,
+        "pending": 0
+      },
+      "total": 3,
+      "expected": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0
+      ],
+      "hasImageRole": true,
+      "hasAccessibleName": true,
+      "hasTitle": true,
+      "hasTextCounts": true,
+      "status": "PASS (generated markup)"
+    }
+  ]
+}

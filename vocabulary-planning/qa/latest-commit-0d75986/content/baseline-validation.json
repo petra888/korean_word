@@ -1,0 +1,19 @@
+{
+  "commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "runs": [
+    {
+      "command": "python3 validate_predevelopment.py",
+      "cwd": "/tmp/vocabulary-full-qa-0d75986-n5h3m0i4/vocabulary-planning",
+      "exit_code": 0,
+      "status": "pass",
+      "limits": "Structural and source-preservation checks only; fictional 5/3/2 supply scenario only"
+    },
+    {
+      "command": "python3 analysis/validate_dataset.py",
+      "cwd": "/tmp/vocabulary-full-qa-0d75986-n5h3m0i4/vocabulary-planning",
+      "exit_code": 0,
+      "status": "pass",
+      "stdout": "PASS: 60 pages / 30 pairs / 450 rows; source preservation, CSV consistency, 444 unique headwords, 438 provisional families, numbering, 13 semantic conflicts, 10 exposed answers, 71 issues across 67 rows."
+    }
+  ]
+}

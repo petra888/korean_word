@@ -1,0 +1,142 @@
+{
+  "source": "/workspace/korean_word/vocabulary-planning/curriculum/pilot-10.json",
+  "source_sha256": "d7593199292ebaf836e7f4e29b8a7562fe4dd5e910f3620117164d538a627491",
+  "reviewed_authoring_snapshot_sha256": "83cb6653362f671d7080a1515ceb112c315d224365744b0f09549a703131dc4c",
+  "authored_payload_without_legacy_sha256": "83cb6653362f671d7080a1515ceb112c315d224365744b0f09549a703131dc4c",
+  "legacy_history_only_change_from_read_snapshot": true,
+  "reviewed_current_items": 160,
+  "reviewed_current_words_and_items_sha256": "6b7434daf6183700767e3eef46101b7343050e9f8467391421f5909cfb0a41ad",
+  "previous_items_count_excluded_from_reviewed_current_count": 150,
+  "item_count": 160,
+  "writing_count": 20,
+  "phases": {
+    "practice": 90,
+    "pretest": 10,
+    "posttest": 10,
+    "delayed": 10,
+    "weekly": 20,
+    "monthly": 10,
+    "quarterly": 10
+  },
+  "source_order": [
+    "까탈",
+    "깜냥",
+    "달포",
+    "말미",
+    "선잠",
+    "강단있는",
+    "격의",
+    "융통성",
+    "굴지",
+    "기탄없이"
+  ],
+  "approval_statuses": [
+    "draft"
+  ],
+  "review_statuses": [
+    "draft"
+  ],
+  "all_dictionary_unverified": true,
+  "pattern_stats": [
+    {
+      "word_id": "W0001",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 3,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 2
+    },
+    {
+      "word_id": "W0002",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 3,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 2
+    },
+    {
+      "word_id": "W0003",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 7,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 3
+    },
+    {
+      "word_id": "W0004",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 2,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 1
+    },
+    {
+      "word_id": "W0005",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 6,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 3
+    },
+    {
+      "word_id": "W0006",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 7,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 3
+    },
+    {
+      "word_id": "W0007",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 3,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 2
+    },
+    {
+      "word_id": "W0008",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 4,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 3
+    },
+    {
+      "word_id": "W0009",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 6,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 3
+    },
+    {
+      "word_id": "W0010",
+      "items": 16,
+      "practice_items": 9,
+      "evaluation_items": 7,
+      "evaluation_option_sets": 7,
+      "evaluation_hints": 7,
+      "evaluation_explanations": 7,
+      "pre_post_delayed_option_sets": 3
+    }
+  ]
+}

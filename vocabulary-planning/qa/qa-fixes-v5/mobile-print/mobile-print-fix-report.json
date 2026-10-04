@@ -1,0 +1,62 @@
+{
+  "reviewed_base_commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "verified_working_source": "/workspace/korean_word/vocabulary-planning/prototype/pilot-flow.html",
+  "sourceHtmlSha256": "0a673ee9af68b60cbab439a8772794ffdedf4615200fd31faaf49b6dbbff3d53",
+  "created_at_utc": "2026-10-03T18:48:40.733512+00:00",
+  "results": [
+    {
+      "id": "MP-001",
+      "kind": "verified implementation issue",
+      "change": "객관식 4보기 aria-pressed 상태를 상호 배타적으로 제공",
+      "verification": "생성 마크업: 선택1개 true, 나머지3개 false; 선택 전4개 false; 재시도 후 제출선택 유지 및 최초오답 보존",
+      "result": "PASS (Node VM)"
+    },
+    {
+      "id": "MP-002",
+      "kind": "verified implementation issue",
+      "change": "작문 초고와 수정 입력란에 고유 id 및 단어별 제목·안내 연결",
+      "verification": "초고10개 및 수정10개 모두 단어별 accessible name; 초고참조 id 실제존재",
+      "result": "PASS (generated markup)"
+    },
+    {
+      "id": "MP-003",
+      "kind": "print structural risk, browser behavior previously unverified",
+      "change": "beforeprint 및 앱 출력 버튼이 현재 부모 자료를 매번 새로 생성",
+      "verification": "최초 대상생성·이전내용갱신·초안/내부메모 제외; 확정문구escape 및 장문10836자보존",
+      "result": "PASS (Node VM callback; browser print NOT RUN)"
+    },
+    {
+      "id": "MP-004",
+      "kind": "verified implementation issue",
+      "change": "보조 글씨·footer·SVG 작은 글씨 #4b6474로 대비 개선",
+      "verification": "밝은 CSS배경18종 및 기타4쌍 대비22쌍 모두4.5:1이상",
+      "result": "PASS (color calculation)"
+    }
+  ],
+  "counts": {
+    "markup_vm": {
+      "passed": 9,
+      "failed": 0
+    },
+    "contrast_pairs": {
+      "passed": 22,
+      "failed": 0
+    },
+    "svg_raster": {
+      "passed": 5,
+      "failed": 0
+    }
+  },
+  "minimum_contrast": 4.736516839739734,
+  "svg_max_error_percentage_points": 0.06518518518518479,
+  "additional_changes_reviewed": "430px 이하 부모 미리보기 패딩 축소 및 도넛1열; 장문 종합평가/부모메시지의 페이지 분할 허용 CSS. 실제 모바일·인쇄 효과는 미검증.",
+  "unverified": [
+    "320/375/768px 및 데스크톱의 실제 브라우저 레이아웃·가로 넘침",
+    "모바일 터치·마우스 드래그·실제 Tab/Enter 포커스·스크린리더",
+    "Chrome/Safari의 실제 Ctrl+P 및 앱 출력, PDF 페이지 나눔·장문 잘림",
+    "실제 브라우저의 색상 합성·안티앨리어싱·disabled opacity",
+    "SVG 한국어 글꼴 렌더 품질 및 실제 HTML/CSS 인쇄 배치"
+  ],
+  "browser_block": "Previous baseline QA Chromium launch terminated with setsockopt: Operation not permitted and SIGTRAP; unchanged launch was not retried.",
+  "baseline_browser_evidence": "../../latest-commit-0d75986/mobile-print/browser-launch.json"
+}

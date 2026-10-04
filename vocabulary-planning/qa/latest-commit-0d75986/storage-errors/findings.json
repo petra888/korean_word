@@ -1,0 +1,194 @@
+{
+  "commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "method": "Independent Node VM runtimes and mocked DOM/localStorage/OpenAI host. No browser, real storage quota, server, navigation service or actual XSS execution.",
+  "findings": [
+    {
+      "id": "SE-05",
+      "name": "Invalid v2 JSON recovers without crashing but silently replaces raw corrupt record",
+      "status": "FINDING",
+      "finding": true,
+      "priority": "P2",
+      "evidence": {
+        "replacedRawRecord": true,
+        "currentStatus": "브라우저 저장을 읽을 수 없습니다. 현재 창에서 진행하거나 JSON을 복사하세요.",
+        "writeCount": 1
+      },
+      "reproduction": "Set vocabulary-pilot-flow-v2 to malformed JSON; restart in student/self state; initial renderSelf() initializes wordOrder and calls persist().",
+      "expected": "Archive raw invalid record before recovery and allow export, avoiding irreversible overwrite.",
+      "actual": "Original bytes are overwritten by new fresh v2 state on first render.",
+      "lines": [
+        32,
+        35,
+        53
+      ]
+    },
+    {
+      "id": "SE-08",
+      "name": "Synchronous host storage failure status survives persist",
+      "status": "FINDING",
+      "finding": true,
+      "priority": "P2",
+      "evidence": {
+        "finalStatus": "데모 기록 저장 · 2026. 10. 4. 오전 3:00",
+        "localSaveSucceeded": true
+      },
+      "reproduction": "Make window.openai.setWidgetState throw synchronously, then choose an answer or type a draft.",
+      "expected": "Display host save failure (and separate local-save success) to avoid false shared-save confidence.",
+      "actual": "Failure catch sets a host warning, then status(storageWarning || success) immediately overwrites it with 데모 기록 저장.",
+      "lines": [
+        35
+      ]
+    },
+    {
+      "id": "SE-11",
+      "name": "Stale host event does not silently overwrite newer local draft",
+      "status": "FINDING",
+      "finding": true,
+      "priority": "P1",
+      "evidence": {
+        "before": "더 최신 입력 초고",
+        "after": "",
+        "staleModifiedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "reproduction": "Save revisionDraft locally after host snapshot A. Deliver older compatible snapshot A through openai:set_globals.",
+      "expected": "Ignore stale snapshot or merge records by revision; do not discard newer local inputs silently.",
+      "actual": "state=normalize(c) unconditionally replaces whole state, wiping newer draft with old snapshot.",
+      "lines": [
+        121
+      ]
+    },
+    {
+      "id": "SE-12",
+      "name": "Incomplete nested v2 shapes are rejected or handled gracefully",
+      "status": "FINDING",
+      "finding": true,
+      "priority": "P1",
+      "evidence": {
+        "cases": [
+          {
+            "shape": "diagnostic.unknown null",
+            "compatible": true,
+            "bootError": {
+              "name": "TypeError",
+              "message": "Cannot read properties of null (reading 'W0001')",
+              "stack": "evalmachine.<anonymous>:28\nfunction selectedCount(){return WORDS.filter(w=>state.diagnostic.unknown[w.id]||state.diagnostic.assignments[w.id]).length;}\n                                                                        ^\n\nTypeError: Cannot read properties of null (reading 'W0001')\n    at evalmachine.<anonymous>:28:73\n    at Array.filter (<anonymous>)\n    at selectedCount (evalmachine.<anonymous>:28:39)\n    at renderSelf (evalmachine.<anonymous>:34:255)\n    at render (evalmachine.<anonymous>:95:502)\n    at evalmachine.<anonymous>:103:10\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)\n    at boot (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:20:145)\n    at /workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:45:1271"
+            }
+          },
+          {
+            "shape": "session null activity",
+            "compatible": true,
+            "bootError": {
+              "name": "TypeError",
+              "message": "Cannot read properties of null (reading 'itemId')",
+              "stack": "evalmachine.<anonymous>:47\nfunction renderStudy(app){const s=currentSession();if(!s){setScreen('plan',false);return;}if(s.currentIndex>=s.activities.length){setScreen(s.writingActivities.length?'writing':'finish',false);return;}const a=s.activities[s.currentIndex],q=item(a.itemId),st=sessionStats(s);app.innerHTML=steps(1)+'<section class=\"card\"><div class=\"row\"><span class=\"tag\">'+(s.id==='regular'?'문맥 혼합 연습':'문맥 보충 연습')+' · '+(s.currentIndex+1)+'/'+s.activities.length+'</span><span class=\"fine\">4지선다 · 첫 답과 힌트를 별도 기록</span></div><div class=\"progress\"><i style=\"width:'+st.objective/s.activities.length*100+'%\"></i></div>'+questionBody(q,s.responses[a.id])+'</section>';bindQuestion(s.responses,a.id,q,()=>s.currentIndex++);}\n                                                                                                                                                                                                                                                       ^\n\nTypeError: Cannot read properties of null (reading 'itemId')\n    at renderStudy (evalmachine.<anonymous>:47:248)\n    at render (evalmachine.<anonymous>:95:595)\n    at evalmachine.<anonymous>:103:10\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)\n    at boot (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:20:145)\n    at /workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:45:1271\n    at probe (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:27:47)\n    at Object.<anonymous> (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:45:1)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)"
+            }
+          },
+          {
+            "shape": "negative currentIndex",
+            "compatible": true,
+            "bootError": {
+              "name": "TypeError",
+              "message": "Cannot read properties of undefined (reading 'itemId')",
+              "stack": "evalmachine.<anonymous>:47\nfunction renderStudy(app){const s=currentSession();if(!s){setScreen('plan',false);return;}if(s.currentIndex>=s.activities.length){setScreen(s.writingActivities.length?'writing':'finish',false);return;}const a=s.activities[s.currentIndex],q=item(a.itemId),st=sessionStats(s);app.innerHTML=steps(1)+'<section class=\"card\"><div class=\"row\"><span class=\"tag\">'+(s.id==='regular'?'문맥 혼합 연습':'문맥 보충 연습')+' · '+(s.currentIndex+1)+'/'+s.activities.length+'</span><span class=\"fine\">4지선다 · 첫 답과 힌트를 별도 기록</span></div><div class=\"progress\"><i style=\"width:'+st.objective/s.activities.length*100+'%\"></i></div>'+questionBody(q,s.responses[a.id])+'</section>';bindQuestion(s.responses,a.id,q,()=>s.currentIndex++);}\n                                                                                                                                                                                                                                                       ^\n\nTypeError: Cannot read properties of undefined (reading 'itemId')\n    at renderStudy (evalmachine.<anonymous>:47:248)\n    at render (evalmachine.<anonymous>:95:595)\n    at evalmachine.<anonymous>:103:10\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)\n    at boot (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:20:145)\n    at /workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:45:1271\n    at probe (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:27:47)\n    at Object.<anonymous> (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:45:1)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)"
+            }
+          },
+          {
+            "shape": "writing grades plain object",
+            "compatible": true,
+            "bootError": {
+              "name": "TypeError",
+              "message": "(wr.grades || []).filter is not a function",
+              "stack": "evalmachine.<anonymous>:72\nfunction selectGradeVersion(wr,id){if(!versions(wr).some(v=>v.id===id))return;wr.selectedVersionId=id;const existing=(wr.grades||[]).filter(g=>g.targetVersionId===id).at(-1);if(existing&&['correct','incorrect','uncertain'].includes(existing.writing_judgment)){wr.gradeDraft={...existing};}else{wr.gradeDraft={targetVersionId:id,writing_judgment:'',understanding_state:'',auto_understanding_state:null,classification_source:'auto',manual_override:false,auto_reason:'작문 판정을 선택하세요.',override_reason:'',comment:String(existing?.comment||''),rule_version:'writing-understanding-v3-1'};}}\n                                                                                                                                     ^\n\nTypeError: (wr.grades || []).filter is not a function\n    at selectGradeVersion (evalmachine.<anonymous>:72:134)\n    at evalmachine.<anonymous>:77:816\n    at Array.map (<anonymous>)\n    at renderGrading (evalmachine.<anonymous>:77:598)\n    at renderTeacher (evalmachine.<anonymous>:65:566)\n    at render (evalmachine.<anonymous>:95:453)\n    at evalmachine.<anonymous>:103:10\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)\n    at boot (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:20:145)"
+            }
+          },
+          {
+            "shape": "selected version missing",
+            "compatible": true,
+            "bootError": {
+              "name": "TypeError",
+              "message": "Cannot read properties of undefined (reading 'id')",
+              "stack": "evalmachine.<anonymous>:77\nfunction renderGrading(app){const entries=[];for(const s of Object.values(state.sessions))for(const a of s.writingActivities||[])if(versions(s.writings[a.id]).length)entries.push({s,a,wr:s.writings[a.id]});if(!entries.length){app.innerHTML='<section class=\"card\"><h2>작문 검토</h2><div class=\"empty\">학생이 작문 초고를 제출하면 단어별로 확인할 수 있습니다.</div></section>';return;}app.innerHTML='<section class=\"card\"><h2>작문을 읽고 한 가지 판정을 선택해요.</h2><p>문맥 첫 답과 작문이 모두 맞으면 앎으로 분류합니다. 교사가 복습이 필요하다고 판단하면 애매함으로 바꿀 수 있어요.</p><p class=\"fine\">작문 판정을 바꾸면 이해 그룹은 새 자동 판정으로 돌아갑니다. 힌트는 도움 기록으로 남으며 자동 앎을 막지 않습니다.</p></section>'+entries.map(({s,a,wr})=>{const w=word(a.wordId);wr.grades??=[];if(!wr.selectedVersionId||!wr.gradeDraft||(!wr.gradeDraft.writing_judgment&&('meaning' in wr.gradeDraft||'context' in wr.gradeDraft||'sentence' in wr.gradeDraft)))selectGradeVersion(wr,wr.selectedVersionId||versions(wr).at(-1).id);const v=versions(wr).find(x=>x.id===wr.selectedVersionId),g=wr.gradeDraft,last=latestGrade(wr);return '<section class=\"card\"><div class=\"row\"><h2>'+esc(titleWord(w.id))+' 작문</h2><span class=\"tag\">'+(last?judgmentLabel(last.writing_judgment)+' · '+gradeText(last.understanding_state):'교사 확인 대기')+'</span></div><label class=\"field\"><span>평가할 원문 버전</span><select class=\"input\" data-grade-version=\"'+esc(a.id)+'\" data-session=\"'+esc(s.id)+'\">'+versions(wr).map(x=>'<option value=\"'+esc(x.id)+'\" '+(x.id===v.id?'selected':'')+'>'+esc(x.kind==='draft'?'초고':'수정본')+' v'+x.number+' · '+esc(stamp(x.submittedAt))+'</option>').join('')+'</select></label><div class=\"answer-text\">'+esc(v.text)+'</div><div class=\"rubric\"><strong>검토 참고 · 콘텐츠 승인 전 초안</strong><p>'+esc(w.simple_definition)+'</p><p class=\"fine\">검토 예문: '+esc(w.writing?.teacher_sample)+'</p><p class=\"fine\">적절한 동사 활용과 조사 변형을 허용합니다. 예: '+esc((w.accepted_forms||[]).join(', '))+'</p></div><div class=\"field\"><span>작문 판정 · 한 가지 선택</span><div class=\"choices\">'+['correct','incorrect','uncertain'].map(j=>btn(judgmentLabel(j),'data-action=\"writing-judgment\" data-session=\"'+s.id+'\" data-activity=\"'+a.id+'\" data-judgment=\"'+j+'\" data-testid=\"judgment-'+a.id+'-'+j+'\" aria-pressed=\"'+(g.writing_judgment===j)+'\"',g.writing_judgment===j?'selected':'')).join('')+'</div></div><div class=\"notice\"><strong>자동 분류: '+gradeText(g.auto_understanding_state)+'</strong><br>'+esc(g.auto_reason||'작문 판정을 선택하세요.')+(g.writing_judgment?'<br><span class=\"fine\">문맥 첫 답 '+(g.first_correct_count||0)+'/'+(g.first_response_count||0)+'개 정답 · 첫 제출 전 힌트 '+(g.first_hint_count||0)+'개'+(!g.first_response_count?' · 문맥 재확인 필요':'')+'</span>':'')+'</div><label class=\"field\"><span>이해 그룹 · 교사가 조정할 수 있어요</span><select class=\"input\" data-grade-key=\"understanding_state\" data-session=\"'+s.id+'\" data-activity=\"'+a.id+'\" '+(!g.writing_judgment?'disabled':'')+'>'+(!g.writing_judgment?'<option value=\"\">작문 판정을 먼저 선택</option>':'')+GROUPS.map(k=>'<option value=\"'+k+'\" '+(g.understanding_state===k?'selected':'')+'>'+LABEL[k]+'</option>').join('')+'</select></label>'+(g.classification_source==='manual'?'<p class=\"fine\">교사 조정: 자동 '+gradeText(g.auto_understanding_state)+' → '+gradeText(g.understanding_state)+'</p><label class=\"field\"><span>조정 이유 · 선택</span><textarea class=\"input\" data-grade-key=\"override_reason\" data-session=\"'+s.id+'\" data-activity=\"'+a.id+'\">'+esc(g.override_reason||'')+'</textarea></label>':'')+'<label class=\"field\"><span>학생에게 전할 말 · 선택</span><textarea class=\"input\" data-grade-key=\"comment\" data-session=\"'+s.id+'\" data-activity=\"'+a.id+'\">'+esc(g.comment||'')+'</textarea></label><div class=\"button-row\">'+btn('선택한 버전 판정 확정','data-action=\"confirm-grade\" data-session=\"'+s.id+'\" data-activity=\"'+a.id+'\" data-version=\"'+esc(v.id)+'\" data-testid=\"confirm-grade\" '+(!g.writing_judgment?'disabled':''),'primary')+'</div>'+(last?'<p class=\"fine\">최근 확정: '+esc(last.targetVersionId)+' · '+judgmentLabel(last.writing_judgment)+' · '+gradeText(last.understanding_state)+' · '+esc(stamp(last.confirmedAt))+'</p>':'')+'</section>';}).join('');document.querySelectorAll('[data-grade-version]').forEach(el=>el.addEventListener('change',()=>{selectGradeVersion(state.sessions[el.dataset.session].writings[el.dataset.gradeVersion],el.value);persist();render();}));bind('writing-judgment',e=>{const el=e.currentTarget;if(chooseWritingJudgment(el.dataset.session,el.dataset.activity,el.dataset.judgment))render();});document.querySelectorAll('[data-grade-key]').forEach(el=>el.addEventListener(el.tagName==='TEXTAREA'?'input':'change',()=>{if(el.dataset.gradeKey==='understanding_state'){setUnderstandingOverride(el.dataset.session,el.dataset.activity,el.value);render();}else{state.sessions[el.dataset.session].writings[el.dataset.activity].gradeDraft[el.dataset.gradeKey]=el.value;persist();}}));bind('confirm-grade',e=>{const el=e.currentTarget,wr=state.sessions[el.dataset.session].writings[el.dataset.activity];if(wr.selectedVersionId!==el.dataset.version){status('평가할 원문이 바뀌었습니다. 선택한 버전을 다시 확인하세요.');return;}if(confirmGrade(el.dataset.session,el.dataset.activity))render();});}\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \n\nTypeError: Cannot read properties of undefined (reading 'id')\n    at evalmachine.<anonymous>:77:1387\n    at Array.map (<anonymous>)\n    at evalmachine.<anonymous>:77:1337\n    at Array.map (<anonymous>)\n    at renderGrading (evalmachine.<anonymous>:77:598)\n    at renderTeacher (evalmachine.<anonymous>:65:566)\n    at render (evalmachine.<anonymous>:95:453)\n    at evalmachine.<anonymous>:103:10\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)"
+            }
+          },
+          {
+            "shape": "review response null",
+            "compatible": true,
+            "bootError": {
+              "name": "TypeError",
+              "message": "Cannot read properties of null (reading 'first')",
+              "stack": "evalmachine.<anonymous>:54\nfunction reviewStats(r){if(!r)return {done:0,total:learnedTargetWords().length,correct:0,independent:0,hints:0};const rs=Object.values(r.responses).filter(x=>x.first).map(x=>x.first);return {done:rs.length,total:r.targetWordIds.length,correct:rs.filter(x=>x.correct).length,independent:rs.filter(x=>x.correct&&!x.hinted).length,hints:rs.filter(x=>x.hinted).length};}\n                                                                                                                                                                ^\n\nTypeError: Cannot read properties of null (reading 'first')\n    at evalmachine.<anonymous>:54:161\n    at Array.filter (<anonymous>)\n    at reviewStats (evalmachine.<anonymous>:54:149)\n    at evalmachine.<anonymous>:57:403\n    at Array.map (<anonymous>)\n    at renderReviews (evalmachine.<anonymous>:57:361)\n    at render (evalmachine.<anonymous>:95:847)\n    at evalmachine.<anonymous>:103:10\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)"
+            }
+          },
+          {
+            "shape": "confirmed parent snapshot missing ratings",
+            "compatible": true,
+            "bootError": {
+              "name": "TypeError",
+              "message": "Cannot read properties of undefined (reading '뜻 이해')",
+              "stack": "evalmachine.<anonymous>:94\nfunction parentReport(){const summary=reportSummary(),st=allStats(),t=state.teacher.status==='confirmed'?state.teacher.confirmedSnapshot:null,examples=[];for(const s of Object.values(state.sessions))for(const a of s.writingActivities||[]){const wr=s.writings[a.id],g=latestGrade(wr),v=g?versions(wr).find(x=>x.id===g.targetVersionId):null;if(g&&v)examples.push({a,g,v});}return '<article class=\"report-page\"><span class=\"tag\">학부모 자료 · 가상 학생 · '+(t?'교사 문구 확인본':'초안')+'</span><h1 style=\"margin-top:16px\">이지우의 어휘 학습 기록</h1><p>별빛국어학원 · 브라우저 데모 누적 기록<br>실제 기간 성적표가 아닙니다. 출력 시각 '+esc(stamp(now()))+'</p>'+renderAssessmentCharts(summary)+renderReportProgress(summary)+'<div class=\"metric-grid\">'+metric(st.regular.objective+'/'+st.regular.objectivePlanned,'객관 연습 제출')+metric(st.regular.writing+'/'+st.regular.writingPlanned,'전수 작문 제출')+metric(st.regular.correct+'/'+st.regular.objective,'객관 첫 정답 / 첫 응답')+'</div><p class=\"fine\">힌트 없이 맞힌 첫 답 '+st.regular.independent+'/'+st.regular.objective+' · 교사 확인 '+st.graded+'/'+st.writing+' · 보충 객관 제출 '+st.remedial+'</p>'+renderAdditionalReview(summary)+'<h2>단어별 교사 평가와 다음 학습</h2>'+wordAssessmentTable()+'<h2>주간·월간·분기 전체 복습</h2><p class=\"fine\">각 기간의 대상은 시작 시 실제 응답·초고 제출 기록의 고유 의미 ID로 고정합니다. 실제 달력 집계는 구현 전입니다.</p><table><thead><tr><th>시범 기간</th><th>전체 확인</th><th>첫 정답</th></tr></thead><tbody>'+Object.entries(PHASES).map(([p,l])=>{const s=reviewStats(state.reviews[p]);return '<tr><td>'+l+'</td><td>'+s.done+'/'+s.total+'</td><td>'+s.correct+'/'+s.done+'</td></tr>';}).join('')+'</tbody></table>'+examples.slice(0,2).map(({a,g,v})=>'<section class=\"keep\"><h2>교사가 확인한 '+esc(titleWord(a.wordId))+' · '+(v.kind==='draft'?'초고':'수정본')+' v'+v.number+'</h2><div class=\"answer-text\">'+esc(v.text)+'</div><p class=\"message\">'+esc(g.comment)+'</p></section>').join('')+(t&&t.includeEvaluation?'<section class=\"keep\"><h2>교사가 직접 작성한 종합 평가</h2><p>'+CATEGORIES.map(k=>k+': '+esc(t.ratings[k])).join(' · ')+'</p>'+[['강점',t.strength],['보완',t.improve],['다음 계획',t.next]].filter(x=>x[1]).map(([k,v])=>'<p class=\"message\"><strong>'+k+'</strong><br>'+esc(v)+'</p>').join('')+'</section>':'')+(t&&t.includeMessage?'<section class=\"keep\"><h2>부모님께 드리는 말씀</h2><p class=\"message\">'+esc(t.parentMessage)+'</p></section>':'')+'<footer class=\"report-footer\">'+(t?esc(t.teacher)+' · '+esc(stamp(t.confirmedAt)):'가상 교사 김선생 · 종합 평가·메시지 미확정')+'<br>검수 전 콘텐츠 시제품이며 학습효과 증빙이 아닙니다. 내부 지도 메모는 포함하지 않으며 자동 발송하지 않습니다.</footer></article>';}\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \n\nTypeError: Cannot read properties of undefined (reading '뜻 이해')\n    at evalmachine.<anonymous>:94:1909\n    at Array.map (<anonymous>)\n    at parentReport (evalmachine.<anonymous>:94:1882)\n    at renderReportEditor (evalmachine.<anonymous>:93:1601)\n    at renderTeacher (evalmachine.<anonymous>:65:627)\n    at render (evalmachine.<anonymous>:95:453)\n    at evalmachine.<anonymous>:103:10\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)\n    at boot (/workspace/korean_word/vocabulary-planning/qa/latest-commit-0d75986/storage-errors/storage-errors-check.js:20:145)"
+            }
+          }
+        ]
+      },
+      "reproduction": "Load otherwise valid v2 with one mutation from evidence table via localStorage or openai:set_globals.",
+      "expected": "Validate nested record schema and references, quarantine rejected values, and render recovery UI with export/reset.",
+      "actual": "All corrupt examples pass compatibility; startup throws TypeError with blank/partial app and no recovery control in app.",
+      "lines": [
+        30,
+        31,
+        53,
+        58,
+        66,
+        73,
+        91,
+        96,
+        113
+      ]
+    },
+    {
+      "id": "SE-15",
+      "name": "Saved session ID attributes are escaped in teacher grading controls",
+      "status": "FINDING",
+      "finding": true,
+      "priority": "P2",
+      "evidence": {
+        "rawInlineHandlerInserted": true,
+        "firstJudgmentButtonAttributes": {
+          "class": "",
+          "data-action": "writing-judgment",
+          "data-session": "regular",
+          "onclick": "globalThis.__qa_xss=1",
+          "data-activity": "regular-W1",
+          "data-judgment": "correct",
+          "data-testid": "judgment-regular-W1-correct",
+          "aria-pressed": "false"
+        }
+      },
+      "reproduction": "Set sessions.regular.id in an otherwise valid stored/host v2 object to regular\" onclick=\"globalThis.__qa_xss=1, then open teacher grading.",
+      "expected": "Escape all attribute values and reject IDs outside allowed content/session identifiers.",
+      "actual": "Unescaped stored session ID is interpolated into button HTML, creating an onclick attribute.",
+      "lines": [
+        30,
+        96
+      ],
+      "limitation": "Confirmed HTML attribute injection, not browser script execution. Input route is stored/host metadata; ordinary writing/comment text is escaped."
+    },
+    {
+      "id": "SE-16",
+      "name": "Successful storage retry clears previous failure indicator",
+      "status": "FINDING",
+      "finding": true,
+      "priority": "P3",
+      "evidence": {
+        "status": "저장 실패: 이 창에서 계속 진행하거나 JSON을 전체 선택해 복사하세요.",
+        "lastWritePersisted": true
+      },
+      "reproduction": "Cause one quota exception, remove quota restriction, perform another answer/draft save.",
+      "expected": "Update to current success status while retaining optional prior-warning history.",
+      "actual": "storageWarning remains 저장 실패 forever, even though subsequent record save succeeds.",
+      "lines": [
+        35
+      ]
+    }
+  ]
+}

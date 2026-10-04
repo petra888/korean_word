@@ -1,0 +1,112 @@
+{
+  "method": "Node VM with mocked DOM/localStorage/host; no real browser, mobile or browser print verification",
+  "source_sha256": "0a673ee9af68b60cbab439a8772794ffdedf4615200fd31faaf49b6dbbff3d53",
+  "count": 16,
+  "passed": 4,
+  "failed": 12,
+  "checks": [
+    {
+      "id": "CO-duplicates-wrong",
+      "name": "Damaged duplicates-wrong order is archived and repaired with all four distinct options",
+      "status": "FAIL",
+      "error": "1 == 4"
+    },
+    {
+      "id": "CO-duplicates-correct",
+      "name": "Damaged duplicates-correct order is archived and repaired with all four distinct options",
+      "status": "FAIL",
+      "error": "1 == 4"
+    },
+    {
+      "id": "CO-three-unique",
+      "name": "Damaged three-unique order is archived and repaired with all four distinct options",
+      "status": "FAIL",
+      "error": "3 == 4"
+    },
+    {
+      "id": "CO-missing-option",
+      "name": "Damaged missing-option order is archived and repaired with all four distinct options",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(b.json('recoveredRecords').some(r=>r.raw===raw&&r.reason.includes('choiceOrders')))\n"
+    },
+    {
+      "id": "CO-extra-option",
+      "name": "Damaged extra-option order is archived and repaired with all four distinct options",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(b.json('recoveredRecords').some(r=>r.raw===raw&&r.reason.includes('choiceOrders')))\n"
+    },
+    {
+      "id": "CO-foreign-option",
+      "name": "Damaged foreign-option order is archived and repaired with all four distinct options",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(b.json('recoveredRecords').some(r=>r.raw===raw&&r.reason.includes('choiceOrders')))\n"
+    },
+    {
+      "id": "CO-invalid-option",
+      "name": "Damaged invalid-option order is archived and repaired with all four distinct options",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(b.json('recoveredRecords').some(r=>r.raw===raw&&r.reason.includes('choiceOrders')))\n"
+    },
+    {
+      "id": "CO-non-array",
+      "name": "Damaged non-array order is archived and repaired with all four distinct options",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(b.json('recoveredRecords').some(r=>r.raw===raw&&r.reason.includes('choiceOrders')))\n"
+    },
+    {
+      "id": "CO-container",
+      "name": "Malformed choiceOrders container is archived and repaired",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(b.json('recoveredRecords').some(r=>r.reason.includes('choiceOrders')))\n"
+    },
+    {
+      "id": "CO-valid",
+      "name": "A valid stored permutation is retained exactly without quarantine",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-runtime",
+      "name": "Runtime damaged order is repaired and persisted before presentation",
+      "status": "FAIL",
+      "error": "1 == 4"
+    },
+    {
+      "id": "CO-preserve",
+      "name": "Repair preserves first answer, retries, pending choice, writing drafts and navigation",
+      "status": "FAIL",
+      "error": "1 == 4"
+    },
+    {
+      "id": "CO-legacy-snapshot",
+      "name": "Stored historical activity snapshot option IDs take precedence over new canonical IDs",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-legacy-unsnapshotted",
+      "name": "Legacy item bank option IDs remain valid when old activity has no snapshot",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "CO-review-snapshot",
+      "name": "Period review snapshot ordering is preserved and damaged ordering is recoverable",
+      "status": "FAIL",
+      "error": "1 == 4"
+    },
+    {
+      "id": "CO-full-flow",
+      "name": "Normal study, all reviews, ten teacher grades, report print preparation, export and restore remain usable",
+      "status": "PASS",
+      "details": {
+        "objectiveResponses": 10,
+        "writingSubmissions": 10,
+        "periodReviewResponses": 30,
+        "teacherGrades": 10,
+        "printPrepared": true,
+        "exportReloadVerified": true
+      }
+    }
+  ]
+}

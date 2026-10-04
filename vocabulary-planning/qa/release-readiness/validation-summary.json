@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "release": "v5.1-demo",
+  "verified_at_utc": "2026-10-04T03:44:48.534990+00:00",
+  "base_commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
+  "verified_scope": "current uncommitted working tree",
+  "html_sha256": "85226d2f83dc08803de48bdebe401c67602296507ee21cbfab91dfb6761976d7",
+  "additional_confirmed_issue_fixed": 1,
+  "checks": {
+    "core_vm": {
+      "passed": 27,
+      "failed": 0
+    },
+    "independent_vm": {
+      "passed": 42,
+      "failed": 0,
+      "initial_allocation_subcases": 660
+    },
+    "choice_order_vm": {
+      "passed": 16,
+      "failed": 0
+    },
+    "mobile_print_markup_vm": {
+      "passed": 9,
+      "failed": 0
+    },
+    "content_structure": {
+      "passed": 20,
+      "failed": 0
+    }
+  },
+  "unchanged_evidence": {
+    "css_identical_to_verified_v5": true,
+    "css_sha256": "ae4c03100bf5bc4e8ddb0612857c278cb54086121d261581ae1356253d23cebe",
+    "previous_contrast_pairs_passed": 22,
+    "same_five_svg_fixture_bytes": [
+      "donut-tiny.svg",
+      "donut-zero.svg",
+      "donut-all.svg",
+      "donut-thirds.svg",
+      "donut-mixed.svg"
+    ],
+    "previous_svg_raster_passed": 5
+  },
+  "actual_browser_mobile_print": "NOT RUN: previous browser launch blocked; code and mocked DOM verification only",
+  "actual_service_acceptance": {
+    "total": 63,
+    "executed": 0
+  },
+  "release_scope": "fictional staff demo; real student pilot needs authentication, permissions, server storage, calendar aggregation, content approval"
+}

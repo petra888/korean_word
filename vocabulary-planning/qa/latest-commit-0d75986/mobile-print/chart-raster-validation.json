@@ -1,0 +1,101 @@
+{
+  "method": "MuPDF SVG rasterization of current committed renderDonut output; no HTML/CSS layout or browser printing exercised",
+  "results": [
+    {
+      "fixture": "zero",
+      "expected_ratios": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "raster_ratios": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_absolute_error": 0,
+      "tolerance": 0.003,
+      "status": "PASS",
+      "source_svg_sha256": "23d5ccb74d4409a21afd0cb0443829bd11b94817be73fbd7402cdd01634f27b9"
+    },
+    {
+      "fixture": "all",
+      "expected_ratios": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "raster_ratios": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_absolute_error": 0.0,
+      "tolerance": 0.003,
+      "status": "PASS",
+      "source_svg_sha256": "4d7eb66f0f8ad781b727cddc061c44aa65cad7de45857e6e10634e6893799883"
+    },
+    {
+      "fixture": "mixed",
+      "expected_ratios": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "raster_ratios": [
+        0.40065185185185187,
+        0.299837037037037,
+        0.19961481481481483,
+        0.0998962962962963
+      ],
+      "max_absolute_error": 0.0006518518518518479,
+      "tolerance": 0.003,
+      "status": "PASS",
+      "source_svg_sha256": "a5d86a25181d82011977c8651ceff7f8c8d94d32629c26f0791a6e226362160b"
+    },
+    {
+      "fixture": "tiny",
+      "expected_ratios": [
+        0.99,
+        0.01,
+        0,
+        0
+      ],
+      "raster_ratios": [
+        0.990392858198587,
+        0.00960714180141299,
+        0.0,
+        0.0
+      ],
+      "max_absolute_error": 0.00039285819858703164,
+      "tolerance": 0.003,
+      "status": "PASS",
+      "source_svg_sha256": "303d4efd8b63fb4b577b833d0a73e616b455de312ec19bfc8300f543b9b3748a"
+    },
+    {
+      "fixture": "thirds",
+      "expected_ratios": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0
+      ],
+      "raster_ratios": [
+        0.3335898650248638,
+        0.3327758702344305,
+        0.3336342647407057,
+        0.0
+      ],
+      "max_absolute_error": 0.0005574630989028106,
+      "tolerance": 0.003,
+      "status": "PASS",
+      "source_svg_sha256": "588a4b3b5f0f831b665e11ee9962ebd20630e9cac70adca3bbba850a4cc04346"
+    }
+  ],
+  "actual_mobile_and_browser_print": "NOT RUN"
+}

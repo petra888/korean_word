@@ -16,7 +16,7 @@ def check(ok, message):
 
 check(bank.get('status') == 'teacher_review_required', 'Bank must remain teacher-review draft')
 check(len(words) == 10 and [w['id'] for w in words] == expected, 'First 10 words must follow exact textbook order')
-check(len(items) == 150, 'Expected 150 objective items')
+check(len(items) == 160, 'Expected 160 objective items')
 check(len({i['id'] for i in items}) == len(items), 'Duplicate item IDs')
 check(len({i['prompt'].strip() for i in items}) == len(items), 'Duplicate full prompt text')
 by_word = {w['id']: w for w in words}
@@ -41,7 +41,7 @@ for w in words:
     check(writing.get('judgment_labels') == [{'id':'correct','label':'정답'},{'id':'incorrect','label':'오답'},{'id':'uncertain','label':'검토(애매)'}], f"Writing judgment labels mismatch: {w['id']}")
     check(writing.get('alternative',{}).get('prompt') != writing.get('prompt'), f"Duplicate writing prompt: {w['id']}")
     counts=collections.Counter(i['phase'] for i in items if i['word_id']==w['id'])
-    check(counts == {'practice':8,'pretest':1,'posttest':1,'delayed':1,'weekly':2,'monthly':1,'quarterly':1}, f"Phase supply mismatch: {w['id']} {dict(counts)}")
+    check(counts == {'practice':9,'pretest':1,'posttest':1,'delayed':1,'weekly':2,'monthly':1,'quarterly':1}, f"Phase supply mismatch: {w['id']} {dict(counts)}")
 
 for i in items:
     w=by_word.get(i['word_id'])

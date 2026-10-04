@@ -1,0 +1,59 @@
+{
+  "method": "Node VM and mocked DOM/storage/host; no actual browser verification",
+  "html_sha256": "0a673ee9af68b60cbab439a8772794ffdedf4615200fd31faaf49b6dbbff3d53",
+  "count": 13,
+  "checks": [
+    {
+      "name": "Unreadable primary storage is never overwritten by initial fresh rendering",
+      "status": "PASS"
+    },
+    {
+      "name": "Recovery archive failure protects corrupt primary and exports exact original bytes from memory",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit reset is usable after archive failure while recovery export remains available",
+      "status": "PASS"
+    },
+    {
+      "name": "New plan freezes question text/options/correct key independently of later bank edits",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy session without snapshot migrates previous bank wording before new canonical wording",
+      "status": "PASS"
+    },
+    {
+      "name": "Period review freezes question snapshot and ignores later bank mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "Local edits after future host time remain newer than replay of accepted host snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid optional activity snapshot falls back to valid archived/current item without dropping activity",
+      "status": "PASS"
+    },
+    {
+      "name": "Broken grade target is quarantined with original audit record while unrelated writing text is preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Reset keeps freshness fence so older future-dated host snapshot cannot resurrect cleared answers",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale asynchronous host rejection cannot replace latest successful save result",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale asynchronous success cannot clear latest host failure",
+      "status": "PASS"
+    },
+    {
+      "name": "Reset host rejection follows handled save path and remains visible",
+      "status": "PASS"
+    }
+  ]
+}
