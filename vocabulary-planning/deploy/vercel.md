@@ -54,18 +54,30 @@ npx vercel
 Ready 상태·생성 URL·보호 대상과 허용 사용자 접속을 확인한 뒤 공유한다. Preview 보호가
 Production URL이나 다른 도메인에도 동일하게 적용된다고 가정하지 않는다.
 
-GitHub Import나 서버 푸시를 먼저 완료할 필요는 없다. 이후 지속적인 자동 배포가 필요하면
-GitHub 소스를 전달하고 Vercel Git 연동·빌드 설정을 별도로 마련한다. 현재 설정은 생성한
-`vercel-preview` 폴더의 직접 업로드용이며 저장소 전체를 그대로 Import하는 설정은 아니다.
+직접 CLI 배포는 GitHub Import나 서버 푸시를 먼저 완료할 필요가 없다. 생성한 `vercel-preview`
+폴더의 설정은 위의 직접 업로드용이다.
+
+## GitHub 연동 배포
+
+2026년 10월 5일 저장소 최상위에 Git 연동용 `vercel.json`과 Node 빌드 스크립트를 추가하고
+GitHub `petra888/korean_word`의 `main`에 push했다. 저장소 전체를 Import할 때 Root Directory는
+저장소 최상위, Framework는 Other, Build Command는 `node vocabulary-planning/build_vercel_preview.mjs`,
+Output Directory는 `vocabulary-planning/deploy/demo-site`, Install Command는 비움이다.
+`vercel.json`이 이 설정을 제공한다. 서버 빌드는 기존 검증 해시·원본 콘텐츠가 같을 때만
+진행하며, 정적 출력은 index.html과 release-manifest.json 두 파일로 제한한다.
+
+연결 도구로 `korean-word-demo`를 생성해 기본 Preview 배포를 요청했으나 `auhjins-projects`
+팀 접근 권한403오류로 배포 전에 중단됐다. Vercel 계정을 해당 팀 접근 권한으로 다시
+연결해야 한다. 프로젝트·배포 ID와 URL을 받기 전에는 배포 완료로 표시하지 않는다.
 
 브라우저 기록은 주소·기기별로 분리된다. 한 차례 테스트를 같은 URL에서 진행하고 새 배포 URL에
 이전 기록이 자동으로 옮겨진다고 안내하지 않는다. 가상 학생 기록만 사용한다.
 
 ## 현재 실행 상태
 
-Vercel 직접 도구·CLI 인증·프로젝트 연결이 이 환경에는 없다. Vercel API와 문서 접속도
-프록시 연결 실패로 막혔다. 여기서는 파일 생성·ZIP 무결성·HTML 일치까지 확인하며 실제
-외부 배포와 접근 보호 적용은 미완료로 기록한다. 실제 기기·인쇄 검수는 보류 상태다.
+Vercel 플러그인과 배포 도구가 연결되어 프로젝트 조회는 성공했다. Vercel CLI62.2.0도
+설치했다. 현재 실제 배포를 막는 오류는 위 Git 연동 요청의 팀 접근 권한403이다.
+실제 외부 배포와 접근 보호 적용은 미완료로 기록한다. 실제 기기·인쇄 검수는 보류 상태다.
 
 공식 안내 링크: [CLI 배포](https://vercel.com/docs/cli/deploy),
 [프로젝트 설정](https://vercel.com/docs/projects/project-configuration),

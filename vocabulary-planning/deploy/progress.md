@@ -2,6 +2,17 @@
 
 2026년 10월 4일. 목적은 가상 학생 기록을 이용한 본인·교직원 검토다.
 
+## 2026년 10월 5일 Vercel 연결 후 실행
+
+- Vercel 연결 도구로 프로젝트 조회가 성공했다. 기존 `korean-learning-website`는 별도 Next.js 서비스이므로 변경하지 않았다.
+- 저장소 최상위 `vercel.json`과 `build_vercel_preview.mjs`를 추가했다. Vercel에서 검증된 HTML과 릴리스 정보 두 파일만 정적 출력하도록 구성했다. Python 빌드나 추가 npm 설치는 필요 없다.
+- Node 빌드를 실제 실행해 기존 검증 HTML SHA와 첫10개·160문항 원본 일치를 확인했다.
+- `8b6f9a63004304ba07006f48ad98b5a8fad67231`을 GitHub `petra888/korean_word`의 `main`에 실제 push했고, 원격 ref의 같은 SHA를 확인했다. 아래의 미푸시 기록은 이전 시점의 내역이다.
+- 별도 `korean-word-demo` 프로젝트를 GitHub 소스에 연결해 Preview 배포하려고 요청했다. Vercel은 저장소 연결 조회 단계에서 `auhjins-projects` 팀 접근 권한이 없다는403오류를 반환했다. 프로젝트 생성·배포는 완료되지 않았고 생성된 배포 ID·URL은 없다.
+- 오류 원문: `Not authorized: Trying to access resource under scope "auhjins-projects". You must re-authenticate to this scope or use a token with access to this scope.`
+- 재개 조건은 Vercel 플러그인 연결에서 `auhjins-projects` 팀 접근 권한을 허용하는 것이다. 허용 후 같은 저장소·프로젝트 이름으로 다시 요청하고 READY 상태·배포 URL·접근 보호를 확인한다. 기존 별도 서비스나 보호 설정을 임의 변경하지 않는다.
+- 실제 기기·인쇄 검수는 사용자 결정에 따라 보류한다.
+
 ## Vercel로 테스트 호스팅 변경
 
 사용자 요청에 따라 Vercel Preview를 테스트 배포 경로로 준비한다. 실제 기기·인쇄 검수는
