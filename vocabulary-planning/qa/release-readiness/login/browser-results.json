@@ -1,0 +1,115 @@
+{
+  "method": "Real local Chromium via Playwright; isolated browser contexts and local HTTP only",
+  "source_sha256": "d8a40becc676b6400f22d473c9daf5838f299354ab201d5e19f591ecd0dd6f3b",
+  "passed": 9,
+  "failed": 0,
+  "deployment": "NOT RUN: user requested deployment only on explicit instruction",
+  "limits": [
+    "Fixed front-end test accounts; no server authentication or authorization.",
+    "Responsive browser viewports, not physical devices; actual printing deferred."
+  ],
+  "checks": [
+    {
+      "name": "Signed-out start shows student login and no learning or teacher menu",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Empty, wrong, cross-role and space-sensitive credentials cannot log in",
+      "status": "PASS",
+      "details": {
+        "invalidCases": 6,
+        "passwordSpacesAreSignificant": true
+      }
+    },
+    {
+      "name": "Role switching clears fields; password visibility keeps the entered value",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Student login enters diagnosis, resumes on reload and cannot open teacher UI",
+      "status": "PASS",
+      "details": {
+        "keyboardSubmit": true,
+        "refreshKeepsLoginAndDiagnosis": true,
+        "passwordStored": false
+      }
+    },
+    {
+      "name": "Teacher login edits reports; logout clears panels and keeps saved report text",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Broken, unknown and expired sessions and old saved teacher role start signed out",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Real student learning, pending reload, ten writings and teacher grading survive account changes",
+      "status": "PASS",
+      "details": {
+        "objectiveAnswers": 10,
+        "writingSubmissions": 10,
+        "teacherGrades": 10,
+        "diagnosisOnlyChoices": true,
+        "viewport": "390×900"
+      }
+    },
+    {
+      "name": "Student and teacher login layouts fit 360, 390, 768 and 1280 pixel viewports",
+      "status": "PASS",
+      "details": {
+        "viewports": [
+          {
+            "width": 360,
+            "role": "student",
+            "horizontalOverflow": false
+          },
+          {
+            "width": 360,
+            "role": "teacher",
+            "horizontalOverflow": false
+          },
+          {
+            "width": 390,
+            "role": "student",
+            "horizontalOverflow": false
+          },
+          {
+            "width": 390,
+            "role": "teacher",
+            "horizontalOverflow": false
+          },
+          {
+            "width": 768,
+            "role": "student",
+            "horizontalOverflow": false
+          },
+          {
+            "width": 768,
+            "role": "teacher",
+            "horizontalOverflow": false
+          },
+          {
+            "width": 1280,
+            "role": "student",
+            "horizontalOverflow": false
+          },
+          {
+            "width": 1280,
+            "role": "teacher",
+            "horizontalOverflow": false
+          }
+        ],
+        "physicalDevice": "not tested"
+      }
+    },
+    {
+      "name": "Browser completes login and learning flows with no uncaught JavaScript errors",
+      "status": "PASS",
+      "details": {}
+    }
+  ]
+}

@@ -1,15 +1,11 @@
 {
   "status": "pass",
-  "release": "v6-demo",
-  "verified_at_utc": "2026-10-09T03:06:07.940297+00:00",
-  "base_commit": "ba44a879f40132445687c455829179c68da6a8b0",
-  "verified_scope": "current working tree before release commit",
-  "html_sha256": "be68926034ff4eef0118f64800ee7d2fa0886b12e2b9af181722d8b8ce64e133",
+  "release": "v7-login-demo",
+  "verified_at_utc": "2026-10-09T04:32:16.041264+00:00",
+  "base_commit": "731c938b0147bb3a1eddf020975ab86462f57dc6",
+  "verified_scope": "source tree before release commit; exact verified HTML checksum retained",
+  "html_sha256": "d8a40becc676b6400f22d473c9daf5838f299354ab201d5e19f591ecd0dd6f3b",
   "checks": {
-    "core_vm": {
-      "passed": 27,
-      "failed": 0
-    },
     "independent_vm": {
       "passed": 42,
       "failed": 0,
@@ -19,22 +15,34 @@
       "passed": 16,
       "failed": 0
     },
+    "diagnostic_choices_vm": {
+      "passed": 13,
+      "failed": 0
+    },
     "mobile_print_markup_vm": {
       "passed": 9,
+      "failed": 0
+    },
+    "test_login_vm": {
+      "passed": 16,
+      "failed": 0
+    },
+    "test_login_browser": {
+      "passed": 9,
+      "failed": 0
+    },
+    "core_vm": {
+      "passed": 27,
       "failed": 0
     },
     "content_structure": {
       "passed": 22,
       "failed": 0
-    },
-    "diagnostic_choices_vm": {
-      "passed": 13,
-      "failed": 0
     }
   },
   "unchanged_evidence": {
-    "css_identical_to_verified_v5": true,
-    "css_sha256": "ae4c03100bf5bc4e8ddb0612857c278cb54086121d261581ae1356253d23cebe",
+    "css_identical_to_verified_v5": false,
+    "css_sha256": "a4ff6fb130a6958263f8211386ff1d4c24903d816e13d3716dbf3272122e4f9d",
     "previous_contrast_pairs_passed": 22,
     "same_five_svg_fixture_bytes": [
       "donut-tiny.svg",
@@ -43,13 +51,34 @@
       "donut-thirds.svg",
       "donut-mixed.svg"
     ],
-    "previous_svg_raster_passed": 5
+    "previous_svg_raster_passed": 5,
+    "original_css_preserved_with_added_login_rules": true
   },
-  "actual_browser_mobile_print": "NOT RUN: previous browser launch blocked; code and mocked DOM verification only",
+  "actual_browser_mobile_print": "Local Chromium login, student learning, teacher grading and responsive login viewports verified; physical devices and actual printing deferred by user.",
   "actual_service_acceptance": {
     "total": 63,
     "executed": 0
   },
-  "release_scope": "fictional staff demo; real student pilot needs authentication, permissions, server storage, calendar aggregation, content approval",
-  "change": "All 90 stage-2 practice questions use diagnosis word choices; unanswered questions and retries migrate while submitted first responses, writings and teacher grades remain unchanged."
+  "release_scope": "fictional student/teacher demo with fixed client-side login; real student pilot still needs server authentication, permissions, server storage, calendar aggregation and content approval",
+  "change": "Added role-specific fixed test login, logout, tab session restoration and gated teacher UI. Preserves diagnosis-only stage-2 choices and all learning and teacher records.",
+  "actual_browser_checks": {
+    "report": "login/browser-results.json",
+    "passed": 9,
+    "failed": 0,
+    "viewports": [
+      360,
+      390,
+      768,
+      1280
+    ]
+  },
+  "deployment": {
+    "authorization": "Explicit user request to deploy this login revision on 2026-10-09 Asia/Seoul",
+    "project": "korean-word-demo",
+    "branch": "main",
+    "target": "production",
+    "purpose": "Existing fictional student/teacher test demo",
+    "execution_tracking": "This file records pre-deployment verification; deployment completion is verified through Vercel metadata.",
+    "policy": "Future deployments require a new explicit user request."
+  }
 }

@@ -1,9 +1,9 @@
 {
-  "testedAt": "2026-10-09T03:00:07.001Z",
+  "testedAt": "2026-10-09T04:29:00.828Z",
   "target": "/workspace/korean_word/vocabulary-planning/prototype/pilot-flow.html",
-  "html_sha256": "be68926034ff4eef0118f64800ee7d2fa0886b12e2b9af181722d8b8ce64e133",
+  "html_sha256": "d8a40becc676b6400f22d473c9daf5838f299354ab201d5e19f591ecd0dd6f3b",
   "method": "Independent Node VM execution with mocked DOM/storage/host; all mutations are in isolated fixtures",
-  "browserVerification": "NOT RUN: browser sandbox restriction persists",
+  "browserVerification": "Not exercised by this VM suite; real local Chromium results are in ../login/browser-results.json",
   "productionValidation": "NOT RUN: prototype has no production authentication/server database",
   "summary": {
     "total": 42,
@@ -42,7 +42,7 @@
       "name": "Quota failure preserves in-memory pending answer and JSON export",
       "status": "PASS",
       "evidence": {
-        "warning": "현재 v2, 이전 v1과 복구용 원문 기록을 표시했습니다.",
+        "warning": "저장 실패: 이 창에서 계속 진행하거나 JSON을 전체 선택해 복사하세요.",
         "unsavedJSONRetained": true
       }
     },
@@ -78,7 +78,7 @@
       "status": "PASS",
       "evidence": {
         "failedStatus": "호스트 저장이 제한되었습니다. 브라우저 기록 또는 JSON 복사를 이용하세요.",
-        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 12:00"
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 1:28"
       }
     },
     {
@@ -87,7 +87,7 @@
       "status": "PASS",
       "evidence": {
         "failedStatus": "호스트 저장이 제한되었습니다. 브라우저 기록 또는 JSON 복사를 이용하세요.",
-        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 12:00"
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 1:28"
       }
     },
     {
@@ -227,7 +227,7 @@
       "name": "Local save recovery clears only the current storage failure",
       "status": "PASS",
       "evidence": {
-        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 12:00",
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 1:28",
         "lastWriteDurable": true
       }
     },
@@ -238,7 +238,7 @@
       "evidence": {
         "originalRecordUntouched": true,
         "inMemoryRecoveryExportable": true,
-        "warning": "현재 v2, 이전 v1과 복구용 원문 기록을 표시했습니다."
+        "warning": "저장 기록 일부를 복구했습니다. 원본 1건은 JSON 내보내기에 보관됩니다. · 복구 원문 보관을 저장하지 못했습니다. 원본을 덮어쓰지 않으며 JSON으로 내보낼 수 있습니다."
       }
     },
     {
@@ -247,7 +247,7 @@
       "status": "PASS",
       "evidence": {
         "lateRejectionIgnored": true,
-        "status": "데모 기록 저장 · 2026. 10. 9. 오후 12:00"
+        "status": "데모 기록 저장 · 2026. 10. 9. 오후 1:28"
       }
     },
     {
@@ -265,8 +265,8 @@
       "name": "Accepted host clock ahead of local time cannot replay over a subsequently saved local draft",
       "status": "PASS",
       "evidence": {
-        "hostTime": "2026-10-09T03:01:06.075Z",
-        "localTime": "2026-10-09T03:01:06.076Z",
+        "hostTime": "2026-10-09T04:29:59.873Z",
+        "localTime": "2026-10-09T04:29:59.874Z",
         "hostRevision": 26,
         "localRevision": 27,
         "latestDraftPreserved": true
@@ -277,8 +277,8 @@
       "name": "Reset remains newer than pre-reset future-dated host snapshot and prevents cleared records from returning",
       "status": "PASS",
       "evidence": {
-        "hostTime": "2026-10-09T03:01:06.096Z",
-        "resetTime": "2026-10-09T03:01:06.097Z",
+        "hostTime": "2026-10-09T04:29:59.886Z",
+        "resetTime": "2026-10-09T04:29:59.887Z",
         "hostRevision": 26,
         "resetRevision": 27,
         "clearedRecordsNotResurrected": true
@@ -487,7 +487,7 @@
     },
     {
       "id": "PR-02",
-      "name": "beforeprint from a fresh student diagnosis fills an initially empty print area with an honest pending report",
+      "name": "beforeprint from a fresh teacher login fills an initially empty print area with an honest pending report",
       "status": "PASS",
       "evidence": {
         "freshPrintAreaPrepared": true,

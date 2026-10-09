@@ -39,6 +39,7 @@ writeFileSync(join(output, 'release-manifest.json'), JSON.stringify({
   html_sha256: sha256, source_commit: commit, source_has_uncommitted_changes: dirty,
   word_count: bank.words.length, objective_items: bank.items.length, storage_schema: 2,
   data_storage: 'browser localStorage; no cross-device or per-student server storage',
+  authentication: 'fixed client-side student/teacher test accounts; no server authentication or authorization',
   deployment_provider: 'Vercel', deployment_target: process.env.VERCEL_ENV === 'production' ? 'Production' : 'Preview',
   hosting_access: 'Vercel project deployment protection',
   real_student_pilot_ready: false, content_approval: bank.status,

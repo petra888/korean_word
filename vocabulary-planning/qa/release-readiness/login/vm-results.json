@@ -1,0 +1,88 @@
+{
+  "method": "Actual prototype JavaScript in Node VM with mocked DOM and blocked-storage cases; fixed test accounts only",
+  "source_sha256": "d8a40becc676b6400f22d473c9daf5838f299354ab201d5e19f591ecd0dd6f3b",
+  "passed": 16,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "No saved learning role or missing session automatically signs in",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Invalid and unknown credentials do not create a session or alter learning records",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Valid session restores the matching account and ignores extra stored fields",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Expired, excessive-future, wrong-account and unknown-role sessions are removed",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Broken session JSON is discarded without falsely claiming storage is unavailable",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Blocked session reads leave login usable and never infer authentication from saved data",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Blocked session writes allow the current tab and explain that reload needs login",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Logout clears authentication and private panels while retaining all learning records",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Logout can invalidate a session when removal is blocked but replacement is available",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Complete session-storage failure still signs out in memory with an actionable message",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Expired in-memory session returns to login on the next render",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Student cannot use teacher export, reset, page navigation or parent-print handlers",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Previously bound teacher actions cannot run after signing out and signing in as student",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Host learning updates cannot switch the signed-in student to teacher",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Host learning updates never authenticate a signed-out visitor",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Login credentials are absent from learning state, host exports and the session schema",
+      "status": "PASS",
+      "details": {}
+    }
+  ]
+}
