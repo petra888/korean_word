@@ -42,7 +42,7 @@ check('CO-legacy-snapshot','Stored historical activity snapshot option IDs take 
  const b=loaded(snapshot);assert(!b.bootError);assert.deepStrictEqual(visibleOptions(b),order);assert.equal(b.run('recoveredRecords.length'),0);assert(b.ids.app.innerHTML.includes(old.prompt));
 });
 check('CO-legacy-unsnapshotted','Legacy item bank option IDs remain valid when old activity has no snapshot',()=>{
- const b=prepared();b.run("{DATA.previous_items=JSON.parse(JSON.stringify(ITEMS));const a=currentSession().activities[0],old=DATA.previous_items.find(q=>q.id===a.itemId);old.options.forEach((o,i)=>o.id='legacy-'+i);old.correct_option_id='legacy-2';delete a.questionSnapshot;state.choiceOrders[old.id]=['legacy-3','legacy-2','legacy-1','legacy-0'];state=normalize(state);render()}");
+ const b=prepared();b.run("{DATA.previous_items=JSON.parse(JSON.stringify(ITEMS));delete currentSession().contentVersion;const a=currentSession().activities[0],old=DATA.previous_items.find(q=>q.id===a.itemId);old.options.forEach((o,i)=>o.id='legacy-'+i);old.correct_option_id='legacy-2';delete a.questionSnapshot;state.choiceOrders[old.id]=['legacy-3','legacy-2','legacy-1','legacy-0'];state=normalize(state);render()}");
  assert.deepStrictEqual(visibleOptions(b),['legacy-3','legacy-2','legacy-1','legacy-0']);assert.equal(b.run('compatibleWidgetState(state)'),true);
 });
 check('CO-review-snapshot','Period review snapshot ordering is preserved and damaged ordering is recoverable',()=>{

@@ -6,6 +6,7 @@ import csv
 import hashlib
 import json
 import re
+import subprocess
 
 parser = argparse.ArgumentParser()
 parser.add_argument("snapshot", type=Path)
@@ -60,12 +61,30 @@ current_items = {item["id"]: item for item in items}
 check("legacy 150 item snapshots retained with distinct bank version", len(previous) == 150
       and len({item["id"] for item in previous}) == 150
       and bank.get("previous_version") != bank["version"])
-check("existing answer IDs and correct expressions preserved", all(
+check("existing answer IDs preserved with diagnostic practice display forms", all(
     old["id"] in current_items and all(old[key] == current_items[old["id"]][key]
         for key in ("word_id", "meaning_id", "phase", "correct_option_id"))
-    and next(option["text"] for option in old["options"] if option["id"] == old["correct_option_id"])
+    and (next(option["text"] for option in old["options"] if option["id"] == old["correct_option_id"])
     == next(option["text"] for option in current_items[old["id"]]["options"]
-        if option["id"] == old["correct_option_id"]) for old in previous))
+        if option["id"] == old["correct_option_id"])
+    or (old["word_id"] == "W0009" and old["phase"] == "practice"
+        and next(option["text"] for option in current_items[old["id"]]["options"]
+                 if option["id"] == old["correct_option_id"]) == "굴지"
+        and "(____)의" in current_items[old["id"]]["prompt"])) for old in previous))
+practice = [q for q in items if q["phase"] == "practice"]
+display = {w["id"]: w["display_word"] for w in words}
+check("all 90 practice questions use four distinct diagnostic words", len(practice) == 90
+      and bank.get("practice_option_scope") == "diagnostic_words"
+      and all(q.get("option_scope") == "diagnostic_words"
+              and len({o["word_id"] for o in q["options"]}) == 4
+              and all(o["text"] == display.get(o["word_id"]) for o in q["options"])
+              and next(o["word_id"] for o in q["options"] if o["id"] == q["correct_option_id"])
+                  == q["word_id"] for q in practice))
+released = bank.get("previous_release_items", [])
+check("160 prior-release snapshots retained; other phases unchanged", len(released) == 160
+      and bank.get("previous_release_version") != bank["version"]
+      and {q["id"] for q in released} == set(current_items)
+      and all(q == current_items[q["id"]] for q in released if q["phase"] != "practice"))
 check("one new practice context per source word", len(items) - len(previous) == 10 and all(
     sum(item["word_id"] == word["id"] and item["phase"] == "practice"
         and item["id"] not in {old["id"] for old in previous} for item in items) == 1 for word in words))
@@ -132,9 +151,14 @@ check("removed numeric writing criteria absent; 3 judgment buttons metadata", al
     "criteria" not in word["writing"] and [label["id"] for label in word["writing"]["judgment_labels"]]
     == ["correct", "incorrect", "uncertain"] for word in words))
 content_doc = (root / "documents/10-word-curriculum.md").read_text()
-check("teacher content document includes every objective ID/prompt/hint/explanation", all(
-    item["id"] in content_doc and all(item[field] in content_doc for field in ("prompt", "hint", "explanation"))
-    for item in items))
+document_items_match = []
+for item in items:
+    block = re.search(r"(?ms)^#+ " + re.escape(item["id"]) + r" ·[^\n]*\n(.*?)(?=^#{3,5} |\Z)", content_doc)
+    document_items_match.append(bool(block) and all(item[field] in block[1]
+        for field in ("prompt", "hint", "explanation"))
+        and {key.lower(): value for key, value in re.findall(r"^- ([A-D])\. (.+)$", block[1], re.M)}
+        == {option["id"]: option["text"] for option in item["options"]})
+check("teacher content document exactly matches each objective prompt/choices/hint/explanation", all(document_items_match))
 check("teacher content document includes all 20 writing prompts/frames/examples", all(
     all(prompt[key] in content_doc for key in ("prompt", "sentence_frame", "teacher_sample"))
     for word in words for prompt in (word["writing"], word["writing"]["alternative"])))
@@ -147,7 +171,9 @@ for word in words:
         "unique_hints": len({item["hint"] for item in own_items}),
         "unique_explanations": len({item["explanation"] for item in own_items}),
         "answer_position_counts": dict(collections.Counter(item["correct_option_id"] for item in own_items))})
-report = {"base_commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a", "verified_scope": "fixed working tree, not a committed revision", "snapshot": str(root),
+commit_result = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True)
+base_commit = commit_result.stdout.strip() if commit_result.returncode == 0 else None
+report = {"base_commit": base_commit, "verified_scope": "current source tree at execution", "snapshot": str(root),
     "status": "pass" if all(check["status"] == "pass" for check in checks) else "fail",
     "check_count": len(checks), "checks": checks, "pattern_stats": pattern_stats,
     "source_issue_ids_first_10": {word["id"]: word["source"]["issue_ids"] for word in words if word["source"]["issue_ids"]},

@@ -35,11 +35,11 @@ mkdirSync(output, { recursive: true });
 assert.ok(readdirSync(output).every(name => ['index.html', 'release-manifest.json'].includes(name)), 'Unexpected public files.');
 writeFileSync(join(output, 'index.html'), source);
 writeFileSync(join(output, 'release-manifest.json'), JSON.stringify({
-  release: 'v5.1-demo', mode: 'fictional staff review demo',
+  release: validation.release, mode: 'fictional staff review demo',
   html_sha256: sha256, source_commit: commit, source_has_uncommitted_changes: dirty,
   word_count: bank.words.length, objective_items: bank.items.length, storage_schema: 2,
   data_storage: 'browser localStorage; no cross-device or per-student server storage',
-  deployment_provider: 'Vercel', deployment_target: 'Preview',
+  deployment_provider: 'Vercel', deployment_target: process.env.VERCEL_ENV === 'production' ? 'Production' : 'Preview',
   hosting_access: 'Vercel project deployment protection',
   real_student_pilot_ready: false, content_approval: bank.status,
   actual_browser_mobile_print: validation.actual_browser_mobile_print,

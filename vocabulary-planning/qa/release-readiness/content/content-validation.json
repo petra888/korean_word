@@ -1,9 +1,9 @@
 {
-  "base_commit": "0d7598638dac12c59e2cf7d0151b43a73f51c42a",
-  "verified_scope": "fixed working tree, not a committed revision",
+  "base_commit": "ba44a879f40132445687c455829179c68da6a8b0",
+  "verified_scope": "current source tree at execution",
   "snapshot": "/workspace/korean_word/vocabulary-planning",
   "status": "pass",
-  "check_count": 20,
+  "check_count": 22,
   "checks": [
     {
       "name": "450 raw rows and original fields retained",
@@ -36,7 +36,17 @@
       "details": null
     },
     {
-      "name": "existing answer IDs and correct expressions preserved",
+      "name": "existing answer IDs preserved with diagnostic practice display forms",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "all 90 practice questions use four distinct diagnostic words",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "name": "160 prior-release snapshots retained; other phases unchanged",
       "status": "pass",
       "details": null
     },
@@ -96,7 +106,7 @@
       "details": null
     },
     {
-      "name": "teacher content document includes every objective ID/prompt/hint/explanation",
+      "name": "teacher content document exactly matches each objective prompt/choices/hint/explanation",
       "status": "pass",
       "details": null
     },
@@ -111,7 +121,7 @@
       "word_id": "W0001",
       "word": "까탈",
       "item_count": 16,
-      "unique_option_sets": 4,
+      "unique_option_sets": 12,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -125,7 +135,7 @@
       "word_id": "W0002",
       "word": "깜냥",
       "item_count": 16,
-      "unique_option_sets": 3,
+      "unique_option_sets": 12,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -139,7 +149,7 @@
       "word_id": "W0003",
       "word": "달포",
       "item_count": 16,
-      "unique_option_sets": 9,
+      "unique_option_sets": 16,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -153,7 +163,7 @@
       "word_id": "W0004",
       "word": "말미",
       "item_count": 16,
-      "unique_option_sets": 2,
+      "unique_option_sets": 11,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -167,7 +177,7 @@
       "word_id": "W0005",
       "word": "선잠",
       "item_count": 16,
-      "unique_option_sets": 6,
+      "unique_option_sets": 15,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -180,7 +190,7 @@
       "word_id": "W0006",
       "word": "강단있는",
       "item_count": 16,
-      "unique_option_sets": 8,
+      "unique_option_sets": 16,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -194,7 +204,7 @@
       "word_id": "W0007",
       "word": "격의",
       "item_count": 16,
-      "unique_option_sets": 3,
+      "unique_option_sets": 12,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -208,7 +218,7 @@
       "word_id": "W0008",
       "word": "융통성",
       "item_count": 16,
-      "unique_option_sets": 5,
+      "unique_option_sets": 13,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -222,7 +232,7 @@
       "word_id": "W0009",
       "word": "굴지",
       "item_count": 16,
-      "unique_option_sets": 7,
+      "unique_option_sets": 15,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -236,7 +246,7 @@
       "word_id": "W0010",
       "word": "기탄없이",
       "item_count": 16,
-      "unique_option_sets": 9,
+      "unique_option_sets": 16,
       "unique_hints": 16,
       "unique_explanations": 16,
       "answer_position_counts": {
@@ -281,8 +291,8 @@
   "checksums": {
     "analysis/vocabulary.json": "caf356b552bff74782158fc85d3e8b5a18994c765d9ae3b68291a8e9def60e50",
     "curriculum/textbook-order.json": "e5c8224452ce5800f8a020b3fa996098303a5815fb157f71569f09e05b5dc621",
-    "curriculum/pilot-10.json": "d7593199292ebaf836e7f4e29b8a7562fe4dd5e910f3620117164d538a627491",
-    "prototype/pilot-flow.html": "85226d2f83dc08803de48bdebe401c67602296507ee21cbfab91dfb6761976d7"
+    "curriculum/pilot-10.json": "5224e534ca619305862ab75b4da0a90476f8248f80242b165d9d28c4fc86952b",
+    "prototype/pilot-flow.html": "be68926034ff4eef0118f64800ee7d2fa0886b12e2b9af181722d8b8ce64e133"
   },
   "limits": [
     "Dataset/source-field comparison does not independently reread all 60 PDF pages.",

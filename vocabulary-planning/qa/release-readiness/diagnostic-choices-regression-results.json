@@ -1,0 +1,77 @@
+{
+  "method": "Node VM with mocked DOM/localStorage/host; no browser, mobile or print verification",
+  "html_sha256": "be68926034ff4eef0118f64800ee7d2fa0886b12e2b9af181722d8b8ce64e133",
+  "count": 13,
+  "passed": 13,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "All 90 practice questions use four distinct diagnostic display words, including the answer",
+      "status": "PASS",
+      "details": {
+        "practiceQuestions": 90,
+        "optionEntries": 360
+      }
+    },
+    {
+      "name": "Every word has nine different distractor sets covering all other diagnosis words",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Assessment and period-review questions remain identical to the prior release",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "All mixed questions render lesson choices and still score correctly after shuffling and restart",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "A prior unanswered question replaces foreign choices and clears only its unsubmitted selection",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "All queued prior-release questions update, and fresh choice ordering remains stable on a second reload",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Host-state restoration applies the same lesson-choice migration",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Submitted first answers and their original question snapshot are preserved",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Retrying an old answered question uses diagnosis choices while retaining its first-answer evidence",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Pending retry choice and its new snapshot survive restart without rewriting the original answer",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "A retry already in progress in the prior release updates its choices without losing first or submitted retries",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Confirmed teacher grades and all ten writing submissions survive the content update unchanged",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Invalid foreign options in the current content bank cannot enter a new plan",
+      "status": "PASS",
+      "details": {}
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "method": "Node VM with mocked DOM/localStorage/host; no real browser, mobile or browser print verification",
-  "source_sha256": "85226d2f83dc08803de48bdebe401c67602296507ee21cbfab91dfb6761976d7",
+  "source_sha256": "be68926034ff4eef0118f64800ee7d2fa0886b12e2b9af181722d8b8ce64e133",
   "count": 16,
   "passed": 16,
   "failed": 0,

@@ -1,7 +1,7 @@
 {
-  "testedAt": "2026-10-04T03:42:27.403Z",
+  "testedAt": "2026-10-09T03:00:07.001Z",
   "target": "/workspace/korean_word/vocabulary-planning/prototype/pilot-flow.html",
-  "html_sha256": "85226d2f83dc08803de48bdebe401c67602296507ee21cbfab91dfb6761976d7",
+  "html_sha256": "be68926034ff4eef0118f64800ee7d2fa0886b12e2b9af181722d8b8ce64e133",
   "method": "Independent Node VM execution with mocked DOM/storage/host; all mutations are in isolated fixtures",
   "browserVerification": "NOT RUN: browser sandbox restriction persists",
   "productionValidation": "NOT RUN: prototype has no production authentication/server database",
@@ -78,7 +78,7 @@
       "status": "PASS",
       "evidence": {
         "failedStatus": "호스트 저장이 제한되었습니다. 브라우저 기록 또는 JSON 복사를 이용하세요.",
-        "recoveredStatus": "데모 기록 저장 · 2026. 10. 4. 오후 12:42"
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 12:00"
       }
     },
     {
@@ -87,7 +87,7 @@
       "status": "PASS",
       "evidence": {
         "failedStatus": "호스트 저장이 제한되었습니다. 브라우저 기록 또는 JSON 복사를 이용하세요.",
-        "recoveredStatus": "데모 기록 저장 · 2026. 10. 4. 오후 12:42"
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 12:00"
       }
     },
     {
@@ -227,7 +227,7 @@
       "name": "Local save recovery clears only the current storage failure",
       "status": "PASS",
       "evidence": {
-        "recoveredStatus": "데모 기록 저장 · 2026. 10. 4. 오후 12:42",
+        "recoveredStatus": "데모 기록 저장 · 2026. 10. 9. 오후 12:00",
         "lastWriteDurable": true
       }
     },
@@ -247,7 +247,7 @@
       "status": "PASS",
       "evidence": {
         "lateRejectionIgnored": true,
-        "status": "데모 기록 저장 · 2026. 10. 4. 오후 12:42"
+        "status": "데모 기록 저장 · 2026. 10. 9. 오후 12:00"
       }
     },
     {
@@ -265,8 +265,8 @@
       "name": "Accepted host clock ahead of local time cannot replay over a subsequently saved local draft",
       "status": "PASS",
       "evidence": {
-        "hostTime": "2026-10-04T03:43:27.005Z",
-        "localTime": "2026-10-04T03:43:27.006Z",
+        "hostTime": "2026-10-09T03:01:06.075Z",
+        "localTime": "2026-10-09T03:01:06.076Z",
         "hostRevision": 26,
         "localRevision": 27,
         "latestDraftPreserved": true
@@ -277,8 +277,8 @@
       "name": "Reset remains newer than pre-reset future-dated host snapshot and prevents cleared records from returning",
       "status": "PASS",
       "evidence": {
-        "hostTime": "2026-10-04T03:43:27.016Z",
-        "resetTime": "2026-10-04T03:43:27.017Z",
+        "hostTime": "2026-10-09T03:01:06.096Z",
+        "resetTime": "2026-10-09T03:01:06.097Z",
         "hostRevision": 26,
         "resetRevision": 27,
         "clearedRecordsNotResurrected": true
