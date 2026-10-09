@@ -1,11 +1,15 @@
 {
   "status": "pass",
-  "release": "v7-login-demo",
-  "verified_at_utc": "2026-10-09T04:32:16.041264+00:00",
-  "base_commit": "731c938b0147bb3a1eddf020975ab86462f57dc6",
-  "verified_scope": "source tree before release commit; exact verified HTML checksum retained",
-  "html_sha256": "d8a40becc676b6400f22d473c9daf5838f299354ab201d5e19f591ecd0dd6f3b",
+  "release": "v8.1-immersive-forest-demo",
+  "verified_at_utc": "2026-10-09T09:16:40.172050+00:00",
+  "base_commit": "0064910bc45bf9f451a98d42ec24bc0e10e1ca55",
+  "verified_scope": "pre-deployment local working tree; remote deployment verification is recorded separately",
+  "html_sha256": "ec7d3b47622f41d7006d848bea8275c052d99e013b65665e61ddd74db1606e59",
   "checks": {
+    "core_vm": {
+      "passed": 27,
+      "failed": 0
+    },
     "independent_vm": {
       "passed": 42,
       "failed": 0,
@@ -31,8 +35,8 @@
       "passed": 9,
       "failed": 0
     },
-    "core_vm": {
-      "passed": 27,
+    "forest_design_browser": {
+      "passed": 11,
       "failed": 0
     },
     "content_structure": {
@@ -40,30 +44,19 @@
       "failed": 0
     }
   },
-  "unchanged_evidence": {
-    "css_identical_to_verified_v5": false,
-    "css_sha256": "a4ff6fb130a6958263f8211386ff1d4c24903d816e13d3716dbf3272122e4f9d",
-    "previous_contrast_pairs_passed": 22,
-    "same_five_svg_fixture_bytes": [
-      "donut-tiny.svg",
-      "donut-zero.svg",
-      "donut-all.svg",
-      "donut-thirds.svg",
-      "donut-mixed.svg"
-    ],
-    "previous_svg_raster_passed": 5,
-    "original_css_preserved_with_added_login_rules": true
-  },
-  "actual_browser_mobile_print": "Local Chromium login, student learning, teacher grading and responsive login viewports verified; physical devices and actual printing deferred by user.",
+  "actual_browser_mobile_print": "Real local Chromium: login, practice, ten writings, grading and report persistence; 360/390/768/1280px full-screen illustrated backgrounds; running and paused ambient motion; reload persistence and live reduced-motion preference; print CSS and parent PDF. Physical devices, printers and other browser engines remain unverified.",
   "actual_service_acceptance": {
     "total": 63,
     "executed": 0
   },
   "release_scope": "fictional student/teacher demo with fixed client-side login; real student pilot still needs server authentication, permissions, server storage, calendar aggregation and content approval",
-  "change": "Added role-specific fixed test login, logout, tab session restoration and gated teacher UI. Preserves diagnosis-only stage-2 choices and all learning and teacher records.",
+  "change": "Added desktop and portrait full-screen forest backgrounds, translucent reading surfaces and ambient leaf/butterfly/light CSS animations. A motion button pauses the background and saves that choice separately from learning data; reduced-motion preference is respected. Existing banner illustrations, curriculum, test1/test2 credentials and learning records are preserved.",
   "actual_browser_checks": {
-    "report": "login/browser-results.json",
-    "passed": 9,
+    "reports": [
+      "login/browser-results.json",
+      "forest/browser-results.json"
+    ],
+    "passed": 20,
     "failed": 0,
     "viewports": [
       360,
@@ -73,12 +66,31 @@
     ]
   },
   "deployment": {
-    "authorization": "Explicit user request to deploy this login revision on 2026-10-09 Asia/Seoul",
-    "project": "korean-word-demo",
-    "branch": "main",
-    "target": "production",
-    "purpose": "Existing fictional student/teacher test demo",
-    "execution_tracking": "This file records pre-deployment verification; deployment completion is verified through Vercel metadata.",
-    "policy": "Future deployments require a new explicit user request."
+    "performed": false,
+    "authorization": "User explicitly requested redeployment to Vercel on 2026-10-09.",
+    "policy": "Deploy and push main only on a new explicit user request.",
+    "evidence_directory": "vocabulary-planning/deploy/transfer/deployment-evidence/"
+  },
+  "total_passed": 165,
+  "asset_sha256": {
+    "forest-entrance.webp": "e3551e1270fac436a18d1d61986342278024b2dfa6b38309c09da8f28641a8eb",
+    "forest-reading.webp": "3f84da416c2215db72f15313912869794bae1b148beea3e9705ce6a7655474b1",
+    "forest-writing.webp": "191b875f7c053f850c0dff9f1b61a8936cb9fad068df766a14a1dd6889011906",
+    "forest-teacher.webp": "3d0d1c8667f166f319f60c2b198175fd2da4eff40f7301fe24dd395011e75110",
+    "forest-world.webp": "2482b2bd9ab710d5a6c359fac5e9be99df614c71b461202c234ea5a926310319",
+    "forest-world-mobile.webp": "f4f0cbad9ebfea82dc4a78f311a3a2ff1eb237b45c8bfbaf35bb51d9743ca9d8"
+  },
+  "visual_verification": {
+    "css_sha256": "bd235e16dfe51322ef385e294c9d4ce240aa0b1fc26bbab82c40f8c1c3ab6572",
+    "report": "forest/browser-results.json",
+    "sampled_text_contrast_pairs": 11,
+    "contrast_method": "Transparent surfaces composited over black and white extremes; minimum ratio 4.5:1.",
+    "browser_print_pdf_pages": 3,
+    "illustration_count": 6,
+    "illustration_total_bytes": 1398074,
+    "whole_viewport_background": true,
+    "motion_controls_verified": true,
+    "reduced_motion_verified": true,
+    "background_blocks_pointer_input": false
   }
 }

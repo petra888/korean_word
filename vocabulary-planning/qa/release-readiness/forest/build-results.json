@@ -1,0 +1,22 @@
+{
+  "html_sha256": "ec7d3b47622f41d7006d848bea8275c052d99e013b65665e61ddd74db1606e59",
+  "local_static_build": "PASS",
+  "student_and_teacher_login": "PASS",
+  "illustrations": "PASS",
+  "portrait_background": "PASS",
+  "motion_control": "PASS",
+  "html_byte_identical": true,
+  "asset_hashes_match": true,
+  "public_files": [
+    "assets/forest-entrance.webp",
+    "assets/forest-reading.webp",
+    "assets/forest-teacher.webp",
+    "assets/forest-world-mobile.webp",
+    "assets/forest-world.webp",
+    "assets/forest-writing.webp",
+    "index.html",
+    "release-manifest.json"
+  ],
+  "deployment": "NOT RUN",
+  "previous_v7_deployment_evidence": "deploy/transfer/deployment-evidence/v7-deployment-verification.json"
+}

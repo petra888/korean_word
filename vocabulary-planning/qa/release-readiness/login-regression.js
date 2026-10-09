@@ -4,18 +4,18 @@ const {boot,target}=require('./regression/vm-harness');
 const AUTH='vocabulary-demo-login-v1',LEARNING='vocabulary-pilot-flow-v2',checks=[];
 function guest(config={}){const b=boot({...config,autoLogin:false});assert(!b.bootError,JSON.stringify(b.bootError));return b;}
 function check(name,fn){try{checks.push({name,status:'PASS',details:fn()||{}});}catch(e){checks.push({name,status:'FAIL',error:e.stack});}}
-function marker(role='student'){return {version:1,role,username:role==='teacher'?'test 2':'test 1',expiresAt:Date.now()+60000};}
+function marker(role='student'){return {version:1,role,username:role==='teacher'?'test2':'test1',expiresAt:Date.now()+60000};}
 check('No saved learning role or missing session automatically signs in',()=>{
  const b=guest();assert.equal(b.run('signedIn()'),false);assert(b.ids.app.innerHTML.includes('login-form'));const state=b.json('state');state.role='teacher';state.teacherScreen='report';const c=guest({saved:{[LEARNING]:JSON.stringify(state)}});assert.equal(c.run('signedIn()'),false);assert(!c.ids.app.innerHTML.includes('data-report-field'));assert(c.ids['account-toolbar'].hidden);
 });
 check('Invalid and unknown credentials do not create a session or alter learning records',()=>{
- const b=guest(),before=b.json('state');for(const call of ["signIn('student','test 1','wrong')","signIn('teacher','test 1','test 1')","signIn('__proto__','test 1','test 1')"]){assert.equal(b.run(call),false);assert.deepStrictEqual(b.json('state'),before);assert.equal(b.sessionSaved[AUTH],undefined);}
+ const b=guest(),before=b.json('state');for(const call of ["signIn('student','test1','wrong')","signIn('teacher','test1','test1')","signIn('__proto__','test1','test1')"]){assert.equal(b.run(call),false);assert.deepStrictEqual(b.json('state'),before);assert.equal(b.sessionSaved[AUTH],undefined);}
 });
 check('Valid session restores the matching account and ignores extra stored fields',()=>{
  const b=guest({sessionSaved:{[AUTH]:JSON.stringify({...marker('teacher'),password:'SHOULD_NOT_LOAD',extra:'ignore'})}});assert.equal(b.run("signedIn('teacher')"),true);assert.equal(b.run('state.role'),'teacher');assert.deepStrictEqual(Object.keys(b.json('authSession')).sort(),['expiresAt','role','username','version']);assert(b.ids.app.innerHTML.includes('teacher-nav'));
 });
 check('Expired, excessive-future, wrong-account and unknown-role sessions are removed',()=>{
- const invalid=[{...marker(),expiresAt:0},{...marker(),expiresAt:Date.now()+9*60*60*1000},{...marker(),username:'test 2'},{...marker(),role:'admin'}];for(const m of invalid){const b=guest({sessionSaved:{[AUTH]:JSON.stringify(m)}});assert.equal(b.run('signedIn()'),false);assert.equal(b.sessionSaved[AUTH],undefined);}
+ const invalid=[{...marker(),expiresAt:0},{...marker(),expiresAt:Date.now()+9*60*60*1000},{...marker(),username:'test2'},{...marker(),role:'admin'}];for(const m of invalid){const b=guest({sessionSaved:{[AUTH]:JSON.stringify(m)}});assert.equal(b.run('signedIn()'),false);assert.equal(b.sessionSaved[AUTH],undefined);}
 });
 check('Broken session JSON is discarded without falsely claiming storage is unavailable',()=>{
  const b=guest({sessionSaved:{[AUTH]:'{broken'}});assert.equal(b.run('signedIn()'),false);assert.equal(b.sessionSaved[AUTH],undefined);assert.equal(b.run('authStorageWarning'),'');

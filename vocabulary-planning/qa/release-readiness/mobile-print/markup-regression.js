@@ -24,7 +24,7 @@ test('MP-003: Native print after teacher login creates a current parent report',
  assert(/\.print-area\{display:block!important\}/.test(html));
  return {method:'Node VM event callback and generated markup; no browser printing',printAreaCharacters:ids['print-area'].innerHTML.length};
 });
-run(`state=fresh();state.sessions.regular={id:'regular',activities:[],responses:{},writingActivities:WORDS.map((w,i)=>({id:'qa-W'+i,wordId:w.id,meaningId:w.meaning_id,type:'writing'})),writings:{},currentIndex:0};state.activeSession='regular';signIn('student','test 1','test 1');state.screen='writing';render()`);
+run(`state=fresh();state.sessions.regular={id:'regular',activities:[],responses:{},writingActivities:WORDS.map((w,i)=>({id:'qa-W'+i,wordId:w.id,meaningId:w.meaning_id,type:'writing'})),writings:{},currentIndex:0};state.activeSession='regular';signIn('student','test1','test1');state.screen='writing';render()`);
 const writing=ids.app.innerHTML;
 fs.writeFileSync(path.join(O,'writing-fields.html'),writing);
 function attributes(s){return Object.fromEntries([...s.matchAll(/([\w-]+)="([^"]*)"/g)].map(m=>[m[1],decode(m[2])]));}
@@ -72,7 +72,7 @@ test('MP-001: Objective choices expose exactly one selected state and clear alte
  return {method:'Actual questionBody generator in Node VM; no keyboard/focus test',optionCount:choices.length,selectedCount:1,unselectedCount:3,submittedSelectionRetained:true,firstIncorrectPreservedAfterCorrectRetry:true};
 });
 fs.writeFileSync(path.join(O,'selected-question.html'),body||'');
-run(`state.teacher.internalMemo='QA_PRIVATE_MEMO_SENTINEL';state.teacher.status='confirmed';state.teacher.confirmedSnapshot={version:1,confirmedAt:now(),teacher:'QA 교사',includeEvaluation:true,includeMessage:true,ratings:Object.fromEntries(CATEGORIES.map(k=>[k,'안정'])),strength:'QA_CONFIRMED_STRENGTH',improve:'QA 보완',next:'QA 계획',parentMessage:'<script>QA_ESCAPED_MESSAGE</script> ' + '긴 부모 메시지 '.repeat(1200)};signIn('teacher','test 2','test 2');state.teacherScreen='report';render()`);
+run(`state.teacher.internalMemo='QA_PRIVATE_MEMO_SENTINEL';state.teacher.status='confirmed';state.teacher.confirmedSnapshot={version:1,confirmedAt:now(),teacher:'QA 교사',includeEvaluation:true,includeMessage:true,ratings:Object.fromEntries(CATEGORIES.map(k=>[k,'안정'])),strength:'QA_CONFIRMED_STRENGTH',improve:'QA 보완',next:'QA 계획',parentMessage:'<script>QA_ESCAPED_MESSAGE</script> ' + '긴 부모 메시지 '.repeat(1200)};signIn('teacher','test2','test2');state.teacherScreen='report';render()`);
 let parent;
 test('Confirmed parent report excludes internal memo, escapes and preserves a long message',()=>{
  parent=run('parentReport()');assert(!parent.includes('QA_PRIVATE_MEMO_SENTINEL'));assert(!parent.includes('<script>QA_ESCAPED_MESSAGE'));assert(parent.includes('&lt;script&gt;QA_ESCAPED_MESSAGE&lt;/script&gt;'));assert(parent.includes('긴 부모 메시지 '.repeat(1200)));assert(parent.includes('QA_CONFIRMED_STRENGTH'));

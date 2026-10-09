@@ -38,7 +38,7 @@ def new_page(browser, width=1280):
 
 def credentials(page, role, username=None, password=None, enter=False):
     page.locator(f'[data-login-role="{role}"]').click()
-    value = "test 2" if role == "teacher" else "test 1"
+    value = "test2" if role == "teacher" else "test1"
     page.locator("#login-id").fill(username if username is not None else value)
     page.locator("#login-password").fill(password if password is not None else value)
     if enter:
@@ -75,9 +75,9 @@ with sync_playwright() as playwright:
         page = new_page(browser)
         page.locator('#login-form button[type="submit"]').click()
         assert "모두 입력" in page.locator("#login-error").inner_text()
-        for role, username, password in [("student", "test 1", "wrong"), ("student", "test 2", "test 2"),
-                                          ("teacher", "test 1", "test 1"), ("teacher", "test 2", "wrong"),
-                                          ("student", "test1", "test 1"), ("student", "test 1", "test 1 ")]:
+        for role, username, password in [("student", "test1", "wrong"), ("student", "test2", "test2"),
+                                          ("teacher", "test1", "test1"), ("teacher", "test2", "wrong"),
+                                          ("student", "test 1", "test1"), ("student", "test1", "test 1")]:
             credentials(page, role, username, password)
             assert page.locator("#login-form").is_visible()
             assert "확인" in page.locator("#login-error").inner_text()
@@ -87,7 +87,7 @@ with sync_playwright() as playwright:
 
     def switching():
         page = new_page(browser)
-        page.locator("#login-id").fill("test 1")
+        page.locator("#login-id").fill("test1")
         page.locator("#login-password").fill("private-entry")
         page.locator("#password-visibility").click()
         assert page.locator("#login-password").get_attribute("type") == "text"
@@ -102,8 +102,8 @@ with sync_playwright() as playwright:
 
     def student():
         page = new_page(browser)
-        credentials(page, "student", " test 1 ", "test 1", enter=True)
-        assert page.locator("#account-badge").inner_text() == "학생 · test 1"
+        credentials(page, "student", " test1 ", "test1", enter=True)
+        assert page.locator("#account-badge").inner_text() == "학생 · test1"
         assert page.get_by_test_id("unknown-W0001").is_visible()
         assert not page.locator(".teacher-nav").count()
         assert not page.locator("#export-record").is_visible()
@@ -114,7 +114,7 @@ with sync_playwright() as playwright:
         assert page.locator("#print-area").inner_html() == ""
         page.get_by_test_id("unknown-W0001").click()
         page.reload()
-        assert page.locator("#account-badge").inner_text() == "학생 · test 1"
+        assert page.locator("#account-badge").inner_text() == "학생 · test1"
         assert page.evaluate("state.diagnostic.unknown.W0001") is True
         marker = page.evaluate(f"JSON.parse(sessionStorage.getItem('{AUTH_KEY}'))")
         assert set(marker) == {"version", "role", "username", "expiresAt"}
@@ -124,7 +124,7 @@ with sync_playwright() as playwright:
     def teacher():
         page = new_page(browser)
         credentials(page, "teacher")
-        assert page.locator("#account-badge").inner_text() == "교사 · test 2"
+        assert page.locator("#account-badge").inner_text() == "교사 · test2"
         assert page.locator(".teacher-nav").is_visible()
         page.locator('[data-action="teacher-page"][data-page="report"]').click()
         page.locator('[data-report-field="parentMessage"]').fill("부모님께 전하는 테스트 메시지")
@@ -152,8 +152,8 @@ with sync_playwright() as playwright:
         page = new_page(browser)
         credentials(page, "teacher")
         page.locator("#logout").click()
-        for marker in ["{broken", json.dumps({"version": 1, "role": "admin", "username": "test 2", "expiresAt": 9999999999999}),
-                       json.dumps({"version": 1, "role": "teacher", "username": "test 2", "expiresAt": 0})]:
+        for marker in ["{broken", json.dumps({"version": 1, "role": "admin", "username": "test2", "expiresAt": 9999999999999}),
+                       json.dumps({"version": 1, "role": "teacher", "username": "test2", "expiresAt": 0})]:
             page.evaluate("([key,value])=>sessionStorage.setItem(key,value)", [AUTH_KEY, marker])
             page.reload()
             assert page.locator("#login-form").is_visible()

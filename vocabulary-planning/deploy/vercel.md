@@ -22,6 +22,13 @@ vercel-preview/
   public/
     index.html
     release-manifest.json
+    assets/
+      forest-entrance.webp
+      forest-reading.webp
+      forest-writing.webp
+      forest-teacher.webp
+      forest-world.webp
+      forest-world-mobile.webp
 ```
 
 업로드 ZIP은 `교직원-테스트-배포-vercel-preview.zip`이다. 전체 교재·문서·QA 이력은 포함하지 않는다.
@@ -64,20 +71,22 @@ GitHub `petra888/korean_word`의 `main`에 push했다. 저장소 전체를 Impor
 저장소 최상위, Framework는 Other, Build Command는 `node vocabulary-planning/build_vercel_preview.mjs`,
 Output Directory는 `vocabulary-planning/deploy/demo-site`, Install Command는 비움이다.
 `vercel.json`이 이 설정을 제공한다. 서버 빌드는 기존 검증 해시·원본 콘텐츠가 같을 때만
-진행하며, 정적 출력은 index.html과 release-manifest.json 두 파일로 제한한다.
+진행하며, 정적 출력은 index.html, release-manifest.json과 검증된 일러스트 여섯 장으로 제한한다.
 
-연결 도구로 `korean-word-demo`를 생성해 기본 Preview 배포를 요청했으나 `auhjins-projects`
-팀 접근 권한403오류로 배포 전에 중단됐다. Vercel 계정을 해당 팀 접근 권한으로 다시
-연결해야 한다. 프로젝트·배포 ID와 URL을 받기 전에는 배포 완료로 표시하지 않는다.
+`korean-word-demo` 프로젝트의 기존 v7 로그인 데모는 배포되었다. 기존 주소는
+`https://korean-word-demo.vercel.app/`이다. v8.1 상상 숲 디자인과 공백 없는 테스트 계정은
+사용자의 재배포 요청에 따라 `main`에 푸시하여 기존 프로젝트에 전달한다. 배포 완료는
+새 커밋의 READY 상태와 기존 주소의 alias 연결을 확인한 뒤 안내한다.
 
 브라우저 기록은 주소·기기별로 분리된다. 한 차례 테스트를 같은 URL에서 진행하고 새 배포 URL에
 이전 기록이 자동으로 옮겨진다고 안내하지 않는다. 가상 학생 기록만 사용한다.
 
 ## 현재 실행 상태
 
-Vercel 플러그인과 배포 도구가 연결되어 프로젝트 조회는 성공했다. Vercel CLI62.2.0도
-설치했다. 현재 실제 배포를 막는 오류는 위 Git 연동 요청의 팀 접근 권한403이다.
-실제 외부 배포와 접근 보호 적용은 미완료로 기록한다. 실제 기기·인쇄 검수는 보류 상태다.
+배포 전 로컬에서 HTML·자산 해시와 정적 빌드 결과를 확인했다. 브라우저의 모바일 화면과
+인쇄/PDF는 점검했으며 실제 기기·실제 프린터 검수는 보류 상태다. 배포 실행 결과는
+`deploy/transfer/deployment-evidence/`에 커밋·프로젝트·배포 ID·주소 연결 확인을 기록한다.
+이 폴더는 Git과 공개 정적 출력에서 제외한다.
 
 공식 안내 링크: [CLI 배포](https://vercel.com/docs/cli/deploy),
 [프로젝트 설정](https://vercel.com/docs/projects/project-configuration),

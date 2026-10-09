@@ -1,27 +1,32 @@
 # 교직원 테스트 배포 준비
 
-현재 테스트 호스팅은 Vercel Preview로 준비한다. [Vercel용 파일 생성·배포 안내](vercel.md)를 따른다.
-실제 기기·인쇄 검수는 사용자 요청에 따라 이번 테스트 배포에서 보류한다.
+v8.1 상상 숲 전체 배경·애니메이션과 공백 없는 테스트 계정은 사용자의 재배포 요청에 따라 기존 `korean-word-demo` 프로젝트의 Git 연동으로 전달합니다. **사용자가 새 배포를 요청할 때만 푸시·배포합니다.** [Vercel 안내](vercel.md)를 참고하세요.
 
-이 폴더의 배포 대상은 `demo-site`입니다. 검증된 시제품을 `index.html`로 복사한 정적 데모이며, 실제 학생 계정·교사 권한·서버 저장은 제공하지 않습니다. 외부 서비스에 업로드하거나 배포하지 않았습니다.
+배포 대상은 `demo-site`입니다. 현재 HTML과 일러스트 여섯 장이 검증 요약의 해시와 일치해야 생성됩니다.
 
-현재 소스와 일치하는 배포 전 검증 결과가 있어야 다음 명령이 실행됩니다.
+저장소 최상위에서 Git 연동용 정적 빌드를 로컬 확인할 수 있습니다.
 
 ```bash
-cd vocabulary-planning
-python3 prepare_demo_release.py
+node vocabulary-planning/build_vercel_preview.mjs
 ```
 
-생성물:
+직접 업로드할 ZIP을 준비하려면 다음 명령을 사용합니다.
+
+```bash
+python3 vocabulary-planning/prepare_demo_release.py
+python3 vocabulary-planning/prepare_vercel_demo.py
+```
+
+이 명령들은 로컬 파일만 만들며 업로드·배포하지 않습니다.
 
 - `demo-site/index.html`: 테스트 화면
-- `demo-site/release-manifest.json`: HTML 해시, Git 기준과 미커밋 여부, 검증 범위
-- `교직원-테스트-배포-v5.1.zip`: 같은 두 파일을 최상위에 넣은 업로드용 ZIP
+- `demo-site/assets/*.webp`: 검증된 네 가지 화면 일러스트와 두 가지 전체 배경
+- `demo-site/release-manifest.json`: HTML·자산 해시, Git 기준, 검증 범위
+- `교직원-테스트-배포-{release}.zip`: 위 여덟 파일을 넣은 업로드용 ZIP
+- `교직원-테스트-배포-vercel-preview.zip`: 설정과 public 폴더를 포함한 직접 Vercel 업로드용 ZIP
 
-배포할 때는 정적 HTTPS 호스팅에 `demo-site`의 내용만 올리고 호스팅 서비스의 교직원 접근 제한을 적용한 뒤 테스트 주소를 공유합니다. 학습 정답·교사 참고 자료가 포함된 시제품이므로 교사 화면 버튼을 로그인 기능으로 간주하지 않습니다. 정적 파일만 올려도 학원·학생 계정 서비스가 생기는 것은 아닙니다.
+전체 교재·문서·QA 이력·테스트 스크린샷은 배포 폴더에 포함하지 않습니다. 생성 폴더와 ZIP은 Git에서 제외됩니다.
 
-현재 HTML은 외부 빌드 도구 없이 열 수 있습니다. Git 연동 호스팅이라면 커밋을 확정한 뒤 빌드 명령을 `python3 vocabulary-planning/prepare_demo_release.py`, 배포 폴더를 `vocabulary-planning/deploy/demo-site`로 설정할 수 있습니다. 호스팅 공급자의 Python 실행 지원과 접근 제한은 설정에서 확인해야 합니다. 직접 업로드도 가능합니다.
+학생 계정은 `test1/test1`, 교사 계정은 `test2/test2`입니다. 고정된 프런트엔드 테스트 로그인으로, 서버 인증·권한·학원별 저장은 구현 전입니다. 실제 기기·실제 프린터 검수는 보류합니다.
 
-브라우저 저장은 주소·기기·브라우저별로 분리됩니다. 파일로 열어 만든 기록이 새 HTTPS 주소로 자동 이전되지 않습니다. 테스트는 같은 주소와 가상 기록으로 진행하며, 기록 내보내기는 내부 메모도 포함하므로 학부모 전달 자료로 사용하지 않습니다. 학부모용 자료는 교사 화면의 확정 자료 출력 기능을 사용합니다.
-
-구체적인 순서·담당자·완료 조건은 [테스트 배포 계획](../documents/test-deployment.md)에 있습니다. 생성 폴더와 ZIP은 Git에서 제외되며 동일한 소스와 검증 결과로 다시 만들 수 있습니다.
+브라우저 기록은 주소·기기·브라우저별로 분리됩니다. 파일로 만든 기록이 새 HTTPS 주소로 자동 이전되지 않습니다. 학부모용 자료는 교사의 확정 자료 출력 기능을 사용하며, 내부 메모도 포함하는 JSON 기록과 구분합니다.
