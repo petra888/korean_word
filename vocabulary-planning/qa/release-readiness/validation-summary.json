@@ -1,15 +1,11 @@
 {
   "status": "pass",
-  "release": "v9-selectable-designs-demo",
-  "verified_at_utc": "2026-10-10T00:27:32.842002+00:00",
-  "base_commit": "b0ef0412764f4a041d50d4b5cffdb03675f20dc2",
-  "verified_scope": "Verified local snapshot; hashes identify the exact source and illustrations. User authorized publishing this v9 snapshot on 2026-10-10. Remote completion is recorded separately in the deployment evidence directory.",
-  "html_sha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
+  "release": "v10-multi-student-teacher-demo",
+  "verified_at_utc": "2026-10-10T13:52:05.713027+00:00",
+  "base_commit": "c411378a20c7318aa8208766e7ae65eab221ad82",
+  "verified_scope": "Local teacher roster and per-student demo records at the exact HTML hash below. The user requested deployment of this v10 release on 2026-10-10; deployed commit, READY status and stable alias verification are recorded separately in the deployment evidence directory.",
+  "html_sha256": "4caac0dfe5881c1ea007d89cec701bb04e01b63fec6649c8652e7f54b17506bb",
   "checks": {
-    "core_vm": {
-      "passed": 27,
-      "failed": 0
-    },
     "independent_vm": {
       "passed": 42,
       "failed": 0,
@@ -31,6 +27,10 @@
       "passed": 16,
       "failed": 0
     },
+    "multi_student_vm": {
+      "passed": 19,
+      "failed": 0
+    },
     "test_login_browser": {
       "passed": 9,
       "failed": 0
@@ -47,26 +47,31 @@
       "passed": 8,
       "failed": 0
     },
+    "teacher_roster_browser": {
+      "passed": 8,
+      "failed": 0
+    },
     "content_structure": {
       "passed": 22,
       "failed": 0
     }
   },
-  "actual_browser_mobile_print": "Real local Chromium: both designs cover login, ten objective responses, ten writings, teacher grading/report/reload, 360/390/768/1280px screens, background pause and reduced motion, parent print CSS/PDF. Design switching also checks 320px, keyboard/focus, unchanged draft nodes and learning data, persistence, cross-tab updates, storage failures and reset. Physical devices, printers, other browser engines and remote deployment remain unverified.",
+  "actual_browser_mobile_print": "Real local Chromium: both designs retain the full study, writing, grading and print flow. The roster is checked at 320/360/390/768/1280px. Two student tabs independently complete 10 objective and 10 writing submissions each; teacher selection, grades, parent text, reset and selected-student JSON/print/PDF are verified. Physical devices/printers, other engines, server authorization and remote deployment are not verified.",
   "actual_service_acceptance": {
     "total": 63,
     "executed": 0
   },
   "release_scope": "fictional student/teacher demo with fixed client-side login; real student pilot still needs server authentication, permissions, server storage, calendar aggregation and content approval",
-  "change": "Added design 1 (existing forest) and design 2 (cinematic future city), five city illustrations, complete city UI styling, theme-specific icons, charts and ambient motion. Design choice persists separately from learning and switches without rerendering forms; keyboard, cross-tab synchronization, storage failure and invalid preference recovery are verified.",
+  "change": "Teacher login opens an assigned student roster with name/class search, progress and pending review counts. Student selection opens existing management. Independent student records, legacy Jiwoo migration, scoped reset/export/print and guarded cross-student host/events preserve isolation. Student test accounts test1/test3/test4 and teacher test2; no master login.",
   "actual_browser_checks": {
     "reports": [
       "login/browser-results.json",
       "forest/browser-results.json",
       "city/browser-results.json",
-      "designs/browser-results.json"
+      "designs/browser-results.json",
+      "multi-student/browser-results.json"
     ],
-    "passed": 39,
+    "passed": 47,
     "failed": 0,
     "viewports": [
       320,
@@ -78,7 +83,8 @@
   },
   "deployment": {
     "performed": false,
-    "authorization": "User explicitly requested deployment on 2026-10-10 after reviewing the local and deployed version difference.",
+    "authorization": "The user explicitly requested deployment of the teacher roster and multi-student v10 changes on 2026-10-10 with '배포해'.",
+    "status_scope": "This is the pre-deployment QA report. Deployment completion is recorded separately after READY and stable alias verification.",
     "policy": "Deploy and push main only on a new explicit user request.",
     "evidence_directory": "vocabulary-planning/deploy/transfer/deployment-evidence/"
   },
@@ -97,11 +103,13 @@
     "forest-writing.webp": "191b875f7c053f850c0dff9f1b61a8936cb9fad068df766a14a1dd6889011906"
   },
   "visual_verification": {
-    "css_sha256": "3270bca3a177394539556b5594bb1648995116efaa869346e6cc8c214c700bdc",
+    "css_sha256": "6d4fadb17d8598340bda3d5082a9908dc22d46ae2aa2d589721d5db549727aa4",
     "reports": [
+      "login/browser-results.json",
       "forest/browser-results.json",
       "city/browser-results.json",
-      "designs/browser-results.json"
+      "designs/browser-results.json",
+      "multi-student/browser-results.json"
     ],
     "sampled_text_contrast_pairs_per_design": 11,
     "contrast_method": "Transparent surfaces composited over black and white extremes; sampled text meets 4.5:1. Primary city gradient endpoints separately checked.",
@@ -119,5 +127,21 @@
       "#064c7d": 8.98,
       "#06677f": 6.45
     }
+  },
+  "student_management": {
+    "teacher_entry": "assigned student roster",
+    "fictional_students": 3,
+    "master_login": false,
+    "state_identity_field": "studentId",
+    "separate_records": true,
+    "storage": "browser localStorage, isolated key per student; no server or cross-device synchronization",
+    "legacy_migration": "Unlabelled v2 and v1 history belong only to the existing Jiwoo/test1 demo.",
+    "teacher_refresh": "Returns to roster; reopening a student restores that student’s saved management page.",
+    "same_student_concurrent_editing": "No server conflict resolution; independent different-student tabs are verified."
+  },
+  "historical_reports": {
+    "core-flow-results.json": "v9 report; not included in current v10 check counts",
+    "city-review/review.json": "v9 comparison against the then-live forest deployment; historical evidence only",
+    "designs/build-results.json": "v9 package verification; see multi-student/build-results.json for the current package"
   }
 }

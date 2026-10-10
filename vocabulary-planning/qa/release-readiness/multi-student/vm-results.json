@@ -1,0 +1,103 @@
+{
+  "method": "Actual JavaScript in Node VM; student isolation, recovery, host events and scoped teacher actions",
+  "source_sha256": "4caac0dfe5881c1ea007d89cec701bb04e01b63fec6649c8652e7f54b17506bb",
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Teacher login and teacher reload start at the assigned roster",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "A student name opens that student’s existing management pages",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Student accounts select their own record and preserve the original test credentials",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Legacy unlabelled single-student v2 records migrate only to Jiwoo",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Separate objective, writing and diagnosis records roundtrip for two students",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Confirmed teacher classification affects only the selected student",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Roster progress and latest-version review queues come from each student",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Parent messages and internal memos remain separate across student switches",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "JSON export and print identify only the selected student",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Reset clears the selected student and leaves all other records untouched",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Previously bound report fields and confirmation cannot write into another student",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Student login and unknown roster IDs cannot change teacher selection",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Back and explicit roster return keep pending teacher comments",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Storage failure keeps an unsaved draft available after switching away and back",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Corrupted student storage is quarantined independently from the original student",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "A mismatched stored student owner is rejected without overwriting that source",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Student-account session restoration derives the correct student identity",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Other-student host events and old unlabelled host snapshots never replace current data",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Late host-save failure from a previous student does not warn or alter the next student",
+      "status": "PASS",
+      "details": {}
+    }
+  ]
+}

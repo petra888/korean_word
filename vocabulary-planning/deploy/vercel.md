@@ -97,3 +97,7 @@ Output Directory는 `vocabulary-planning/deploy/demo-site`, Install Command는 �
 [프로젝트 설정](https://vercel.com/docs/projects/project-configuration),
 [Vercel Authentication](https://vercel.com/docs/deployment-protection/vercel-authentication).
 이 환경에서 공식 문서의 최신 내용을 열어 대조하지는 못했다.
+
+## v10 담당 학생 관리
+
+2026년 10월 10일 사용자의 배포 요청에 따라 교사 학생 명단과 학생별 기록을 포함한 v10을 같은 프로젝트에 배포한다. GitHub `main` 푸시로 실행하며 해당 커밋의 READY 상태와 `https://korean-word-demo.vercel.app/` 연결을 확인한다. 검증 요약의 HTML·일러스트 해시가 맞는 정적 빌드만 업로드한다. 학생·교사 고정 테스트 계정과 브라우저 저장을 사용하며 마스터 로그인·서버 권한·기기 간 공유는 포함하지 않는다.

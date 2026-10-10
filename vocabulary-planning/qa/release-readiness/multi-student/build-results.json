@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-10-10T13:53:42.168237+00:00",
+  "status": "pass",
+  "source_sha256": "4caac0dfe5881c1ea007d89cec701bb04e01b63fec6649c8652e7f54b17506bb",
+  "release": "v10-multi-student-teacher-demo",
+  "checks": [
+    {
+      "path": "vocabulary-planning/deploy/demo-site",
+      "status": "PASS",
+      "public_files": 13,
+      "html_and_assets_match_verified_source": true,
+      "student_metadata_matches": true
+    },
+    {
+      "path": "vocabulary-planning/deploy/vercel-preview/public",
+      "status": "PASS",
+      "public_files": 13,
+      "html_and_assets_match_verified_source": true,
+      "student_metadata_matches": true
+    },
+    {
+      "archive": "vocabulary-planning/deploy/교직원-테스트-배포-vercel-preview.zip",
+      "status": "PASS",
+      "file_count": 15,
+      "sha256": "b6df800af9fcc2d14c3bd99a5a94ecd846bc4eb170c7a65e997b2a4e875efea6"
+    }
+  ],
+  "externally_deployed": false,
+  "packaged_browser_repeated": false,
+  "reason": "Packaged HTML and all 11 assets are byte-identical to the source verified in real Chromium. No application source changed after browser checks."
+}

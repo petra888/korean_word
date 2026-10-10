@@ -125,6 +125,9 @@ with sync_playwright() as playwright:
         page = new_page(browser)
         credentials(page, "teacher")
         assert page.locator("#account-badge").inner_text() == "교사 · test2"
+        assert page.locator("#roster-students").is_visible()
+        assert page.locator("[data-student-card]").count() == 3
+        page.locator('[data-action="open-student"][data-student="student-jiwoo"]').first.click()
         assert page.locator(".teacher-nav").is_visible()
         page.locator('[data-action="teacher-page"][data-page="report"]').click()
         page.locator('[data-report-field="parentMessage"]').fill("부모님께 전하는 테스트 메시지")
@@ -145,6 +148,7 @@ with sync_playwright() as playwright:
         assert page.locator("#login-form").is_visible()
         assert not page.locator(".teacher-nav").count()
         credentials(page, "teacher")
+        page.locator('[data-action="open-student"][data-student="student-jiwoo"]').first.click()
         assert page.locator('[data-report-field="parentMessage"]').input_value() == "부모님께 전하는 테스트 메시지"
     check("Teacher login edits reports; logout clears panels and keeps saved report text", teacher)
 
@@ -190,6 +194,7 @@ with sync_playwright() as playwright:
         before = page.evaluate("JSON.stringify(state.sessions.regular)")
         page.locator("#logout").click()
         credentials(page, "teacher")
+        page.locator('[data-action="open-student"][data-student="student-jiwoo"]').first.click()
         assert page.evaluate("JSON.stringify(state.sessions.regular)") == before
         page.locator('[data-action="teacher-page"][data-page="grading"]').click()
         activities = page.evaluate("state.sessions.regular.writingActivities")

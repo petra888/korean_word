@@ -43,6 +43,8 @@ def login(page, role):
     page.locator("#login-id").fill(value)
     page.locator("#login-password").fill(value)
     page.locator("#login-password").press("Enter")
+    if role == "teacher":
+        page.locator('[data-action="open-student"][data-student="student-jiwoo"]').first.click()
 
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox"])
@@ -170,6 +172,7 @@ with sync_playwright() as p:
         assert values[0] == values[1] and colors[0] != colors[1]
         page.locator('[data-action="confirm-report"]').click()
         page.reload()
+        page.locator('[data-action="open-student"][data-student="student-jiwoo"]').first.click()
         assert page.locator('[data-report-field="parentMessage"]').input_value().startswith("THEME_PARENT_MESSAGE")
         assert page.locator("html").get_attribute("data-design") == "city"
         return {"gradeDraftAndCommentKept": True, "reportDraftKept": True, "chartDataUnchanged": True, "chartColorsChange": colors, "reloadKeepsReportAndDesign": True}

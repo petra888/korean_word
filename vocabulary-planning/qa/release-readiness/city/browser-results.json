@@ -1,7 +1,7 @@
 {
   "method": "Real local Chromium through Playwright",
   "design": "city",
-  "html_sha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
+  "html_sha256": "4caac0dfe5881c1ea007d89cec701bb04e01b63fec6649c8652e7f54b17506bb",
   "passed": 11,
   "failed": 0,
   "checks": [

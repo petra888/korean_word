@@ -1,5 +1,5 @@
 {
-  "base_commit": "b0ef0412764f4a041d50d4b5cffdb03675f20dc2",
+  "base_commit": "c411378a20c7318aa8208766e7ae65eab221ad82",
   "verified_scope": "current source tree at execution",
   "snapshot": "/workspace/korean_word/vocabulary-planning",
   "status": "pass",
@@ -292,7 +292,7 @@
     "analysis/vocabulary.json": "caf356b552bff74782158fc85d3e8b5a18994c765d9ae3b68291a8e9def60e50",
     "curriculum/textbook-order.json": "e5c8224452ce5800f8a020b3fa996098303a5815fb157f71569f09e05b5dc621",
     "curriculum/pilot-10.json": "5224e534ca619305862ab75b4da0a90476f8248f80242b165d9d28c4fc86952b",
-    "prototype/pilot-flow.html": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200"
+    "prototype/pilot-flow.html": "4caac0dfe5881c1ea007d89cec701bb04e01b63fec6649c8652e7f54b17506bb"
   },
   "limits": [
     "Dataset/source-field comparison does not independently reread all 60 PDF pages.",

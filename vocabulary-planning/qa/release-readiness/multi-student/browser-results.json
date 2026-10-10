@@ -1,0 +1,90 @@
+{
+  "method": "Real local Chromium; real UI actions, shared-origin parallel student tabs and browser print/PDF",
+  "source_sha256": "4caac0dfe5881c1ea007d89cec701bb04e01b63fec6649c8652e7f54b17506bb",
+  "passed": 8,
+  "failed": 0,
+  "limits": [
+    "Fictional students and browser storage; no server authorization or cross-device synchronization.",
+    "No physical devices or printers tested.",
+    "Not deployed."
+  ],
+  "checks": [
+    {
+      "name": "Teacher login opens the assigned roster in both designs",
+      "status": "PASS",
+      "details": {
+        "assignedStudents": 3,
+        "studentSelectionRequired": true
+      }
+    },
+    {
+      "name": "Two student tabs learn independently and populate the correct roster progress",
+      "status": "PASS",
+      "details": {
+        "parallelStudentTabs": 2,
+        "objectiveSubmissions": 20,
+        "writingSubmissions": 20
+      }
+    },
+    {
+      "name": "Selected-student grading, automatic groups and parent messages remain separate",
+      "status": "PASS",
+      "details": {
+        "firstStudentGraded": 1,
+        "secondStudentGraded": 0,
+        "studentReportsSeparate": true
+      }
+    },
+    {
+      "name": "Selected-student JSON and print/PDF contain the correct name and clear on roster return",
+      "status": "PASS",
+      "details": {
+        "selectedStudentPrintAndExport": true,
+        "browserPDFGenerated": true,
+        "privateMemoExcluded": true
+      }
+    },
+    {
+      "name": "Search, class filter, no-result recovery and keyboard student selection work",
+      "status": "PASS",
+      "details": {
+        "nameSearch": true,
+        "classFilter": true,
+        "emptyState": true,
+        "keyboardNameSelection": true
+      }
+    },
+    {
+      "name": "Both roster designs fit five viewport sizes with usable controls",
+      "status": "PASS",
+      "details": {
+        "designs": 2,
+        "viewports": [
+          320,
+          360,
+          390,
+          768,
+          1280
+        ],
+        "touchTargets": "at least 44px"
+      }
+    },
+    {
+      "name": "Reload restores separate reports; reset clears only the selected student",
+      "status": "PASS",
+      "details": {
+        "teacherReloadStartsAtRoster": true,
+        "selectedStudentResetOnly": true,
+        "otherStudentReportKept": true
+      }
+    },
+    {
+      "name": "No script errors or failed images during roster and student management flows",
+      "status": "PASS",
+      "details": {
+        "scriptErrors": [],
+        "failedRequests": []
+      }
+    }
+  ]
+}

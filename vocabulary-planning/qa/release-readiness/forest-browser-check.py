@@ -43,6 +43,8 @@ def login(page, role):
     page.locator("#login-id").fill(value)
     page.locator("#login-password").fill(value)
     page.locator("#login-password").press("Enter")
+    if role == "teacher":
+        page.locator('[data-action="open-student"][data-student="student-jiwoo"]').first.click()
 
 
 def images_loaded(page):
@@ -275,6 +277,7 @@ with sync_playwright() as playwright:
     def saved():
         before = page.evaluate("JSON.stringify(state.sessions.regular)")
         page.reload()
+        page.locator('[data-action="open-student"][data-student="student-jiwoo"]').first.click()
         assert page.locator(".teacher-nav").is_visible()
         assert page.evaluate("JSON.stringify(state.sessions.regular)") == before
         assert page.locator('[data-report-field="parentMessage"]').input_value().startswith("FOREST_CONFIRMED_PARENT_MESSAGE")

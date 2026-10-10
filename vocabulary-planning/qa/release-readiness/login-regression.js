@@ -12,7 +12,7 @@ check('Invalid and unknown credentials do not create a session or alter learning
  const b=guest(),before=b.json('state');for(const call of ["signIn('student','test1','wrong')","signIn('teacher','test1','test1')","signIn('__proto__','test1','test1')"]){assert.equal(b.run(call),false);assert.deepStrictEqual(b.json('state'),before);assert.equal(b.sessionSaved[AUTH],undefined);}
 });
 check('Valid session restores the matching account and ignores extra stored fields',()=>{
- const b=guest({sessionSaved:{[AUTH]:JSON.stringify({...marker('teacher'),password:'SHOULD_NOT_LOAD',extra:'ignore'})}});assert.equal(b.run("signedIn('teacher')"),true);assert.equal(b.run('state.role'),'teacher');assert.deepStrictEqual(Object.keys(b.json('authSession')).sort(),['expiresAt','role','username','version']);assert(b.ids.app.innerHTML.includes('teacher-nav'));
+ const b=guest({sessionSaved:{[AUTH]:JSON.stringify({...marker('teacher'),password:'SHOULD_NOT_LOAD',extra:'ignore'})}});assert.equal(b.run("signedIn('teacher')"),true);assert.equal(b.run('state.role'),'teacher');assert.deepStrictEqual(Object.keys(b.json('authSession')).sort(),['expiresAt','role','username','version']);assert(b.ids.app.innerHTML.includes('roster-students'));assert(!b.ids.app.innerHTML.includes('teacher-nav'));
 });
 check('Expired, excessive-future, wrong-account and unknown-role sessions are removed',()=>{
  const invalid=[{...marker(),expiresAt:0},{...marker(),expiresAt:Date.now()+9*60*60*1000},{...marker(),username:'test2'},{...marker(),role:'admin'}];for(const m of invalid){const b=guest({sessionSaved:{[AUTH]:JSON.stringify(m)}});assert.equal(b.run('signedIn()'),false);assert.equal(b.sessionSaved[AUTH],undefined);}
