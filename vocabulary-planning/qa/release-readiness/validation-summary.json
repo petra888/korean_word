@@ -1,10 +1,10 @@
 {
   "status": "pass",
-  "release": "v8.1-immersive-forest-demo",
-  "verified_at_utc": "2026-10-09T09:16:40.172050+00:00",
-  "base_commit": "0064910bc45bf9f451a98d42ec24bc0e10e1ca55",
-  "verified_scope": "pre-deployment local working tree; remote deployment verification is recorded separately",
-  "html_sha256": "ec7d3b47622f41d7006d848bea8275c052d99e013b65665e61ddd74db1606e59",
+  "release": "v9-selectable-designs-demo",
+  "verified_at_utc": "2026-10-10T00:27:32.842002+00:00",
+  "base_commit": "b0ef0412764f4a041d50d4b5cffdb03675f20dc2",
+  "verified_scope": "Verified local snapshot; hashes identify the exact source and illustrations. User authorized publishing this v9 snapshot on 2026-10-10. Remote completion is recorded separately in the deployment evidence directory.",
+  "html_sha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
   "checks": {
     "core_vm": {
       "passed": 27,
@@ -39,26 +39,37 @@
       "passed": 11,
       "failed": 0
     },
+    "city_design_browser": {
+      "passed": 11,
+      "failed": 0
+    },
+    "design_switch_browser": {
+      "passed": 8,
+      "failed": 0
+    },
     "content_structure": {
       "passed": 22,
       "failed": 0
     }
   },
-  "actual_browser_mobile_print": "Real local Chromium: login, practice, ten writings, grading and report persistence; 360/390/768/1280px full-screen illustrated backgrounds; running and paused ambient motion; reload persistence and live reduced-motion preference; print CSS and parent PDF. Physical devices, printers and other browser engines remain unverified.",
+  "actual_browser_mobile_print": "Real local Chromium: both designs cover login, ten objective responses, ten writings, teacher grading/report/reload, 360/390/768/1280px screens, background pause and reduced motion, parent print CSS/PDF. Design switching also checks 320px, keyboard/focus, unchanged draft nodes and learning data, persistence, cross-tab updates, storage failures and reset. Physical devices, printers, other browser engines and remote deployment remain unverified.",
   "actual_service_acceptance": {
     "total": 63,
     "executed": 0
   },
   "release_scope": "fictional student/teacher demo with fixed client-side login; real student pilot still needs server authentication, permissions, server storage, calendar aggregation and content approval",
-  "change": "Added desktop and portrait full-screen forest backgrounds, translucent reading surfaces and ambient leaf/butterfly/light CSS animations. A motion button pauses the background and saves that choice separately from learning data; reduced-motion preference is respected. Existing banner illustrations, curriculum, test1/test2 credentials and learning records are preserved.",
+  "change": "Added design 1 (existing forest) and design 2 (cinematic future city), five city illustrations, complete city UI styling, theme-specific icons, charts and ambient motion. Design choice persists separately from learning and switches without rerendering forms; keyboard, cross-tab synchronization, storage failure and invalid preference recovery are verified.",
   "actual_browser_checks": {
     "reports": [
       "login/browser-results.json",
-      "forest/browser-results.json"
+      "forest/browser-results.json",
+      "city/browser-results.json",
+      "designs/browser-results.json"
     ],
-    "passed": 20,
+    "passed": 39,
     "failed": 0,
     "viewports": [
+      320,
       360,
       390,
       768,
@@ -67,30 +78,46 @@
   },
   "deployment": {
     "performed": false,
-    "authorization": "User explicitly requested redeployment to Vercel on 2026-10-09.",
+    "authorization": "User explicitly requested deployment on 2026-10-10 after reviewing the local and deployed version difference.",
     "policy": "Deploy and push main only on a new explicit user request.",
     "evidence_directory": "vocabulary-planning/deploy/transfer/deployment-evidence/"
   },
-  "total_passed": 165,
+  "total_passed": 184,
   "asset_sha256": {
+    "city-reading.webp": "b6dc23450bde9d23be14007a3f75684440511588d275f2c9db51cc5f72d18256",
+    "city-teacher.webp": "ea79e445050c9ae31f3f7c9c03f70d24b5fde1322f936aa58bc36635837c1c1f",
+    "city-world-mobile.webp": "a161ea6c7209b1ba5e5fe33e20e8b58e0d75049e471dac47f9f2cdb8cd123cc4",
+    "city-world.webp": "748228f0ac4a5a434751614a65441364a9a21d6852b2eddc6d62198276f706dd",
+    "city-writing.webp": "cbf8b3de6c709de0492dd2e0208d923cadc0b8c294635be60950f4ce222375de",
     "forest-entrance.webp": "e3551e1270fac436a18d1d61986342278024b2dfa6b38309c09da8f28641a8eb",
     "forest-reading.webp": "3f84da416c2215db72f15313912869794bae1b148beea3e9705ce6a7655474b1",
-    "forest-writing.webp": "191b875f7c053f850c0dff9f1b61a8936cb9fad068df766a14a1dd6889011906",
     "forest-teacher.webp": "3d0d1c8667f166f319f60c2b198175fd2da4eff40f7301fe24dd395011e75110",
+    "forest-world-mobile.webp": "f4f0cbad9ebfea82dc4a78f311a3a2ff1eb237b45c8bfbaf35bb51d9743ca9d8",
     "forest-world.webp": "2482b2bd9ab710d5a6c359fac5e9be99df614c71b461202c234ea5a926310319",
-    "forest-world-mobile.webp": "f4f0cbad9ebfea82dc4a78f311a3a2ff1eb237b45c8bfbaf35bb51d9743ca9d8"
+    "forest-writing.webp": "191b875f7c053f850c0dff9f1b61a8936cb9fad068df766a14a1dd6889011906"
   },
   "visual_verification": {
-    "css_sha256": "bd235e16dfe51322ef385e294c9d4ce240aa0b1fc26bbab82c40f8c1c3ab6572",
-    "report": "forest/browser-results.json",
-    "sampled_text_contrast_pairs": 11,
-    "contrast_method": "Transparent surfaces composited over black and white extremes; minimum ratio 4.5:1.",
-    "browser_print_pdf_pages": 3,
-    "illustration_count": 6,
-    "illustration_total_bytes": 1398074,
+    "css_sha256": "3270bca3a177394539556b5594bb1648995116efaa869346e6cc8c214c700bdc",
+    "reports": [
+      "forest/browser-results.json",
+      "city/browser-results.json",
+      "designs/browser-results.json"
+    ],
+    "sampled_text_contrast_pairs_per_design": 11,
+    "contrast_method": "Transparent surfaces composited over black and white extremes; sampled text meets 4.5:1. Primary city gradient endpoints separately checked.",
+    "browser_print_pdf_generated_for_both_designs": true,
+    "illustration_count": 11,
+    "illustration_total_bytes": 2830124,
     "whole_viewport_background": true,
     "motion_controls_verified": true,
     "reduced_motion_verified": true,
-    "background_blocks_pointer_input": false
+    "background_blocks_pointer_input": false,
+    "design_switch_rerenders_forms": false,
+    "city_primary_gradient_white_text_contrast": {
+      "#075b96": 7.13,
+      "#087d9c": 4.75,
+      "#064c7d": 8.98,
+      "#06677f": 6.45
+    }
   }
 }

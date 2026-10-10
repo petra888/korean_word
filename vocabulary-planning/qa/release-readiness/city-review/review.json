@@ -1,0 +1,549 @@
+{
+  "source_sha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
+  "deploy_performed": false,
+  "views": [
+    {
+      "view": "source-login",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-world.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".brand-mark": {
+          "color": "rgb(11, 101, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "image": "linear-gradient(135deg, rgb(237, 250, 255), rgb(210, 234, 251))",
+          "radius": "9px 17px",
+          "border": "rgb(180, 215, 236)"
+        },
+        ".login-submit": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(7, 91, 150)",
+          "image": "linear-gradient(120deg, rgb(7, 91, 150), rgb(8, 125, 156))",
+          "radius": "8px 17px",
+          "border": "rgb(7, 91, 150)"
+        },
+        ".login-card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(253, 254, 255, 0.97)",
+          "image": "none",
+          "radius": "0px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".input": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(255, 255, 255)",
+          "image": "none",
+          "radius": "8px",
+          "border": "rgb(171, 204, 224)"
+        },
+        ".login-eyebrow": {
+          "color": "rgb(12, 98, 141)",
+          "background": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "radius": "0px",
+          "border": "rgb(12, 98, 141)"
+        }
+      }
+    },
+    {
+      "view": "source-diagnosis",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-reading.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(250, 253, 255, 0.98)",
+          "image": "none",
+          "radius": "12px 26px 12px 12px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".tag": {
+          "color": "rgb(28, 99, 135)",
+          "background": "rgb(237, 247, 255)",
+          "image": "none",
+          "radius": "6px",
+          "border": "rgb(195, 223, 234)"
+        },
+        ".meaning-row": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(251, 253, 255)",
+          "image": "none",
+          "radius": "9px",
+          "border": "rgb(205, 223, 234)"
+        },
+        ".token-bank button": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(251, 253, 255)",
+          "image": "none",
+          "radius": "7px 13px 7px 7px",
+          "border": "rgb(186, 214, 231)"
+        },
+        ".step.active": {
+          "color": "rgb(10, 84, 126)",
+          "background": "rgb(234, 247, 255)",
+          "image": "none",
+          "radius": "8px 16px 8px 8px",
+          "border": "rgb(54, 149, 191)"
+        }
+      }
+    },
+    {
+      "view": "source-plan",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-reading.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(250, 253, 255, 0.98)",
+          "image": "none",
+          "radius": "12px 26px 12px 12px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".notice": {
+          "color": "rgb(52, 94, 122)",
+          "background": "rgb(237, 247, 255)",
+          "image": "none",
+          "radius": "9px",
+          "border": "rgb(198, 224, 239) rgb(198, 224, 239) rgb(198, 224, 239) rgb(90, 175, 209)"
+        },
+        ".primary": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(7, 91, 150)",
+          "image": "linear-gradient(120deg, rgb(7, 91, 150), rgb(8, 125, 156))",
+          "radius": "8px 15px",
+          "border": "rgb(7, 91, 150)"
+        },
+        ".metric": {
+          "color": "rgb(23, 70, 100)",
+          "background": "rgb(238, 248, 255)",
+          "image": "none",
+          "radius": "10px",
+          "border": "rgb(200, 225, 241)"
+        },
+        ".tag": {
+          "color": "rgb(28, 99, 135)",
+          "background": "rgb(237, 247, 255)",
+          "image": "none",
+          "radius": "6px",
+          "border": "rgb(195, 223, 234)"
+        }
+      }
+    },
+    {
+      "view": "source-question",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-reading.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(250, 253, 255, 0.98)",
+          "image": "none",
+          "radius": "12px 26px 12px 12px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".question": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(237, 247, 253)",
+          "image": "none",
+          "radius": "10px",
+          "border": "rgb(203, 223, 234) rgb(203, 223, 234) rgb(203, 223, 234) rgb(80, 181, 214)"
+        },
+        ".answer": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(251, 253, 255)",
+          "image": "none",
+          "radius": "9px 19px 9px 9px",
+          "border": "rgb(185, 213, 231)"
+        },
+        ".step.active": {
+          "color": "rgb(10, 84, 126)",
+          "background": "rgb(234, 247, 255)",
+          "image": "none",
+          "radius": "8px 16px 8px 8px",
+          "border": "rgb(54, 149, 191)"
+        },
+        ".tag": {
+          "color": "rgb(28, 99, 135)",
+          "background": "rgb(237, 247, 255)",
+          "image": "none",
+          "radius": "6px",
+          "border": "rgb(195, 223, 234)"
+        }
+      }
+    },
+    {
+      "view": "source-teacher",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/prototype/assets/city-teacher.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(250, 253, 255, 0.98)",
+          "image": "none",
+          "radius": "12px 26px 12px 12px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".teacher-nav": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(229, 242, 252)",
+          "image": "none",
+          "radius": "10px",
+          "border": "rgb(192, 220, 238)"
+        },
+        ".teacher-nav button.selected": {
+          "color": "rgb(12, 98, 141)",
+          "background": "rgb(255, 255, 255)",
+          "image": "none",
+          "radius": "7px",
+          "border": "rgb(69, 151, 198)"
+        },
+        "th": {
+          "color": "rgb(58, 101, 128)",
+          "background": "rgb(234, 244, 252)",
+          "image": "none",
+          "radius": "0px",
+          "border": "rgb(58, 101, 128) rgb(58, 101, 128) rgb(205, 223, 235)"
+        }
+      }
+    },
+    {
+      "view": "packaged-login",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-world.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".brand-mark": {
+          "color": "rgb(11, 101, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "image": "linear-gradient(135deg, rgb(237, 250, 255), rgb(210, 234, 251))",
+          "radius": "9px 17px",
+          "border": "rgb(180, 215, 236)"
+        },
+        ".login-submit": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(7, 91, 150)",
+          "image": "linear-gradient(120deg, rgb(7, 91, 150), rgb(8, 125, 156))",
+          "radius": "8px 17px",
+          "border": "rgb(7, 91, 150)"
+        },
+        ".login-card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(253, 254, 255, 0.97)",
+          "image": "none",
+          "radius": "0px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".input": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(255, 255, 255)",
+          "image": "none",
+          "radius": "8px",
+          "border": "rgb(171, 204, 224)"
+        },
+        ".login-eyebrow": {
+          "color": "rgb(12, 98, 141)",
+          "background": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "radius": "0px",
+          "border": "rgb(12, 98, 141)"
+        }
+      }
+    },
+    {
+      "view": "packaged-diagnosis",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-reading.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(250, 253, 255, 0.98)",
+          "image": "none",
+          "radius": "12px 26px 12px 12px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".tag": {
+          "color": "rgb(28, 99, 135)",
+          "background": "rgb(237, 247, 255)",
+          "image": "none",
+          "radius": "6px",
+          "border": "rgb(195, 223, 234)"
+        },
+        ".meaning-row": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(251, 253, 255)",
+          "image": "none",
+          "radius": "9px",
+          "border": "rgb(205, 223, 234)"
+        },
+        ".token-bank button": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(251, 253, 255)",
+          "image": "none",
+          "radius": "7px 13px 7px 7px",
+          "border": "rgb(186, 214, 231)"
+        },
+        ".step.active": {
+          "color": "rgb(10, 84, 126)",
+          "background": "rgb(234, 247, 255)",
+          "image": "none",
+          "radius": "8px 16px 8px 8px",
+          "border": "rgb(54, 149, 191)"
+        }
+      }
+    },
+    {
+      "view": "packaged-plan",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-reading.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(250, 253, 255, 0.98)",
+          "image": "none",
+          "radius": "12px 26px 12px 12px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".notice": {
+          "color": "rgb(52, 94, 122)",
+          "background": "rgb(237, 247, 255)",
+          "image": "none",
+          "radius": "9px",
+          "border": "rgb(198, 224, 239) rgb(198, 224, 239) rgb(198, 224, 239) rgb(90, 175, 209)"
+        },
+        ".primary": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(7, 91, 150)",
+          "image": "linear-gradient(120deg, rgb(7, 91, 150), rgb(8, 125, 156))",
+          "radius": "8px 15px",
+          "border": "rgb(7, 91, 150)"
+        },
+        ".metric": {
+          "color": "rgb(23, 70, 100)",
+          "background": "rgb(238, 248, 255)",
+          "image": "none",
+          "radius": "10px",
+          "border": "rgb(200, 225, 241)"
+        },
+        ".tag": {
+          "color": "rgb(28, 99, 135)",
+          "background": "rgb(237, 247, 255)",
+          "image": "none",
+          "radius": "6px",
+          "border": "rgb(195, 223, 234)"
+        }
+      }
+    },
+    {
+      "view": "packaged-question",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-reading.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(250, 253, 255, 0.98)",
+          "image": "none",
+          "radius": "12px 26px 12px 12px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".question": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(237, 247, 253)",
+          "image": "none",
+          "radius": "10px",
+          "border": "rgb(203, 223, 234) rgb(203, 223, 234) rgb(203, 223, 234) rgb(80, 181, 214)"
+        },
+        ".answer": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(251, 253, 255)",
+          "image": "none",
+          "radius": "9px 19px 9px 9px",
+          "border": "rgb(185, 213, 231)"
+        },
+        ".step.active": {
+          "color": "rgb(10, 84, 126)",
+          "background": "rgb(234, 247, 255)",
+          "image": "none",
+          "radius": "8px 16px 8px 8px",
+          "border": "rgb(54, 149, 191)"
+        },
+        ".tag": {
+          "color": "rgb(28, 99, 135)",
+          "background": "rgb(237, 247, 255)",
+          "image": "none",
+          "radius": "6px",
+          "border": "rgb(195, 223, 234)"
+        }
+      }
+    },
+    {
+      "view": "packaged-teacher",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-world.webp",
+          "width": 1672
+        },
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-teacher.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(250, 253, 255, 0.98)",
+          "image": "none",
+          "radius": "12px 26px 12px 12px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".teacher-nav": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(229, 242, 252)",
+          "image": "none",
+          "radius": "10px",
+          "border": "rgb(192, 220, 238)"
+        },
+        ".teacher-nav button.selected": {
+          "color": "rgb(12, 98, 141)",
+          "background": "rgb(255, 255, 255)",
+          "image": "none",
+          "radius": "7px",
+          "border": "rgb(69, 151, 198)"
+        },
+        "th": {
+          "color": "rgb(58, 101, 128)",
+          "background": "rgb(234, 244, 252)",
+          "image": "none",
+          "radius": "0px",
+          "border": "rgb(58, 101, 128) rgb(58, 101, 128) rgb(205, 223, 235)"
+        }
+      }
+    },
+    {
+      "view": "mobile-login",
+      "design": "city",
+      "images": [
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-world-mobile.webp",
+          "width": 941
+        },
+        {
+          "src": "http://127.0.0.1:33701/deploy/demo-site/assets/city-teacher.webp",
+          "width": 1672
+        }
+      ],
+      "styles": {
+        ".login-submit": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(7, 91, 150)",
+          "image": "linear-gradient(120deg, rgb(7, 91, 150), rgb(8, 125, 156))",
+          "radius": "8px 17px",
+          "border": "rgb(7, 91, 150)"
+        },
+        ".login-card": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgba(253, 254, 255, 0.97)",
+          "image": "none",
+          "radius": "0px",
+          "border": "rgb(188, 216, 233)"
+        },
+        ".input": {
+          "color": "rgb(18, 53, 78)",
+          "background": "rgb(255, 255, 255)",
+          "image": "none",
+          "radius": "8px",
+          "border": "rgb(171, 204, 224)"
+        },
+        ".login-eyebrow": {
+          "color": "rgb(12, 98, 141)",
+          "background": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "radius": "0px",
+          "border": "rgb(12, 98, 141)"
+        }
+      }
+    }
+  ],
+  "script_errors": [],
+  "failed_requests": [],
+  "status": "pass"
+}

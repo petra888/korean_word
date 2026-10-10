@@ -1,13 +1,13 @@
 {
   "sourcePath": "/workspace/korean_word/vocabulary-planning/prototype/pilot-flow.html",
-  "sourceHtmlSha256": "ec7d3b47622f41d7006d848bea8275c052d99e013b65665e61ddd74db1606e59",
+  "sourceHtmlSha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
   "method": "Current edited source evaluated in Node VM with mocked DOM. Layout, browser accessibility tree, focus, touch and browser printing are not exercised.",
   "results": [
     {
       "name": "MP-003: Native print after teacher login creates a current parent report",
       "status": "PASS",
       "method": "Node VM event callback and generated markup; no browser printing",
-      "printAreaCharacters": 6487
+      "printAreaCharacters": 6792
     },
     {
       "name": "MP-002: Ten draft textareas expose distinct word-specific names",
@@ -156,7 +156,7 @@
       "status": "PASS",
       "method": "Mock print call counter and actual handler",
       "printCalls": 1,
-      "printAreaCharacters": 18087
+      "printAreaCharacters": 18391
     },
     {
       "name": "MP-003: Native beforeprint replaces stale output with current confirmed content",

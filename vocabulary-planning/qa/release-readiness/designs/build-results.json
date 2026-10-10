@@ -1,0 +1,42 @@
+{
+  "method": "Real local Chromium against packaged static output; no upload or deploy",
+  "html_sha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
+  "public_files": [
+    "assets/city-reading.webp",
+    "assets/city-teacher.webp",
+    "assets/city-world-mobile.webp",
+    "assets/city-world.webp",
+    "assets/city-writing.webp",
+    "assets/forest-entrance.webp",
+    "assets/forest-reading.webp",
+    "assets/forest-teacher.webp",
+    "assets/forest-world-mobile.webp",
+    "assets/forest-world.webp",
+    "assets/forest-writing.webp",
+    "index.html",
+    "release-manifest.json"
+  ],
+  "checks": [
+    {
+      "design": "forest",
+      "role": "student",
+      "loginReloadScene": "PASS"
+    },
+    {
+      "design": "forest",
+      "role": "teacher",
+      "loginReloadScene": "PASS"
+    },
+    {
+      "design": "city",
+      "role": "student",
+      "loginReloadScene": "PASS"
+    },
+    {
+      "design": "city",
+      "role": "teacher",
+      "loginReloadScene": "PASS"
+    }
+  ],
+  "status": "pass"
+}

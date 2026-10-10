@@ -18,5 +18,7 @@
     "release-manifest.json"
   ],
   "deployment": "NOT RUN",
-  "previous_v7_deployment_evidence": "deploy/transfer/deployment-evidence/v7-deployment-verification.json"
+  "previous_v7_deployment_evidence": "deploy/transfer/deployment-evidence/v7-deployment-verification.json",
+  "historical_release": "v8.1-immersive-forest-demo",
+  "current_build_report": "../designs/build-results.json"
 }

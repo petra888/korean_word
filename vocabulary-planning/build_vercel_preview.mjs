@@ -11,7 +11,7 @@ const sha256 = createHash('sha256').update(source).digest('hex');
 const validation = JSON.parse(readFileSync(join(root, 'qa/release-readiness/validation-summary.json'), 'utf8'));
 assert.equal(validation.status, 'pass', 'The release must be verified before deployment.');
 assert.equal(validation.html_sha256, sha256, 'HTML differs from the verified release.');
-const assetNames = ['forest-entrance.webp', 'forest-reading.webp', 'forest-writing.webp', 'forest-teacher.webp', 'forest-world.webp', 'forest-world-mobile.webp'];
+const assetNames = ['forest-entrance.webp', 'forest-reading.webp', 'forest-writing.webp', 'forest-teacher.webp', 'forest-world.webp', 'forest-world-mobile.webp', 'city-world.webp', 'city-world-mobile.webp', 'city-reading.webp', 'city-writing.webp', 'city-teacher.webp'];
 const assets = Object.fromEntries(assetNames.map(name => [name,
   createHash('sha256').update(readFileSync(join(root, 'prototype/assets', name))).digest('hex')
 ]));

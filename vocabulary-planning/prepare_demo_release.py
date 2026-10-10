@@ -17,7 +17,7 @@ if not validation_path.exists():
 validation = json.loads(validation_path.read_text())
 if validation.get('status') != 'pass' or validation.get('html_sha256') != digest:
     raise SystemExit('Release verification does not match the current HTML. Verify this source first.')
-asset_names = ['forest-entrance.webp', 'forest-reading.webp', 'forest-writing.webp', 'forest-teacher.webp', 'forest-world.webp', 'forest-world-mobile.webp']
+asset_names = ['forest-entrance.webp', 'forest-reading.webp', 'forest-writing.webp', 'forest-teacher.webp', 'forest-world.webp', 'forest-world-mobile.webp', 'city-world.webp', 'city-world-mobile.webp', 'city-reading.webp', 'city-writing.webp', 'city-teacher.webp']
 asset_hashes = {name: hashlib.sha256((ROOT / 'prototype/assets' / name).read_bytes()).hexdigest() for name in asset_names}
 if validation.get('asset_sha256') != asset_hashes:
     raise SystemExit('Release verification does not match the current illustrations.')

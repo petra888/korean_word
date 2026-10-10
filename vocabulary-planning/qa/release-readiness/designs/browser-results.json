@@ -1,0 +1,105 @@
+{
+  "method": "Real local Chromium through Playwright",
+  "html_sha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Both designs change the UI while preserving typed credentials and password visibility",
+      "status": "PASS",
+      "details": {
+        "newVisitorDefault": "design 2",
+        "formNodeAndInputKept": true,
+        "palettes": {
+          "forest": {
+            "radius": "13px",
+            "background": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          "city": {
+            "radius": "8px 17px",
+            "background": "linear-gradient(120deg, rgb(7, 91, 150), rgb(8, 125, 156))",
+            "color": "rgb(255, 255, 255)"
+          }
+        }
+      }
+    },
+    {
+      "name": "Both designs and the header fit mobile/tablet/desktop with responsive scene assets",
+      "status": "PASS",
+      "details": {
+        "widths": [
+          320,
+          360,
+          390,
+          768,
+          1280
+        ],
+        "bothResponsivePictures": true,
+        "selectorTargetsAtLeast44px": true
+      }
+    },
+    {
+      "name": "Design selection is keyboard accessible and persists across reload",
+      "status": "PASS",
+      "details": {
+        "keyboardActivation": true,
+        "focusKept": true,
+        "bothPreferencesPersist": true
+      }
+    },
+    {
+      "name": "Changing designs preserves selected answers, writing drafts, and submitted learning",
+      "status": "PASS",
+      "details": {
+        "pendingAnswerKept": true,
+        "draftNodeAndTextKept": true,
+        "objectiveSubmissions": 10,
+        "writingSubmissions": 10,
+        "logoutKeepsDesign": true
+      }
+    },
+    {
+      "name": "Teacher grading/report drafts persist and chart data stays identical when colors change",
+      "status": "PASS",
+      "details": {
+        "gradeDraftAndCommentKept": true,
+        "reportDraftKept": true,
+        "chartDataUnchanged": true,
+        "chartColorsChange": [
+          "rgb(39, 106, 81)",
+          "rgb(8, 123, 150)"
+        ],
+        "reloadKeepsReportAndDesign": true
+      }
+    },
+    {
+      "name": "Motion settings stay independent, OS reduction is honored, and other tabs synchronize design",
+      "status": "PASS",
+      "details": {
+        "motionPreferenceIndependent": true,
+        "crossTabDesignSync": true,
+        "reducedMotionHonoredAcrossDesigns": true
+      }
+    },
+    {
+      "name": "Storage failures recover safely, invalid preferences are ignored, and learning reset retains design",
+      "status": "PASS",
+      "details": {
+        "storageFailureKeepsCurrentChoiceAndLearning": true,
+        "warningRecoversAfterSuccessfulSave": true,
+        "invalidOrBlockedReadFallsBack": true,
+        "learningResetKeepsDesign": true
+      }
+    },
+    {
+      "name": "No uncaught errors or broken assets during design switching",
+      "status": "PASS",
+      "details": {
+        "errors": [],
+        "failedRequests": []
+      }
+    }
+  ],
+  "deploymentPerformed": false
+}

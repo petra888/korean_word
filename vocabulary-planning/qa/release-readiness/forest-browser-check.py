@@ -6,13 +6,16 @@ from threading import Thread
 import hashlib
 import json
 import re
+import os
 import traceback
 
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "prototype/pilot-flow.html"
-OUT = Path(__file__).resolve().parent / "forest"
+DESIGN = os.environ.get("VOCABULARY_DESIGN", "forest")
+assert DESIGN in ["forest", "city"]
+OUT = Path(__file__).resolve().parent / ("forest" if DESIGN == "forest" else "city")
 OUT.mkdir(exist_ok=True)
 checks, errors, asset_failures = [], [], []
 
@@ -64,6 +67,7 @@ def fits(page):
 with sync_playwright() as playwright:
     browser = playwright.chromium.launch(executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox"])
     context = browser.new_context(viewport={"width": 1280, "height": 960})
+    context.add_init_script("if (!localStorage.getItem('vocabulary-design-v1')) localStorage.setItem('vocabulary-design-v1'," + json.dumps(DESIGN) + ");")
     page = context.new_page()
     page.on("pageerror", lambda error: errors.append(str(error)))
     page.on("response", lambda response: asset_failures.append(response.url) if response.status >= 400 else None)
@@ -71,9 +75,9 @@ with sync_playwright() as playwright:
 
     def login_scenes():
         screenshot(page, "login-student-desktop")
-        assert "forest-entrance.webp" in page.locator(".login-landscape").get_attribute("src")
+        assert ("forest-entrance.webp" if DESIGN == "forest" else "city-world.webp") in page.locator(".login-landscape").get_attribute("src")
         page.locator('[data-login-role="teacher"]').click()
-        assert "forest-teacher.webp" in page.locator(".login-landscape").get_attribute("src")
+        assert (DESIGN+"-teacher.webp") in page.locator(".login-landscape").get_attribute("src")
         screenshot(page, "login-teacher-desktop")
         for width in [360, 390, 768, 1280]:
             page.set_viewport_size({"width": width, "height": 960})
@@ -91,7 +95,7 @@ with sync_playwright() as playwright:
         for width in [360, 390, 768, 1280]:
             page.set_viewport_size({"width": width, "height": 960})
             images_loaded(page)
-            expected = "forest-world-mobile.webp" if width <= 800 else "forest-world.webp"
+            expected = DESIGN + ("-world-mobile.webp" if width <= 800 else "-world.webp")
             assert page.locator("#forest-world img").evaluate("e=>e.currentSrc").endswith(expected)
             box = page.locator("#forest-world").bounding_box()
             assert box["x"] == box["y"] == 0 and box["width"] == width and box["height"] == 960
@@ -104,7 +108,7 @@ with sync_playwright() as playwright:
     check("Desktop and portrait forest backgrounds cover the whole viewport without blocking controls", full_environment)
 
     def motion_controls():
-        leaf = page.locator(".forest-leaf").first
+        leaf = page.locator(".forest-leaf" if DESIGN == "forest" else ".city-drone").first
         before_record = page.evaluate("localStorage.getItem('vocabulary-pilot-flow-v2')")
         assert page.locator("#forest-world").get_attribute("data-motion") == "running"
         before = leaf.evaluate("e=>getComputedStyle(e).transform")
@@ -129,7 +133,7 @@ with sync_playwright() as playwright:
         page.emulate_media(reduced_motion="reduce")
         page.wait_for_function("document.getElementById('forest-world').getAttribute('data-motion')==='paused'")
         assert page.locator("#forest-motion-toggle").is_disabled()
-        assert page.locator(".forest-leaf").first.evaluate("e=>getComputedStyle(e).animationName") == "none"
+        assert page.locator(".forest-leaf" if DESIGN == "forest" else ".city-drone").first.evaluate("e=>getComputedStyle(e).animationName") == "none"
         page.emulate_media(reduced_motion="no-preference")
         page.wait_for_function("document.getElementById('forest-world').getAttribute('data-motion')==='running'")
         assert page.locator("#forest-motion-toggle").is_enabled()
@@ -172,7 +176,7 @@ with sync_playwright() as playwright:
             page.get_by_test_id("submit-answer").click()
             page.get_by_test_id("next").click()
         assert page.locator("[data-writing]").count() == 10
-        assert "forest-writing.webp" in page.locator(".forest-banner-art").get_attribute("src")
+        assert (DESIGN+"-writing.webp") in page.locator(".forest-banner-art").get_attribute("src")
         screenshot(page, "writing-desktop")
         page.evaluate("window.scrollTo(0,1000)")
         assert page.locator("#forest-world").bounding_box()["y"] == 0
@@ -195,7 +199,7 @@ with sync_playwright() as playwright:
         page.locator("#logout").click()
         login(page, "teacher")
         assert page.locator(".record-answer.incorrect").count() >= 1
-        assert page.locator(".record-answer.incorrect").first.evaluate("e=>getComputedStyle(e).color") == "rgb(178, 55, 55)"
+        assert page.locator(".record-answer.incorrect").first.evaluate("e=>getComputedStyle(e).color") == ("rgb(178, 55, 55)" if DESIGN == "forest" else "rgb(177, 50, 54)")
         screenshot(page, "teacher-records-desktop")
         page.locator('[data-action="teacher-page"][data-page="grading"]').click()
         for activity, judgment in [("regular-W1", "correct"), ("regular-W2", "incorrect"), ("regular-W3", "uncertain")]:
@@ -280,7 +284,7 @@ with sync_playwright() as playwright:
     browser.close()
 server.shutdown()
 
-result = {"method": "Real local Chromium through Playwright", "html_sha256": hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
+result = {"method": "Real local Chromium through Playwright", "design": DESIGN, "html_sha256": hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
           "passed": sum(c["status"] == "PASS" for c in checks), "failed": sum(c["status"] == "FAIL" for c in checks), "checks": checks,
           "limits": ["Physical devices and physical printing not tested.", "No deployment or remote verification performed."],
           "assets": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((SOURCE.parent / "assets").glob("*.webp"))}}

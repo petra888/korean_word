@@ -1,8 +1,8 @@
 # 교직원 테스트 배포 준비
 
-v8.1 상상 숲 전체 배경·애니메이션과 공백 없는 테스트 계정은 사용자의 재배포 요청에 따라 기존 `korean-word-demo` 프로젝트의 Git 연동으로 전달합니다. **사용자가 새 배포를 요청할 때만 푸시·배포합니다.** [Vercel 안내](vercel.md)를 참고하세요.
+2026년 10월 10일 사용자의 요청으로 v9의 디자인 1·2 선택, 미래 도시 UI와 일러스트를 기존 `korean-word-demo` 프로젝트에 배포합니다. 기존 배포는 v8.1 상상 숲 버전이며 새 배포의 완료는 커밋별 READY 상태와 기존 주소 연결로 확인합니다. **사용자가 새 배포를 요청할 때만 푸시·배포합니다.** [Vercel 안내](vercel.md)를 참고하세요.
 
-배포 대상은 `demo-site`입니다. 현재 HTML과 일러스트 여섯 장이 검증 요약의 해시와 일치해야 생성됩니다.
+배포 대상은 `demo-site`입니다. 현재 HTML과 일러스트 열한 장이 검증 요약의 해시와 일치해야 생성됩니다.
 
 저장소 최상위에서 Git 연동용 정적 빌드를 로컬 확인할 수 있습니다.
 
@@ -22,7 +22,7 @@ python3 vocabulary-planning/prepare_vercel_demo.py
 - `demo-site/index.html`: 테스트 화면
 - `demo-site/assets/*.webp`: 검증된 네 가지 화면 일러스트와 두 가지 전체 배경
 - `demo-site/release-manifest.json`: HTML·자산 해시, Git 기준, 검증 범위
-- `교직원-테스트-배포-{release}.zip`: 위 여덟 파일을 넣은 업로드용 ZIP
+- `교직원-테스트-배포-{release}.zip`: 위 열세 파일을 넣은 업로드용 ZIP
 - `교직원-테스트-배포-vercel-preview.zip`: 설정과 public 폴더를 포함한 직접 Vercel 업로드용 ZIP
 
 전체 교재·문서·QA 이력·테스트 스크린샷은 배포 폴더에 포함하지 않습니다. 생성 폴더와 ZIP은 Git에서 제외됩니다.

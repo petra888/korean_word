@@ -29,6 +29,11 @@ vercel-preview/
       forest-teacher.webp
       forest-world.webp
       forest-world-mobile.webp
+      city-world.webp
+      city-world-mobile.webp
+      city-reading.webp
+      city-writing.webp
+      city-teacher.webp
 ```
 
 업로드 ZIP은 `교직원-테스트-배포-vercel-preview.zip`이다. 전체 교재·문서·QA 이력은 포함하지 않는다.
@@ -71,11 +76,11 @@ GitHub `petra888/korean_word`의 `main`에 push했다. 저장소 전체를 Impor
 저장소 최상위, Framework는 Other, Build Command는 `node vocabulary-planning/build_vercel_preview.mjs`,
 Output Directory는 `vocabulary-planning/deploy/demo-site`, Install Command는 비움이다.
 `vercel.json`이 이 설정을 제공한다. 서버 빌드는 기존 검증 해시·원본 콘텐츠가 같을 때만
-진행하며, 정적 출력은 index.html, release-manifest.json과 검증된 일러스트 여섯 장으로 제한한다.
+진행하며, 정적 출력은 index.html, release-manifest.json과 검증된 일러스트 열한 장으로 제한한다.
 
 `korean-word-demo` 프로젝트의 기존 v7 로그인 데모는 배포되었다. 기존 주소는
-`https://korean-word-demo.vercel.app/`이다. v8.1 상상 숲 디자인과 공백 없는 테스트 계정은
-사용자의 재배포 요청에 따라 `main`에 푸시하여 기존 프로젝트에 전달한다. 배포 완료는
+`https://korean-word-demo.vercel.app/`이다. v8.1 상상 숲 버전은 재배포를 완료했다. 2026년 10월 10일 사용자의 새 배포 요청에 따라 v9의 두 디자인 선택과 미래 도시 UI를
+기존 프로젝트에 배포한다. 사용자의 새 배포 요청이 있을 때만 `main`에 푸시하며, 완료는
 새 커밋의 READY 상태와 기존 주소의 alias 연결을 확인한 뒤 안내한다.
 
 브라우저 기록은 주소·기기별로 분리된다. 한 차례 테스트를 같은 URL에서 진행하고 새 배포 URL에

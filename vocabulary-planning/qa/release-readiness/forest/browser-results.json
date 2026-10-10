@@ -1,6 +1,7 @@
 {
   "method": "Real local Chromium through Playwright",
-  "html_sha256": "ec7d3b47622f41d7006d848bea8275c052d99e013b65665e61ddd74db1606e59",
+  "design": "forest",
+  "html_sha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
   "passed": 11,
   "failed": 0,
   "checks": [
@@ -271,6 +272,11 @@
     "No deployment or remote verification performed."
   ],
   "assets": {
+    "city-reading.webp": "b6dc23450bde9d23be14007a3f75684440511588d275f2c9db51cc5f72d18256",
+    "city-teacher.webp": "ea79e445050c9ae31f3f7c9c03f70d24b5fde1322f936aa58bc36635837c1c1f",
+    "city-world-mobile.webp": "a161ea6c7209b1ba5e5fe33e20e8b58e0d75049e471dac47f9f2cdb8cd123cc4",
+    "city-world.webp": "748228f0ac4a5a434751614a65441364a9a21d6852b2eddc6d62198276f706dd",
+    "city-writing.webp": "cbf8b3de6c709de0492dd2e0208d923cadc0b8c294635be60950f4ce222375de",
     "forest-entrance.webp": "e3551e1270fac436a18d1d61986342278024b2dfa6b38309c09da8f28641a8eb",
     "forest-reading.webp": "3f84da416c2215db72f15313912869794bae1b148beea3e9705ce6a7655474b1",
     "forest-teacher.webp": "3d0d1c8667f166f319f60c2b198175fd2da4eff40f7301fe24dd395011e75110",

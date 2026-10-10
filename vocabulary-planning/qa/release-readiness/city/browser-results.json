@@ -1,0 +1,287 @@
+{
+  "method": "Real local Chromium through Playwright",
+  "design": "city",
+  "html_sha256": "b7c056582b3778cc2ea15fac8659fb9f5832aeb3c4740d9d8449667cea9c5200",
+  "passed": 11,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Student and teacher login illustrations load and controls fit desktop/mobile",
+      "status": "PASS",
+      "details": {
+        "viewports": [
+          360,
+          390,
+          768,
+          1280
+        ],
+        "studentAndTeacherScenes": true
+      }
+    },
+    {
+      "name": "Desktop and portrait forest backgrounds cover the whole viewport without blocking controls",
+      "status": "PASS",
+      "details": {
+        "viewports": [
+          {
+            "width": 360,
+            "wholeViewport": true,
+            "asset": "city-world-mobile.webp"
+          },
+          {
+            "width": 390,
+            "wholeViewport": true,
+            "asset": "city-world-mobile.webp"
+          },
+          {
+            "width": 768,
+            "wholeViewport": true,
+            "asset": "city-world-mobile.webp"
+          },
+          {
+            "width": 1280,
+            "wholeViewport": true,
+            "asset": "city-world.webp"
+          }
+        ],
+        "decorationOnly": true
+      }
+    },
+    {
+      "name": "Leaf motion runs, pauses and resumes; preference persists separately from learning",
+      "status": "PASS",
+      "details": {
+        "animationActuallyChangesTransform": true,
+        "pauseFreezesMotion": true,
+        "choiceSurvivesReload": true,
+        "learningRecordUnaffected": true
+      }
+    },
+    {
+      "name": "Reduced-motion preference disables ambient animation and updates live",
+      "status": "PASS",
+      "details": {
+        "operatingSystemPreference": "honored",
+        "animations": "none under reduce",
+        "preferenceChangesLive": true
+      }
+    },
+    {
+      "name": "Diagnosis word placement and planned learning remain readable at all widths",
+      "status": "PASS",
+      "details": {
+        "definitionRows": 10,
+        "wordCards": 10,
+        "viewports": [
+          360,
+          390,
+          768,
+          1280
+        ]
+      }
+    },
+    {
+      "name": "Four-choice practice, all ten writings and period reviews work with the forest UI",
+      "status": "PASS",
+      "details": {
+        "objectiveResponses": 10,
+        "writingSubmissions": 10,
+        "allThreeReviewPeriods": true
+      }
+    },
+    {
+      "name": "Teacher record colors, three grading choices and charts remain usable",
+      "status": "PASS",
+      "details": {
+        "wrongAnswersRed": true,
+        "threeSingleChoiceJudgmentButtons": true,
+        "responsiveReports": true
+      }
+    },
+    {
+      "name": "Main text, muted labels and primary buttons meet sampled text contrast",
+      "status": "PASS",
+      "details": {
+        "pairs": [
+          {
+            "selector": ".brand-name",
+            "color": "rgb(18, 53, 78)",
+            "backgrounds": [
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(248, 253, 255, 0.96)"
+            ],
+            "ratio": 11.4
+          },
+          {
+            "selector": ".forest-eyebrow",
+            "color": "rgb(11, 99, 142)",
+            "backgrounds": [
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(235, 246, 255, 0.94)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 5.26
+          },
+          {
+            "selector": ".forest-banner-copy h1",
+            "color": "rgb(18, 53, 78)",
+            "backgrounds": [
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(235, 246, 255, 0.94)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 10.2
+          },
+          {
+            "selector": ".forest-banner-copy>p:last-child",
+            "color": "rgb(53, 93, 118)",
+            "backgrounds": [
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(235, 246, 255, 0.94)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 5.63
+          },
+          {
+            "selector": ".teacher-nav .selected",
+            "color": "rgb(12, 98, 141)",
+            "backgrounds": [
+              "rgb(255, 255, 255)",
+              "rgb(229, 242, 252)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 6.67
+          },
+          {
+            "selector": ".chart-subtitle",
+            "color": "rgb(75, 101, 123)",
+            "backgrounds": [
+              "rgba(0, 0, 0, 0)",
+              "rgb(251, 253, 255)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(250, 253, 255, 0.98)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 5.98
+          },
+          {
+            "selector": ".assessment-status",
+            "color": "rgb(18, 53, 78)",
+            "backgrounds": [
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(250, 253, 255, 0.98)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 11.96
+          },
+          {
+            "selector": ".notice",
+            "color": "rgb(52, 94, 122)",
+            "backgrounds": [
+              "rgb(237, 247, 255)",
+              "rgba(250, 253, 255, 0.98)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 6.39
+          },
+          {
+            "selector": ".field>span",
+            "color": "rgb(35, 77, 104)",
+            "backgrounds": [
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(250, 253, 255, 0.98)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 8.44
+          },
+          {
+            "selector": ".primary",
+            "color": "rgb(255, 255, 255)",
+            "backgrounds": [
+              "rgb(7, 91, 150)",
+              "rgba(0, 0, 0, 0)",
+              "rgba(250, 253, 255, 0.98)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 7.13
+          },
+          {
+            "selector": ".fine",
+            "color": "rgb(75, 101, 123)",
+            "backgrounds": [
+              "rgba(0, 0, 0, 0)",
+              "rgba(250, 253, 255, 0.98)",
+              "rgba(0, 0, 0, 0)"
+            ],
+            "ratio": 5.71
+          }
+        ],
+        "criterion": "4.5:1 for sampled surfaces, composited over black and white illustration extremes; artwork edges reviewed visually"
+      }
+    },
+    {
+      "name": "Parent report print/PDF excludes illustrations and internal notes",
+      "status": "PASS",
+      "details": {
+        "browserPrintCSS": true,
+        "pdfGenerated": true,
+        "illustrationsExcluded": true,
+        "physicalPrinting": "not tested"
+      }
+    },
+    {
+      "name": "Saved learning, grades and teacher report survive a page reload",
+      "status": "PASS",
+      "details": {
+        "learningAndGradesKeptOnReload": true,
+        "reportTextKept": true
+      }
+    },
+    {
+      "name": "No uncaught script errors or failed illustration requests",
+      "status": "PASS",
+      "details": {
+        "scriptErrors": [],
+        "assetFailures": []
+      }
+    }
+  ],
+  "limits": [
+    "Physical devices and physical printing not tested.",
+    "No deployment or remote verification performed."
+  ],
+  "assets": {
+    "city-reading.webp": "b6dc23450bde9d23be14007a3f75684440511588d275f2c9db51cc5f72d18256",
+    "city-teacher.webp": "ea79e445050c9ae31f3f7c9c03f70d24b5fde1322f936aa58bc36635837c1c1f",
+    "city-world-mobile.webp": "a161ea6c7209b1ba5e5fe33e20e8b58e0d75049e471dac47f9f2cdb8cd123cc4",
+    "city-world.webp": "748228f0ac4a5a434751614a65441364a9a21d6852b2eddc6d62198276f706dd",
+    "city-writing.webp": "cbf8b3de6c709de0492dd2e0208d923cadc0b8c294635be60950f4ce222375de",
+    "forest-entrance.webp": "e3551e1270fac436a18d1d61986342278024b2dfa6b38309c09da8f28641a8eb",
+    "forest-reading.webp": "3f84da416c2215db72f15313912869794bae1b148beea3e9705ce6a7655474b1",
+    "forest-teacher.webp": "3d0d1c8667f166f319f60c2b198175fd2da4eff40f7301fe24dd395011e75110",
+    "forest-world-mobile.webp": "f4f0cbad9ebfea82dc4a78f311a3a2ff1eb237b45c8bfbaf35bb51d9743ca9d8",
+    "forest-world.webp": "2482b2bd9ab710d5a6c359fac5e9be99df614c71b461202c234ea5a926310319",
+    "forest-writing.webp": "191b875f7c053f850c0dff9f1b61a8936cb9fad068df766a14a1dd6889011906"
+  }
+}

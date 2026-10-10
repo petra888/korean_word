@@ -139,6 +139,5 @@
     "Production authentication and authorization",
     "Server autosave, calendar aggregation and deployment",
     "Educational content approval or learning efficacy"
-  ],
-  "source_sha256": "ec7d3b47622f41d7006d848bea8275c052d99e013b65665e61ddd74db1606e59"
+  ]
 }
